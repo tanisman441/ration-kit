@@ -2703,6 +2703,201 @@
   }
  },
  {
+  "name": "transport/car",
+  "status": "draft",
+  "desc": "Yandan görünüm sade araba; sağa bakar, tekerlekler speed parametresiyle döner",
+  "tags": [
+   "araba",
+   "otomobil",
+   "car",
+   "vehicle",
+   "taşıt",
+   "sürüş",
+   "driving",
+   "yol"
+  ],
+  "anchor": "zemin merkezi (0,0); gövde yukarı uzar",
+  "box": [
+   -125,
+   -95,
+   125,
+   14
+  ],
+  "points": [
+   "front",
+   "roof",
+   "wheelF",
+   "wheelR"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "tekerlek dönüş hızı (0-1)"
+   }
+  }
+ },
+ {
+  "name": "transport/plane",
+  "status": "draft",
+  "desc": "Yandan görünüm yolcu uçağı; flying anında burun kaldırır, yükselir ve iz bırakır",
+  "tags": [
+   "uçak",
+   "plane",
+   "airplane",
+   "jet",
+   "havayolu",
+   "uçuş",
+   "flight",
+   "seyahat",
+   "travel"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -140,
+   -75,
+   140,
+   60
+  ],
+  "points": [
+   "nose",
+   "tail",
+   "wing"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "flying": {
+    "type": "time",
+    "default": null,
+    "desc": "kalkış/yükselme anı"
+   }
+  }
+ },
+ {
+  "name": "transport/rocket",
+  "status": "draft",
+  "desc": "Dikey roket; launch anında motor alevi büyür, duman çıkar ve gökyüzüne yükselir",
+  "tags": [
+   "roket",
+   "rocket",
+   "füze",
+   "uzay",
+   "space",
+   "fırlatma",
+   "launch",
+   "nasa",
+   "yörünge"
+  ],
+  "anchor": "roket tabanı (0,0); gövde yukarı uzar",
+  "box": [
+   -62,
+   -178,
+   62,
+   20
+  ],
+  "points": [
+   "nose",
+   "base",
+   "window"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "launch": {
+    "type": "time",
+    "default": null,
+    "desc": "fırlatma anı"
+   }
+  }
+ },
+ {
+  "name": "transport/ship",
+  "status": "draft",
+  "desc": "Yandan görünüm gemi; bacadan duman çıkar, sailing arttıkça dalgalarda salınır",
+  "tags": [
+   "gemi",
+   "ship",
+   "boat",
+   "tekne",
+   "deniz",
+   "sea",
+   "yolculuk",
+   "voyage",
+   "liman"
+  ],
+  "anchor": "su hattı merkezi (0,0); gövde yukarı uzar",
+  "box": [
+   -155,
+   -130,
+   155,
+   35
+  ],
+  "points": [
+   "bow",
+   "stern",
+   "deck"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "sailing": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "dalga salınım şiddeti (0-1)"
+   }
+  }
+ },
+ {
+  "name": "transport/truck",
+  "status": "draft",
+  "desc": "Yandan görünüm kamyon; önde kabin, arkada çizgili römork, tekerlekler speed ile döner",
+  "tags": [
+   "kamyon",
+   "tır",
+   "truck",
+   "lorry",
+   "nakliye",
+   "yük",
+   "cargo",
+   "taşıt",
+   "vehicle"
+  ],
+  "anchor": "zemin merkezi (0,0); gövde yukarı uzar",
+  "box": [
+   -180,
+   -115,
+   180,
+   14
+  ],
+  "points": [
+   "front",
+   "cargo",
+   "wheelF"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "tekerlek dönüş hızı (0-1)"
+   }
+  }
+ },
+ {
   "name": "ui/browser-window",
   "status": "draft",
   "desc": "Tarayıcı penceresi; adres satırı ve sade sayfa iskeletiyle",

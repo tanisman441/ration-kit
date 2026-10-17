@@ -68,7 +68,7 @@ Bitince `[x]`.
 - [x] P3 economy/stock-ticker, economy/factory-line
 
 ## transport — ulaşım
-- [ ] P3 transport/car, transport/truck, transport/plane, transport/ship, transport/rocket (params: launch zaman)
+- [x] P3 transport/car, transport/truck, transport/plane, transport/ship, transport/rocket (params: launch zaman)
 
 ## ui — arayüz parçaları
 - [x] P1 ui/style-sheet — stil rehberi referans tahtası (bkz. STYLE.md)
