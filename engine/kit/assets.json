@@ -313,6 +313,219 @@
   }
  },
  {
+  "name": "economy/bank",
+  "status": "draft",
+  "desc": "Klasik banka binası cephesi; alınlık, dört sütun, kapı ve merdiven",
+  "tags": [
+   "banka",
+   "bank",
+   "finans",
+   "finance",
+   "bina",
+   "building",
+   "para",
+   "money"
+  ],
+  "anchor": "taban (0,0) — merdivenin altı",
+  "box": [
+   -168,
+   -258,
+   168,
+   26
+  ],
+  "points": [
+   "door",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "economy/coin",
+  "status": "draft",
+  "desc": "Madeni para; spin 0-1 arasında yarım tur döner (ön yüz yıldızlı, arka yüz çizgili)",
+  "tags": [
+   "para",
+   "madeni para",
+   "coin",
+   "money",
+   "altın",
+   "gold",
+   "dön",
+   "spin"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -75,
+   -80,
+   75,
+   80
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "spin": {
+    "type": "number",
+    "default": 0,
+    "desc": "dönüş miktarı (0-1: yarım tur)"
+   }
+  }
+ },
+ {
+  "name": "economy/credit-card",
+  "status": "draft",
+  "desc": "Kredi kartı; flip anında dönerek arka yüze geçer (manyetik şeritli)",
+  "tags": [
+   "kredi kartı",
+   "kart",
+   "credit",
+   "card",
+   "ödeme",
+   "payment",
+   "banka kartı"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -132,
+   -88,
+   132,
+   88
+  ],
+  "points": [
+   "chip",
+   "corner"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "flip": {
+    "type": "time",
+    "default": null,
+    "desc": "çevirme anı (0.45 sn dönüş)"
+   }
+  }
+ },
+ {
+  "name": "economy/money-stack",
+  "status": "draft",
+  "desc": "Banknot destesi; amount arttıkça katman sayısı ve yükseklik artar",
+  "tags": [
+   "para",
+   "banknot",
+   "deste",
+   "money",
+   "cash",
+   "banknote",
+   "stack",
+   "zengin"
+  ],
+  "anchor": "taban (0,0) — en alt banknotun altı",
+  "box": [
+   -95,
+   -158,
+   95,
+   20
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green"
+   },
+   "amount": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "deste doluluğu (0-1)"
+   }
+  }
+ },
+ {
+  "name": "economy/price-tag",
+  "status": "draft",
+  "desc": "İpten sarkan fiyat etiketi; text ile fiyat yazısı değişir",
+  "tags": [
+   "fiyat",
+   "etiket",
+   "price",
+   "tag",
+   "indirim",
+   "sale",
+   "alışveriş",
+   "label"
+  ],
+  "anchor": "etiket merkezi (0,0)",
+  "box": [
+   -128,
+   -72,
+   128,
+   72
+  ],
+  "points": [
+   "hole",
+   "corner"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "text": {
+    "type": "text",
+    "default": "₺99",
+    "desc": "etiket üzerindeki yazı"
+   }
+  }
+ },
+ {
+  "name": "economy/shopping-cart",
+  "status": "draft",
+  "desc": "Alışveriş sepeti; full 0-1 arasında sepete ürün kutuları dolar",
+  "tags": [
+   "sepet",
+   "alışveriş",
+   "shopping",
+   "cart",
+   "market",
+   "trolley",
+   "satın al"
+  ],
+  "anchor": "tekerlek tabanı (0,0)",
+  "box": [
+   -120,
+   -148,
+   80,
+   26
+  ],
+  "points": [
+   "handle",
+   "basket"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "full": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "sepet doluluğu (0-1)"
+   }
+  }
+ },
+ {
   "name": "environment/barrel",
   "status": "draft",
   "desc": "Metal varil; fuel varyantı sarı ikaz şeritli, water varyantı mavi dalga şeritli",

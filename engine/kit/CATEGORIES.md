@@ -61,10 +61,10 @@ Bitince `[x]`.
 - [ ] P3 science/magnet, science/planet, science/microscope, science/virus
 
 ## economy — para ve ekonomi
-- [ ] P2 economy/coin — params: flip (zaman)
-- [ ] P2 economy/money-stack — params: amount 0–1
-- [ ] P2 economy/bank — banka binası
-- [ ] P2 economy/shopping-cart, economy/credit-card, economy/price-tag
+- [x] P2 economy/coin — params: spin (0-1)
+- [x] P2 economy/money-stack — params: amount 0–1
+- [x] P2 economy/bank — banka binası
+- [x] P2 economy/shopping-cart, economy/credit-card, economy/price-tag
 - [ ] P3 economy/stock-ticker, economy/factory-line
 
 ## transport — ulaşım
