@@ -1915,6 +1915,165 @@
   }
  },
  {
+  "name": "science/magnet",
+  "status": "draft",
+  "desc": "Klasik at nalı mıknatıs; active anında manyetik alan çizgileri belirir ve metal parçalar kutuplara çekilir",
+  "tags": [
+   "mıknatıs",
+   "magnet",
+   "manyetik",
+   "magnetic",
+   "fizik",
+   "physics",
+   "kutup",
+   "pole",
+   "çekim",
+   "attraction",
+   "alan",
+   "field"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -90,
+   -95,
+   90,
+   75
+  ],
+  "points": [
+   "north",
+   "south"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "mıknatıs gövde rengi"
+   },
+   "active": {
+    "type": "time",
+    "default": null,
+    "desc": "çekim anı: alan çizgileri + metal parçalar"
+   }
+  }
+ },
+ {
+  "name": "science/microscope",
+  "status": "draft",
+  "desc": "Yandan görünüm mikroskop; mercek tüpü, objektif, numune tablası ve odak düğmeli",
+  "tags": [
+   "mikroskop",
+   "microscope",
+   "laboratuvar",
+   "lab",
+   "bilim",
+   "science",
+   "lens",
+   "objektif",
+   "objective",
+   "inceleme"
+  ],
+  "anchor": "taban (0,0)",
+  "box": [
+   -115,
+   -220,
+   90,
+   15
+  ],
+  "points": [
+   "eyepiece",
+   "lens",
+   "stage"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "gövde rengi"
+   }
+  }
+ },
+ {
+  "name": "science/planet",
+  "status": "draft",
+  "desc": "Halkalı gezegen; yüzey detayları rotate fazıyla kayar ve gezegen yavaşça döner",
+  "tags": [
+   "gezegen",
+   "planet",
+   "halka",
+   "ring",
+   "uzay",
+   "space",
+   "satürn",
+   "saturn",
+   "gök cismi",
+   "astronomi",
+   "astronomy"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -135,
+   -100,
+   135,
+   100
+  ],
+  "points": [
+   "center",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "gezegen gövde rengi"
+   },
+   "rotate": {
+    "type": "number",
+    "default": 0.25,
+    "desc": "yüzey fazı 0–1"
+   }
+  }
+ },
+ {
+  "name": "science/virus",
+  "status": "draft",
+  "desc": "Dikenli virüs modeli; wobble parametresiyle titrer, spike proteinleri belirgin",
+  "tags": [
+   "virüs",
+   "virus",
+   "mikrop",
+   "germ",
+   "mikrobiyoloji",
+   "microbiology",
+   "pandemi",
+   "pandemic",
+   "spike",
+   "hastalık",
+   "disease"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "virüs gövde rengi"
+   },
+   "wobble": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "titreme şiddeti 0–1"
+   }
+  }
+ },
+ {
   "name": "tech/cable-bundle",
   "status": "draft",
   "desc": "Bağlantı bloğundan yayılan kablo demeti; biri vurgu renkli veri hattı",
