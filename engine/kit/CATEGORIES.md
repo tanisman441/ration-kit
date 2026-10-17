@@ -23,7 +23,7 @@ Bitince `[x]`.
 - [x] P1 tech/database — params: activity 0–1
 - [x] P2 tech/chip — işlemci; params: activity 0–1
 - [x] P2 tech/satellite, tech/cable-bundle, tech/monitor-setup, tech/gpu, tech/keyboard-mouse
-- [ ] P3 tech/data-center (geniş sahne), tech/fiber-line
+- [x] P3 tech/data-center (geniş sahne), tech/fiber-line
 
 ## fx — efektler
 - [x] P1 fx/explosion — flaş, ateş topu, duman halkası, parçalar; params: at (zaman), size

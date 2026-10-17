@@ -1761,6 +1761,45 @@
   }
  },
  {
+  "name": "tech/data-center",
+  "status": "draft",
+  "desc": "Veri merkezi salonu; koridorun iki yanında kabinler, yük arttıkça LED yanar",
+  "tags": [
+   "veri merkezi",
+   "sunucu",
+   "data center",
+   "server hall",
+   "salon",
+   "bilgisayar",
+   "ağ",
+   "network",
+   "sunucu odası"
+  ],
+  "anchor": "zemin merkezi (0,0); salon yukarı uzar",
+  "box": [
+   -420,
+   -260,
+   420,
+   20
+  ],
+  "points": [
+   "center",
+   "rackL",
+   "rackR"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "load": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "yanan LED oranı (0-1)"
+   }
+  }
+ },
+ {
   "name": "tech/database",
   "status": "draft",
   "desc": "Silindir veritabanı; aktivite arttıkça içinde veri parçacıkları yükselir, bant LEDleri yanar",
@@ -1795,6 +1834,46 @@
     "type": "number",
     "default": 0.5,
     "desc": "aktivite (0-1): veri akış hızı ve yanan LED sayısı"
+   }
+  }
+ },
+ {
+  "name": "tech/fiber-line",
+  "status": "draft",
+  "desc": "Fiber optik hat; active anında ışık darbesi soldan sağa geçer",
+  "tags": [
+   "fiber",
+   "optik",
+   "hat",
+   "fiber optic",
+   "kablo",
+   "cable",
+   "internet",
+   "ışık",
+   "light",
+   "ağ"
+  ],
+  "anchor": "hat merkezi (0,0)",
+  "box": [
+   -230,
+   -45,
+   230,
+   45
+  ],
+  "points": [
+   "start",
+   "mid",
+   "end"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "active": {
+    "type": "time",
+    "default": null,
+    "desc": "ışık darbesi anı: darbe 1.1 sn hattan geçer"
    }
   }
  },
