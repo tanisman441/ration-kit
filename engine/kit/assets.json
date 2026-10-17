@@ -1631,6 +1631,81 @@
   }
  },
  {
+  "name": "maps/city-grid",
+  "status": "draft",
+  "desc": "Üstten görünüm şehir ızgarası; cadde ağı, bina blokları, park ve ana arter",
+  "tags": [
+   "şehir",
+   "ızgara",
+   "şehir haritası",
+   "city",
+   "grid",
+   "street map",
+   "topdown",
+   "kuşbakışı",
+   "urban",
+   "metropol",
+   "cadde"
+  ],
+  "anchor": "harita merkezi",
+  "box": [
+   -260,
+   -200,
+   260,
+   200
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "bina bloğu rengi"
+   }
+  }
+ },
+ {
+  "name": "maps/network-topology",
+  "status": "draft",
+  "desc": "Ağ topolojisi; merkez hub ve 6 düğüm, active anında veri paketleri akar",
+  "tags": [
+   "ağ",
+   "topoloji",
+   "network",
+   "topology",
+   "bağlantı",
+   "sunucu ağı",
+   "node",
+   "hub",
+   "internet ağı",
+   "lan",
+   "düğüm"
+  ],
+  "anchor": "hub merkezi (0,0)",
+  "box": [
+   -240,
+   -180,
+   240,
+   180
+  ],
+  "points": [
+   "hub"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "düğüm rengi"
+   },
+   "active": {
+    "type": "time",
+    "default": null,
+    "desc": "veri akışı anı (paketler hub’dan düğümlere akar)"
+   }
+  }
+ },
+ {
   "name": "maps/world",
   "status": "draft",
   "desc": "Basitleştirilmiş dünya haritası; okyanus üzerinde tanınabilir kıta siluetleri, bölge vurgusu",

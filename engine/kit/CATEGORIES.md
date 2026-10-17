@@ -51,7 +51,7 @@ Bitince `[x]`.
 ## maps — haritalar ve kuşbakışı
 - [x] P2 maps/arena-topdown — FPS haritası: duvarlar, iki doğma noktası, koridorlar; params: highlight (none|a|b|mid)
 - [x] P2 maps/world — basit dünya haritası; params: highlight (bölge)
-- [ ] P3 maps/city-grid, maps/network-topology
+- [x] P3 maps/city-grid, maps/network-topology
 
 ## science — bilim
 - [x] P2 science/atom — params: electrons, spin
