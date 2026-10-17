@@ -74,6 +74,45 @@
   }
  },
  {
+  "name": "characters/hacker",
+  "status": "draft",
+  "desc": "Kapüşonlu hacker; laptop başında oturur, active anında hızlı yazma patlaması yapar",
+  "tags": [
+   "hacker",
+   "bilgisayar korsanı",
+   "kapüşon",
+   "laptop",
+   "kod",
+   "siber",
+   "hooded",
+   "cyber",
+   "coder",
+   "dark"
+  ],
+  "anchor": "zemin (0,0); sahne merkezi",
+  "box": [
+   -180,
+   -292,
+   170,
+   12
+  ],
+  "points": [
+   "screen",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "active": {
+    "type": "time",
+    "default": null,
+    "desc": "yazma patlaması: eller sekme, ekran titreme"
+   }
+  }
+ },
+ {
   "name": "characters/person",
   "status": "draft",
   "desc": "Sade, cinsiyetsiz insan figürü; önden görünüm, yuvarlak hatlar, 5 poz",
@@ -122,6 +161,153 @@
      "point",
      "think",
      "cheer"
+    ]
+   }
+  }
+ },
+ {
+  "name": "characters/scientist",
+  "status": "draft",
+  "desc": "Önlüklü bilim insanı; explain pozunda anlatır, experiment pozunda deney tüpü tutar",
+  "tags": [
+   "bilim insanı",
+   "laboratuvar",
+   "önlük",
+   "deney",
+   "araştırmacı",
+   "scientist",
+   "lab",
+   "researcher",
+   "experiment",
+   "professor"
+  ],
+  "anchor": "ayaklar (0,0); boy ~290 birim",
+  "box": [
+   -95,
+   -292,
+   95,
+   12
+  ],
+  "points": [
+   "head",
+   "hand"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "surprised"
+    ]
+   },
+   "pose": {
+    "type": "enum",
+    "default": "explain",
+    "values": [
+     "explain",
+     "experiment"
+    ]
+   }
+  }
+ },
+ {
+  "name": "characters/soldier",
+  "status": "draft",
+  "desc": "FPS askeri (yandan, sağa bakar); kask, yelek, göğüste tüfek; idle|aim|run",
+  "tags": [
+   "asker",
+   "FPS",
+   "tüfek",
+   "silah",
+   "askeri",
+   "soldier",
+   "military",
+   "rifle",
+   "army",
+   "shooter"
+  ],
+  "anchor": "ayaklar (0,0); sahne merkezi",
+  "box": [
+   -72,
+   -310,
+   120,
+   12
+  ],
+  "points": [
+   "head",
+   "chest",
+   "gun"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "team": {
+    "type": "color",
+    "default": "red",
+    "desc": "takım vurgu rengi (yelek şeridi)"
+   },
+   "pose": {
+    "type": "enum",
+    "default": "idle",
+    "values": [
+     "idle",
+     "aim",
+     "run"
+    ]
+   },
+   "hit": {
+    "type": "time",
+    "default": null,
+    "desc": "vurulma anı: sarsılma + beyaz flaş"
+   }
+  }
+ },
+ {
+  "name": "characters/worker",
+  "status": "draft",
+  "desc": "Baretli işçi; sarı baret ve reflektörlü yelek, 3 ruh hali",
+  "tags": [
+   "işçi",
+   "baret",
+   "inşaat",
+   "emekçi",
+   "worker",
+   "construction",
+   "hardhat",
+   "helmet",
+   "laborer"
+  ],
+  "anchor": "ayaklar (0,0); boy ~295 birim",
+  "box": [
+   -95,
+   -300,
+   95,
+   12
+  ],
+  "points": [
+   "head",
+   "hand"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "surprised"
     ]
    }
   }
