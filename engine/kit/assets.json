@@ -1026,6 +1026,101 @@
   }
  },
  {
+  "name": "maps/arena-topdown",
+  "status": "draft",
+  "desc": "Üstten görünüm simetrik FPS arenası; duvarlar, siper kasaları, kırmızı/mavi takım doğuş bölgeleri",
+  "tags": [
+   "arena",
+   "harita",
+   "map",
+   "topdown",
+   "kuşbakışı",
+   "fps haritası",
+   "savaş arenası",
+   "game map",
+   "battle arena",
+   "spawn"
+  ],
+  "anchor": "harita merkezi",
+  "box": [
+   -260,
+   -200,
+   260,
+   200
+  ],
+  "points": [
+   "spawnA",
+   "spawnB",
+   "mid"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "duvar ve siper rengi"
+   },
+   "highlight": {
+    "type": "enum",
+    "default": "none",
+    "values": [
+     "none",
+     "a",
+     "b",
+     "mid"
+    ],
+    "desc": "vurgulanan bölge"
+   }
+  }
+ },
+ {
+  "name": "maps/world",
+  "status": "draft",
+  "desc": "Basitleştirilmiş dünya haritası; okyanus üzerinde tanınabilir kıta siluetleri, bölge vurgusu",
+  "tags": [
+   "dünya",
+   "harita",
+   "world",
+   "map",
+   "küre",
+   "gezegen",
+   "kıtalar",
+   "continents",
+   "earth",
+   "globe"
+  ],
+  "anchor": "harita merkezi",
+  "box": [
+   -185,
+   -165,
+   185,
+   165
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kıta rengi"
+   },
+   "highlight": {
+    "type": "enum",
+    "default": "none",
+    "values": [
+     "none",
+     "n-america",
+     "s-america",
+     "europe",
+     "africa",
+     "asia",
+     "oceania"
+    ],
+    "desc": "vurgulanan bölge"
+   }
+  }
+ },
+ {
   "name": "tech/cable-bundle",
   "status": "draft",
   "desc": "Bağlantı bloğundan yayılan kablo demeti; biri vurgu renkli veri hattı",

@@ -49,8 +49,8 @@ Bitince `[x]`.
 - [ ] P3 environment/city-skyline, environment/mountain, environment/room-interior
 
 ## maps — haritalar ve kuşbakışı
-- [ ] P2 maps/arena-topdown — FPS haritası: duvarlar, iki doğma noktası, koridorlar; params: highlight (none|a|b|mid)
-- [ ] P2 maps/world — basit dünya haritası; params: highlight (bölge)
+- [x] P2 maps/arena-topdown — FPS haritası: duvarlar, iki doğma noktası, koridorlar; params: highlight (none|a|b|mid)
+- [x] P2 maps/world — basit dünya haritası; params: highlight (bölge)
 - [ ] P3 maps/city-grid, maps/network-topology
 
 ## science — bilim
