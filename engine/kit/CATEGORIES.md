@@ -46,7 +46,7 @@ Bitince `[x]`.
 - [x] P1 environment/door — params: open 0–1
 - [x] P1 environment/building — bina cephesi; variant: house|office|factory; params: lights 0–1
 - [x] P2 environment/tree, environment/road (yatay şerit), environment/bridge, environment/fence, environment/barrel
-- [ ] P3 environment/city-skyline, environment/mountain, environment/room-interior
+- [x] P3 environment/city-skyline, environment/mountain, environment/room-interior
 
 ## maps — haritalar ve kuşbakışı
 - [x] P2 maps/arena-topdown — FPS haritası: duvarlar, iki doğma noktası, koridorlar; params: highlight (none|a|b|mid)

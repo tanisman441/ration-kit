@@ -806,6 +806,45 @@
   }
  },
  {
+  "name": "environment/city-skyline",
+  "status": "draft",
+  "desc": "Şehir silüeti; iki katmanlı bina sırası, yanan pencereler ayarlanabilir",
+  "tags": [
+   "şehir",
+   "silüet",
+   "bina",
+   "gökdelen",
+   "gece",
+   "city",
+   "skyline",
+   "buildings",
+   "skyscraper",
+   "downtown"
+  ],
+  "anchor": "zemin (0,0)",
+  "box": [
+   -265,
+   -255,
+   265,
+   20
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "lights": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "yanan pencere oranı 0–1"
+   }
+  }
+ },
+ {
   "name": "environment/crate",
   "status": "draft",
   "desc": "3/4 görünüm kasa; wood varyantı çıtalı, metal varyantı perçinli",
@@ -914,6 +953,39 @@
   }
  },
  {
+  "name": "environment/mountain",
+  "status": "draft",
+  "desc": "Dağ; iki katmanlı silüet, karlı zirveler ve tabanda iki çam",
+  "tags": [
+   "dağ",
+   "zirve",
+   "kar",
+   "doğa",
+   "manzara",
+   "mountain",
+   "peak",
+   "snow",
+   "nature",
+   "landscape"
+  ],
+  "anchor": "zemin (0,0)",
+  "box": [
+   -280,
+   -250,
+   280,
+   20
+  ],
+  "points": [
+   "peak"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
   "name": "environment/road",
   "status": "draft",
   "desc": "Yatay asfalt yol şeridi; ortada sarı kesik çizgi, kenarlarda şerit çizgileri",
@@ -944,6 +1016,40 @@
    "color": {
     "type": "color",
     "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "environment/room-interior",
+  "status": "draft",
+  "desc": "Oda içi; duvar, zemin, ışıklı pencere, halı, tablo ve kitaplıklı raf",
+  "tags": [
+   "oda",
+   "iç mekân",
+   "ev",
+   "pencere",
+   "halı",
+   "room",
+   "interior",
+   "home",
+   "window",
+   "rug"
+  ],
+  "anchor": "zemin (0,0)",
+  "box": [
+   -285,
+   -230,
+   285,
+   25
+  ],
+  "points": [
+   "window",
+   "rug"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel"
    }
   }
  },
