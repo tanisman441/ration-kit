@@ -35,9 +35,9 @@ Bitince `[x]`.
 - [ ] P3 fx/portal, fx/magic-burst
 
 ## weapons — silahlar (orijinal tasarım, marka yok)
-- [ ] P2 weapons/rifle — params: fire (zaman); points: muzzle, grip
-- [ ] P2 weapons/pistol — params: fire (zaman); points: muzzle, grip
-- [ ] P2 weapons/sniper — params: fire (zaman), scope glint
+- [x] P2 weapons/rifle — params: fire (zaman); points: muzzle, grip
+- [x] P2 weapons/pistol — params: fire (zaman); points: muzzle, grip
+- [x] P2 weapons/sniper — params: fire (zaman), scope glint
 - [ ] P3 weapons/shotgun, weapons/grenade (params: throw, explode), weapons/knife, weapons/bullet (uçan mermi + iz)
 
 ## environment — mekân ve nesneler

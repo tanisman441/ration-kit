@@ -1432,5 +1432,120 @@
   ],
   "points": [],
   "params": {}
+ },
+ {
+  "name": "weapons/pistol",
+  "status": "draft",
+  "desc": "Yandan görünüm tabanca; namlu sağa bakar, ateş anında namlu flaşı ve hafif tepme",
+  "tags": [
+   "tabanca",
+   "silah",
+   "pistol",
+   "gun",
+   "handgun",
+   "ateş",
+   "FPS",
+   "yan silah"
+  ],
+  "anchor": "sürgü merkezi (0,0)",
+  "box": [
+   -95,
+   -38,
+   100,
+   74
+  ],
+  "points": [
+   "muzzle",
+   "grip"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "fire": {
+    "type": "time",
+    "default": null,
+    "desc": "ateş anı: namlu flaşı + hafif tepme"
+   }
+  }
+ },
+ {
+  "name": "weapons/rifle",
+  "status": "draft",
+  "desc": "Yandan görünüm saldırı tüfeği; namlu sağa bakar, ateş anında namlu flaşı ve geri tepme",
+  "tags": [
+   "tüfek",
+   "silah",
+   "saldırı tüfeği",
+   "rifle",
+   "gun",
+   "assault rifle",
+   "ateş",
+   "FPS",
+   "piyade"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -150,
+   -52,
+   210,
+   62
+  ],
+  "points": [
+   "muzzle",
+   "grip"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "fire": {
+    "type": "time",
+    "default": null,
+    "desc": "ateş anı: namlu flaşı + geri tepme"
+   }
+  }
+ },
+ {
+  "name": "weapons/sniper",
+  "status": "draft",
+  "desc": "Yandan görünüm dürbünlü keskin nişancı tüfeği; ateş anında namlu flaşı, geri tepme ve dürbün parlaması",
+  "tags": [
+   "keskin nişancı",
+   "tüfek",
+   "dürbün",
+   "silah",
+   "sniper",
+   "rifle",
+   "scope",
+   "ateş",
+   "FPS",
+   "uzun menzil"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -160,
+   -70,
+   225,
+   80
+  ],
+  "points": [
+   "muzzle",
+   "grip",
+   "scope"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "fire": {
+    "type": "time",
+    "default": null,
+    "desc": "ateş anı: namlu flaşı + geri tepme + dürbün parlaması"
+   }
+  }
  }
 ]
