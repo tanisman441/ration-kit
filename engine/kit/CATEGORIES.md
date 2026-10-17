@@ -12,7 +12,7 @@ Bitince `[x]`.
 - [x] P2 characters/scientist — önlüklü bilim insanı; pozlar: explain|experiment
 - [x] P2 characters/hacker — kapüşonlu, laptop başında
 - [x] P2 characters/worker — baretli işçi
-- [ ] P3 characters/doctor, characters/teacher, characters/kid, characters/robot
+- [x] P3 characters/doctor, characters/teacher, characters/kid, characters/robot
 
 ## tech — teknoloji ve ağ
 - [x] P1 tech/server-rack — LED'li sunucu kabini; params: load 0–1, alert (zaman)

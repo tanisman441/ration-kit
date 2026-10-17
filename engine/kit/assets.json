@@ -36,6 +36,47 @@
   }
  },
  {
+  "name": "characters/doctor",
+  "status": "draft",
+  "desc": "Doktor; beyaz önlük ve boyunda stetoskop, 3 ruh hali",
+  "tags": [
+   "doktor",
+   "hekim",
+   "sağlık",
+   "stetoskop",
+   "doctor",
+   "physician",
+   "medic",
+   "healthcare"
+  ],
+  "anchor": "ayaklar (0,0); boy ~290 birim",
+  "box": [
+   -95,
+   -292,
+   95,
+   12
+  ],
+  "points": [
+   "head",
+   "chest"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "surprised"
+    ]
+   }
+  }
+ },
+ {
   "name": "characters/gamer",
   "status": "draft",
   "desc": "Kulaklıklı oyuncu; masada monitör başında oturur, active anında tıklar",
@@ -113,6 +154,48 @@
   }
  },
  {
+  "name": "characters/kid",
+  "status": "draft",
+  "desc": "Çocuk; orantılı küçük figür, 3 ruh hali",
+  "tags": [
+   "çocuk",
+   "küçük",
+   "oğlan",
+   "kız",
+   "kid",
+   "child",
+   "boy",
+   "girl",
+   "little"
+  ],
+  "anchor": "ayaklar (0,0); boy ~205 birim",
+  "box": [
+   -70,
+   -208,
+   70,
+   10
+  ],
+  "points": [
+   "head",
+   "chest"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "surprised"
+    ]
+   }
+  }
+ },
+ {
   "name": "characters/person",
   "status": "draft",
   "desc": "Sade, cinsiyetsiz insan figürü; önden görünüm, yuvarlak hatlar, 5 poz",
@@ -162,6 +245,41 @@
      "think",
      "cheer"
     ]
+   }
+  }
+ },
+ {
+  "name": "characters/robot",
+  "status": "draft",
+  "desc": "Robot; metal gövde, anten ve LED gözler, active anında tarama animasyonu",
+  "tags": [
+   "robot",
+   "android",
+   "makine",
+   "yapay zeka",
+   "droid",
+   "bot"
+  ],
+  "anchor": "ayaklar (0,0); boy ~295 birim",
+  "box": [
+   -95,
+   -320,
+   95,
+   12
+  ],
+  "points": [
+   "head",
+   "chest"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "active": {
+    "type": "time",
+    "default": null,
+    "desc": "göz taraması + LED yanıp sönme anı"
    }
   }
  },
@@ -267,6 +385,47 @@
     "type": "time",
     "default": null,
     "desc": "vurulma anı: sarsılma + beyaz flaş"
+   }
+  }
+ },
+ {
+  "name": "characters/teacher",
+  "status": "draft",
+  "desc": "Öğretmen; gözlük ve elinde işaret çubuğu, 3 ruh hali",
+  "tags": [
+   "öğretmen",
+   "eğitimci",
+   "okul",
+   "ders",
+   "teacher",
+   "educator",
+   "school",
+   "instructor"
+  ],
+  "anchor": "ayaklar (0,0); boy ~290 birim",
+  "box": [
+   -95,
+   -292,
+   95,
+   12
+  ],
+  "points": [
+   "head",
+   "hand"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "surprised"
+    ]
    }
   }
  },
