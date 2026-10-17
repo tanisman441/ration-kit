@@ -26,11 +26,11 @@ Bitince `[x]`.
 - [ ] P3 tech/data-center (geniş sahne), tech/fiber-line
 
 ## fx — efektler
-- [ ] P1 fx/explosion — flaş, ateş topu, duman halkası, parçalar; params: at (zaman), size
-- [ ] P1 fx/fire — döngülü alev; params: intensity 0–1
-- [ ] P1 fx/smoke — yükselen duman; params: density
-- [ ] P1 fx/sparks — kıvılcım patlaması; params: at (zaman)
-- [ ] P1 fx/electric — elektrik arkı / yıldırım; params: at (zaman)
+- [x] P1 fx/explosion — flaş, ateş topu, duman halkası, parçalar; params: at (zaman), size
+- [x] P1 fx/fire — döngülü alev; params: intensity 0–1
+- [x] P1 fx/smoke — yükselen duman; params: density
+- [x] P1 fx/sparks — kıvılcım patlaması; params: at (zaman)
+- [x] P1 fx/electric — elektrik arkı / yıldırım; params: at (zaman)
 - [ ] P2 fx/water-splash, fx/dust-puff, fx/confetti, fx/shockwave-ground, fx/speed-lines
 - [ ] P3 fx/portal, fx/magic-burst
 

@@ -127,6 +127,185 @@
   }
  },
  {
+  "name": "fx/electric",
+  "status": "draft",
+  "desc": "Elektrik arkı: at anında titreyen, dallı şimşek çakması",
+  "tags": [
+   "elektrik",
+   "yıldırım",
+   "şimşek",
+   "ark",
+   "kıvılcım",
+   "electric",
+   "lightning",
+   "bolt",
+   "zap",
+   "arc"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -85,
+   -115,
+   85,
+   115
+  ],
+  "points": [
+   "top",
+   "bottom"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çakma anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "fx/explosion",
+  "status": "draft",
+  "desc": "Çizgi film patlaması: beyaz flaş, büyüyen ateş topu, genişleyen duman halkası, saçılan parçalar",
+  "tags": [
+   "patlama",
+   "infılak",
+   "ateş topu",
+   "explosion",
+   "blast",
+   "fireball",
+   "boom"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "büyüklük çarpanı"
+   }
+  }
+ },
+ {
+  "name": "fx/fire",
+  "status": "draft",
+  "desc": "Döngülü alev; noise ile doğal titreme, yoğunluk ayarlı, tabanda parlama",
+  "tags": [
+   "ateş",
+   "alev",
+   "yangın",
+   "fire",
+   "flame",
+   "burn",
+   "blaze"
+  ],
+  "anchor": "taban (0,0)",
+  "box": [
+   -65,
+   -190,
+   65,
+   10
+  ],
+  "points": [
+   "top",
+   "base"
+  ],
+  "params": {
+   "intensity": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "alev yoğunluğu 0–1"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "fx/smoke",
+  "status": "draft",
+  "desc": "Yükselen duman sütunu; yoğunluk ayarlı, yumuşak döngülü, hafif yana salınımlı",
+  "tags": [
+   "duman",
+   "is",
+   "buhar",
+   "tütün",
+   "smoke",
+   "fume",
+   "haze",
+   "vapor"
+  ],
+  "anchor": "taban (0,0)",
+  "box": [
+   -75,
+   -195,
+   75,
+   10
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "density": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "duman yoğunluğu 0–1"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "fx/sparks",
+  "status": "draft",
+  "desc": "Kıvılcım patlaması: at anında ince ışıklı çizgiler dışa saçılır, solar",
+  "tags": [
+   "kıvılcım",
+   "parıltı",
+   "çarpışma",
+   "sıçrama",
+   "spark",
+   "sparks",
+   "glint",
+   "burst"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -95,
+   -95,
+   95,
+   95
+  ],
+  "points": [],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
   "name": "tech/cloud",
   "status": "draft",
   "desc": "Bulut sunucu; senkron anında içinde dönen senkron okları belirir",
