@@ -472,6 +472,79 @@
   }
  },
  {
+  "name": "fx/confetti",
+  "status": "draft",
+  "desc": "Konfeti yağmuru: at anında tepeden renkli parçalar salınarak dökülür",
+  "tags": [
+   "konfeti",
+   "kutlama",
+   "parti",
+   "yağmur",
+   "confetti",
+   "celebration",
+   "party",
+   "cannon"
+  ],
+  "anchor": "üst merkez (0,0): konfetinin çıktığı nokta; parçalar aşağı dökülür",
+  "box": [
+   -190,
+   -20,
+   190,
+   240
+  ],
+  "points": [
+   "base"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "fx/dust-puff",
+  "status": "draft",
+  "desc": "Toz bulutu: at anında zeminden kabarır, dışa yayılır, solar",
+  "tags": [
+   "toz",
+   "bulut",
+   "toprak",
+   "darbe",
+   "dust",
+   "puff",
+   "cloud",
+   "dirt",
+   "poof"
+  ],
+  "anchor": "taban (0,0): tozun çıktığı nokta",
+  "box": [
+   -170,
+   -130,
+   170,
+   20
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "toz kalkma anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
   "name": "fx/electric",
   "status": "draft",
   "desc": "Elektrik arkı: at anında titreyen, dallı şimşek çakması",
@@ -581,6 +654,42 @@
   }
  },
  {
+  "name": "fx/shockwave-ground",
+  "status": "draft",
+  "desc": "Zemin şok dalgası: at anında zeminde genişleyen elips halkalar ve kalkan toz",
+  "tags": [
+   "şok",
+   "dalga",
+   "zemin",
+   "patlama dalgası",
+   "shockwave",
+   "ground",
+   "blast wave",
+   "ring"
+  ],
+  "anchor": "zemin merkezi (0,0): şokun çıktığı nokta",
+  "box": [
+   -230,
+   -70,
+   230,
+   50
+  ],
+  "points": [
+   "edge"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "şok anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
   "name": "fx/smoke",
   "status": "draft",
   "desc": "Yükselen duman sütunu; yoğunluk ayarlı, yumuşak döngülü, hafif yana salınımlı",
@@ -647,6 +756,86 @@
    "color": {
     "type": "color",
     "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "fx/speed-lines",
+  "status": "draft",
+  "desc": "Hız çizgileri: döngülü akan ince çizgiler, yön ve hız ayarlanabilir",
+  "tags": [
+   "hız",
+   "çizgi",
+   "hareket",
+   "manga",
+   "anime",
+   "speed",
+   "lines",
+   "motion",
+   "streaks"
+  ],
+  "anchor": "merkez (0,0): efektin merkezi",
+  "box": [
+   -210,
+   -150,
+   210,
+   150
+  ],
+  "points": [],
+  "params": {
+   "direction": {
+    "type": "enum",
+    "default": "h",
+    "values": [
+     "h",
+     "v"
+    ],
+    "desc": "akış yönü: yatay|dikey"
+   },
+   "speed": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "0–1: çizgi uzunluğu ve yoğunluğu"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "fx/water-splash",
+  "status": "draft",
+  "desc": "Su sıçraması: at anında yukarı fışkıran damlalar, düşer ve solar",
+  "tags": [
+   "su",
+   "sıçrama",
+   "damla",
+   "su sesi",
+   "water",
+   "splash",
+   "droplet",
+   "plop"
+  ],
+  "anchor": "taban (0,0): sıçramanın çıktığı nokta; damlalar yukarı fışkırır",
+  "box": [
+   -130,
+   -190,
+   130,
+   30
+  ],
+  "points": [
+   "peak"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sıçrama anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
    }
   }
  },
