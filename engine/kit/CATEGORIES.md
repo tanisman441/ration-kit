@@ -15,12 +15,12 @@ Bitince `[x]`.
 - [ ] P3 characters/doctor, characters/teacher, characters/kid, characters/robot
 
 ## tech — teknoloji ve ağ
-- [ ] P1 tech/server-rack — LED'li sunucu kabini; params: load 0–1, alert (zaman)
-- [ ] P1 tech/laptop — params: screen (code|chart|game|blank)
-- [ ] P1 tech/phone — params: screen (chat|app|call|blank), notify (zaman)
-- [ ] P1 tech/router — anten ve trafik ışıkları; params: traffic 0–1
-- [ ] P1 tech/cloud — bulut sunucu; params: sync (zaman)
-- [ ] P1 tech/database — params: activity 0–1
+- [x] P1 tech/server-rack — LED'li sunucu kabini; params: load 0–1, alert (zaman)
+- [x] P1 tech/laptop — params: screen (code|chart|game|blank)
+- [x] P1 tech/phone — params: screen (chat|app|call|blank), notify (zaman)
+- [x] P1 tech/router — anten ve trafik ışıkları; params: traffic 0–1
+- [x] P1 tech/cloud — bulut sunucu; params: sync (zaman)
+- [x] P1 tech/database — params: activity 0–1
 - [ ] P2 tech/chip — işlemci; params: heat 0–1
 - [ ] P2 tech/satellite, tech/cable-bundle, tech/monitor-setup, tech/gpu, tech/keyboard-mouse
 - [ ] P3 tech/data-center (geniş sahne), tech/fiber-line

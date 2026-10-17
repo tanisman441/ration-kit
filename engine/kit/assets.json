@@ -125,5 +125,255 @@
     ]
    }
   }
+ },
+ {
+  "name": "tech/cloud",
+  "status": "draft",
+  "desc": "Bulut sunucu; senkron anında içinde dönen senkron okları belirir",
+  "tags": [
+   "bulut",
+   "cloud",
+   "sunucu",
+   "senkron",
+   "veri",
+   "depolama",
+   "server",
+   "sync",
+   "storage",
+   "internet"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -110,
+   -78,
+   110,
+   78
+  ],
+  "points": [
+   "center",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "sync": {
+    "type": "time",
+    "default": null,
+    "desc": "senkron anı: oklar 1 tur döner (~1 sn)"
+   }
+  }
+ },
+ {
+  "name": "tech/database",
+  "status": "draft",
+  "desc": "Silindir veritabanı; aktivite arttıkça içinde veri parçacıkları yükselir, bant LEDleri yanar",
+  "tags": [
+   "veritabanı",
+   "database",
+   "veri",
+   "silindir",
+   "sql",
+   "depolama",
+   "data",
+   "storage",
+   "server"
+  ],
+  "anchor": "taban (0,0); silindir yukarı uzar",
+  "box": [
+   -80,
+   -172,
+   80,
+   10
+  ],
+  "points": [
+   "top",
+   "side"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "activity": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "aktivite (0-1): veri akış hızı ve yanan LED sayısı"
+   }
+  }
+ },
+ {
+  "name": "tech/laptop",
+  "status": "draft",
+  "desc": "Dizüstü bilgisayar; ekranında kod, grafik, oyun veya boş içerik gösterilir",
+  "tags": [
+   "laptop",
+   "dizüstü",
+   "bilgisayar",
+   "notebook",
+   "ekran",
+   "computer",
+   "notebook",
+   "screen"
+  ],
+  "anchor": "taban (0,0); ekran yukarı uzar",
+  "box": [
+   -110,
+   -160,
+   110,
+   8
+  ],
+  "points": [
+   "screen",
+   "keyboard"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "screen": {
+    "type": "enum",
+    "default": "code",
+    "values": [
+     "code",
+     "chart",
+     "game",
+     "blank"
+    ],
+    "desc": "ekran içeriği"
+   }
+  }
+ },
+ {
+  "name": "tech/phone",
+  "status": "draft",
+  "desc": "Akıllı telefon; ekranında sohbet, uygulama ızgarası, arama veya boş içerik; bildirim bandı düşer",
+  "tags": [
+   "telefon",
+   "akıllı telefon",
+   "cep",
+   "mobil",
+   "bildirim",
+   "phone",
+   "smartphone",
+   "mobile",
+   "notification"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -62,
+   -112,
+   62,
+   112
+  ],
+  "points": [
+   "screen",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "screen": {
+    "type": "enum",
+    "default": "chat",
+    "values": [
+     "chat",
+     "app",
+     "call",
+     "blank"
+    ],
+    "desc": "ekran içeriği"
+   },
+   "notify": {
+    "type": "time",
+    "default": null,
+    "desc": "bildirim anı: üstten band düşer, 1.4 sn kalır"
+   }
+  }
+ },
+ {
+  "name": "tech/router",
+  "status": "draft",
+  "desc": "Üç antenli Wi-Fi yönlendirici; trafik arttıkça sinyal dalgaları yayılır, LEDler yanar",
+  "tags": [
+   "router",
+   "yönlendirici",
+   "wifi",
+   "modem",
+   "ağ",
+   "internet",
+   "antenna",
+   "anten",
+   "network"
+  ],
+  "anchor": "taban (0,0); antenler yukarı uzar",
+  "box": [
+   -100,
+   -172,
+   100,
+   10
+  ],
+  "points": [
+   "antenna",
+   "front"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "traffic": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "ağ trafiği (0-1): yanan LED ve sinyal yoğunluğu"
+   }
+  }
+ },
+ {
+  "name": "tech/server-rack",
+  "status": "draft",
+  "desc": "LEDli sunucu kabini; 4 ünite, yük arttıkça LED yanar, alert anında kırmızı yanıp söner",
+  "tags": [
+   "sunucu",
+   "server",
+   "veri merkezi",
+   "rack",
+   "kabine",
+   "bilgisayar",
+   "server rack",
+   "data center",
+   "ağ"
+  ],
+  "anchor": "taban (0,0); kabin yukarı uzar, boy ~225 birim",
+  "box": [
+   -95,
+   -240,
+   95,
+   12
+  ],
+  "points": [
+   "top",
+   "front"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "load": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "yanan LED oranı (0-1)"
+   },
+   "alert": {
+    "type": "time",
+    "default": null,
+    "desc": "uyarı anı: kabin 1.2 sn kırmızı yanıp söner"
+   }
+  }
  }
 ]
