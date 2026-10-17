@@ -54,10 +54,10 @@ Bitince `[x]`.
 - [ ] P3 maps/city-grid, maps/network-topology
 
 ## science — bilim
-- [ ] P2 science/atom — params: electrons, spin
-- [ ] P2 science/cell — params: divide (zaman)
-- [ ] P2 science/dna — dönen sarmal
-- [ ] P2 science/beaker — params: bubbles, color
+- [x] P2 science/atom — params: electrons, spin
+- [x] P2 science/cell — params: divide (zaman)
+- [x] P2 science/dna — dönen sarmal
+- [x] P2 science/beaker — params: bubbles, color
 - [ ] P3 science/magnet, science/planet, science/microscope, science/virus
 
 ## economy — para ve ekonomi

@@ -1121,6 +1121,167 @@
   }
  },
  {
+  "name": "science/atom",
+  "status": "draft",
+  "desc": "Atom modeli: parlak çekirdek ve üç eliptik yörüngede dönen elektronlar",
+  "tags": [
+   "atom",
+   "çekirdek",
+   "elektron",
+   "yörünge",
+   "fizik",
+   "atom model",
+   "nucleus",
+   "electron",
+   "physics"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -130,
+   -130,
+   130,
+   130
+  ],
+  "points": [
+   "nucleus"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "elektron ve yörünge vurgu rengi"
+   },
+   "spin": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "elektron dönüş hızı 0–1"
+   }
+  }
+ },
+ {
+  "name": "science/beaker",
+  "status": "draft",
+  "desc": "Erlenmayer: seviyesi ayarlanabilir renkli sıvı, kaynama anında kabarcık ve buhar",
+  "tags": [
+   "erlenmayer",
+   "beher",
+   "kimya",
+   "deney",
+   "sıvı",
+   "kaynama",
+   "beaker",
+   "flask",
+   "chemistry",
+   "lab"
+  ],
+  "anchor": "taban (0,0)",
+  "box": [
+   -90,
+   -190,
+   90,
+   12
+  ],
+  "points": [
+   "mouth",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "sıvı rengi"
+   },
+   "fill": {
+    "type": "number",
+    "default": 0.55,
+    "desc": "sıvı seviyesi 0–1"
+   },
+   "bubble": {
+    "type": "time",
+    "default": null,
+    "desc": "kaynama anı (kabarcık patlaması + buhar)"
+   }
+  }
+ },
+ {
+  "name": "science/cell",
+  "status": "draft",
+  "desc": "Hücre: zar, sitoplazma, çekirdek ve organeller; bölünme anında iki hücreye ayrılır",
+  "tags": [
+   "hücre",
+   "biyoloji",
+   "çekirdek",
+   "bölünme",
+   "mitoz",
+   "cell",
+   "biology",
+   "nucleus",
+   "mitosis"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -225,
+   -125,
+   225,
+   125
+  ],
+  "points": [
+   "nucleus",
+   "membrane"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "vurgu rengi (çekirdek ve organeller)"
+   },
+   "divide": {
+    "type": "time",
+    "default": null,
+    "desc": "bölünme anı (mitoz)"
+   }
+  }
+ },
+ {
+  "name": "science/dna",
+  "status": "draft",
+  "desc": "DNA çift sarmalı: iki renkli iplik ve baz çifti basamakları, yavaşça döner",
+  "tags": [
+   "dna",
+   "gen",
+   "genetik",
+   "sarmal",
+   "biyoloji",
+   "gene",
+   "genetics",
+   "helix",
+   "biology"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -90,
+   -130,
+   90,
+   130
+  ],
+  "points": [
+   "top",
+   "bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "birinci iplik vurgu rengi"
+   },
+   "rotate": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "dönüş hızı 0–1"
+   }
+  }
+ },
+ {
   "name": "tech/cable-bundle",
   "status": "draft",
   "desc": "Bağlantı bloğundan yayılan kablo demeti; biri vurgu renkli veri hattı",
