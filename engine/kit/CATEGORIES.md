@@ -71,9 +71,9 @@ Bitince `[x]`.
 - [ ] P3 transport/car, transport/truck, transport/plane, transport/ship, transport/rocket (params: launch zaman)
 
 ## ui — arayüz parçaları
-- [ ] P1 ui/style-sheet — stil rehberi referans tahtası (bkz. STYLE.md)
-- [ ] P1 ui/chat-bubble — params: text, side (left|right), at (zaman)
-- [ ] P1 ui/notification — params: title, text, at (zaman)
+- [x] P1 ui/style-sheet — stil rehberi referans tahtası (bkz. STYLE.md)
+- [x] P1 ui/chat-bubble — params: text, side (left|right), at (zaman)
+- [x] P1 ui/notification — params: title, text, at (zaman)
 - [ ] P2 ui/killfeed — params: killer, victim, at (zaman)
 - [ ] P2 ui/health-bar-hud — oyun içi HUD can/zırh
 - [ ] P2 ui/loading-spinner, ui/progress-ring, ui/cursor-click, ui/browser-window

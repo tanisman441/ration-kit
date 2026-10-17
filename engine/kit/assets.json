@@ -713,5 +713,130 @@
     "desc": "uyarı anı: kabin 1.2 sn kırmızı yanıp söner"
    }
   }
+ },
+ {
+  "name": "ui/chat-bubble",
+  "status": "draft",
+  "desc": "Konuşma balonu; metin, kuyruk yönü (left|right) ve belirme anı ayarlanabilir",
+  "tags": [
+   "balon",
+   "konuşma",
+   "mesaj",
+   "diyalog",
+   "sohbet",
+   "chat",
+   "bubble",
+   "speech",
+   "message",
+   "dialog"
+  ],
+  "anchor": "balon merkezi (0,0); kuyruk ucu points.tailL/tailR",
+  "box": [
+   -280,
+   -120,
+   280,
+   120
+  ],
+  "points": [
+   "tailL",
+   "tailR"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel"
+   },
+   "text": {
+    "type": "text",
+    "default": "Merhaba!"
+   },
+   "side": {
+    "type": "enum",
+    "default": "left",
+    "values": [
+     "left",
+     "right"
+    ]
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "belirme anı: pop animasyonu"
+   }
+  }
+ },
+ {
+  "name": "ui/notification",
+  "status": "draft",
+  "desc": "Bildirim kartı; başlık ve metinle yukarıdan kayarak girer",
+  "tags": [
+   "bildirim",
+   "uyarı",
+   "kart",
+   "mesaj",
+   "itme",
+   "notification",
+   "alert",
+   "card",
+   "push",
+   "notice"
+  ],
+  "anchor": "kart merkezi (0,0)",
+  "box": [
+   -230,
+   -150,
+   230,
+   90
+  ],
+  "points": [
+   "icon",
+   "card"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel"
+   },
+   "title": {
+    "type": "text",
+    "default": "Bildirim"
+   },
+   "text": {
+    "type": "text",
+    "default": "Yeni bir gelişme var."
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "giriş anı: yukarıdan kayar"
+   }
+  }
+ },
+ {
+  "name": "ui/style-sheet",
+  "status": "draft",
+  "desc": "Stil rehberi referans tahtası: oran, renk paleti, çizgi kalınlığı, yüzler, ışık yönü",
+  "tags": [
+   "stil",
+   "rehber",
+   "referans",
+   "tahta",
+   "palet",
+   "renk",
+   "style",
+   "guide",
+   "reference",
+   "palette",
+   "board"
+  ],
+  "anchor": "pano merkezi (0,0)",
+  "box": [
+   -460,
+   -320,
+   460,
+   320
+  ],
+  "points": [],
+  "params": {}
  }
 ]
