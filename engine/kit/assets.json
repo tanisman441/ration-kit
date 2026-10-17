@@ -1964,6 +1964,44 @@
   }
  },
  {
+  "name": "ui/browser-window",
+  "status": "draft",
+  "desc": "Tarayıcı penceresi; adres satırı ve sade sayfa iskeletiyle",
+  "tags": [
+   "tarayıcı",
+   "pencere",
+   "internet",
+   "site",
+   "web",
+   "browser",
+   "window",
+   "web",
+   "internet",
+   "tab"
+  ],
+  "anchor": "pencere merkezi (0,0)",
+  "box": [
+   -300,
+   -220,
+   300,
+   220
+  ],
+  "points": [
+   "urlbar",
+   "content"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel"
+   },
+   "url": {
+    "type": "text",
+    "default": "ration.video"
+   }
+  }
+ },
+ {
   "name": "ui/chat-bubble",
   "status": "draft",
   "desc": "Konuşma balonu; metin, kuyruk yönü (left|right) ve belirme anı ayarlanabilir",
@@ -2015,6 +2053,163 @@
   }
  },
  {
+  "name": "ui/cursor-click",
+  "status": "draft",
+  "desc": "Fare imleci; at anında uçtan tıklama dalgası yayar",
+  "tags": [
+   "imleç",
+   "fare",
+   "tık",
+   "tıklama",
+   "işaret",
+   "cursor",
+   "click",
+   "mouse",
+   "pointer",
+   "tap"
+  ],
+  "anchor": "imleç ucu (0,0)",
+  "box": [
+   -70,
+   -70,
+   110,
+   110
+  ],
+  "points": [
+   "tip"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tıklama anı: dalga yayılır"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "ui/health-bar-hud",
+  "status": "draft",
+  "desc": "Oyun içi can barı; hp oranına göre dolar, düşük canda nabız gibi atar",
+  "tags": [
+   "can",
+   "bar",
+   "sağlık",
+   "hud",
+   "oyun",
+   "health",
+   "bar",
+   "hud",
+   "game",
+   "hp"
+  ],
+  "anchor": "bar merkezi (0,0)",
+  "box": [
+   -230,
+   -44,
+   230,
+   44
+  ],
+  "points": [
+   "left",
+   "right"
+  ],
+  "params": {
+   "hp": {
+    "type": "number",
+    "default": 0.75,
+    "desc": "can oranı 0–1"
+   },
+   "color": {
+    "type": "color",
+    "default": "green"
+   }
+  }
+ },
+ {
+  "name": "ui/killfeed",
+  "status": "draft",
+  "desc": "FPS öldürme bildirimi satırı; katil ve kurban adıyla sağdan kayarak girer",
+  "tags": [
+   "öldürme",
+   "skor",
+   "bildirim",
+   "fps",
+   "kill",
+   "killfeed",
+   "score",
+   "ölüm",
+   "game",
+   "hud"
+  ],
+  "anchor": "satır merkezi (0,0)",
+  "box": [
+   -340,
+   -44,
+   340,
+   44
+  ],
+  "points": [
+   "killer",
+   "mid",
+   "victim"
+  ],
+  "params": {
+   "killer": {
+    "type": "text",
+    "default": "Oyuncu1"
+   },
+   "victim": {
+    "type": "text",
+    "default": "Oyuncu2"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "giriş anı: sağdan kayar"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "ui/loading-spinner",
+  "status": "draft",
+  "desc": "Dönen yükleme animasyonu; iz bırakan parlak yay başı",
+  "tags": [
+   "yükleme",
+   "yükleniyor",
+   "bekle",
+   "dönüyor",
+   "loading",
+   "spinner",
+   "wait",
+   "loader",
+   "busy"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -70,
+   -70,
+   70,
+   70
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
   "name": "ui/notification",
   "status": "draft",
   "desc": "Bildirim kartı; başlık ve metinle yukarıdan kayarak girer",
@@ -2058,6 +2253,43 @@
     "type": "time",
     "default": null,
     "desc": "giriş anı: yukarıdan kayar"
+   }
+  }
+ },
+ {
+  "name": "ui/progress-ring",
+  "status": "draft",
+  "desc": "İlerleme halkası; ortada yüzde yazar, %100 olunca kısa parlama yapar",
+  "tags": [
+   "ilerleme",
+   "yüzde",
+   "halka",
+   "tamamlanma",
+   "progress",
+   "ring",
+   "percent",
+   "circle",
+   "loading"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -80,
+   -80,
+   80,
+   80
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "progress": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "ilerleme 0–1"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
    }
   }
  },
