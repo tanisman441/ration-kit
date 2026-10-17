@@ -65,7 +65,7 @@ Bitince `[x]`.
 - [x] P2 economy/money-stack — params: amount 0–1
 - [x] P2 economy/bank — banka binası
 - [x] P2 economy/shopping-cart, economy/credit-card, economy/price-tag
-- [ ] P3 economy/stock-ticker, economy/factory-line
+- [x] P3 economy/stock-ticker, economy/factory-line
 
 ## transport — ulaşım
 - [ ] P3 transport/car, transport/truck, transport/plane, transport/ship, transport/rocket (params: launch zaman)

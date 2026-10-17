@@ -576,6 +576,44 @@
   }
  },
  {
+  "name": "economy/factory-line",
+  "status": "draft",
+  "desc": "Fabrika üretim hattı; speed arttıkça bant, merdane ve kutular hızlanır",
+  "tags": [
+   "fabrika",
+   "factory",
+   "üretim",
+   "production",
+   "bant",
+   "conveyor",
+   "sanayi",
+   "hat",
+   "line"
+  ],
+  "anchor": "bant hattı (0,0) — kutular negatif y yönünde yukarıdadır",
+  "box": [
+   -238,
+   -150,
+   238,
+   58
+  ],
+  "points": [
+   "start",
+   "end"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "bant hızı (0–1)"
+   }
+  }
+ },
+ {
   "name": "economy/money-stack",
   "status": "draft",
   "desc": "Banknot destesi; amount arttıkça katman sayısı ve yükseklik artar",
@@ -681,6 +719,49 @@
     "type": "number",
     "default": 0.5,
     "desc": "sepet doluluğu (0-1)"
+   }
+  }
+ },
+ {
+  "name": "economy/stock-ticker",
+  "status": "draft",
+  "desc": "Borsa bandı; trend rozeti (yükselen/düşen/yatay) ve akan fiyat yazısı",
+  "tags": [
+   "borsa",
+   "stock",
+   "ticker",
+   "hisse",
+   "share",
+   "finans",
+   "finance",
+   "band"
+  ],
+  "anchor": "panel merkezi (0,0)",
+  "box": [
+   -268,
+   -56,
+   268,
+   56
+  ],
+  "points": [
+   "left",
+   "right"
+  ],
+  "params": {
+   "text": {
+    "type": "text",
+    "default": "RATN +2.4%  ·  TECH -1.2%  ·  FIN +0.8%  ·  ENRJ -3.1%  ·  GIDA +1.5%  ·  ",
+    "desc": "akan fiyat yazısı"
+   },
+   "trend": {
+    "type": "enum",
+    "default": "up",
+    "values": [
+     "up",
+     "down",
+     "flat"
+    ],
+    "desc": "trend yönü"
    }
   }
  },
