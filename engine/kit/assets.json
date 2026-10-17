@@ -2639,6 +2639,119 @@
   "params": {}
  },
  {
+  "name": "weapons/bullet",
+  "status": "draft",
+  "desc": "Yandan görünüm mermi; flying anında hızla uçar ve parlak iz bırakır",
+  "tags": [
+   "mermi",
+   "bullet",
+   "fişek",
+   "ammo",
+   "ammunition",
+   "çekirdek",
+   "kovan",
+   "ateş",
+   "FPS"
+  ],
+  "anchor": "mermi merkezi (0,0)",
+  "box": [
+   -85,
+   -28,
+   85,
+   28
+  ],
+  "points": [
+   "tip",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "flying": {
+    "type": "time",
+    "default": null,
+    "desc": "uçuş başlangıç anı: mermi sağa fırlar, iz bırakır"
+   }
+  }
+ },
+ {
+  "name": "weapons/grenade",
+  "status": "draft",
+  "desc": "El bombası; pin anında kaşık açılır ve pim halkası fırlar, explode anında flaş + parça + duman",
+  "tags": [
+   "el bombası",
+   "bomba",
+   "grenade",
+   "bomb",
+   "patlayıcı",
+   "explosive",
+   "pim",
+   "pin",
+   "FPS"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -75,
+   -95,
+   75,
+   75
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green"
+   },
+   "pin": {
+    "type": "time",
+    "default": null,
+    "desc": "pim çekme anı: kaşık açılır, halka fırlar"
+   },
+   "explode": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı: flaş + parçalar + duman"
+   }
+  }
+ },
+ {
+  "name": "weapons/knife",
+  "status": "draft",
+  "desc": "Yandan görünüm bıçak; keskin uçlu namlu, balçak ve perçinli kabza",
+  "tags": [
+   "bıçak",
+   "knife",
+   "kama",
+   "blade",
+   "silah",
+   "weapon",
+   "savaş bıçağı",
+   "kesici"
+  ],
+  "anchor": "bıçak merkezi (0,0)",
+  "box": [
+   -105,
+   -32,
+   125,
+   32
+  ],
+  "points": [
+   "tip",
+   "handle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
   "name": "weapons/pistol",
   "status": "draft",
   "desc": "Yandan görünüm tabanca; namlu sağa bakar, ateş anında namlu flaşı ve hafif tepme",
@@ -2710,6 +2823,44 @@
     "type": "time",
     "default": null,
     "desc": "ateş anı: namlu flaşı + geri tepme"
+   }
+  }
+ },
+ {
+  "name": "weapons/shotgun",
+  "status": "draft",
+  "desc": "Yandan görünüm pompalı tüfek; kalın namlu, kayar pompa, ateş anında flaş ve güçlü geri tepme",
+  "tags": [
+   "pompalı",
+   "tüfek",
+   "silah",
+   "shotgun",
+   "gun",
+   "pump",
+   "ateş",
+   "FPS",
+   "av tüfeği"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -155,
+   -58,
+   215,
+   66
+  ],
+  "points": [
+   "muzzle",
+   "grip"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "fire": {
+    "type": "time",
+    "default": null,
+    "desc": "ateş anı: geniş namlu flaşı + güçlü geri tepme"
    }
   }
  },

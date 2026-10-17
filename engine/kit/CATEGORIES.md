@@ -38,7 +38,7 @@ Bitince `[x]`.
 - [x] P2 weapons/rifle — params: fire (zaman); points: muzzle, grip
 - [x] P2 weapons/pistol — params: fire (zaman); points: muzzle, grip
 - [x] P2 weapons/sniper — params: fire (zaman), scope glint
-- [ ] P3 weapons/shotgun, weapons/grenade (params: throw, explode), weapons/knife, weapons/bullet (uçan mermi + iz)
+- [x] P3 weapons/shotgun, weapons/grenade (params: pin, explode), weapons/knife, weapons/bullet (uçan mermi + iz)
 
 ## environment — mekân ve nesneler
 - [x] P1 environment/wall — beton duvar/siper; params: hit (zaman: toz + parça)
