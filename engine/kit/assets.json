@@ -313,6 +313,80 @@
   }
  },
  {
+  "name": "environment/barrel",
+  "status": "draft",
+  "desc": "Metal varil; fuel varyantı sarı ikaz şeritli, water varyantı mavi dalga şeritli",
+  "tags": [
+   "varil",
+   "bidon",
+   "yakıt",
+   "yağ",
+   "su bidonu",
+   "barrel",
+   "drum",
+   "fuel drum",
+   "oil drum",
+   "water"
+  ],
+  "anchor": "zemin (0,0); varil merkezi, boy ~150 birim",
+  "box": [
+   -75,
+   -165,
+   75,
+   10
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "variant": {
+    "type": "enum",
+    "default": "fuel",
+    "values": [
+     "fuel",
+     "water"
+    ]
+   }
+  }
+ },
+ {
+  "name": "environment/bridge",
+  "status": "draft",
+  "desc": "Yandan asma köprü; iki kule, sarkan ana kablo ve güverteye inen askılar",
+  "tags": [
+   "köprü",
+   "asma köprü",
+   "viyadük",
+   "geçit",
+   "bridge",
+   "suspension bridge",
+   "viaduct",
+   "crossing"
+  ],
+  "anchor": "güverte merkezi (0,0); güverte yatay, kuleler yukarı uzar",
+  "box": [
+   -250,
+   -130,
+   250,
+   30
+  ],
+  "points": [
+   "left",
+   "right",
+   "deck"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
   "name": "environment/building",
   "status": "draft",
   "desc": "Bina cephesi; house/office/factory varyantı, yanan pencereler ayarlanabilir",
@@ -432,6 +506,118 @@
     "type": "number",
     "default": 0,
     "desc": "açılma oranı 0–1"
+   }
+  }
+ },
+ {
+  "name": "environment/fence",
+  "status": "draft",
+  "desc": "Tel örgü çit; direkler arasında baklava desenli örgü, üstte korkuluk",
+  "tags": [
+   "çit",
+   "tel örgü",
+   "sınır",
+   "tel",
+   "korkuluk",
+   "fence",
+   "chain-link",
+   "barrier",
+   "border"
+  ],
+  "anchor": "zemin (0,0); çit yukarı uzar, boy ~100 birim",
+  "box": [
+   -274,
+   -113,
+   274,
+   13
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "environment/road",
+  "status": "draft",
+  "desc": "Yatay asfalt yol şeridi; ortada sarı kesik çizgi, kenarlarda şerit çizgileri",
+  "tags": [
+   "yol",
+   "asfalt",
+   "cadde",
+   "sokak",
+   "şerit",
+   "road",
+   "street",
+   "asphalt",
+   "highway",
+   "lane"
+  ],
+  "anchor": "şerit merkezi (0,0); yol yatay uzar",
+  "box": [
+   -324,
+   -37,
+   324,
+   37
+  ],
+  "points": [
+   "start",
+   "end"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "environment/tree",
+  "status": "draft",
+  "desc": "Ağaç; pine varyantı çam, leafy varyantı yuvarlak tepeli; sway ile rüzgârda salınır",
+  "tags": [
+   "ağaç",
+   "çam",
+   "orman",
+   "doğa",
+   "bitki",
+   "tree",
+   "pine",
+   "forest",
+   "nature",
+   "leafy"
+  ],
+  "anchor": "zemin (0,0); gövde yukarı uzar, tepe ~-245",
+  "box": [
+   -100,
+   -255,
+   100,
+   10
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "variant": {
+    "type": "enum",
+    "default": "pine",
+    "values": [
+     "pine",
+     "leafy"
+    ]
+   },
+   "sway": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "rüzgâr şiddeti 0–1: tepenin salınımı"
    }
   }
  },

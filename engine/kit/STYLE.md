@@ -24,6 +24,8 @@ iki temada (night/paper) da okunan, aynı "aileden" görünen düz (flat) vektö
 
 ## Çizgi ve gölge
 - Dış hat: `bg` rengi, alfa 0.55, kalınlık = box genişliğinin ~0.03'ü (4–8 px eşdeğeri).
+- Serbest çizgiler: zeminden bağımsız havada duran ince çizgiler (kablo, ip, tel, askı)
+  `bg` yerine **`ink`** rengiyle, alfa 0.55–0.8 çizilir — aksi halde hiçbir temada görünmezler.
   İç ayrım çizgileri aynı renk, alfa 0.35, daha ince.
 - Gölge: tek ton, %12 koyultma (`k.rgba` ile aynı rengin koyusu), sağ alta 6 units offset.
   Işık sol üstten gelir varsayılır.
