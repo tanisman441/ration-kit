@@ -41,6 +41,9 @@ export default {
       ctx.beginPath(); ctx.ellipse(cx + wob * 0.5, y - 158 * s, 21 * s + LW / 2, 20 * s + LW / 2, 0, 0, k.TAU); ctx.fill();
       ctx.fillStyle = bodyC;
       ctx.beginPath(); ctx.ellipse(cx + wob * 0.5, y - 158 * s, 21 * s, 20 * s, 0, 0, k.TAU); ctx.fill();
+      // premium parlama
+      ctx.fillStyle = 'rgba(255,255,255,0.10)';
+      ctx.beginPath(); ctx.ellipse(cx + wob * 0.5 - 7 * s, y - 165 * s, 7 * s, 5 * s, -0.4, 0, k.TAU); ctx.fill();
     };
 
     // iki sıra: arka sıra daha küçük ve yukarıda

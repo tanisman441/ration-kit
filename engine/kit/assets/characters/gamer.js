@@ -72,6 +72,11 @@ export default {
     ctx.beginPath(); ctx.arc(tx, ty, 9, 0, k.TAU); ctx.fill();
     ctx.fillStyle = k.rgba('green');
     ctx.beginPath(); k.rrect(sx + 8, sy + 6, (sw - 16) * (0.72 + press * 0.1), 8, 4); ctx.fill();
+    // ekran parlaması (premium)
+    ctx.fillStyle = 'rgba(255,255,255,0.08)';
+    ctx.beginPath();
+    ctx.moveTo(sx, sy + sh); ctx.lineTo(sx + 44, sy); ctx.lineTo(sx + 72, sy); ctx.lineTo(sx + 28, sy + sh);
+    ctx.closePath(); ctx.fill();
 
     // oyuncu — oturur, sağa bakar
     const hipX = -115, hipY = -104;
@@ -107,6 +112,9 @@ export default {
     ctx.beginPath(); ctx.arc(hx, hy - 4, 36, Math.PI * 1.08, Math.PI * 1.92); ctx.stroke();
     blob(hx - 40, hy - 18, 15, 32, 7, acc);       // sol yastık
     blob(hx + 25, hy - 18, 15, 32, 7, acc);       // sağ yastık
+    // baş parlaması (premium)
+    ctx.fillStyle = 'rgba(255,255,255,0.10)';
+    ctx.beginPath(); ctx.ellipse(hx - 11, hy - 10, 11, 8, -0.4, 0, k.TAU); ctx.fill();
     // tepki anında küçük "tık" çizgileri
     if (press > 0.3) {
       ctx.strokeStyle = k.rgba('yellow', press); ctx.lineWidth = 3;

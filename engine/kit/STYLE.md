@@ -52,6 +52,14 @@ iki temada (night/paper) da okunan, aynı "aileden" görünen düz (flat) vektö
 - `desc`: tek cümle, çizimin neye benzediği.
 - `params`: filmin ayarlayabileceği her şey; her birine `default` şart.
 
+## Premium finish (17 Ekim 2026 — çıta yükseltme)
+- Her ana formda sol üstten **yumuşak parlama**: beyaz, alfa 0.10–0.12, kontursuz elips.
+  Işık her çizimde aynı yönden (sol üst) gelir; parlama da hep sol üsttedir.
+- Gölgeyle parlama birlikte kullanılır: sağ alt %12 koyultma + sol üst %10 aydınlatma =
+  hafif hacim hissi, hâlâ düz (flat) görünüm.
+- Parlama asla metin/ekran gibi bilgi taşıyan yüzeylere uygulanmaz.
+- İç detay çizgileri (yüz, klavye tuşu vb.) `ink` rengi, alfa 0.75, ince (3–4 birim).
+
 ## Referans tahtası
 `ui/style-sheet` asset'i bu rehberin görsel özetidir: oran çubuğu (baş/gövde),
 renk paleti (iki temada), çizgi kalınlıkları, dört yüz ifadesi, gölge yönü.
