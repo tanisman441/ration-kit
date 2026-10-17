@@ -32,7 +32,7 @@ Bitince `[x]`.
 - [x] P1 fx/sparks — kıvılcım patlaması; params: at (zaman)
 - [x] P1 fx/electric — elektrik arkı / yıldırım; params: at (zaman)
 - [x] P2 fx/water-splash, fx/dust-puff, fx/confetti, fx/shockwave-ground, fx/speed-lines
-- [ ] P3 fx/portal, fx/magic-burst
+- [x] P3 fx/portal, fx/magic-burst
 
 ## weapons — silahlar (orijinal tasarım, marka yok)
 - [x] P2 weapons/rifle — params: fire (zaman); points: muzzle, grip

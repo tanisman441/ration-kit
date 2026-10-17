@@ -1212,6 +1212,86 @@
   }
  },
  {
+  "name": "fx/magic-burst",
+  "status": "draft",
+  "desc": "Sihirli patlama: yıldız ışınlar, genişleyen mor halka, sarmal yükselen yıldız kıvılcımlar",
+  "tags": [
+   "büyü",
+   "sihir",
+   "patlama",
+   "magic",
+   "burst",
+   "parıltı",
+   "spell",
+   "yıldız",
+   "sparkle"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "büyü rengi"
+   }
+  }
+ },
+ {
+  "name": "fx/portal",
+  "status": "draft",
+  "desc": "Dikey enerji portalı: open ile açılan halka, içinde dönen sarmal enerji, active anında parıltı",
+  "tags": [
+   "portal",
+   "geçit",
+   "kapı",
+   "enerji",
+   "ışınlanma",
+   "teleport",
+   "büyü",
+   "sihir",
+   "portal"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -135,
+   -175,
+   135,
+   175
+  ],
+  "points": [
+   "center",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "enerji rengi"
+   },
+   "open": {
+    "type": "number",
+    "default": 1,
+    "desc": "portal açıklığı (0–1)"
+   },
+   "active": {
+    "type": "time",
+    "default": null,
+    "desc": "aktivasyon anı (parıltı + genişleyen halka)"
+   }
+  }
+ },
+ {
   "name": "fx/shockwave-ground",
   "status": "draft",
   "desc": "Zemin şok dalgası: at anında zeminde genişleyen elips halkalar ve kalkan toz",
