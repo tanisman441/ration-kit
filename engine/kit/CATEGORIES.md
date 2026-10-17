@@ -77,3 +77,23 @@ Bitince `[x]`.
 - [x] P2 ui/killfeed — params: killer, victim, at (zaman)
 - [x] P2 ui/health-bar-hud — oyun içi HUD can/zırh
 - [x] P2 ui/loading-spinner, ui/progress-ring, ui/cursor-click, ui/browser-window
+
+## GENİŞLEME — sürekli büyüme kuyruğu (7/24 iş buradan beslenir)
+Kural: listedeki ilk `[ ]` kategori alınır, çizilir, `[x]` yapılır, commit + push edilir.
+Her kategori 4–6 çizim; stil STYLE.md'ye uyar; her çizim 2 tur görsel kontrol.
+
+- [ ] X1 sports — ball (params: bounce time), goal, trophy, whistle, medal, stadium
+- [ ] X2 animals — cat, dog, bird (params: fly time), fish, horse, bee
+- [ ] X3 food — apple, burger, pizza, coffee (params: steam time), cake, bread
+- [ ] X4 nature — flower, rain (params: intensity), snow, sun, moon, star
+- [ ] X5 music — note, guitar, drum (params: hit time), speaker, microphone, headphones
+- [ ] X6 home — bed, chair, lamp (params: on 0-1), sofa, tv (params: screen), fridge
+- [ ] X7 office — desk, folder, printer (params: print time), calendar, clock (params: time)
+- [ ] X8 school — book, pencil, backpack, blackboard (params: text), ruler, graduation-cap
+- [ ] X9 health — heart (params: beat time), pill, syringe, ambulance, mask, thermometer
+- [ ] X10 fantasy — sword, shield, crown, dragon, castle, wand (params: cast time), potion
+- [ ] X11 icons — check, cross, warning, info, question, star-rating (params: rating), heart-like, thumbs-up
+- [ ] X12 professions — police, firefighter, chef, pilot, nurse, farmer (characters ailesinden)
+- [ ] X13 vehicles-2 — bicycle, motorcycle, bus, train, helicopter, tractor
+- [ ] X14 weather-fx — rainbow, lightning-storm, fog, tornado, hail, aurora
+- [ ] X15 space — astronaut, ufo, galaxy, satellite-dish, space-station, comet (params: fly time)
