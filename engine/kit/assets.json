@@ -1,1 +1,129 @@
-[]
+[
+ {
+  "name": "characters/crowd",
+  "status": "draft",
+  "desc": "5–12 kişilik kalabalık; iki sıra, hafif salınımlı sade figürler",
+  "tags": [
+   "kalabalık",
+   "insanlar",
+   "topluluk",
+   "izleyici",
+   "crowd",
+   "people",
+   "group",
+   "audience"
+  ],
+  "anchor": "zemin (0,0); grubun ortası",
+  "box": [
+   -250,
+   -225,
+   250,
+   12
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "count": {
+    "type": "number",
+    "default": 8,
+    "desc": "kişi sayısı 5–12"
+   }
+  }
+ },
+ {
+  "name": "characters/gamer",
+  "status": "draft",
+  "desc": "Kulaklıklı oyuncu; masada monitör başında oturur, active anında tıklar",
+  "tags": [
+   "oyuncu",
+   "gamer",
+   "bilgisayar",
+   "kulaklık",
+   "masa",
+   "gaming",
+   "player",
+   "headphones",
+   "desk"
+  ],
+  "anchor": "zemin (0,0); sahne merkezi",
+  "box": [
+   -180,
+   -292,
+   170,
+   12
+  ],
+  "points": [
+   "screen",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "active": {
+    "type": "time",
+    "default": null,
+    "desc": "tıklama/tepki anı: eller basar, baş sallanır"
+   }
+  }
+ },
+ {
+  "name": "characters/person",
+  "status": "draft",
+  "desc": "Sade, cinsiyetsiz insan figürü; önden görünüm, yuvarlak hatlar, 5 poz",
+  "tags": [
+   "insan",
+   "kişi",
+   "karakter",
+   "figür",
+   "person",
+   "character",
+   "human",
+   "figure"
+  ],
+  "anchor": "ayaklar (0,0); boy ~290 birim",
+  "box": [
+   -95,
+   -292,
+   95,
+   12
+  ],
+  "points": [
+   "head",
+   "chest"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "pose": {
+    "type": "enum",
+    "default": "stand",
+    "values": [
+     "stand",
+     "walk",
+     "point",
+     "think",
+     "cheer"
+    ]
+   }
+  }
+ }
+]

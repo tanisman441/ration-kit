@@ -5,9 +5,9 @@ Anlatım videolarında en sık ihtiyaç duyulan çizimler, öncelik sırasıyla.
 Bitince `[x]`.
 
 ## characters — insanlar (hepsi aynı stil ailesinden)
-- [ ] P1 characters/person — sade, cinsiyetsiz insan; pozlar: stand|walk|point|think|cheer; params: color, mood (happy|neutral|sad|surprised)
-- [ ] P1 characters/crowd — 5–12 kişilik kalabalık; params: count, color
-- [ ] P1 characters/gamer — kulaklıklı, masada oyun oynayan kişi; params: active (tıklama/tepki zamanı)
+- [x] P1 characters/person — sade, cinsiyetsiz insan; pozlar: stand|walk|point|think|cheer; params: color, mood (happy|neutral|sad|surprised)
+- [x] P1 characters/crowd — 5–12 kişilik kalabalık; params: count, color
+- [x] P1 characters/gamer — kulaklıklı, masada oyun oynayan kişi; params: active (tıklama/tepki zamanı)
 - [ ] P2 characters/soldier — FPS askeri; pozlar: idle|aim|run; params: team, hit (vurulma zamanı)
 - [ ] P2 characters/scientist — önlüklü bilim insanı; pozlar: explain|experiment
 - [ ] P2 characters/hacker — kapüşonlu, laptop başında
