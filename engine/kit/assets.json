@@ -651,6 +651,74 @@
   }
  },
  {
+  "name": "tech/cable-bundle",
+  "status": "draft",
+  "desc": "Bağlantı bloğundan yayılan kablo demeti; biri vurgu renkli veri hattı",
+  "tags": [
+   "kablo",
+   "cable",
+   "demet",
+   "bağlantı",
+   "tel",
+   "bundle",
+   "wire",
+   "fiş",
+   "ağ kablosu"
+  ],
+  "anchor": "bağlantı bloğu tabanı (0,0); kablolar yukarı uzar",
+  "box": [
+   -150,
+   -190,
+   150,
+   24
+  ],
+  "points": [
+   "plug"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "tech/chip",
+  "status": "draft",
+  "desc": "Üstten görünüm işlemci yongası; activity arttıkça pin ışıkları ve devre izleri canlanır",
+  "tags": [
+   "işlemci",
+   "yong",
+   "chip",
+   "cpu",
+   "processor",
+   "donanım",
+   "hardware",
+   "mikroçip"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -105,
+   -105,
+   105,
+   105
+  ],
+  "points": [
+   "die"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "activity": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "pin ışıkları ve devre izi yoğunluğu (0-1)"
+   }
+  }
+ },
+ {
   "name": "tech/cloud",
   "status": "draft",
   "desc": "Bulut sunucu; senkron anında içinde dönen senkron okları belirir",
@@ -728,6 +796,75 @@
   }
  },
  {
+  "name": "tech/gpu",
+  "status": "draft",
+  "desc": "Yatay ekran kartı; load arttıkça fan hızlanır ve LED şeridi parlar",
+  "tags": [
+   "ekran kartı",
+   "gpu",
+   "grafik kartı",
+   "fan",
+   "donanım",
+   "graphics card",
+   "hardware",
+   "soğutma"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -195,
+   -75,
+   195,
+   75
+  ],
+  "points": [
+   "fan"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "load": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "fan hızı ve LED parlaklığı (0-1)"
+   }
+  }
+ },
+ {
+  "name": "tech/keyboard-mouse",
+  "status": "draft",
+  "desc": "Klavye ve fare seti; klavyede tuş ızgarası, farede tekerlek çizgisi",
+  "tags": [
+   "klavye",
+   "keyboard",
+   "fare",
+   "mouse",
+   "tuş",
+   "set",
+   "girdi",
+   "input",
+   "bilgisayar"
+  ],
+  "anchor": "taban (0,0)",
+  "box": [
+   -175,
+   -75,
+   175,
+   12
+  ],
+  "points": [
+   "keyboard",
+   "mouse"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   }
+  }
+ },
+ {
   "name": "tech/laptop",
   "status": "draft",
   "desc": "Dizüstü bilgisayar; ekranında kod, grafik, oyun veya boş içerik gösterilir",
@@ -751,6 +888,50 @@
   "points": [
    "screen",
    "keyboard"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "screen": {
+    "type": "enum",
+    "default": "code",
+    "values": [
+     "code",
+     "chart",
+     "game",
+     "blank"
+    ],
+    "desc": "ekran içeriği"
+   }
+  }
+ },
+ {
+  "name": "tech/monitor-setup",
+  "status": "draft",
+  "desc": "Çift monitörlü kurulum; ekran içeriği kod, grafik, oyun veya boş olabilir",
+  "tags": [
+   "monitör",
+   "monitor",
+   "ekran",
+   "çift ekran",
+   "kurulum",
+   "dual screen",
+   "setup",
+   "masaüstü",
+   "desktop"
+  ],
+  "anchor": "taban (0,0); monitörler yukarı uzar",
+  "box": [
+   -215,
+   -200,
+   215,
+   12
+  ],
+  "points": [
+   "screenL",
+   "screenR"
   ],
   "params": {
    "color": {
@@ -854,6 +1035,44 @@
     "type": "number",
     "default": 0.5,
     "desc": "ağ trafiği (0-1): yanan LED ve sinyal yoğunluğu"
+   }
+  }
+ },
+ {
+  "name": "tech/satellite",
+  "status": "draft",
+  "desc": "Yörüngedeki uydu; active anında çanak antenden sinyal dalgaları yayılır",
+  "tags": [
+   "uydu",
+   "satellite",
+   "uzay",
+   "sinyal",
+   "yörünge",
+   "space",
+   "signal",
+   "orbit",
+   "anten"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -190,
+   -110,
+   190,
+   110
+  ],
+  "points": [
+   "dish",
+   "body"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "active": {
+    "type": "time",
+    "default": null,
+    "desc": "sinyal gönderme anı: 0.9 sn dalga yayılımı"
    }
   }
  },

@@ -21,8 +21,8 @@ Bitince `[x]`.
 - [x] P1 tech/router — anten ve trafik ışıkları; params: traffic 0–1
 - [x] P1 tech/cloud — bulut sunucu; params: sync (zaman)
 - [x] P1 tech/database — params: activity 0–1
-- [ ] P2 tech/chip — işlemci; params: heat 0–1
-- [ ] P2 tech/satellite, tech/cable-bundle, tech/monitor-setup, tech/gpu, tech/keyboard-mouse
+- [x] P2 tech/chip — işlemci; params: activity 0–1
+- [x] P2 tech/satellite, tech/cable-bundle, tech/monitor-setup, tech/gpu, tech/keyboard-mouse
 - [ ] P3 tech/data-center (geniş sahne), tech/fiber-line
 
 ## fx — efektler
