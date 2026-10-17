@@ -1,0 +1,27 @@
+{
+  "name": "fps-api-opus",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "duration": 61.75,
+  "bpm": 120,
+  "speed": 1,
+  "lang": "tr",
+  "subframes": 6,
+  "shutter": 0.7,
+  "fonts": {
+    "css": [
+      "@fontsource/archivo-black/400.css",
+      "@fontsource/barlow-condensed/900.css",
+      "@fontsource/jetbrains-mono/500.css",
+      "@fontsource/jetbrains-mono/700.css"
+    ],
+    "preload": [
+      "400 40px 'Archivo Black'",
+      "900 40px 'Barlow Condensed'",
+      "500 40px 'JetBrains Mono'",
+      "700 40px 'JetBrains Mono'"
+    ],
+    "sample": "AaBbÇçĞğİıÖöŞşÜü0123456789%·—›→▸✓×=#$()−≈°θ₀½²↓…"
+  }
+}

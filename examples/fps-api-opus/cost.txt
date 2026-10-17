@@ -1,0 +1,5 @@
+claude-opus-5-5 · effort low · 79 s (incl. sheet renders)
+  call 1: in 408 · cache write 2190 · cache read 0 · out 4180 → $0.0962
+  call 2: in 7719 · cache write 0 · cache read 2190 · out 5135 → $0.1340
+  total $0.2302
+  scene.js: 136 lines, 8076 chars

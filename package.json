@@ -1,0 +1,37 @@
+{
+  "name": "ft-motion",
+  "version": "0.1.0",
+  "description": "Motion graphics as a pure function of time: Canvas 2D scenes, headless-Chrome rendering with motion blur, ffmpeg encoding and synthesized sound.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "preview": "node ft.mjs preview",
+    "stills": "node ft.mjs stills",
+    "sheet": "node ft.mjs sheet",
+    "render": "node ft.mjs render",
+    "new": "node ft.mjs new"
+  },
+  "dependencies": {
+    "@fontsource/anton": "^5.3.0",
+    "@fontsource/archivo-black": "^5.3.0",
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@fontsource/creepster": "^5.3.0",
+    "@fontsource/fredoka": "^5.3.0",
+    "@fontsource/inter": "^5.2.0",
+    "@fontsource/jetbrains-mono": "^5.2.0",
+    "@fontsource/metal-mania": "^5.3.0",
+    "@fontsource/nosifer": "^5.3.0",
+    "@fontsource/playfair-display": "^5.3.0",
+    "@fontsource/rubik-glitch": "^5.3.0",
+    "@fontsource/special-elite": "^5.3.0",
+    "puppeteer-core": "^24.0.0",
+    "three": "^0.186.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": {
+    "name": "Serhat Demir",
+    "email": "serhatdemir1235@gmail.com"
+  }
+}

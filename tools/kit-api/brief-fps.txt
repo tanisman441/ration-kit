@@ -1,0 +1,8 @@
+Konu: Online bir FPS oyununda ateş ettiğinde arka planda ne oluyor?
+Format: 9:16 dikey, yaklaşık 60 saniye (12–14 anlatım cümlesi), Türkçe anlatım, tema night.
+Marka (HUD): ONLINE FPS · ATEŞİN ARKA PLANI
+Anlatılacaklar, bu sırayla: tetiğe basınca bilgisayarın animasyonu hemen başlatması; isabete sunucunun karar vermesi;
+ateş bilgisinin (konum, bakış yönü, zaman) paket olarak sunucuya gitmesi; oyuncu ile sunucunun aynı "şimdi"yi görmemesi;
+40 ms gecikme örneği; lag compensation ve sunucunun zamanı geri sarması; hitscan ışını ve hitbox kesişimi; headshot;
+tick rate (64 tick); isabet geçerliyse canın düşmesi ve sonucun diğer oyunculara gönderilmesi; kapanış: hepsi milisaniyeler içinde.
+Örnek sayılar temsili olarak işaretlensin.

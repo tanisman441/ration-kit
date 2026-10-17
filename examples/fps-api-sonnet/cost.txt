@@ -1,0 +1,5 @@
+claude-sonnet-5-5 · effort low · 51 s (incl. sheet renders)
+  call 1: in 408 · cache write 2278 · cache read 0 · out 4179 → $0.0483
+  call 2: in 7718 · cache write 0 · cache read 2278 · out 4260 → $0.0585
+  total $0.1068
+  scene.js: 117 lines, 7710 chars
