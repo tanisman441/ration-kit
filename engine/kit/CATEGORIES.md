@@ -41,10 +41,10 @@ Bitince `[x]`.
 - [ ] P3 weapons/shotgun, weapons/grenade (params: throw, explode), weapons/knife, weapons/bullet (uçan mermi + iz)
 
 ## environment — mekân ve nesneler
-- [ ] P1 environment/wall — beton duvar/siper; params: hit (zaman: toz + parça)
-- [ ] P1 environment/crate — kasa; variant: wood|metal
-- [ ] P1 environment/door — params: open 0–1
-- [ ] P1 environment/building — bina cephesi; variant: house|office|factory; params: lights 0–1
+- [x] P1 environment/wall — beton duvar/siper; params: hit (zaman: toz + parça)
+- [x] P1 environment/crate — kasa; variant: wood|metal
+- [x] P1 environment/door — params: open 0–1
+- [x] P1 environment/building — bina cephesi; variant: house|office|factory; params: lights 0–1
 - [ ] P2 environment/tree, environment/road (yatay şerit), environment/bridge, environment/fence, environment/barrel
 - [ ] P3 environment/city-skyline, environment/mountain, environment/room-interior
 

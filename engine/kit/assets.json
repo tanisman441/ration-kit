@@ -127,6 +127,165 @@
   }
  },
  {
+  "name": "environment/building",
+  "status": "draft",
+  "desc": "Bina cephesi; house/office/factory varyantı, yanan pencereler ayarlanabilir",
+  "tags": [
+   "bina",
+   "ev",
+   "ofis",
+   "fabrika",
+   "cephe",
+   "building",
+   "house",
+   "office",
+   "factory",
+   "facade"
+  ],
+  "anchor": "zemin (0,0); cephe ortası",
+  "box": [
+   -158,
+   -285,
+   158,
+   12
+  ],
+  "points": [
+   "door"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "variant": {
+    "type": "enum",
+    "default": "house",
+    "values": [
+     "house",
+     "office",
+     "factory"
+    ]
+   },
+   "lights": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "yanan pencere oranı 0–1"
+   }
+  }
+ },
+ {
+  "name": "environment/crate",
+  "status": "draft",
+  "desc": "3/4 görünüm kasa; wood varyantı çıtalı, metal varyantı perçinli",
+  "tags": [
+   "kasa",
+   "sandık",
+   "kutu",
+   "malzeme",
+   "crate",
+   "box",
+   "wooden crate",
+   "metal crate",
+   "supply"
+  ],
+  "anchor": "zemin (0,0); kasa merkezi",
+  "box": [
+   -110,
+   -150,
+   110,
+   12
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "variant": {
+    "type": "enum",
+    "default": "wood",
+    "values": [
+     "wood",
+     "metal"
+    ]
+   }
+  }
+ },
+ {
+  "name": "environment/door",
+  "status": "draft",
+  "desc": "Çerçeveli kapı; open parametresiyle açılır, aralıktan ışık sızar",
+  "tags": [
+   "kapı",
+   "giriş",
+   "eşik",
+   "door",
+   "entrance",
+   "doorway",
+   "gate"
+  ],
+  "anchor": "zemin (0,0); eşik ortası",
+  "box": [
+   -100,
+   -232,
+   100,
+   12
+  ],
+  "points": [
+   "top",
+   "threshold"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "open": {
+    "type": "number",
+    "default": 0,
+    "desc": "açılma oranı 0–1"
+   }
+  }
+ },
+ {
+  "name": "environment/wall",
+  "status": "draft",
+  "desc": "Alçak beton duvar/siper; vurulma anında toz bulutu ve parça çıkarır",
+  "tags": [
+   "duvar",
+   "siper",
+   "beton",
+   "korunak",
+   "wall",
+   "cover",
+   "concrete",
+   "barrier"
+  ],
+  "anchor": "zemin (0,0); duvar yukarı uzar, boy ~110 birim",
+  "box": [
+   -170,
+   -120,
+   170,
+   12
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "hit": {
+    "type": "time",
+    "default": null,
+    "desc": "vurulma anı: toz + parça + çatlak"
+   }
+  }
+ },
+ {
   "name": "fx/electric",
   "status": "draft",
   "desc": "Elektrik arkı: at anında titreyen, dallı şimşek çakması",
