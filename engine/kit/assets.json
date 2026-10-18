@@ -1437,6 +1437,279 @@
   }
  },
  {
+  "name": "fantasy/castle",
+  "status": "draft",
+  "desc": "İki kuleli taş kale; burçlar, kemerli kapı, titreyen pencere ışıkları; signal anında burç feneri çakar",
+  "tags": [
+   "kale",
+   "şato",
+   "hisar",
+   "ortaçağ",
+   "castle",
+   "fortress",
+   "medieval",
+   "kingdom"
+  ],
+  "anchor": "taban merkezi (0,0)",
+  "box": [
+   -155,
+   -128,
+   155,
+   128
+  ],
+  "points": [
+   "gate",
+   "beacon"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2",
+    "desc": "taş rengi"
+   },
+   "signal": {
+    "type": "time",
+    "default": null,
+    "desc": "burç fenerinin çaktığı an"
+   }
+  }
+ },
+ {
+  "name": "fantasy/crown",
+  "status": "draft",
+  "desc": "Beş dişli altın taç; bandında parlayan üç taş; shine anında üzerinden ışık süpürür",
+  "tags": [
+   "taç",
+   "kral tacı",
+   "krallık",
+   "altın",
+   "crown",
+   "king crown",
+   "royalty",
+   "gold"
+  ],
+  "anchor": "taban merkezi (0,0)",
+  "box": [
+   -115,
+   -82,
+   115,
+   82
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "taç metal rengi"
+   },
+   "gem": {
+    "type": "color",
+    "default": "red",
+    "desc": "taş rengi"
+   },
+   "shine": {
+    "type": "time",
+    "default": null,
+    "desc": "tacın üzerinden geçen ışık süpürmesi anı"
+   }
+  }
+ },
+ {
+  "name": "fantasy/dragon",
+  "status": "draft",
+  "desc": "Yandan görünen yeşil ejderha; kanat çırpar, nefes alır; breath anında ağzından ateş püskürtür",
+  "tags": [
+   "ejderha",
+   "ateş ejderhası",
+   "canavar",
+   "fantastik yaratık",
+   "dragon",
+   "fire dragon",
+   "monster",
+   "fantasy beast"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -195,
+   -125,
+   315,
+   125
+  ],
+  "points": [
+   "mouth",
+   "back"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "pul rengi"
+   },
+   "breath": {
+    "type": "time",
+    "default": null,
+    "desc": "ateş püskürtme anı"
+   }
+  }
+ },
+ {
+  "name": "fantasy/potion",
+  "status": "draft",
+  "desc": "Mantarlı yuvarlak iksir şişesi; mor sıvı dalgalanır, baloncuklar yükselir; fizz anında köpürür",
+  "tags": [
+   "iksir",
+   "büyü iksiri",
+   "şişe",
+   "sihir",
+   "potion",
+   "magic potion",
+   "elixir",
+   "flask"
+  ],
+  "anchor": "taban merkezi (0,0)",
+  "box": [
+   -95,
+   -112,
+   95,
+   112
+  ],
+  "points": [
+   "mouth"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "cam rengi"
+   },
+   "liquid": {
+    "type": "color",
+    "default": "purple",
+    "desc": "sıvı rengi"
+   },
+   "fizz": {
+    "type": "time",
+    "default": null,
+    "desc": "köpürme anı"
+   }
+  }
+ },
+ {
+  "name": "fantasy/shield",
+  "status": "draft",
+  "desc": "Önden görünen uçurtma kalkan; yıldız amblemli; hit anında sarsılır ve kıvılcım saçar",
+  "tags": [
+   "kalkan",
+   "şövalye kalkanı",
+   "savunma",
+   "zırh",
+   "shield",
+   "knight shield",
+   "defense",
+   "armor"
+  ],
+  "anchor": "kalkan merkezi (0,0)",
+  "box": [
+   -105,
+   -115,
+   105,
+   122
+  ],
+  "points": [
+   "center",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2",
+    "desc": "kalkan gövde rengi"
+   },
+   "hit": {
+    "type": "time",
+    "default": null,
+    "desc": "darbe anı: sarsıntı + kıvılcım"
+   }
+  }
+ },
+ {
+  "name": "fantasy/sword",
+  "status": "draft",
+  "desc": "Yukarı bakan süslü kılıç; balçaklı kabza, topuzunda taş; glint anında bıçağın üzerinden ışık süpürür",
+  "tags": [
+   "kılıç",
+   "şövalye kılıcı",
+   "bıçak",
+   "fantastik",
+   "sword",
+   "knight sword",
+   "blade",
+   "fantasy"
+  ],
+  "anchor": "kabza merkezi (0,0)",
+  "box": [
+   -100,
+   -180,
+   100,
+   100
+  ],
+  "points": [
+   "tip",
+   "grip"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "çelik rengi"
+   },
+   "glint": {
+    "type": "time",
+    "default": null,
+    "desc": "bıçağın üzerinden geçen ışık süpürmesi anı"
+   }
+  }
+ },
+ {
+  "name": "fantasy/wand",
+  "status": "draft",
+  "desc": "Yıldız uçlu büyü asası; ucu boşta nabız gibi parlar; cast anında kıvılcım yağmuru ve halka saçar",
+  "tags": [
+   "asa",
+   "büyü asası",
+   "sihirli değnek",
+   "sihir",
+   "wand",
+   "magic wand",
+   "wizard",
+   "spell"
+  ],
+  "anchor": "sap merkezi (0,0)",
+  "box": [
+   -95,
+   -118,
+   95,
+   122
+  ],
+  "points": [
+   "tip"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "asa gövde rengi"
+   },
+   "cast": {
+    "type": "time",
+    "default": null,
+    "desc": "büyü atma anı: kıvılcım yağmuru"
+   }
+  }
+ },
+ {
   "name": "food/apple",
   "status": "draft",
   "desc": "Hafif sağa eğik kırmızı elma; bite anında ısırık izi açılır ve bir parça uçar",
@@ -2096,6 +2369,250 @@
    "color": {
     "type": "color",
     "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "health/ambulance",
+  "status": "draft",
+  "desc": "Yandan ambulans; tepe lambası dönüşümlü yanıp söner, siren anında hızlı flaş + ses dalgaları yayar",
+  "tags": [
+   "ambulans",
+   "acil",
+   "112",
+   "sağlık",
+   "ambulance",
+   "emergency",
+   "siren",
+   "hastane",
+   "ilk yardım"
+  ],
+  "anchor": "zemin merkezi (0,0); gövde yukarı uzar",
+  "box": [
+   -170,
+   -150,
+   170,
+   15
+  ],
+  "points": [
+   "front",
+   "top",
+   "light"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "haç, şerit ve tepe lambası rengi"
+   },
+   "siren": {
+    "type": "time",
+    "default": null,
+    "desc": "siren anı: hızlı flaş + ses dalgaları (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "health/heart",
+  "status": "draft",
+  "desc": "Kırmızı kalp; EKG çizgili, boştayken çift vuruşlu nabız atar, beat anında halka yayar",
+  "tags": [
+   "kalp",
+   "nabız",
+   "kalp atışı",
+   "sağlık",
+   "heart",
+   "heartbeat",
+   "pulse",
+   "ekg",
+   "love"
+  ],
+  "anchor": "kalbin merkezi (0,0)",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "beat": {
+    "type": "time",
+    "default": null,
+    "desc": "atım anı: güçlü nabız + genişleyen halka (0.6 sn)"
+   }
+  }
+ },
+ {
+  "name": "health/mask",
+  "status": "draft",
+  "desc": "Cerrahi maske; boştayken nefes alır gibi hafifçe şişer, cough anında öksürükle damlacıklar saçar",
+  "tags": [
+   "maske",
+   "cerrahi maske",
+   "korunma",
+   "mask",
+   "surgical mask",
+   "protection",
+   "covid",
+   "sağlık",
+   "hijyen"
+  ],
+  "anchor": "maskenin merkezi (0,0)",
+  "box": [
+   -110,
+   -80,
+   110,
+   80
+  ],
+  "points": [
+   "center",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "maske rengi"
+   },
+   "cough": {
+    "type": "time",
+    "default": null,
+    "desc": "öksürük anı: şişme + damlacıklar (0.7 sn)"
+   }
+  }
+ },
+ {
+  "name": "health/pill",
+  "status": "draft",
+  "desc": "İki renkli kapsül hap; boştayken hafifçe süzülür, toss anında sıçrayıp döner ve squaş ile düşer",
+  "tags": [
+   "hap",
+   "ilaç",
+   "kapsül",
+   "pill",
+   "capsule",
+   "medicine",
+   "drug",
+   "eczane",
+   "tedavi"
+  ],
+  "anchor": "kapsülün merkezi (0,0)",
+  "box": [
+   -95,
+   -70,
+   95,
+   70
+  ],
+  "points": [
+   "left",
+   "right"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "kapsülün sol yarısının rengi"
+   },
+   "toss": {
+    "type": "time",
+    "default": null,
+    "desc": "fırlatma anı: havaya sıçrar, tam tur döner, squaş ile düşer (0.6 sn)"
+   }
+  }
+ },
+ {
+  "name": "health/syringe",
+  "status": "draft",
+  "desc": "Dikey şırınga; inject anında piston iner, iğne ucunda damla oluşup düşer",
+  "tags": [
+   "şırınga",
+   "iğne",
+   "enjeksiyon",
+   "aşı",
+   "syringe",
+   "needle",
+   "injection",
+   "vaccine",
+   "sağlık"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -50,
+   -130,
+   50,
+   75
+  ],
+  "points": [
+   "tip",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "sıvı rengi"
+   },
+   "level": {
+    "type": "number",
+    "default": 0.55,
+    "desc": "sıvı seviyesi 0–1"
+   },
+   "inject": {
+    "type": "time",
+    "default": null,
+    "desc": "enjeksiyon anı: piston iner, damla oluşur ve düşer (1.1 sn)"
+   }
+  }
+ },
+ {
+  "name": "health/thermometer",
+  "status": "draft",
+  "desc": "Cam termometre; cıva seviyesi ayarlanır, yüzey canlıca titrer, measure anında cıva nabzı atar",
+  "tags": [
+   "termometre",
+   "ateş",
+   "sıcaklık",
+   "ölçüm",
+   "thermometer",
+   "temperature",
+   "fever",
+   "derece",
+   "sağlık"
+  ],
+  "anchor": "ampul merkezi (0,10)",
+  "box": [
+   -45,
+   -125,
+   45,
+   50
+  ],
+  "points": [
+   "top",
+   "bulb"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "cıva rengi"
+   },
+   "level": {
+    "type": "number",
+    "default": 0.55,
+    "desc": "cıva seviyesi 0–1"
+   },
+   "measure": {
+    "type": "time",
+    "default": null,
+    "desc": "ölçüm anı: cıva nabzı + parlama (0.6 sn)"
    }
   }
  },
@@ -3198,6 +3715,232 @@
     "type": "time",
     "default": null,
     "desc": "baskı anı: kağıt 1.2 sn'de çıkar, baskı çizgileri belirir"
+   }
+  }
+ },
+ {
+  "name": "school/backpack",
+  "status": "draft",
+  "desc": "Ön cepli, askılı okul çantası; bounce anında havaya zıplayıp esneyerek iner",
+  "tags": [
+   "çanta",
+   "okul çantası",
+   "backpack",
+   "sırt çantası",
+   "okul",
+   "school"
+  ],
+  "anchor": "çanta merkezi (0,0)",
+  "box": [
+   -100,
+   -135,
+   100,
+   105
+  ],
+  "points": [
+   "top",
+   "pocket"
+  ],
+  "params": {
+   "bounce": {
+    "type": "time",
+    "default": null,
+    "desc": "zıplama anı (havaya kalkıp esneyerek iner, ~0.55 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "school/blackboard",
+  "status": "draft",
+  "desc": "Ahşap çerçeveli kara tahta; write anında tebeşir yazısı soldan sağa belirir",
+  "tags": [
+   "tahta",
+   "kara tahta",
+   "blackboard",
+   "sınıf",
+   "classroom",
+   "tebeşir",
+   "chalk",
+   "ders"
+  ],
+  "anchor": "tahta merkezi (0,0)",
+  "box": [
+   -155,
+   -145,
+   155,
+   125
+  ],
+  "points": [
+   "top",
+   "tray"
+  ],
+  "params": {
+   "text": {
+    "type": "text",
+    "default": "okul",
+    "desc": "tahtaya yazılan metin"
+   },
+   "write": {
+    "type": "time",
+    "default": null,
+    "desc": "yazma anı (metin soldan sağa belirir, ~1.2 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "school/book",
+  "status": "draft",
+  "desc": "Yarı açık duran kitap; flip anında sağdaki sayfa havada kavis çizerek sola çevrilir",
+  "tags": [
+   "kitap",
+   "okuma",
+   "book",
+   "reading",
+   "ders",
+   "study",
+   "sayfa"
+  ],
+  "anchor": "kitap omurgası (0,0)",
+  "box": [
+   -130,
+   -90,
+   130,
+   90
+  ],
+  "points": [
+   "spine",
+   "left",
+   "right"
+  ],
+  "params": {
+   "open": {
+    "type": "number",
+    "default": 0.65,
+    "desc": "sayfaların açıklığı (0: kapalıya yakın V, 1: tam açık)"
+   },
+   "flip": {
+    "type": "time",
+    "default": null,
+    "desc": "sayfa çevirme anı (sağ sayfa sola çevrilir, ~0.7 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "school/graduation-cap",
+  "status": "draft",
+  "desc": "Mezuniyet kepi; tassel anında püskül mezuniyet törenindeki gibi sağdan sola savrulur",
+  "tags": [
+   "kep",
+   "mezuniyet",
+   "graduation",
+   "cap",
+   "üniversite",
+   "diploma",
+   "tören"
+  ],
+  "anchor": "kep tablası merkezi (0,0)",
+  "box": [
+   -115,
+   -60,
+   115,
+   95
+  ],
+  "points": [
+   "top",
+   "tassel"
+  ],
+  "params": {
+   "tassel": {
+    "type": "time",
+    "default": null,
+    "desc": "püskül savrulma anı (sağdan sola, ~0.9 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "school/pencil",
+  "status": "draft",
+  "desc": "Silgili klasik kurşun kalem; write anında ucu kıvrımlı bir çizgi çizer",
+  "tags": [
+   "kalem",
+   "kurşun kalem",
+   "pencil",
+   "yazı",
+   "write",
+   "çizim",
+   "drawing"
+  ],
+  "anchor": "kalem merkezi (0,0)",
+  "box": [
+   -140,
+   -95,
+   205,
+   95
+  ],
+  "points": [
+   "tip"
+  ],
+  "params": {
+   "write": {
+    "type": "time",
+    "default": null,
+    "desc": "yazma anı (uç kıvrımlı çizgiyi 1 sn'de çizer)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "school/ruler",
+  "status": "draft",
+  "desc": "Santim çizgili ahşap cetvel; snap anında bükülüp titreyerek eski haline döner",
+  "tags": [
+   "cetvel",
+   "ölçü",
+   "ruler",
+   "measure",
+   "okul",
+   "school",
+   "matematik"
+  ],
+  "anchor": "cetvel merkezi (0,0)",
+  "box": [
+   -145,
+   -55,
+   145,
+   55
+  ],
+  "points": [
+   "left",
+   "right"
+  ],
+  "params": {
+   "snap": {
+    "type": "time",
+    "default": null,
+    "desc": "bükülme anı (cetvel esneyip titrer, ~0.7 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
    }
   }
  },
