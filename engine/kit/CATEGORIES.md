@@ -83,9 +83,9 @@ Kural: listedeki ilk `[ ]` kategori alınır, çizilir, `[x]` yapılır, commit 
 Her kategori 4–6 çizim; stil STYLE.md'ye uyar; her çizim 2 tur görsel kontrol.
 
 - [x] X1 sports — ball (params: bounce time), goal, trophy, whistle, medal, stadium
-- [ ] X2 animals — cat, dog, bird (params: fly time), fish, horse, bee
-- [ ] X3 food — apple, burger, pizza, coffee (params: steam time), cake, bread
-- [ ] X4 nature — flower, rain (params: intensity), snow, sun, moon, star
+- [x] X2 animals — cat, dog, bird (params: fly time), fish, horse, bee
+- [x] X3 food — apple, burger, pizza, coffee (params: steam time), cake, bread
+- [x] X4 nature — flower, rain (params: intensity), snow, sun, moon, star
 - [ ] X5 music — note, guitar, drum (params: hit time), speaker, microphone, headphones
 - [ ] X6 home — bed, chair, lamp (params: on 0-1), sofa, tv (params: screen), fridge
 - [ ] X7 office — desk, folder, printer (params: print time), calendar, clock (params: time)

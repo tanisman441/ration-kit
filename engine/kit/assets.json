@@ -1,5 +1,225 @@
 [
  {
+  "name": "animals/bee",
+  "status": "draft",
+  "desc": "Uçan arı, yandan görünüm; kanatlar hızla vızıldar, sting olayında iğne batırır",
+  "tags": [
+   "arı",
+   "böcek",
+   "vızıltı",
+   "bal",
+   "bee",
+   "insect",
+   "buzz",
+   "sting"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -85,
+   -75,
+   85,
+   75
+  ],
+  "points": [
+   "sting",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "sting": {
+    "type": "time",
+    "default": null,
+    "desc": "iğne batırma — yaklaşma + batış + geri çekilme (1.0 sn)"
+   }
+  }
+ },
+ {
+  "name": "animals/bird",
+  "status": "draft",
+  "desc": "Uçuşan kuş, yandan görünüm; kanatlar sürekli çırpınır, fly olayında hızlanır",
+  "tags": [
+   "kuş",
+   "uçan",
+   "kanat",
+   "gökyüzü",
+   "bird",
+   "flying",
+   "wing",
+   "fly"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -115,
+   -85,
+   115,
+   85
+  ],
+  "points": [
+   "beak",
+   "tail",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "fly": {
+    "type": "time",
+    "default": null,
+    "desc": "kanat hızlanması — kalkış/dalış, gövde eğilir (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "animals/cat",
+  "status": "draft",
+  "desc": "Oturan sevimli kedi, yandan görünüm; kuyruğu sallanır, arada göz kırpar",
+  "tags": [
+   "kedi",
+   "kedicik",
+   "evcil hayvan",
+   "mırnav",
+   "cat",
+   "kitten",
+   "kitty",
+   "pet"
+  ],
+  "anchor": "oturma tabanı (0,0); boy ~245 birim",
+  "box": [
+   -120,
+   -278,
+   115,
+   10
+  ],
+  "points": [
+   "head",
+   "nose",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "blink": {
+    "type": "time",
+    "default": null,
+    "desc": "göz kırpma + kulak seğirmesi (0.3 sn)"
+   }
+  }
+ },
+ {
+  "name": "animals/dog",
+  "status": "draft",
+  "desc": "Ayakta duran köpek, yandan görünüm; kuyruk sallar, diliyle hızlı solur",
+  "tags": [
+   "köpek",
+   "evcil hayvan",
+   "havlama",
+   "yavru",
+   "dog",
+   "puppy",
+   "pet",
+   "bark"
+  ],
+  "anchor": "ayaklar (0,0); boy ~215 birim",
+  "box": [
+   -115,
+   -225,
+   165,
+   10
+  ],
+  "points": [
+   "head",
+   "nose",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "bark": {
+    "type": "time",
+    "default": null,
+    "desc": "havlama — ağız açılır + ses halkaları (0.7 sn)"
+   }
+  }
+ },
+ {
+  "name": "animals/fish",
+  "status": "draft",
+  "desc": "Yüzen balık, yandan görünüm; kuyruk ve yüzgeçler salınır, kabarcıklar yükselir",
+  "tags": [
+   "balık",
+   "deniz",
+   "yüzen",
+   "okyanus",
+   "fish",
+   "swimming",
+   "sea",
+   "ocean"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -115,
+   -65,
+   115,
+   65
+  ],
+  "points": [
+   "mouth",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "animals/horse",
+  "status": "draft",
+  "desc": "Ayakta duran at, yandan görünüm; kuyruk ve yele sallanır, burun titrer",
+  "tags": [
+   "at",
+   "binicilik",
+   "koşan",
+   "tay",
+   "horse",
+   "stallion",
+   "ride",
+   "equine"
+  ],
+  "anchor": "ayaklar (0,0); boy ~305 birim",
+  "box": [
+   -145,
+   -315,
+   165,
+   10
+  ],
+  "points": [
+   "back",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "nod": {
+    "type": "time",
+    "default": null,
+    "desc": "baş eğme — selam/onay hareketi (0.7 sn)"
+   }
+  }
+ },
+ {
   "name": "characters/crowd",
   "status": "draft",
   "desc": "5–12 kişilik kalabalık; iki sıra, hafif salınımlı sade figürler",
@@ -1217,6 +1437,221 @@
   }
  },
  {
+  "name": "food/apple",
+  "status": "draft",
+  "desc": "Hafif sağa eğik kırmızı elma; bite anında ısırık izi açılır ve bir parça uçar",
+  "tags": [
+   "elma",
+   "meyve",
+   "apple",
+   "fruit",
+   "ısırık",
+   "bite",
+   "yemek"
+  ],
+  "anchor": "elmanın merkezi (0,0)",
+  "box": [
+   -75,
+   -85,
+   75,
+   85
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "bite": {
+    "type": "time",
+    "default": null,
+    "desc": "ısırık anı (ısırık izi açılır + parça uçar)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "food/bread",
+  "status": "draft",
+  "desc": "Yandan ekmek somunu; slice anında uçtaki dilim kayıp ayrılır ve geri döner",
+  "tags": [
+   "ekmek",
+   "bread",
+   "somun",
+   "loaf",
+   "dilim",
+   "slice",
+   "fırın",
+   "bakery",
+   "yemek"
+  ],
+  "anchor": "somunun merkezi (0,0)",
+  "box": [
+   -95,
+   -70,
+   95,
+   70
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "slice": {
+    "type": "time",
+    "default": null,
+    "desc": "dilimlenme anı (uç dilim kayıp ayrılır, 1.2 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "food/burger",
+  "status": "draft",
+  "desc": "Katmanlı hamburger ön görünüm; squish anında üstten basılır ve geri döner",
+  "tags": [
+   "hamburger",
+   "burger",
+   "fast food",
+   "yemek",
+   "fastfood",
+   "ekmek",
+   "sandviç"
+  ],
+  "anchor": "burgerin merkezi (0,0)",
+  "box": [
+   -85,
+   -80,
+   85,
+   80
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "squish": {
+    "type": "time",
+    "default": null,
+    "desc": "sıkıştırma anı (katmanlar basılır ve geri döner)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "food/cake",
+  "status": "draft",
+  "desc": "Tabakta dilim pasta ve mum; candle anında alev söner, duman yükselir",
+  "tags": [
+   "pasta",
+   "cake",
+   "dilim",
+   "slice",
+   "mum",
+   "candle",
+   "doğum günü",
+   "birthday",
+   "tatlı"
+  ],
+  "anchor": "dilim merkezi (0,0)",
+  "box": [
+   -85,
+   -100,
+   85,
+   100
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "candle": {
+    "type": "time",
+    "default": null,
+    "desc": "mum üfleme anı (alev söner + duman yükselir, 1.4 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "food/coffee",
+  "status": "draft",
+  "desc": "Üstten hafif açılı kahve fincanı; steam anında yoğun buhar yükselir, yüzeyde dalgalanma olur",
+  "tags": [
+   "kahve",
+   "fincan",
+   "coffee",
+   "cup",
+   "buhar",
+   "steam",
+   "içecek",
+   "espresso"
+  ],
+  "anchor": "fincanın merkezi (0,0)",
+  "box": [
+   -80,
+   -90,
+   80,
+   90
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "steam": {
+    "type": "time",
+    "default": null,
+    "desc": "buhar anı (yoğun buhar yükselir, 1.2 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "food/pizza",
+  "status": "draft",
+  "desc": "Yandan eğik pizza dilimi; cheese-pull anında peynir iplikleri uzar ve geri çekilir",
+  "tags": [
+   "pizza",
+   "dilim",
+   "slice",
+   "peynir",
+   "cheese",
+   "yemek",
+   "italyan"
+  ],
+  "anchor": "dilim merkezi (0,0)",
+  "box": [
+   -80,
+   -85,
+   80,
+   85
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "cheese-pull": {
+    "type": "time",
+    "default": null,
+    "desc": "peynir uzama anı (iplikler uzar ve geri döner)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
   "name": "fx/confetti",
   "status": "draft",
   "desc": "Konfeti yağmuru: at anında tepeden renkli parçalar salınarak dökülür",
@@ -1831,6 +2266,253 @@
      "oceania"
     ],
     "desc": "vurgulanan bölge"
+   }
+  }
+ },
+ {
+  "name": "nature/flower",
+  "status": "draft",
+  "desc": "Saplı çiçek; bloom anında tomurcuk çiçeğe açılır, sap rüzgârda salınır",
+  "tags": [
+   "çiçek",
+   "gül",
+   "bitki",
+   "doğa",
+   "tomurcuk",
+   "çiçek açma",
+   "flower",
+   "bloom",
+   "plant",
+   "nature",
+   "blossom"
+  ],
+  "anchor": "zemin (0,0); çiçek başı ~y=-235",
+  "box": [
+   -120,
+   -300,
+   120,
+   16
+  ],
+  "points": [
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "petal": {
+    "type": "color",
+    "default": "red"
+   },
+   "bloom": {
+    "type": "time",
+    "default": null,
+    "desc": "tomurcuğun açılma anı (~1.4 sn sürer)"
+   },
+   "sway": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "rüzgâr şiddeti 0–1"
+   }
+  }
+ },
+ {
+  "name": "nature/moon",
+  "status": "draft",
+  "desc": "Hilal ay; phase anında hilalden dolunaya geçer, yumuşak parıltıyla nabız atar",
+  "tags": [
+   "ay",
+   "hilal",
+   "dolunay",
+   "gece",
+   "gökyüzü",
+   "moon",
+   "crescent",
+   "night",
+   "lunar",
+   "sky"
+  ],
+  "anchor": "ay merkezi (0,0)",
+  "box": [
+   -95,
+   -95,
+   95,
+   95
+  ],
+  "points": [
+   "centre"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "phase": {
+    "type": "time",
+    "default": null,
+    "desc": "hilal→dolunay geçiş anı (~2 sn sürer)"
+   }
+  }
+ },
+ {
+  "name": "nature/rain",
+  "status": "draft",
+  "desc": "Yağmur bulutu; intensity ile damla yoğunluğu ayarlanır, damlalar sürekli yağar",
+  "tags": [
+   "yağmur",
+   "bulut",
+   "damla",
+   "hava",
+   "yağış",
+   "rain",
+   "cloud",
+   "drops",
+   "weather",
+   "storm"
+  ],
+  "anchor": "bulut merkezi (0,-55); damlalar y=160 civarına düşer",
+  "box": [
+   -140,
+   -120,
+   140,
+   175
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "drop": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "intensity": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "yağış şiddeti 0–1: damla yoğunluğu"
+   }
+  }
+ },
+ {
+  "name": "nature/snow",
+  "status": "draft",
+  "desc": "Kar yağışı; gust anında rüzgâr taneleri yana savurur, normalde taneler süzülerek düşer",
+  "tags": [
+   "kar",
+   "kar tanesi",
+   "kış",
+   "hava",
+   "yağış",
+   "snow",
+   "snowflake",
+   "winter",
+   "weather",
+   "blizzard"
+  ],
+  "anchor": "merkez (0,0); kar alanı",
+  "box": [
+   -150,
+   -170,
+   150,
+   170
+  ],
+  "points": [],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "gust": {
+    "type": "time",
+    "default": null,
+    "desc": "rüzgâr olayı anı (~1.4 sn savrulma)"
+   },
+   "density": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "tane yoğunluğu 0–1"
+   }
+  }
+ },
+ {
+  "name": "nature/star",
+  "status": "draft",
+  "desc": "Parlayan beş köşeli yıldız; twinkle anında parıltı patlaması olur, normalde titreyerek yanıp söner",
+  "tags": [
+   "yıldız",
+   "parıltı",
+   "gece",
+   "gökyüzü",
+   "ışıltı",
+   "star",
+   "twinkle",
+   "night",
+   "sky",
+   "sparkle",
+   "shining"
+  ],
+  "anchor": "yıldız merkezi (0,0)",
+  "box": [
+   -90,
+   -90,
+   90,
+   90
+  ],
+  "points": [
+   "tip"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "twinkle": {
+    "type": "time",
+    "default": null,
+    "desc": "parıltı patlaması anı (~0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "nature/sun",
+  "status": "draft",
+  "desc": "Işınlı güneş; flare anında parlama patlaması olur, ışınlar yavaşça döner ve nabız atar",
+  "tags": [
+   "güneş",
+   "ışın",
+   "gündüz",
+   "hava",
+   "yaz",
+   "parlak",
+   "sun",
+   "sunshine",
+   "rays",
+   "day",
+   "summer"
+  ],
+  "anchor": "güneş merkezi (0,0)",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "centre"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "flare": {
+    "type": "time",
+    "default": null,
+    "desc": "parlama patlaması anı (~0.9 sn)"
    }
   }
  },
