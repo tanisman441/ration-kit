@@ -2100,6 +2100,247 @@
   }
  },
  {
+  "name": "home/bed",
+  "status": "draft",
+  "desc": "Yandan tek kişilik yatak: başlık, yastık ve nefes alan yorgan",
+  "tags": [
+   "yatak",
+   "uyku",
+   "bed",
+   "sleep",
+   "yorgan",
+   "blanket",
+   "yastık",
+   "pillow",
+   "ev",
+   "home"
+  ],
+  "anchor": "yatağın merkezi (0,0); zemin y=95",
+  "box": [
+   -135,
+   -85,
+   135,
+   95
+  ],
+  "points": [
+   "pillow",
+   "blanket",
+   "foot"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "yorgan rengi"
+   }
+  }
+ },
+ {
+  "name": "home/chair",
+  "status": "draft",
+  "desc": "Yandan ahşap yemek sandalyesi; boşta hafif sallanır",
+  "tags": [
+   "sandalye",
+   "oturak",
+   "chair",
+   "seat",
+   "mobilya",
+   "furniture",
+   "ev",
+   "home",
+   "oduncu"
+  ],
+  "anchor": "oturma merkezi (0,0); zemin y=92",
+  "box": [
+   -85,
+   -105,
+   95,
+   100
+  ],
+  "points": [
+   "seat",
+   "back",
+   "leg"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "oturma/sırtlık rengi"
+   },
+   "rock": {
+    "type": "number",
+    "default": 1,
+    "desc": "sallanma şiddeti 0–1 (0 = durur)"
+   }
+  }
+ },
+ {
+  "name": "home/fridge",
+  "status": "draft",
+  "desc": "Önden çift kapılı buzdolabı; motoru hafif titrer, open anında alt kapak açılır ve iç ışık yanar",
+  "tags": [
+   "buzdolabı",
+   "fridge",
+   "refrigerator",
+   "mutfak",
+   "kitchen",
+   "soğutucu",
+   "ev",
+   "home"
+  ],
+  "anchor": "buzdolabının merkezi (0,0); zemin y=98",
+  "box": [
+   -110,
+   -105,
+   110,
+   105
+  ],
+  "points": [
+   "door",
+   "handle",
+   "top"
+  ],
+  "params": {
+   "open": {
+    "type": "time",
+    "default": null,
+    "desc": "kapak açılma anı (açılır, durur, kapanır; 1.2 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "gövde rengi"
+   }
+  }
+ },
+ {
+  "name": "home/lamp",
+  "status": "draft",
+  "desc": "Abajurlu lambader; on ile ışık açılır, ışık huzmesi hafif titrer",
+  "tags": [
+   "lamba",
+   "lambader",
+   "lamp",
+   "ışık",
+   "light",
+   "abajur",
+   "aydınlatma",
+   "ev",
+   "home"
+  ],
+  "anchor": "lambanın gövdesi merkezi (0,0); zemin y=92",
+  "box": [
+   -95,
+   -115,
+   95,
+   100
+  ],
+  "points": [
+   "bulb",
+   "shade",
+   "base"
+  ],
+  "params": {
+   "on": {
+    "type": "number",
+    "default": 1,
+    "desc": "ışık şiddeti 0–1"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "abajur rengi"
+   }
+  }
+ },
+ {
+  "name": "home/sofa",
+  "status": "draft",
+  "desc": "Önden üçlü kanepe; sit anında minderler çöker ve yaylanarak toparlanır",
+  "tags": [
+   "kanepe",
+   "koltuk",
+   "sofa",
+   "couch",
+   "oturma",
+   "salon",
+   "mobilya",
+   "furniture",
+   "ev",
+   "home"
+  ],
+  "anchor": "kanepenin merkezi (0,0); zemin y=88",
+  "box": [
+   -145,
+   -85,
+   145,
+   95
+  ],
+  "points": [
+   "seat",
+   "back",
+   "arm"
+  ],
+  "params": {
+   "sit": {
+    "type": "time",
+    "default": null,
+    "desc": "oturma anı (minder çökmesi + yaylanma, 0.8 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "döşeme rengi"
+   }
+  }
+ },
+ {
+  "name": "home/tv",
+  "status": "draft",
+  "desc": "Düz ekran TV; ekran içeriği varyantla değişir, ekran hafif titrer",
+  "tags": [
+   "tv",
+   "televizyon",
+   "television",
+   "ekran",
+   "screen",
+   "haber",
+   "maç",
+   "ev",
+   "home"
+  ],
+  "anchor": "ekran merkezi (0,0); zemin y=98",
+  "box": [
+   -125,
+   -90,
+   125,
+   105
+  ],
+  "points": [
+   "screen",
+   "stand"
+  ],
+  "params": {
+   "screen": {
+    "type": "enum",
+    "default": "static",
+    "values": [
+     "static",
+     "news",
+     "sports",
+     "blank"
+    ],
+    "desc": "ekran içeriği"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink",
+    "desc": "çerçeve rengi"
+   }
+  }
+ },
+ {
   "name": "maps/arena-topdown",
   "status": "draft",
   "desc": "Üstten görünüm simetrik FPS arenası; duvarlar, siper kasaları, kırmızı/mavi takım doğuş bölgeleri",
@@ -2266,6 +2507,239 @@
      "oceania"
     ],
     "desc": "vurgulanan bölge"
+   }
+  }
+ },
+ {
+  "name": "music/drum",
+  "status": "draft",
+  "desc": "Trampet davul; hit anında bagetler vurur, deride dalga yayılır",
+  "tags": [
+   "davul",
+   "trampet",
+   "vurmalı",
+   "baget",
+   "drum",
+   "snare",
+   "percussion",
+   "ritim",
+   "rhythm"
+  ],
+  "anchor": "kasnağın merkezi (0,0)",
+  "box": [
+   -135,
+   -110,
+   135,
+   100
+  ],
+  "points": [
+   "head",
+   "rim",
+   "body"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "hit": {
+    "type": "time",
+    "default": null,
+    "desc": "vuruş anı: deri dalgası + baget hareketi (0.5 sn)"
+   }
+  }
+ },
+ {
+  "name": "music/guitar",
+  "status": "draft",
+  "desc": "Akustik gitar; strum anında teller titreşir ve ses deliği rozeti parlar",
+  "tags": [
+   "gitar",
+   "akustik gitar",
+   "müzik",
+   "çalgı",
+   "guitar",
+   "acoustic",
+   "music",
+   "instrument",
+   "tel"
+  ],
+  "anchor": "gövdenin merkezi (0,0)",
+  "box": [
+   -200,
+   -135,
+   200,
+   135
+  ],
+  "points": [
+   "hole",
+   "head",
+   "bridge",
+   "body"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "strum": {
+    "type": "time",
+    "default": null,
+    "desc": "telleri çalma anı: tel titreşimi + rozet parlaması (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "music/headphones",
+  "status": "draft",
+  "desc": "Kafa üstü kulaklık; kulak yastıklarından dönüşümlü ses dalgaları yayılır",
+  "tags": [
+   "kulaklık",
+   "headphone",
+   "müzik",
+   "ses",
+   "headphones",
+   "headset",
+   "music",
+   "audio",
+   "sound"
+  ],
+  "anchor": "kulaklığın merkezi (0,0)",
+  "box": [
+   -145,
+   -120,
+   145,
+   120
+  ],
+  "points": [
+   "left",
+   "right",
+   "band"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "waves": {
+    "type": "number",
+    "default": 1,
+    "desc": "ses dalgası animasyonu (0=kapalı)"
+   }
+  }
+ },
+ {
+  "name": "music/microphone",
+  "status": "draft",
+  "desc": "Sahne mikrofonu; seviye LED'i ses nabzıyla yanıp söner",
+  "tags": [
+   "mikrofon",
+   "ses",
+   "sahne",
+   "kayıt",
+   "microphone",
+   "mic",
+   "sound",
+   "stage",
+   "recording"
+  ],
+  "anchor": "mikrofonun merkezi (0,0)",
+  "box": [
+   -95,
+   -125,
+   95,
+   125
+  ],
+  "points": [
+   "head",
+   "base",
+   "led"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "level": {
+    "type": "number",
+    "default": 0.8,
+    "desc": "seviye LED'i nabız şiddeti (0=kapalı)"
+   }
+  }
+ },
+ {
+  "name": "music/note",
+  "status": "draft",
+  "desc": "Havada süzülen sekizlik müzik notası; başı üzerinde nabız gibi atan parlama",
+  "tags": [
+   "nota",
+   "müzik notası",
+   "melodi",
+   "şarkı",
+   "note",
+   "music note",
+   "melody",
+   "song"
+  ],
+  "anchor": "notanın merkezi (0,0)",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "head",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "float": {
+    "type": "number",
+    "default": 1,
+    "desc": "süzülme hareketi yoğunluğu (0=kapalı)"
+   }
+  }
+ },
+ {
+  "name": "music/speaker",
+  "status": "draft",
+  "desc": "Hoparlör kabini; bas nabzıyla woofer konisi hareket eder",
+  "tags": [
+   "hoparlör",
+   "speaker",
+   "kolon",
+   "bas",
+   "ses",
+   "sound",
+   "bass",
+   "müzik",
+   "music"
+  ],
+  "anchor": "kabinin merkezi (0,0)",
+  "box": [
+   -115,
+   -125,
+   115,
+   125
+  ],
+  "points": [
+   "cone",
+   "tweeter",
+   "port"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "beat": {
+    "type": "number",
+    "default": 0.8,
+    "desc": "bas nabzı şiddeti (0=kapalı)"
    }
   }
  },
@@ -2513,6 +2987,217 @@
     "type": "time",
     "default": null,
     "desc": "parlama patlaması anı (~0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "office/calendar",
+  "status": "draft",
+  "desc": "Duvar takvimi; sayfa çevirme anında üst sayfa yukarı kıvrılır, işaretli gün değişir",
+  "tags": [
+   "takvim",
+   "duvar takvimi",
+   "tarih",
+   "ajanda",
+   "ofis",
+   "calendar",
+   "wall calendar",
+   "date",
+   "planner"
+  ],
+  "anchor": "sayfa merkezi (0,0)",
+  "box": [
+   -115,
+   -115,
+   115,
+   115
+  ],
+  "points": [
+   "top",
+   "page",
+   "rings"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "flip": {
+    "type": "time",
+    "default": null,
+    "desc": "sayfa çevirme anı: üst sayfa 0.7 sn'de yukarı kıvrılıp düşer, işaretli gün değişir"
+   }
+  }
+ },
+ {
+  "name": "office/clock",
+  "status": "draft",
+  "desc": "Yuvarlak duvar saati; saniye ibresi canlı döner, alarm anında titreyip ses dalgası yayar",
+  "tags": [
+   "saat",
+   "duvar saati",
+   "zaman",
+   "alarm",
+   "akrep",
+   "yelkovan",
+   "clock",
+   "wall clock",
+   "time",
+   "alarm clock"
+  ],
+  "anchor": "kadran merkezi (0,0)",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "center",
+   "top",
+   "hand12"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "time": {
+    "type": "number",
+    "default": 10.14,
+    "desc": "saat (0-12 arası, ondalıklı): akrep/yelkovan konumu"
+   },
+   "alarm": {
+    "type": "time",
+    "default": null,
+    "desc": "alarm anı: 1 sn titreme + ses dalgaları"
+   }
+  }
+ },
+ {
+  "name": "office/desk",
+  "status": "draft",
+  "desc": "Çalışma masası; monitör, kahve fincanı ve masa lambası üstünde, çekmece kayarak açılır",
+  "tags": [
+   "masa",
+   "çalışma masası",
+   "ofis",
+   "monitör",
+   "desk",
+   "office desk",
+   "table",
+   "workstation",
+   "monitor"
+  ],
+  "anchor": "masa tablası merkezi (0,0)",
+  "box": [
+   -170,
+   -160,
+   170,
+   110
+  ],
+  "points": [
+   "top",
+   "drawer",
+   "screen"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "slide": {
+    "type": "time",
+    "default": null,
+    "desc": "çekmece açılma anı: kayar, 0.9 sn açık kalır, kapanır"
+   },
+   "screen": {
+    "type": "enum",
+    "default": "code",
+    "values": [
+     "code",
+     "chart",
+     "blank"
+    ],
+    "desc": "monitör ekranı"
+   }
+  }
+ },
+ {
+  "name": "office/folder",
+  "status": "draft",
+  "desc": "Dosya klasörü; açılınca kağıtlar yukarı kayar, ön kapak öne eğilir",
+  "tags": [
+   "klasör",
+   "dosya",
+   "dosya klasörü",
+   "belge",
+   "evrak",
+   "folder",
+   "file folder",
+   "documents",
+   "paperwork"
+  ],
+  "anchor": "klasör taban merkezi (0,0)",
+  "box": [
+   -115,
+   -120,
+   115,
+   75
+  ],
+  "points": [
+   "top",
+   "papers",
+   "tab"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "open": {
+    "type": "time",
+    "default": null,
+    "desc": "açılma anı: kağıtlar çıkar, kapak öne eğilir; 1.2 sn sürer"
+   }
+  }
+ },
+ {
+  "name": "office/printer",
+  "status": "draft",
+  "desc": "Önden yazıcı; üstte kağıt tepsisi, baskı anında kağıt önden kayarak çıkar",
+  "tags": [
+   "yazıcı",
+   "printer",
+   "baskı",
+   "kağıt",
+   "ofis",
+   "print",
+   "printing",
+   "paper",
+   "office"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -135,
+   -105,
+   135,
+   135
+  ],
+  "points": [
+   "tray",
+   "paperout",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "print": {
+    "type": "time",
+    "default": null,
+    "desc": "baskı anı: kağıt 1.2 sn'de çıkar, baskı çizgileri belirir"
    }
   }
  },
