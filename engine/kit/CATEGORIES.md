@@ -82,7 +82,7 @@ Bitince `[x]`.
 Kural: listedeki ilk `[ ]` kategori alınır, çizilir, `[x]` yapılır, commit + push edilir.
 Her kategori 4–6 çizim; stil STYLE.md'ye uyar; her çizim 2 tur görsel kontrol.
 
-- [ ] X1 sports — ball (params: bounce time), goal, trophy, whistle, medal, stadium
+- [x] X1 sports — ball (params: bounce time), goal, trophy, whistle, medal, stadium
 - [ ] X2 animals — cat, dog, bird (params: fly time), fish, horse, bee
 - [ ] X3 food — apple, burger, pizza, coffee (params: steam time), cake, bread
 - [ ] X4 nature — flower, rain (params: intensity), snow, sun, moon, star

@@ -2155,6 +2155,223 @@
   }
  },
  {
+  "name": "sports/ball",
+  "status": "draft",
+  "desc": "Sade desenli futbol topu; bounce anında zıplar ve hafif yassılaşır",
+  "tags": [
+   "futbol",
+   "top",
+   "ball",
+   "soccer",
+   "football",
+   "zıpla",
+   "bounce",
+   "spor"
+  ],
+  "anchor": "topun merkezi (0,0)",
+  "box": [
+   -70,
+   -160,
+   70,
+   70
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "bounce": {
+    "type": "time",
+    "default": null,
+    "desc": "zıplama anı (yükselme + squash)"
+   }
+  }
+ },
+ {
+  "name": "sports/goal",
+  "status": "draft",
+  "desc": "Futbol kalesi: renkli direkler ve gösterilip gizlenebilen arka file",
+  "tags": [
+   "kale",
+   "goal",
+   "direk",
+   "file",
+   "net",
+   "futbol",
+   "soccer",
+   "goalpost",
+   "spor"
+  ],
+  "anchor": "kale ağzı zemin ortası (0,0)",
+  "box": [
+   -160,
+   -130,
+   160,
+   50
+  ],
+  "points": [
+   "bar"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "net": {
+    "type": "enum",
+    "default": "on",
+    "values": [
+     "on",
+     "off"
+    ],
+    "desc": "arka file göster/gizle"
+   }
+  }
+ },
+ {
+  "name": "sports/medal",
+  "status": "draft",
+  "desc": "Kurdeleli madalya; award anında yıldız kabartması parlar",
+  "tags": [
+   "madalya",
+   "medal",
+   "ödül",
+   "award",
+   "kurdele",
+   "ribbon",
+   "şampiyon",
+   "winner",
+   "spor",
+   "altın"
+  ],
+  "anchor": "madalyonun merkezi (0,0)",
+  "box": [
+   -70,
+   -130,
+   70,
+   70
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "award": {
+    "type": "time",
+    "default": null,
+    "desc": "ödül anı (parıltı)"
+   }
+  }
+ },
+ {
+  "name": "sports/stadium",
+  "status": "draft",
+  "desc": "Stadyum cephesi: doluluğu ayarlanabilen tribünler, saha ve gece ışıkları",
+  "tags": [
+   "stadyum",
+   "stadium",
+   "saha",
+   "tribün",
+   "arena",
+   "futbol",
+   "football",
+   "ışık",
+   "seyirci",
+   "crowd",
+   "spor"
+  ],
+  "anchor": "saha zemin ortası (0,0)",
+  "box": [
+   -180,
+   -140,
+   180,
+   20
+  ],
+  "points": [
+   "pitch"
+  ],
+  "params": {
+   "lights": {
+    "type": "number",
+    "default": 0,
+    "desc": "gece ışıkları şiddeti (0-1)"
+   },
+   "crowd": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "tribün doluluğu (0-1)"
+   }
+  }
+ },
+ {
+  "name": "sports/trophy",
+  "status": "draft",
+  "desc": "Klasik kupa: iki kulplu altın kupa ve kaide; 2-3 saniyede bir ışıltı parlar",
+  "tags": [
+   "kupa",
+   "trophy",
+   "şampiyon",
+   "cup",
+   "kazanan",
+   "winner",
+   "şampiyonluk",
+   "ödül",
+   "award",
+   "spor"
+  ],
+  "anchor": "kaidenin taban ortası (0,0)",
+  "box": [
+   -90,
+   -150,
+   90,
+   10
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "sports/whistle",
+  "status": "draft",
+  "desc": "İpli klasik düdük; blow anında ses çizgileri çıkar ve düdük titrer",
+  "tags": [
+   "düdük",
+   "whistle",
+   "hakem",
+   "referee",
+   "çal",
+   "blow",
+   "spor",
+   "ses"
+  ],
+  "anchor": "düdüğün merkezi (0,0)",
+  "box": [
+   -100,
+   -80,
+   100,
+   60
+  ],
+  "points": [
+   "mouth",
+   "mouthpiece"
+  ],
+  "params": {
+   "blow": {
+    "type": "time",
+    "default": null,
+    "desc": "çalma anı (ses çizgileri + titreşim 0.3 sn)"
+   }
+  }
+ },
+ {
   "name": "tech/cable-bundle",
   "status": "draft",
   "desc": "Bağlantı bloğundan yayılan kablo demeti; biri vurgu renkli veri hattı",
