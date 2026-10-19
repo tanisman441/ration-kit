@@ -1925,6 +1925,264 @@
   }
  },
  {
+  "name": "fx-2/energy-beam",
+  "status": "draft",
+  "desc": "Enerji ışını: nabızla titreyen ışın, at anında güç patlaması ve kıvılcım yağmuru",
+  "tags": [
+   "enerji",
+   "ışın",
+   "beam",
+   "lazer",
+   "laser",
+   "güç",
+   "power",
+   "elektrik",
+   "şarj",
+   "charge"
+  ],
+  "anchor": "merkez (0,0) — ışın çekirdeği (düğüm noktası)",
+  "box": [
+   -195,
+   -195,
+   195,
+   195
+  ],
+  "points": [
+   "top",
+   "bottom",
+   "left",
+   "right"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "enerji rengi"
+   },
+   "orientation": {
+    "type": "enum",
+    "default": "vertical",
+    "values": [
+     "vertical",
+     "horizontal"
+    ],
+    "desc": "ışın yönü"
+   },
+   "intensity": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "ışın yoğunluğu (0–1)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "güç patlaması anı (flare + kıvılcımlar)"
+   }
+  }
+ },
+ {
+  "name": "fx-2/frost",
+  "status": "draft",
+  "desc": "Buzlanma: at anında merkezden dallanarak büyüyen buz kristalleri ve soğuk parıltı",
+  "tags": [
+   "buz",
+   "frost",
+   "ice",
+   "kristal",
+   "crystal",
+   "donma",
+   "freeze",
+   "soğuk",
+   "cold",
+   "kar tanesi"
+  ],
+  "anchor": "merkez (0,0) — buzlanmanın başladığı nokta",
+  "box": [
+   -125,
+   -125,
+   125,
+   125
+  ],
+  "points": [
+   "center",
+   "tip"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "buz rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "buzlanma anı (kristal dallanması)"
+   }
+  }
+ },
+ {
+  "name": "fx-2/heal-glow",
+  "status": "draft",
+  "desc": "İyileşme parlaması: at anında yükselen artı-şekilli partiküller ve genişleyen şifa halkaları",
+  "tags": [
+   "iyileşme",
+   "şifa",
+   "heal",
+   "healing",
+   "glow",
+   "parlama",
+   "can",
+   "rejenerasyon",
+   "canlanma",
+   "yeşil ışık"
+  ],
+  "anchor": "taban (0,0) — iyileşen noktanın zemin karşılığı",
+  "box": [
+   -110,
+   -150,
+   110,
+   40
+  ],
+  "points": [
+   "top",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "şifa enerjisinin rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "iyileşme anı (partiküller + halkalar)"
+   }
+  }
+ },
+ {
+  "name": "fx-2/poison-cloud",
+  "status": "draft",
+  "desc": "Zehir bulutu: sürekli köpüren canlı bulut, at anında şişip zehir püskürten patlama",
+  "tags": [
+   "zehir",
+   "bulut",
+   "poison",
+   "cloud",
+   "toksin",
+   "gaz",
+   "duman",
+   "zehirli",
+   "toxic",
+   "püskürme"
+  ],
+  "anchor": "bulut merkezi (0,0)",
+  "box": [
+   -150,
+   -115,
+   150,
+   85
+  ],
+  "points": [
+   "top",
+   "edge"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "zehir rengi"
+   },
+   "density": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "bulut yoğunluğu (0–1)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "püskürme anı (şişme + damlacık savrulması)"
+   }
+  }
+ },
+ {
+  "name": "fx-2/shockwave-air",
+  "status": "draft",
+  "desc": "Hava şok dalgası: at anında merkezden genişleyen halkalar ve radyal hız çizgileri",
+  "tags": [
+   "şok",
+   "dalga",
+   "hava",
+   "shockwave",
+   "air",
+   "blast",
+   "patlama dalgası",
+   "şok dalgası",
+   "ring"
+  ],
+  "anchor": "merkez (0,0) — şokun çıktığı nokta",
+  "box": [
+   -170,
+   -170,
+   170,
+   170
+  ],
+  "points": [
+   "edge"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "dalga rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "şok anı (halkalar + hız çizgileri)"
+   }
+  }
+ },
+ {
+  "name": "fx-2/teleport",
+  "status": "draft",
+  "desc": "Işınlanma: at anında dikey ışık sütunu, yükselen parçacıklar ve genişleyen zemin halkası",
+  "tags": [
+   "ışınlanma",
+   "teleport",
+   "ışın",
+   "teleportation",
+   "beam",
+   "ışık sütunu",
+   "yok olma",
+   "belirme",
+   "warp"
+  ],
+  "anchor": "taban (0,0) — ışınlanmanın gerçekleştiği zemin noktası",
+  "box": [
+   -110,
+   -175,
+   110,
+   25
+  ],
+  "points": [
+   "top",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "ışın enerjisinin rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ışınlanma anı (sütun + parçacıklar + halka)"
+   }
+  }
+ },
+ {
   "name": "fx/confetti",
   "status": "draft",
   "desc": "Konfeti yağmuru: at anında tepeden renkli parçalar salınarak dökülür",
@@ -4879,6 +5137,235 @@
   }
  },
  {
+  "name": "space/astronaut",
+  "status": "draft",
+  "desc": "Uzay giysili astronot; kask camında yüz ifadesi, sallanan bağlantı ipi",
+  "tags": [
+   "astronot",
+   "uzay",
+   "astronaut",
+   "space",
+   "uzay giysisi",
+   "spacesuit",
+   "kozmonot",
+   "nasa"
+  ],
+  "anchor": "ayaklar (0,0); boy ~315 birim",
+  "box": [
+   -195,
+   -340,
+   150,
+   14
+  ],
+  "points": [
+   "head",
+   "hand",
+   "waist"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral"
+    ]
+   }
+  }
+ },
+ {
+  "name": "space/comet",
+  "status": "draft",
+  "desc": "Kuyruklu yıldız; fly anında parçacık kuyruğu sönümlenir",
+  "tags": [
+   "kuyruklu yıldız",
+   "komet",
+   "uzay",
+   "comet",
+   "space",
+   "göktaşı",
+   "meteor",
+   "yıldız kayması"
+  ],
+  "anchor": "çekirdek (0,0); kuyruk sola uzanır",
+  "box": [
+   -270,
+   -80,
+   60,
+   80
+  ],
+  "points": [
+   "head",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "fly": {
+    "type": "time",
+    "default": null,
+    "desc": "geçiş anı: 0.8 sn kuyruk parçacık sönümlenmesi"
+   }
+  }
+ },
+ {
+  "name": "space/galaxy",
+  "status": "draft",
+  "desc": "Spiral galaksi; kolları döner, merkezi nabız gibi parlar",
+  "tags": [
+   "galaksi",
+   "uzay",
+   "spiral",
+   "yıldız",
+   "galaxy",
+   "space",
+   "spiral galaxy",
+   "stars",
+   "evren"
+  ],
+  "anchor": "galaksi merkezi (0,0)",
+  "box": [
+   -175,
+   -120,
+   175,
+   120
+  ],
+  "points": [
+   "center",
+   "rim"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "space/satellite-dish",
+  "status": "draft",
+  "desc": "Yer istasyonu uydu çanağı; ping anında sinyal dalgaları yayar",
+  "tags": [
+   "uydu",
+   "çanak",
+   "anten",
+   "sinyal",
+   "dish",
+   "satellite dish",
+   "uzay",
+   "space",
+   "iletisim",
+   "anten"
+  ],
+  "anchor": "taban (0,0)",
+  "box": [
+   -160,
+   -260,
+   160,
+   16
+  ],
+  "points": [
+   "focal",
+   "dish",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "ping": {
+    "type": "time",
+    "default": null,
+    "desc": "sinyal gönderme anı: 1.0 sn dalga yayılımı"
+   }
+  }
+ },
+ {
+  "name": "space/space-station",
+  "status": "draft",
+  "desc": "Yörünge uzay istasyonu; LED sinyalleri ve güneş panelleriyle",
+  "tags": [
+   "uzay istasyonu",
+   "istasyon",
+   "yörünge",
+   "space station",
+   "space",
+   "uzay",
+   "güneş paneli",
+   "iss",
+   "orbit"
+  ],
+  "anchor": "merkezi modülün merkezi (0,0)",
+  "box": [
+   -280,
+   -120,
+   280,
+   120
+  ],
+  "points": [
+   "node",
+   "antenna",
+   "panel"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "signal": {
+    "type": "time",
+    "default": null,
+    "desc": "anten sinyal gönderme anı: 0.9 sn dalga yayılımı"
+   }
+  }
+ },
+ {
+  "name": "space/ufo",
+  "status": "draft",
+  "desc": "Uçan daire; active anında ışın demeti açar, alt ışıklar döner",
+  "tags": [
+   "ufo",
+   "uçan daire",
+   "uzay",
+   "ışın",
+   "tractor beam",
+   "flying saucer",
+   "space",
+   "beam",
+   "uzaylı"
+  ],
+  "anchor": "disk merkezi (0,0); ışın aşağı doğru açılır",
+  "box": [
+   -160,
+   -90,
+   160,
+   120
+  ],
+  "points": [
+   "dome",
+   "belly",
+   "beam"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "beam": {
+    "type": "time",
+    "default": null,
+    "desc": "ışın demeti aç/kapa anı: 1.2 sn (açılma 0.3 + sönme 0.9)"
+   }
+  }
+ },
+ {
   "name": "sports/ball",
   "status": "draft",
   "desc": "Sade desenli futbol topu; bounce anında zıplar ve hafif yassılaşır",
@@ -6698,6 +7185,247 @@
     "type": "time",
     "default": null,
     "desc": "ateş anı: namlu flaşı + geri tepme + dürbün parlaması"
+   }
+  }
+ },
+ {
+  "name": "weather-fx/aurora",
+  "status": "draft",
+  "desc": "Kutup ışıkları; dalga gibi akan ışık perdeleri, titreyen iç ışınlar",
+  "tags": [
+   "kutup ışıkları",
+   "aurora",
+   "gece",
+   "gökyüzü",
+   "ışık",
+   "aurora",
+   "northern lights",
+   "sky",
+   "night",
+   "polar"
+  ],
+  "anchor": "perdelerin üst kenarı y≈-130; merkez (0,0)",
+  "box": [
+   -170,
+   -150,
+   170,
+   130
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green"
+   },
+   "fringe": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "weather-fx/fog",
+  "status": "draft",
+  "desc": "Üç katmanlı sürüklenen sis; dalgalı bantlar farklı hızlarda kesintisiz akar",
+  "tags": [
+   "sis",
+   "pus",
+   "buğu",
+   "duman",
+   "hava",
+   "fog",
+   "mist",
+   "haze",
+   "weather",
+   "drift"
+  ],
+  "anchor": "merkez (0,0); sis yatay bantlar halinde",
+  "box": [
+   -170,
+   -100,
+   170,
+   100
+  ],
+  "points": [],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "density": {
+    "type": "number",
+    "default": 0.65,
+    "desc": "sis yoğunluğu 0–1: alfa ve katman sayısı"
+   }
+  }
+ },
+ {
+  "name": "weather-fx/hail",
+  "status": "draft",
+  "desc": "Dolu bulutu; fall anında dolu sağanağı ve yere çarpma parçacıkları",
+  "tags": [
+   "dolu",
+   "buz",
+   "yağış",
+   "fırtına",
+   "bulut",
+   "hava",
+   "hail",
+   "ice",
+   "storm",
+   "cloud"
+  ],
+  "anchor": "bulut merkezi (0,-75); taşlar y=160 civarında yere çarpar",
+  "box": [
+   -160,
+   -140,
+   160,
+   180
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "intensity": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "dolu şiddeti 0–1: taş yoğunluğu"
+   },
+   "fall": {
+    "type": "time",
+    "default": null,
+    "desc": "dolu sağanağı anı: hızlı taşlar + çarpma parçacıkları"
+   }
+  }
+ },
+ {
+  "name": "weather-fx/lightning-storm",
+  "status": "draft",
+  "desc": "Şiddetli fırtına bulutu; strike anında çakan şimşek ve bulut içi aydınlanma",
+  "tags": [
+   "yıldırım",
+   "şimşek",
+   "fırtına",
+   "şiddetli",
+   "yağmur",
+   "bulut",
+   "thunderstorm",
+   "lightning",
+   "bolt",
+   "storm"
+  ],
+  "anchor": "bulut merkezi (0,-70); şimşek y=160 civarına iner",
+  "box": [
+   -160,
+   -150,
+   160,
+   175
+  ],
+  "points": [
+   "top",
+   "bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "drop": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "bolt": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "strike": {
+    "type": "time",
+    "default": null,
+    "desc": "şimşek çakma anı: 0.15 sn flaş + 0.6 sn sönüm"
+   }
+  }
+ },
+ {
+  "name": "weather-fx/rainbow",
+  "status": "draft",
+  "desc": "İki bulut arasında açılan gökkuşağı; bulutlar süzülür, yay hafifçe titrer",
+  "tags": [
+   "gökkuşağı",
+   "yağmur",
+   "bulut",
+   "renk",
+   "hava",
+   "rainbow",
+   "cloud",
+   "weather",
+   "sky",
+   "arc"
+  ],
+  "anchor": "yay merkezi (0,70); bulutlar uçlarda y≈58",
+  "box": [
+   -290,
+   -190,
+   290,
+   100
+  ],
+  "points": [
+   "left",
+   "right"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "oluşma anı: yay 1 sn'de soldan sağa açılır"
+   }
+  }
+ },
+ {
+  "name": "weather-fx/tornado",
+  "status": "draft",
+  "desc": "Dönen hortum hunisi; faz kaymalı bantlar dönüş illüzyonu verir, tabanda enkaz savrulur",
+  "tags": [
+   "hortum",
+   "kasırga",
+   "fırtına",
+   "rüzgar",
+   "girdap",
+   "tornado",
+   "twister",
+   "funnel",
+   "storm",
+   "wind"
+  ],
+  "anchor": "huni ekseni x=0; tepe bulutu y≈-165, taban y≈165",
+  "box": [
+   -120,
+   -190,
+   120,
+   180
+  ],
+  "points": [
+   "top",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "strength": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "hortum şiddeti 0–1: yalpa genliği ve huni genişliği"
    }
   }
  }
