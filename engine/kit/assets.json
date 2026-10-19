@@ -509,6 +509,303 @@
   }
  },
  {
+  "name": "character-emote/anger-vein",
+  "status": "draft",
+  "desc": "Öfkelenen insan figürü; alında belirip nabız gibi atan öfke damarı",
+  "tags": [
+   "öfke",
+   "kızgın",
+   "sinir",
+   "kızgınlık",
+   "angry",
+   "anger",
+   "rage",
+   "furious",
+   "vein"
+  ],
+  "anchor": "ayaklar (0,0); boy ~310 birim",
+  "box": [
+   -110,
+   -310,
+   110,
+   14
+  ],
+  "points": [
+   "head",
+   "chest",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "öfke anı; damarı belirip nabız gibi atar"
+   }
+  }
+ },
+ {
+  "name": "character-emote/dizzy-spiral",
+  "status": "draft",
+  "desc": "Başı dönen sersem figür; gözler spiral olur, baş yana yatar, yıldızlar döner",
+  "tags": [
+   "sersem",
+   "baş dönmesi",
+   "dizzy",
+   "spiral",
+   "sendeleme",
+   "yıldızlar",
+   "dazed",
+   "confused",
+   "stars"
+  ],
+  "anchor": "ayaklar (0,0); boy ~300 birim",
+  "box": [
+   -125,
+   -340,
+   125,
+   14
+  ],
+  "points": [
+   "head",
+   "chest",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sendeleme anı; gözler spiral olur, baş yana yatar"
+   }
+  }
+ },
+ {
+  "name": "character-emote/heart-eyes",
+  "status": "draft",
+  "desc": "Hayranlıkla bakan figür; gözler kalp olur, ışıltılar ve süzülen kalp yükselir",
+  "tags": [
+   "aşk",
+   "hayranlık",
+   "beğenme",
+   "kalp",
+   "kalp gözler",
+   "love",
+   "crush",
+   "heart eyes",
+   "adore",
+   "smitten"
+  ],
+  "anchor": "ayaklar (0,0); süzülen kalp ~370 birim yukarıda",
+  "box": [
+   -115,
+   -390,
+   115,
+   14
+  ],
+  "points": [
+   "head",
+   "chest",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kalp göz anı; kalpler belirir, ışıltılar ve süzülen kalp"
+   }
+  }
+ },
+ {
+  "name": "character-emote/jump-joy",
+  "status": "draft",
+  "desc": "Sevinçle zıplayan insan figürü; çömelme, yükselme, tepe pozu ve iniş tozu",
+  "tags": [
+   "sevinç",
+   "zıplama",
+   "mutluluk",
+   "coşku",
+   "hoplama",
+   "sıçrama",
+   "jump",
+   "joy",
+   "happy",
+   "celebration",
+   "bounce"
+  ],
+  "anchor": "ayaklar (0,0); zıplama tepesi ~430 birim yukarıda",
+  "box": [
+   -140,
+   -480,
+   140,
+   26
+  ],
+  "points": [
+   "head",
+   "chest",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "jump": {
+    "type": "time",
+    "default": null,
+    "desc": "sevinç zıplaması anı (kalkış); null ise mutlu mini zıplama"
+   }
+  }
+ },
+ {
+  "name": "character-emote/shock-gasp",
+  "status": "draft",
+  "desc": "Şaşkınlık anındaki insan figürü; büyüyen gözler, O ağız ve şok çizgileri",
+  "tags": [
+   "şaşkınlık",
+   "şok",
+   "şaşırmak",
+   "hayret",
+   "surprise",
+   "shock",
+   "gasp",
+   "surprised",
+   "wow"
+  ],
+  "anchor": "ayaklar (0,0); boy ~330 birim",
+  "box": [
+   -150,
+   -340,
+   150,
+   14
+  ],
+  "points": [
+   "head",
+   "chest",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "şaşırma anı; gözler büyür, ağız O olur, şok çizgileri belirir"
+   }
+  }
+ },
+ {
+  "name": "character-emote/sweat-drop",
+  "status": "draft",
+  "desc": "Endişeli insan figürü; gerginlik anında şakağından ter damlası fırlar",
+  "tags": [
+   "ter",
+   "terleme",
+   "endişe",
+   "gerginlik",
+   "stres",
+   "sweat",
+   "nervous",
+   "anxiety",
+   "stress",
+   "drop"
+  ],
+  "anchor": "ayaklar (0,0); boy ~300 birim",
+  "box": [
+   -115,
+   -360,
+   115,
+   14
+  ],
+  "points": [
+   "head",
+   "chest",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad"
+    ]
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "gerginlik anı; ter damlası şakaktan fırlar ve söner"
+   }
+  }
+ },
+ {
   "name": "characters/crowd",
   "status": "draft",
   "desc": "5–12 kişilik kalabalık; iki sıra, hafif salınımlı sade figürler",
@@ -7859,6 +8156,300 @@
   }
  },
  {
+  "name": "text-fx/count-up",
+  "status": "draft",
+  "desc": "Sayıcı: olay anında 0'dan hedef sayıya doğru yumuşayarak sayar, sonra hafif nabız atar",
+  "tags": [
+   "sayı",
+   "sayaç",
+   "istatistik",
+   "skor",
+   "yüzde",
+   "count",
+   "counter",
+   "number",
+   "stats",
+   "score"
+  ],
+  "anchor": "sayı merkezi (0,0)",
+  "box": [
+   -320,
+   -48,
+   320,
+   48
+  ],
+  "points": [
+   "center",
+   "baseline"
+  ],
+  "params": {
+   "to": {
+    "type": "number",
+    "default": 100,
+    "desc": "hedef sayı"
+   },
+   "dur": {
+    "type": "number",
+    "default": 1.2,
+    "desc": "sayım süresi (sn)"
+   },
+   "prefix": {
+    "type": "text",
+    "default": "",
+    "desc": "sayının önüne eklenecek önek"
+   },
+   "suffix": {
+    "type": "text",
+    "default": "",
+    "desc": "sayının sonuna eklenecek sonek (örn. %)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sayıma başlama anı"
+   }
+  }
+ },
+ {
+  "name": "text-fx/glitch-text",
+  "status": "draft",
+  "desc": "Bozuk metin: olay anında 0.5 sn RGB dilim kaymaları, boştayken ara sıra mikro seğirme",
+  "tags": [
+   "bozuk",
+   "glitch",
+   "hata",
+   "cyber",
+   "sinyal",
+   "metin",
+   "glitch",
+   "corrupt",
+   "cyber",
+   "text",
+   "error"
+  ],
+  "anchor": "metin merkezi (0,0)",
+  "box": [
+   -340,
+   -48,
+   340,
+   48
+  ],
+  "points": [
+   "center",
+   "baseline"
+  ],
+  "params": {
+   "text": {
+    "type": "text",
+    "default": "Merhaba",
+    "desc": "bozulacak metin"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "bozulma anı (0.5 sn sürer)"
+   }
+  }
+ },
+ {
+  "name": "text-fx/highlight-sweep",
+  "status": "draft",
+  "desc": "Fosforlu kalem vurgusu metnin üzerinden soldan sağa süpürülür; ardından hafif parlama nabzı devam eder",
+  "tags": [
+   "vurgu",
+   "fosforlu",
+   "kalem",
+   "işaretleme",
+   "metin",
+   "highlight",
+   "marker",
+   "sweep",
+   "text"
+  ],
+  "anchor": "metin merkezi (0,0)",
+  "box": [
+   -340,
+   -48,
+   340,
+   48
+  ],
+  "points": [
+   "center",
+   "baseline"
+  ],
+  "params": {
+   "text": {
+    "type": "text",
+    "default": "Merhaba",
+    "desc": "vurgulanacak metin"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "vurgu (kalem) rengi"
+   },
+   "textColor": {
+    "type": "color",
+    "default": "ink",
+    "desc": "metin rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "süpürmenin başlama anı (0.7 sn sürer)"
+   }
+  }
+ },
+ {
+  "name": "text-fx/pop-word",
+  "status": "draft",
+  "desc": "Kelime overshoot (hafif aşma) büyümeyle patlayarak belirir, sonra yumuşakça süzülür",
+  "tags": [
+   "kelime",
+   "belirme",
+   "pop",
+   "vurgu",
+   "metin",
+   "pop",
+   "appear",
+   "emphasis",
+   "word",
+   "text"
+  ],
+  "anchor": "metin merkezi (0,0)",
+  "box": [
+   -320,
+   -56,
+   320,
+   56
+  ],
+  "points": [
+   "center",
+   "baseline"
+  ],
+  "params": {
+   "text": {
+    "type": "text",
+    "default": "Merhaba",
+    "desc": "belirecek kelime/metin"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "belirme anı (0.35 sn overshoot)"
+   }
+  }
+ },
+ {
+  "name": "text-fx/shake-text",
+  "status": "draft",
+  "desc": "Sarsılan metin: olay anında 0.4 sn yatay sarsıntı, boştayken neredeyse görünmez titreme",
+  "tags": [
+   "sarsıntı",
+   "titreme",
+   "deprem",
+   "uyarı",
+   "metin",
+   "shake",
+   "tremble",
+   "vibration",
+   "text"
+  ],
+  "anchor": "metin merkezi (0,0)",
+  "box": [
+   -320,
+   -48,
+   320,
+   48
+  ],
+  "points": [
+   "center",
+   "baseline"
+  ],
+  "params": {
+   "text": {
+    "type": "text",
+    "default": "Merhaba",
+    "desc": "sarsılacak metin"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "intensity": {
+    "type": "number",
+    "default": 8,
+    "desc": "sarsıntı genliği (birim)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sarsıntı anı (0.4 sn sürer)"
+   }
+  }
+ },
+ {
+  "name": "text-fx/typewriter-caret",
+  "status": "draft",
+  "desc": "Daktilo efekti: metin harf harf belirir, sonunda yanıp sönen imleç (caret) durur",
+  "tags": [
+   "daktilo",
+   "yazma",
+   "yazı",
+   "imleç",
+   "metin",
+   "typewriter",
+   "typing",
+   "caret",
+   "cursor",
+   "text"
+  ],
+  "anchor": "metin merkezi (0,0); yazı tam ortalanır, imleç son harfin sağındadır",
+  "box": [
+   -320,
+   -48,
+   320,
+   48
+  ],
+  "points": [
+   "center",
+   "baseline"
+  ],
+  "params": {
+   "text": {
+    "type": "text",
+    "default": "Merhaba",
+    "desc": "yazılacak metin"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "speed": {
+    "type": "number",
+    "default": 12,
+    "desc": "saniyedeki harf sayısı"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yazmaya başlama anı"
+   }
+  }
+ },
+ {
   "name": "transport/car",
   "status": "draft",
   "desc": "Yandan görünüm sade araba; sağa bakar, tekerlekler speed parametresiyle döner",
@@ -8329,6 +8920,229 @@
     "type": "time",
     "default": null,
     "desc": "belirme anı: pop girişi"
+   }
+  }
+ },
+ {
+  "name": "ui-feedback/button-press",
+  "status": "draft",
+  "desc": "Yuvarlak basılabilir buton; press anında içe çöküp yay geri dönüşü yapar",
+  "tags": [
+   "buton",
+   "basma",
+   "tıklama",
+   "tıkla",
+   "bas",
+   "button",
+   "press",
+   "click",
+   "tap",
+   "ui"
+  ],
+  "anchor": "buton merkezi (0,0)",
+  "box": [
+   -110,
+   -80,
+   110,
+   80
+  ],
+  "points": [
+   "center",
+   "top"
+  ],
+  "params": {
+   "press": {
+    "type": "time",
+    "default": null,
+    "desc": "basılma anı: içe çökme + yay geri dönüş"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "ui-feedback/error-shake",
+  "status": "draft",
+  "desc": "Hata bildirimi: at anında yuvarlak kare X ile sarsılır",
+  "tags": [
+   "hata",
+   "yanlış",
+   "x",
+   "sarsıntı",
+   "başarısız",
+   "error",
+   "fail",
+   "shake",
+   "wrong",
+   "ui"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -80,
+   -80,
+   80,
+   80
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "hata anı: 0.4 sn yatay sarsıntı"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "ui-feedback/loading-dots",
+  "status": "draft",
+  "desc": "Üç nokta sırayla zıplayan sürekli yükleme göstergesi",
+  "tags": [
+   "yükleniyor",
+   "yükleme",
+   "nokta",
+   "bekleme",
+   "loading",
+   "dots",
+   "spinner",
+   "waiting",
+   "ui"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -90,
+   -40,
+   90,
+   40
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "ui-feedback/progress-ring",
+  "status": "draft",
+  "desc": "Tamamlanma mikro-animasyonu: halka fill anında dolar, bitince patlar ve tik belirir",
+  "tags": [
+   "tamamlanma",
+   "ilerleme",
+   "halka",
+   "tik",
+   "onay",
+   "complete",
+   "progress",
+   "ring",
+   "success",
+   "ui"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -80,
+   -80,
+   80,
+   80
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "fill": {
+    "type": "time",
+    "default": null,
+    "desc": "doldurmanın tamamlandığı an (1.2 sn dolum + patlama + tik)"
+   },
+   "color": {
+    "type": "color",
+    "default": "green"
+   }
+  }
+ },
+ {
+  "name": "ui-feedback/pull-refresh",
+  "status": "draft",
+  "desc": "Yenileme göstergesi: at anında dairesel ok aşağı çekilip yayla geri sıçrar",
+  "tags": [
+   "yenile",
+   "yenileme",
+   "ok",
+   "çek",
+   "pull",
+   "refresh",
+   "reload",
+   "sync",
+   "ui"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -80,
+   -90,
+   80,
+   90
+  ],
+  "points": [
+   "center",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çekme anı: aşağı çekilme + geri sıçrama (0.55 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "ui-feedback/success-check",
+  "status": "draft",
+  "desc": "Başarı onayı: at anında tik çizilerek belirir, halka patlar",
+  "tags": [
+   "başarı",
+   "tik",
+   "onay",
+   "doğru",
+   "tamam",
+   "success",
+   "check",
+   "tick",
+   "approved",
+   "ui"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -80,
+   -80,
+   80,
+   80
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "onay anı: tik çizilir + halka patlaması"
+   },
+   "color": {
+    "type": "color",
+    "default": "green"
    }
   }
  },
