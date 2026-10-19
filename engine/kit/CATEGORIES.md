@@ -104,3 +104,9 @@ Her kategori 4–6 çizim; stil STYLE.md'ye uyar; her çizim 2 tur görsel kontr
 - [x] X20 combat-fx — slash, punch-impact, block-shield, dash-trail, charge-up, ko-stars (vuruş efektleri)
 - [x] X21 vehicle-fx — exhaust-smoke, drift-skid, headlight-beam, siren-light, propeller-spin, tire-tracks
 - [x] X22 magic-2 — summon-circle, spell-cast, levitate, morph, invisibility, time-rewind
+- [ ] X23 sports-fx — slowmo-run, score-flash, whistle-blast, crowd-wave, timer-countdown, replay-arrow (spor aksiyon efektleri)
+- [ ] X24 particle-fx — sparkle-burst, confetti-pop, smoke-puff, dust-devil, bubbles-rise, ember-drift (parçacık patlamaları)
+- [ ] X25 liquid-fx — splash-drop, pour-stream, ripple-ring, drip-fall, bubble-pop, wave-crash (sıvı animasyonları)
+- [ ] X26 ui-feedback — button-press, progress-ring, loading-dots, success-check, error-shake, pull-refresh (UI mikro animasyonlar)
+- [ ] X27 character-emote — jump-joy, shock-gasp, anger-vein, sweat-drop, heart-eyes, dizzy-spiral (duygu efektleri, characters ailesi)
+- [ ] X28 text-fx — typewriter-caret, highlight-sweep, shake-text, pop-word, count-up, glitch-text (metin animasyonları)
