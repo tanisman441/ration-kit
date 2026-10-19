@@ -2858,6 +2858,306 @@
   }
  },
  {
+  "name": "icons/check",
+  "status": "draft",
+  "desc": "Yeşil daire rozet içinde kalın tik işareti; pop anında yaylanarak belirir",
+  "tags": [
+   "tik",
+   "onay",
+   "check",
+   "checkmark",
+   "doğru",
+   "correct",
+   "ok",
+   "icon"
+  ],
+  "anchor": "rozet merkezi (0,0)",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "rozet rengi"
+   },
+   "pop": {
+    "type": "time",
+    "default": null,
+    "desc": "giriş anı: 0.35 sn yaylanma"
+   }
+  }
+ },
+ {
+  "name": "icons/cross",
+  "status": "draft",
+  "desc": "Kırmızı daire rozet içinde kalın çarpı işareti; pop anında yaylanarak belirir",
+  "tags": [
+   "çarpı",
+   "hata",
+   "cross",
+   "x mark",
+   "yanlış",
+   "wrong",
+   "iptal",
+   "cancel",
+   "icon"
+  ],
+  "anchor": "rozet merkezi (0,0)",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "rozet rengi"
+   },
+   "pop": {
+    "type": "time",
+    "default": null,
+    "desc": "giriş anı: 0.35 sn yaylanma"
+   }
+  }
+ },
+ {
+  "name": "icons/heart-like",
+  "status": "draft",
+  "desc": "Kırmızı kalp; boşta yavaş nabızla atar, beat anında büyür ve kırmızı ışık saçar",
+  "tags": [
+   "kalp",
+   "beğeni",
+   "heart",
+   "like",
+   "aşk",
+   "love",
+   "favori",
+   "favorite",
+   "icon"
+  ],
+  "anchor": "kalp merkezi (0,0)",
+  "box": [
+   -95,
+   -85,
+   95,
+   90
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "kalp rengi"
+   },
+   "beat": {
+    "type": "time",
+    "default": null,
+    "desc": "kalp atışı anı: 0.45 sn büyüme + glow"
+   }
+  }
+ },
+ {
+  "name": "icons/info",
+  "status": "draft",
+  "desc": "Mavi daire içinde bilgi \"i\"si; boşta hafifçe nabız gibi büyüyüp küçülür",
+  "tags": [
+   "bilgi",
+   "info",
+   "information",
+   "bilgilendirme",
+   "ipucu",
+   "hint",
+   "icon"
+  ],
+  "anchor": "daire merkezi (0,0)",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "daire rengi"
+   }
+  }
+ },
+ {
+  "name": "icons/question",
+  "status": "draft",
+  "desc": "Mor daire içinde soru işareti; işaret boşta hafifçe zıplayarak \"kafa karışıklığı\" yapar",
+  "tags": [
+   "soru",
+   "question",
+   "soru işareti",
+   "question mark",
+   "yardım",
+   "help",
+   "icon"
+  ],
+  "anchor": "daire merkezi (0,0)",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "daire rengi"
+   }
+  }
+ },
+ {
+  "name": "icons/star-rating",
+  "status": "draft",
+  "desc": "Yan yana 5 yıldız; rating kadar sarı dolar, fill anında soldan sağa sırayla dolum animasyonu yapar",
+  "tags": [
+   "yıldız",
+   "puan",
+   "star",
+   "rating",
+   "değerlendirme",
+   "puanlama",
+   "5 star",
+   "icon"
+  ],
+  "anchor": "yıldız sırası merkezi (0,0)",
+  "box": [
+   -158,
+   -48,
+   158,
+   48
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "dolu yıldız rengi"
+   },
+   "rating": {
+    "type": "number",
+    "default": 5,
+    "desc": "0–5 arası puan (buçuk desteklenir)"
+   },
+   "fill": {
+    "type": "time",
+    "default": null,
+    "desc": "dolum anı: yıldızlar sırayla dolar (0.85 sn)"
+   }
+  }
+ },
+ {
+  "name": "icons/thumbs-up",
+  "status": "draft",
+  "desc": "Yuvarlak rozet içinde yukarı bakan başparmak; pop anında yaylanarak belirir",
+  "tags": [
+   "başparmak",
+   "beğeni",
+   "thumbs up",
+   "like",
+   "onay",
+   "approve",
+   "güzel",
+   "icon"
+  ],
+  "anchor": "rozet merkezi (0,0)",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "rozet rengi"
+   },
+   "pop": {
+    "type": "time",
+    "default": null,
+    "desc": "giriş anı: 0.35 sn yaylanma"
+   }
+  }
+ },
+ {
+  "name": "icons/warning",
+  "status": "draft",
+  "desc": "Sarı uyarı üçgeni içinde ünlem; pulse anında sarsılır ve yanıp söner",
+  "tags": [
+   "uyarı",
+   "üçgen",
+   "warning",
+   "alert",
+   "ünlem",
+   "exclamation",
+   "dikkat",
+   "caution",
+   "icon"
+  ],
+  "anchor": "üçgen merkezi (0,0)",
+  "box": [
+   -95,
+   -95,
+   95,
+   95
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "üçgen rengi"
+   },
+   "pulse": {
+    "type": "time",
+    "default": null,
+    "desc": "uyarı anı: 0.6 sn sarsıntı + flaş"
+   }
+  }
+ },
+ {
   "name": "maps/arena-topdown",
   "status": "draft",
   "desc": "Üstten görünüm simetrik FPS arenası; duvarlar, siper kasaları, kırmızı/mavi takım doğuş bölgeleri",
@@ -3715,6 +4015,320 @@
     "type": "time",
     "default": null,
     "desc": "baskı anı: kağıt 1.2 sn'de çıkar, baskı çizgileri belirir"
+   }
+  }
+ },
+ {
+  "name": "professions/chef",
+  "status": "draft",
+  "desc": "Şapkalı aşçı (önlük + fular); serve anında tepsiyi yukarı kaldırır, üstünden buhar yükselir",
+  "tags": [
+   "aşçı",
+   "şef",
+   "mutfak",
+   "tepsi",
+   "yemek",
+   "chef",
+   "cook",
+   "kitchen",
+   "tray",
+   "serve"
+  ],
+  "anchor": "ayaklar (0,0); şapka üstü ~-380",
+  "box": [
+   -115,
+   -395,
+   115,
+   12
+  ],
+  "points": [
+   "head",
+   "chest",
+   "left_hand",
+   "right_hand",
+   "tray"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "ceket rengi"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "serve": {
+    "type": "time",
+    "default": null,
+    "desc": "servis anı: tepsi yukarı kalkar, buhar çıkar (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "professions/farmer",
+  "status": "draft",
+  "desc": "Çiftçi (hasır şapka, tulum, elinde kürek); dig anında küreği kaldırıp toprağa saplar",
+  "tags": [
+   "çiftçi",
+   "tarla",
+   "tulum",
+   "kürek",
+   "hasır şapka",
+   "farmer",
+   "farm",
+   "shovel",
+   "dig",
+   "overalls"
+  ],
+  "anchor": "ayaklar (0,0); şapka üstü ~-305",
+  "box": [
+   -125,
+   -325,
+   165,
+   12
+  ],
+  "points": [
+   "head",
+   "chest",
+   "left_hand",
+   "right_hand",
+   "blade"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "tulum rengi"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "dig": {
+    "type": "time",
+    "default": null,
+    "desc": "kazma anı: kürek kalkar, toprağa saplanır (1.0 sn)"
+   }
+  }
+ },
+ {
+  "name": "professions/firefighter",
+  "status": "draft",
+  "desc": "Baretli itfaiyeci (reflektör şeritli mont); spray anında hortumdan 0.8 sn su fışkırır",
+  "tags": [
+   "itfaiyeci",
+   "itfaiye",
+   "yangın",
+   "hortum",
+   "baret",
+   "firefighter",
+   "fireman",
+   "hose",
+   "water"
+  ],
+  "anchor": "ayaklar (0,0); baret üstü ~-300",
+  "box": [
+   -115,
+   -330,
+   320,
+   12
+  ],
+  "points": [
+   "head",
+   "chest",
+   "left_hand",
+   "right_hand",
+   "nozzle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "mont rengi"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "spray": {
+    "type": "time",
+    "default": null,
+    "desc": "su fışkırtma anı: hortumdan su çıkar (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "professions/nurse",
+  "status": "draft",
+  "desc": "Hemşire (kep + önlük, göğüste yeşil artı); heal anında başının üstünde yeşil artı parlar",
+  "tags": [
+   "hemşire",
+   "sağlık",
+   "hastane",
+   "şifa",
+   "doktor",
+   "nurse",
+   "healthcare",
+   "hospital",
+   "heal"
+  ],
+  "anchor": "ayaklar (0,0); artı işareti ~-365",
+  "box": [
+   -115,
+   -390,
+   115,
+   12
+  ],
+  "points": [
+   "head",
+   "chest",
+   "left_hand",
+   "right_hand",
+   "cross"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "forma rengi"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "heal": {
+    "type": "time",
+    "default": null,
+    "desc": "şifa anı: baş üstünde yeşil artı parlar (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "professions/pilot",
+  "status": "draft",
+  "desc": "Pilot üniformalı figür (şapka, apolet, kravat); wave anında sağ elini kaldırıp sallar",
+  "tags": [
+   "pilot",
+   "kaptan",
+   "uçak",
+   "havayolu",
+   "üniforma",
+   "pilot",
+   "captain",
+   "airline",
+   "wave"
+  ],
+  "anchor": "ayaklar (0,0); şapka üstü ~-305",
+  "box": [
+   -115,
+   -325,
+   115,
+   12
+  ],
+  "points": [
+   "head",
+   "chest",
+   "left_hand",
+   "right_hand"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "üniforma rengi"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "wave": {
+    "type": "time",
+    "default": null,
+    "desc": "el sallama anı: sağ el kalkar, yana sallanır (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "professions/police",
+  "status": "draft",
+  "desc": "Üniformalı polis memuru (kep, rozet, omuz ışıkları); siren anında şapka ve omuz ışıkları kırmızı-mavi çakar",
+  "tags": [
+   "polis",
+   "polis memuru",
+   "üniforma",
+   "siren",
+   "emniyet",
+   "police",
+   "officer",
+   "cop",
+   "siren lights"
+  ],
+  "anchor": "ayaklar (0,0); kep üstü ~-320",
+  "box": [
+   -110,
+   -330,
+   110,
+   12
+  ],
+  "points": [
+   "head",
+   "chest",
+   "left_hand",
+   "right_hand",
+   "light_left",
+   "light_right"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "üniforma rengi"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "siren": {
+    "type": "time",
+    "default": null,
+    "desc": "siren anı: şapka ve omuz ışıkları yanıp söner (0.9 sn)"
    }
   }
  },
@@ -5580,6 +6194,246 @@
   ],
   "points": [],
   "params": {}
+ },
+ {
+  "name": "vehicles-2/bicycle",
+  "status": "draft",
+  "desc": "Yandan görünüm sade bisiklet; pedal anında bir tur çevirir, tekerlekler iki tur döner",
+  "tags": [
+   "bisiklet",
+   "bisiklet sürmek",
+   "bicycle",
+   "bike",
+   "cycling",
+   "taşıt",
+   "spor"
+  ],
+  "anchor": "zemin merkezi (0,0); tekerlekler yerde",
+  "box": [
+   -112,
+   -102,
+   112,
+   14
+  ],
+  "points": [
+   "crank",
+   "seat",
+   "handlebar",
+   "wheelF",
+   "wheelR"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kadro rengi"
+   },
+   "pedal": {
+    "type": "time",
+    "default": null,
+    "desc": "pedal çevirme anı: bir tur pedal + dönen tekerlek (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "vehicles-2/bus",
+  "status": "draft",
+  "desc": "Yandan görünüm şehir otobüsü; kapı anında iki kanat açılır, içinden sarı ışık sızar",
+  "tags": [
+   "otobüs",
+   "belediye otobüsü",
+   "bus",
+   "taşıt",
+   "şehir",
+   "toplu taşıma",
+   "kapı"
+  ],
+  "anchor": "zemin merkezi (0,0); tekerlekler yerde",
+  "box": [
+   -132,
+   -118,
+   132,
+   14
+  ],
+  "points": [
+   "door",
+   "front",
+   "roof",
+   "wheelF",
+   "wheelR"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "gövde rengi"
+   },
+   "doors": {
+    "type": "time",
+    "default": null,
+    "desc": "kapı açılma anı: iki kanat yana kayar (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "vehicles-2/helicopter",
+  "status": "draft",
+  "desc": "Yandan görünüm helikopter; pervane sürekli döner, kuyruk rotoru eşlik eder, gövde hafif salınır",
+  "tags": [
+   "helikopter",
+   "heli",
+   "helicopter",
+   "pervane",
+   "uçak",
+   "taşıt",
+   "havacılık"
+  ],
+  "anchor": "kızak tabanı merkezi (0,0); gövde yukarı uzar",
+  "box": [
+   -135,
+   -150,
+   135,
+   12
+  ],
+  "points": [
+   "rotorHub",
+   "cockpit",
+   "tail",
+   "skidL",
+   "skidR"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "gövde rengi"
+   },
+   "rotor": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "pervane hızı (0-1, sürekli dönüş)"
+   }
+  }
+ },
+ {
+  "name": "vehicles-2/motorcycle",
+  "status": "draft",
+  "desc": "Yandan görünüm motosiklet; gaz verilince egzozdan duman çıkar, far parlar, gövde titrer",
+  "tags": [
+   "motosiklet",
+   "motor",
+   "motorcycle",
+   "moto",
+   "taşıt",
+   "hız",
+   "egzoz"
+  ],
+  "anchor": "zemin merkezi (0,0); tekerlekler yerde",
+  "box": [
+   -118,
+   -112,
+   118,
+   14
+  ],
+  "points": [
+   "exhaust",
+   "headlight",
+   "seat",
+   "wheelF",
+   "wheelR"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "depo/kapotaj rengi"
+   },
+   "rev": {
+    "type": "time",
+    "default": null,
+    "desc": "gaz verme anı: duman pufu + far yanar (0.7 sn)"
+   }
+  }
+ },
+ {
+  "name": "vehicles-2/tractor",
+  "status": "draft",
+  "desc": "Yandan görünüm çiftlik traktörü; saban anında arka tekerlekten toz bulutu yükselir",
+  "tags": [
+   "traktör",
+   "çiftçi",
+   "tractor",
+   "tarım",
+   "çiftlik",
+   "taşıt",
+   "saban"
+  ],
+  "anchor": "zemin merkezi (0,0); tekerlekler yerde",
+  "box": [
+   -122,
+   -118,
+   122,
+   14
+  ],
+  "points": [
+   "plow",
+   "exhaust",
+   "cabin",
+   "wheelBig",
+   "wheelSmall"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kaporta/kabin rengi"
+   },
+   "plow": {
+    "type": "time",
+    "default": null,
+    "desc": "saban anı: arkadan toz bulutu kalkar (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "vehicles-2/train",
+  "status": "draft",
+  "desc": "Yandan görünüm buharlı lokomotif; düdük anında bacadan buhar fışkırır, arkada hız izi belirir",
+  "tags": [
+   "tren",
+   "lokomotif",
+   "buharlı tren",
+   "train",
+   "locomotive",
+   "taşıt",
+   "demiryolu",
+   "buhar"
+  ],
+  "anchor": "zemin merkezi (0,0); tekerlekler yerde",
+  "box": [
+   -128,
+   -150,
+   128,
+   14
+  ],
+  "points": [
+   "chimney",
+   "cabin",
+   "wheelBig",
+   "cowcatcher"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "gövde rengi"
+   },
+   "whistle": {
+    "type": "time",
+    "default": null,
+    "desc": "düdük anı: buhar fışkırır + hareket izi (0.9 sn)"
+   }
+  }
  },
  {
   "name": "weapons/bullet",
