@@ -101,6 +101,6 @@ Her kategori 4–6 çizim; stil STYLE.md'ye uyar; her çizim 2 tur görsel kontr
 - [x] X17 character-actions — run-cycle, jump, fall, wave, sit, dance (person ailesi, time-param aksiyonlar)
 - [x] X18 nature-fx — waterfall, leaves-fall, waves, clouds-drift, sunrise, volcano (döngüsel animasyonlar)
 - [x] X19 ui-animated — toast, tooltip, modal-pop, skeleton-loader, toggle-switch, tab-bar (at ile giriş animasyonu)
-- [ ] X20 combat-fx — slash, punch-impact, block-shield, dash-trail, charge-up, ko-stars (vuruş efektleri)
-- [ ] X21 vehicle-fx — exhaust-smoke, drift-skid, headlight-beam, siren-light, propeller-spin, tire-tracks
-- [ ] X22 magic-2 — summon-circle, spell-cast, levitate, morph, invisibility, time-rewind
+- [x] X20 combat-fx — slash, punch-impact, block-shield, dash-trail, charge-up, ko-stars (vuruş efektleri)
+- [x] X21 vehicle-fx — exhaust-smoke, drift-skid, headlight-beam, siren-light, propeller-spin, tire-tracks
+- [x] X22 magic-2 — summon-circle, spell-cast, levitate, morph, invisibility, time-rewind

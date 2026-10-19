@@ -981,6 +981,255 @@
   }
  },
  {
+  "name": "combat-fx/block-shield",
+  "status": "draft",
+  "desc": "Blok kalkanı: block anında altıgen kalkan flaşı ve dalgalanma halkası, boşta hafif titreme",
+  "tags": [
+   "kalkan",
+   "blok",
+   "savunma",
+   "koruma",
+   "shield",
+   "block",
+   "defend",
+   "guard",
+   "hex"
+  ],
+  "anchor": "kalkanın merkezi (0,0)",
+  "box": [
+   -115,
+   -125,
+   115,
+   125
+  ],
+  "points": [
+   "center",
+   "top"
+  ],
+  "params": {
+   "block": {
+    "type": "time",
+    "default": null,
+    "desc": "blok anı (kalkan flaşı + dalgalanma)"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   }
+  }
+ },
+ {
+  "name": "combat-fx/charge-up",
+  "status": "draft",
+  "desc": "Güç toplama: boşta nabız gibi atan enerji küresi, release anında içe çöküp patlayan parlama",
+  "tags": [
+   "güç",
+   "enerji",
+   "toplama",
+   "şarj",
+   "patlama",
+   "charge",
+   "power",
+   "energy",
+   "orb",
+   "blast"
+  ],
+  "anchor": "enerji küresinin merkezi (0,0)",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "core",
+   "orbit"
+  ],
+  "params": {
+   "release": {
+    "type": "time",
+    "default": null,
+    "desc": "güç boşalması anı (patlama)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "combat-fx/dash-trail",
+  "status": "draft",
+  "desc": "Hızlı geçiş izi: dash anında ardında hayalet iz bırakan şevron ok ve hız çizgileri",
+  "tags": [
+   "hız",
+   "geçiş",
+   "iz",
+   "sürat",
+   "hayalet",
+   "dash",
+   "trail",
+   "speed",
+   "rush",
+   "afterimage"
+  ],
+  "anchor": "geçiş yolunun merkezi (0,0)",
+  "box": [
+   -210,
+   -100,
+   210,
+   100
+  ],
+  "points": [
+   "head",
+   "tail"
+  ],
+  "params": {
+   "dash": {
+    "type": "time",
+    "default": null,
+    "desc": "geçiş anı (hayalet iz + hız çizgileri)"
+   },
+   "direction": {
+    "type": "enum",
+    "default": "r",
+    "values": [
+     "r",
+     "l"
+    ],
+    "desc": "geçiş yönü: sağ|sol"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "combat-fx/ko-stars",
+  "status": "draft",
+  "desc": "Nakavt yıldızları: boşta baş çevresinde dönen yıldızlar, ko anında dışa sarmal patlama",
+  "tags": [
+   "yıldız",
+   "nakavt",
+   "baygın",
+   "sarmal",
+   "dönme",
+   "ko",
+   "knockout",
+   "stars",
+   "dizzy",
+   "spiral"
+  ],
+  "anchor": "yıldız yörüngesinin merkezi (0,0)",
+  "box": [
+   -175,
+   -135,
+   175,
+   135
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "ko": {
+    "type": "time",
+    "default": null,
+    "desc": "nakavt anı (yıldızlar dışa sarmal, 1.2 sn)"
+   },
+   "count": {
+    "type": "number",
+    "default": 5,
+    "desc": "yıldız sayısı (3–7)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "combat-fx/punch-impact",
+  "status": "draft",
+  "desc": "Yumruk çarpma patlaması: impact anında radyal halka ve yıldız kıvılcımları saçan vuruş efekti",
+  "tags": [
+   "yumruk",
+   "çarpma",
+   "patlama",
+   "vuruş",
+   "darbe",
+   "punch",
+   "impact",
+   "hit",
+   "strike"
+  ],
+  "anchor": "çarpmanın merkezi (0,0)",
+  "box": [
+   -170,
+   -170,
+   170,
+   170
+  ],
+  "points": [
+   "center",
+   "ring"
+  ],
+  "params": {
+   "impact": {
+    "type": "time",
+    "default": null,
+    "desc": "çarpma anı (halka + kıvılcımlar)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: patlama büyüklüğü"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "combat-fx/slash",
+  "status": "draft",
+  "desc": "Kılıç kesik yayı: slash anında parlayan hilal şeklinde kesik izi ve hareket çizgileri",
+  "tags": [
+   "kılıç",
+   "kesik",
+   "vuruş",
+   "savaş",
+   "slash",
+   "sword",
+   "cut",
+   "combat",
+   "swish"
+  ],
+  "anchor": "kesik yayının merkezi (0,0)",
+  "box": [
+   -190,
+   -140,
+   190,
+   140
+  ],
+  "points": [
+   "tip",
+   "trail"
+  ],
+  "params": {
+   "slash": {
+    "type": "time",
+    "default": null,
+    "desc": "kesik anı (parlama + hareket çizgileri)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
   "name": "economy/bank",
   "status": "draft",
   "desc": "Klasik banka binası cephesi; alınlık, dört sütun, kapı ve merdiven",
@@ -3701,6 +3950,237 @@
     "type": "time",
     "default": null,
     "desc": "uyarı anı: 0.6 sn sarsıntı + flaş"
+   }
+  }
+ },
+ {
+  "name": "magic-2/invisibility",
+  "status": "draft",
+  "desc": "Görünmezlik: vanish anında titreyerek solan pelerinli figür ve kalan soluk parıltı",
+  "tags": [
+   "görünmezlik",
+   "invisibility",
+   "invisible",
+   "solma",
+   "fade",
+   "büyü",
+   "pelerin",
+   "gizlenme",
+   "yok olma"
+  ],
+  "anchor": "figürün tabanı (0,0)",
+  "box": [
+   -70,
+   -125,
+   70,
+   65
+  ],
+  "points": [
+   "head",
+   "torso",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink",
+    "desc": "figürün rengi"
+   },
+   "vanish": {
+    "type": "time",
+    "default": null,
+    "desc": "solma anı (0.8 sn titreme + kaybolma)"
+   }
+  }
+ },
+ {
+  "name": "magic-2/levitate",
+  "status": "draft",
+  "desc": "Havada süzülen büyü kristali: yavaş salınım, nabız parlama, yükselen ışık tozları",
+  "tags": [
+   "süzülme",
+   "levitate",
+   "levitation",
+   "uçma",
+   "kristal",
+   "büyü",
+   "floating",
+   "hover",
+   "havada"
+  ],
+  "anchor": "süzülmenin merkezi (0,0) — kristal bu nokta etrafında salınır",
+  "box": [
+   -80,
+   -110,
+   80,
+   80
+  ],
+  "points": [
+   "center",
+   "top",
+   "ground"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "kristalin enerji rengi"
+   }
+  }
+ },
+ {
+  "name": "magic-2/morph",
+  "status": "draft",
+  "desc": "Dönüşüm: morph anında küreden dört uçlu yıldıza eriyen, nefes alan büyü formu",
+  "tags": [
+   "dönüşüm",
+   "morph",
+   "transformation",
+   "şekil değiştirme",
+   "yıldız",
+   "büyü",
+   "metamorphosis",
+   "erime"
+  ],
+  "anchor": "merkez (0,0) — dönüşümün tam ortası",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "formun rengi"
+   },
+   "morph": {
+    "type": "time",
+    "default": null,
+    "desc": "dönüşüm anı (1.0 sn küre → yıldız)"
+   }
+  }
+ },
+ {
+  "name": "magic-2/spell-cast",
+  "status": "draft",
+  "desc": "Büyü fırlatma: cast anında fırlayan ışın mermisi, ışık izi ve hedefteki çarpma patlaması",
+  "tags": [
+   "büyü",
+   "fırlatma",
+   "spell",
+   "cast",
+   "ışın",
+   "beam",
+   "mermi",
+   "sihir",
+   "saldırı"
+  ],
+  "anchor": "fırlatma noktası (0,0) — ışın buradan sağa (+x) doğru uçar",
+  "box": [
+   -70,
+   -90,
+   190,
+   90
+  ],
+  "points": [
+   "launch",
+   "impact"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "büyü enerjisinin rengi"
+   },
+   "cast": {
+    "type": "time",
+    "default": null,
+    "desc": "fırlatma anı (0.6 sn uçuş + çarpma patlaması)"
+   }
+  }
+ },
+ {
+  "name": "magic-2/summon-circle",
+  "status": "draft",
+  "desc": "Büyülü çağırma çemberi: summon anında çizilen iç içe halkalar, dönen runik glifler ve merkezi parlama",
+  "tags": [
+   "büyü",
+   "çağırma",
+   "çember",
+   "summon",
+   "summoning",
+   "magic circle",
+   "rune",
+   "sihir",
+   "glif"
+  ],
+  "anchor": "merkez (0,0) — çemberin tam ortası",
+  "box": [
+   -130,
+   -130,
+   130,
+   130
+  ],
+  "points": [
+   "center",
+   "edge",
+   "above"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "büyü enerjisinin rengi"
+   },
+   "summon": {
+    "type": "time",
+    "default": null,
+    "desc": "çağırma anı (1.2 sn halka çizimi + glifler + parlama)"
+   }
+  }
+ },
+ {
+  "name": "magic-2/time-rewind",
+  "status": "draft",
+  "desc": "Zamanı geri sarma: rewind anında ibreleri tersine dönen saat ve içe sarmal ışıklar",
+  "tags": [
+   "zaman",
+   "geri sarma",
+   "rewind",
+   "saat",
+   "time",
+   "clock",
+   "zaman yolculuğu",
+   "büyü",
+   "reverse",
+   "ters"
+  ],
+  "anchor": "merkez (0,0) — saatin merkezi",
+  "box": [
+   -130,
+   -130,
+   130,
+   130
+  ],
+  "points": [
+   "center",
+   "rim"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "zaman enerjisinin rengi"
+   },
+   "rewind": {
+    "type": "time",
+    "default": null,
+    "desc": "geri sarma anı (1.5 sn ters dönüş + sarmal)"
    }
   }
  },
@@ -7509,6 +7989,253 @@
   ],
   "points": [],
   "params": {}
+ },
+ {
+  "name": "vehicle-fx/drift-skid",
+  "status": "draft",
+  "desc": "Drift lastik izi: kavisli çift iz 0.8 saniyede çizilir, toz bulutu eşlik eder",
+  "tags": [
+   "drift",
+   "lastik",
+   "iz",
+   "kayma",
+   "viraj",
+   "yarış",
+   "tire",
+   "skid",
+   "drift",
+   "mark",
+   "slide",
+   "racing"
+  ],
+  "anchor": "yayın tepesi (0,-60); iz alt kenarlardan girer, tepede kayar",
+  "box": [
+   -205,
+   -110,
+   205,
+   120
+  ],
+  "points": [
+   "start",
+   "apex",
+   "end"
+  ],
+  "params": {
+   "drift": {
+    "type": "time",
+    "default": null,
+    "desc": "drift anı: iz 0.8 sn'de çizilir, toz 1 sn'de solar"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "vehicle-fx/exhaust-smoke",
+  "status": "draft",
+  "desc": "Egzoz dumanı: sürekli yükselen, genişleyip solan duman halkaları",
+  "tags": [
+   "egzoz",
+   "duman",
+   "halka",
+   "is",
+   "motor",
+   "egzoz dumanı",
+   "exhaust",
+   "smoke",
+   "ring",
+   "fumes",
+   "emission"
+  ],
+  "anchor": "egzoz ağzı (0,0): duman buradan yükselir",
+  "box": [
+   -90,
+   -230,
+   90,
+   24
+  ],
+  "points": [
+   "tip",
+   "top"
+  ],
+  "params": {
+   "intensity": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "duman yoğunluğu 0–1"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "vehicle-fx/headlight-beam",
+  "status": "draft",
+  "desc": "Far hüzmesi: hafif titreyen ışık konisi; flash anında 0.3 sn uzun far patlaması",
+  "tags": [
+   "far",
+   "hüzme",
+   "ışık",
+   "gece",
+   "sürüş",
+   "araba",
+   "headlight",
+   "beam",
+   "light",
+   "night",
+   "driving",
+   "car"
+  ],
+  "anchor": "far merceği (0,0); hüzme sağa uzar",
+  "box": [
+   -56,
+   -92,
+   330,
+   92
+  ],
+  "points": [
+   "lamp",
+   "beamtip"
+  ],
+  "params": {
+   "flash": {
+    "type": "time",
+    "default": null,
+    "desc": "uzun far patlaması anı (0.3 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "vehicle-fx/propeller-spin",
+  "status": "draft",
+  "desc": "Pervane dönüşü: sürekli dönen 3 kanat; hayalet kanatlar ve bulanık disk motion blur verir",
+  "tags": [
+   "pervane",
+   "dönüş",
+   "helikopter",
+   "uçak",
+   "motor",
+   "hız",
+   "propeller",
+   "spin",
+   "rotation",
+   "helicopter",
+   "plane",
+   "blur"
+  ],
+  "anchor": "göbek (0,0): pervanenin dönme merkezi",
+  "box": [
+   -172,
+   -172,
+   172,
+   172
+  ],
+  "points": [
+   "hub",
+   "top"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 3,
+    "desc": "dönüş hızı (saniyede tur)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "vehicle-fx/siren-light",
+  "status": "draft",
+  "desc": "Siren ışığı: kırmızı/mavi dönüşümlü flaş, ~1 saniye periyot, kubbeli gövde",
+  "tags": [
+   "siren",
+   "polis",
+   "ambulans",
+   "itfaiye",
+   "flaş",
+   "alarm",
+   "tehlike",
+   "siren",
+   "police",
+   "light",
+   "alarm",
+   "flash",
+   "emergency"
+  ],
+  "anchor": "taban (0,0): siren buraya monte edilir",
+  "box": [
+   -72,
+   -96,
+   72,
+   22
+  ],
+  "points": [
+   "top",
+   "base"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "flaş hızı çarpanı (1 = ~1 sn periyot)"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   }
+  }
+ },
+ {
+  "name": "vehicle-fx/tire-tracks",
+  "status": "draft",
+  "desc": "Lastik izleri: roll anında iki paralel dişli iz soldan sağa belirir, toz eşlik eder",
+  "tags": [
+   "lastik",
+   "iz",
+   "tekerlek",
+   "yol",
+   "toprak",
+   "araba",
+   "tire",
+   "tracks",
+   "wheel",
+   "road",
+   "trail",
+   "car"
+  ],
+  "anchor": "izlerin ortası (0,0); izler soldan sağa uzar",
+  "box": [
+   -190,
+   -72,
+   190,
+   72
+  ],
+  "points": [
+   "start",
+   "end"
+  ],
+  "params": {
+   "roll": {
+    "type": "time",
+    "default": null,
+    "desc": "geçiş anı: izler 0.7 sn'de belirir, toz 0.6 sn'de solar"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
  },
  {
   "name": "vehicles-2/bicycle",
