@@ -3954,6 +3954,234 @@
   }
  },
  {
+  "name": "liquid-fx/bubble-pop",
+  "status": "draft",
+  "desc": "Havada süzülüp sallanan baloncuk; at anında patlayıp parçaları etrafa savrulur",
+  "tags": [
+   "baloncuk",
+   "köpük",
+   "patlama",
+   "sabun köpüğü",
+   "süzülme",
+   "bubble",
+   "pop",
+   "soap bubble",
+   "burst",
+   "float"
+  ],
+  "anchor": "baloncuk merkezi (0,0)",
+  "box": [
+   -90,
+   -90,
+   90,
+   90
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "liquid-fx/drip-fall",
+  "status": "draft",
+  "desc": "Musluk ucunda büyüyüp uzayan, kopup düşen ve tabanda kaybolan döngülü damla",
+  "tags": [
+   "damla",
+   "damlama",
+   "musluk",
+   "sızıntı",
+   "su damlası",
+   "drip",
+   "droplet",
+   "falling drop",
+   "leak",
+   "faucet"
+  ],
+  "anchor": "damlanın çıktığı uç (0,0); taban y=190",
+  "box": [
+   -40,
+   -20,
+   40,
+   200
+  ],
+  "points": [
+   "source",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "liquid-fx/pour-stream",
+  "status": "draft",
+  "desc": "Üstten dökülen, döngüsel akan sıvı sütunu; altta yüzeyde köpürme",
+  "tags": [
+   "dökme",
+   "akış",
+   "su akışı",
+   "sıvı",
+   "şelale mini",
+   "pour",
+   "stream",
+   "flowing water",
+   "liquid flow",
+   "waterfall"
+  ],
+  "anchor": "akış kaynağı (0,-10); su y=160 civarında yüzeye çarpar",
+  "box": [
+   -80,
+   -20,
+   80,
+   190
+  ],
+  "points": [
+   "source",
+   "surface"
+  ],
+  "params": {
+   "flow": {
+    "type": "number",
+    "default": 0.8,
+    "desc": "akış şiddeti 0–1: kalınlık, hız, köpük"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "liquid-fx/ripple-ring",
+  "status": "draft",
+  "desc": "Su yüzeyine düşen damlanın genişleyip sönen halka dalgaları",
+  "tags": [
+   "halka",
+   "dalga",
+   "su yüzeyi",
+   "damla sesi",
+   "yankı",
+   "ripple",
+   "ring",
+   "water surface",
+   "wave ring",
+   "plop"
+  ],
+  "anchor": "yüzey merkezi (0,0); damla yukarıdan düşer",
+  "box": [
+   -160,
+   -44,
+   160,
+   44
+  ],
+  "points": [
+   "surface"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "damlanın yüzeye değme anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "liquid-fx/splash-drop",
+  "status": "draft",
+  "desc": "Çarpma anında damlanın yüzeye düşüp taç şeklinde sıçraması; yukarı fışkıran damlalar",
+  "tags": [
+   "sıçrama",
+   "damla",
+   "su damlası",
+   "çarpma",
+   "taç",
+   "splash",
+   "droplet",
+   "crown splash",
+   "impact",
+   "water drop"
+  ],
+  "anchor": "çarpma noktası (0,0); damla yukarıdan düşer",
+  "box": [
+   -130,
+   -190,
+   130,
+   50
+  ],
+  "points": [
+   "impact",
+   "fall"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "damlanın çarpma anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "liquid-fx/wave-crash",
+  "status": "draft",
+  "desc": "Yükselip kıvrılan dalga tepesi; at anında kırılıp köpük ve serpinti saçar",
+  "tags": [
+   "dalga",
+   "kırılma",
+   "köpük",
+   "serpinti",
+   "deniz",
+   "wave",
+   "crash",
+   "breaker",
+   "foam",
+   "spray",
+   "sea"
+  ],
+  "anchor": "dalga tabanı (0,10); tepe at öncesi yükselir",
+  "box": [
+   -180,
+   -140,
+   180,
+   40
+  ],
+  "points": [
+   "base",
+   "crest"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "dalganın kırılma anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
   "name": "magic-2/invisibility",
   "status": "draft",
   "desc": "Görünmezlik: vanish anında titreyerek solan pelerinli figür ve kalan soluk parıltı",
@@ -5306,6 +5534,250 @@
   }
  },
  {
+  "name": "particle-fx/bubbles-rise",
+  "status": "draft",
+  "desc": "Yükselen baloncuklar: yalpalanarak yukarı süzülen, üstte patlayan baloncuklar",
+  "tags": [
+   "baloncuk",
+   "kabarcık",
+   "köpük",
+   "suda",
+   "yükselme",
+   "bubbles",
+   "rise",
+   "soap",
+   "foam",
+   "float"
+  ],
+  "anchor": "alt merkez (0,0) — baloncukların doğduğu nokta",
+  "box": [
+   -90,
+   -165,
+   90,
+   45
+  ],
+  "points": [
+   "source",
+   "top"
+  ],
+  "params": {
+   "count": {
+    "type": "number",
+    "default": 12,
+    "desc": "aynı anda yüzen baloncuk sayısı"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "baloncuk çeper rengi"
+   }
+  }
+ },
+ {
+  "name": "particle-fx/confetti-pop",
+  "status": "draft",
+  "desc": "Konfeti patlaması: at anında merkezden fışkıran, takla atan renkli parçalar",
+  "tags": [
+   "konfeti",
+   "patlama",
+   "kutlama",
+   "parti",
+   "parça",
+   "confetti",
+   "pop",
+   "celebration",
+   "party",
+   "explosion"
+  ],
+  "anchor": "merkez (0,0) — patlamanın gerçekleştiği nokta",
+  "box": [
+   -130,
+   -130,
+   130,
+   130
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "ana vurgu rengi (diğer parçalar tema renklerinden)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı"
+   }
+  }
+ },
+ {
+  "name": "particle-fx/dust-devil",
+  "status": "draft",
+  "desc": "Dönen toz girdabı: dönen yay halkaları ve yukarı spiral çizen toz zerreleri",
+  "tags": [
+   "toz",
+   "girdap",
+   "kasırga",
+   "fırtına",
+   "dönme",
+   "spiral",
+   "dust",
+   "vortex",
+   "tornado",
+   "devil",
+   "swirl"
+  ],
+  "anchor": "taban (0,0) — girdabın temas ettiği zemin noktası",
+  "box": [
+   -95,
+   -185,
+   95,
+   25
+  ],
+  "points": [
+   "base",
+   "top"
+  ],
+  "params": {
+   "intensity": {
+    "type": "number",
+    "default": 0.8,
+    "desc": "girdap şiddeti (dönüş hızı + toz yoğunluğu)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "toz rengi"
+   }
+  }
+ },
+ {
+  "name": "particle-fx/ember-drift",
+  "status": "draft",
+  "desc": "Sürüklenen korlar: titreyerek yukarı savrulan, parlayan kor zerreleri",
+  "tags": [
+   "kor",
+   "ateş",
+   "kıvılcım",
+   "titreme",
+   "savurma",
+   "kül",
+   "ember",
+   "drift",
+   "fire",
+   "spark",
+   "flicker"
+  ],
+  "anchor": "alt merkez (0,0) — korların doğduğu taban noktası",
+  "box": [
+   -110,
+   -170,
+   110,
+   60
+  ],
+  "points": [
+   "source",
+   "top"
+  ],
+  "params": {
+   "count": {
+    "type": "number",
+    "default": 16,
+    "desc": "aynı anda sürüklenen kor sayısı"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "kor rengi (sıcak renk önerilir)"
+   }
+  }
+ },
+ {
+  "name": "particle-fx/smoke-puff",
+  "status": "draft",
+  "desc": "Yükselen duman yumağı: tabandan sürekli genişleyip solarak yükselen puflar",
+  "tags": [
+   "duman",
+   "buhar",
+   "puf",
+   "bulut",
+   "yükselme",
+   "smoke",
+   "puff",
+   "steam",
+   "cloud",
+   "rise"
+  ],
+  "anchor": "taban (0,0) — dumanın çıktığı nokta",
+  "box": [
+   -100,
+   -180,
+   100,
+   40
+  ],
+  "points": [
+   "source",
+   "top"
+  ],
+  "params": {
+   "density": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "duman yoğunluğu"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "duman rengi"
+   }
+  }
+ },
+ {
+  "name": "particle-fx/sparkle-burst",
+  "status": "draft",
+  "desc": "Patlayan yıldız kıvılcımı: at anında merkezden fışkıran dört köşeli parıltı yıldızları",
+  "tags": [
+   "kıvılcım",
+   "parıltı",
+   "patlama",
+   "yıldız",
+   "sparkle",
+   "burst",
+   "glitter",
+   "shine",
+   "magic"
+  ],
+  "anchor": "merkez (0,0) — patlamanın gerçekleştiği nokta",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "kıvılcım rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı (yıldızlar fışkırır)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "patlama büyüklüğü çarpanı"
+   }
+  }
+ },
+ {
   "name": "professions/chef",
   "status": "draft",
   "desc": "Şapkalı aşçı (önlük + fular); serve anında tepsiyi yukarı kaldırır, üstünden buhar yükselir",
@@ -6391,6 +6863,233 @@
     "type": "time",
     "default": null,
     "desc": "ışın demeti aç/kapa anı: 1.2 sn (açılma 0.3 + sönme 0.9)"
+   }
+  }
+ },
+ {
+  "name": "sports-fx/crowd-wave",
+  "status": "draft",
+  "desc": "Tribün kesiti: üç sıra taraftar, soldan sağa gezen döngüsel Meksika dalgasıyla zıplar",
+  "tags": [
+   "tribün",
+   "taraftar",
+   "kalabalık",
+   "meksika dalgası",
+   "stadyum",
+   "crowd",
+   "fans",
+   "stadium",
+   "wave",
+   "supporters"
+  ],
+  "anchor": "tribün merkezi (0,0); en üst sıra y=-52",
+  "box": [
+   -240,
+   -100,
+   240,
+   100
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "sports-fx/replay-arrow",
+  "status": "draft",
+  "desc": "Tekrar oku: saat yönünün tersine yavaşça dönen dairesel ok",
+  "tags": [
+   "tekrar",
+   "replay",
+   "ok",
+   "döngü",
+   "arrow",
+   "loop",
+   "yeniden",
+   "geri sarma",
+   "rewind"
+  ],
+  "anchor": "halka merkezi (0,0)",
+  "box": [
+   -140,
+   -140,
+   140,
+   140
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "sports-fx/score-flash",
+  "status": "draft",
+  "desc": "Skor flaşı: yazı etrafında patlayan yıldız ışınları, genişleyen halka ve saçılan parçacıklar",
+  "tags": [
+   "gol",
+   "skor",
+   "flaş",
+   "goal",
+   "score",
+   "flash",
+   "burst",
+   "skorboard",
+   "kutlama",
+   "celebration"
+  ],
+  "anchor": "flaş merkezi (0,0)",
+  "box": [
+   -220,
+   -160,
+   220,
+   160
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "flaş anı: ışınlar + halka + yazı patlaması"
+   },
+   "word": {
+    "type": "text",
+    "default": "GOAL"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "sports-fx/slowmo-run",
+  "status": "draft",
+  "desc": "Ağır çekim sprint: öne eğik koşucu silueti ve zaman gecikmeli hayalet hız izleri",
+  "tags": [
+   "koşu",
+   "sprint",
+   "sprinter",
+   "ağır çekim",
+   "hız izi",
+   "atletizm",
+   "run",
+   "sprint",
+   "slowmo",
+   "speed trail",
+   "athletics"
+  ],
+  "anchor": "koşucu gövde merkezi (0,0); zemin y=+100",
+  "box": [
+   -240,
+   -130,
+   240,
+   130
+  ],
+  "points": [
+   "head",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sprint patlama anı: hız çizgileri + öne atılma"
+   }
+  }
+ },
+ {
+  "name": "sports-fx/timer-countdown",
+  "status": "draft",
+  "desc": "Maç saati: geri sayan dijital panel, sıfıra ulaşınca flaş patlaması",
+  "tags": [
+   "sayaç",
+   "zaman",
+   "maç saati",
+   "geri sayım",
+   "timer",
+   "countdown",
+   "clock",
+   "süre",
+   "time"
+  ],
+  "anchor": "panel merkezi (0,0)",
+  "box": [
+   -190,
+   -110,
+   190,
+   110
+  ],
+  "points": [
+   "face"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "start": {
+    "type": "number",
+    "default": 10,
+    "desc": "geri sayım başlangıç saniyesi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sıfır anı: flaş patlaması"
+   }
+  }
+ },
+ {
+  "name": "sports-fx/whistle-blast",
+  "status": "draft",
+  "desc": "Hakem düdüğü: patlama anında sağa doğru genişleyen ses dalgası yayları",
+  "tags": [
+   "düdük",
+   "ses",
+   "hakem",
+   "ıslık",
+   "whistle",
+   "sound",
+   "referee",
+   "blast",
+   "ses dalgası"
+  ],
+  "anchor": "düdük gövdesi merkezi (-75,0); ses kaynağı noktası bell (0,0)",
+  "box": [
+   -240,
+   -150,
+   200,
+   150
+  ],
+  "points": [
+   "mouth",
+   "bell"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ıslık anı: ses dalgası yayları fırlar"
    }
   }
  },
