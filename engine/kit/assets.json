@@ -220,6 +220,295 @@
   }
  },
  {
+  "name": "character-actions/dance",
+  "status": "draft",
+  "desc": "Dans eden insan figürü; 4 vuruşluk ritmik kol-bacak hareketi ve süzülen notalar",
+  "tags": [
+   "dans",
+   "dans etmek",
+   "ritim",
+   "eğlence",
+   "oynamak",
+   "dance",
+   "dancing",
+   "groove",
+   "party"
+  ],
+  "anchor": "ayaklar (0,0); 4 vuruşluk döngü (vuruş başına 0.5 sn)",
+  "box": [
+   -140,
+   -400,
+   140,
+   24
+  ],
+  "points": [
+   "head",
+   "hand",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "beat": {
+    "type": "time",
+    "default": null,
+    "desc": "ritim başlangıç anı; null ise t=0'dan başlar"
+   }
+  }
+ },
+ {
+  "name": "character-actions/fall",
+  "status": "draft",
+  "desc": "Geriye düşen insan figürü; savrulan kollar, iniş sarsıntısı ve toz bulutu",
+  "tags": [
+   "düşme",
+   "düşmek",
+   "yere düşme",
+   "tökezleme",
+   "yuvarlanma",
+   "fall",
+   "falling",
+   "trip",
+   "stumble"
+  ],
+  "anchor": "ayaklar (0,0); düşüş geriye, -x yönüne",
+  "box": [
+   -320,
+   -310,
+   140,
+   24
+  ],
+  "points": [
+   "head",
+   "feet",
+   "hand"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "surprised",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "fall": {
+    "type": "time",
+    "default": null,
+    "desc": "düşme anı (dengenin bozulduğu an); null ise ayakta durur"
+   }
+  }
+ },
+ {
+  "name": "character-actions/jump",
+  "status": "draft",
+  "desc": "Zıplama anındaki insan figürü; çömelme, yükselme, diz çekme ve iniş tozu",
+  "tags": [
+   "zıplama",
+   "zıplamak",
+   "hoplama",
+   "sıçrama",
+   "havaya zıplama",
+   "jump",
+   "jumping",
+   "leap",
+   "hop"
+  ],
+  "anchor": "ayaklar (0,0); tepe noktası ~150 birim yukarıda",
+  "box": [
+   -130,
+   -470,
+   130,
+   24
+  ],
+  "points": [
+   "head",
+   "chest",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "surprised",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "jump": {
+    "type": "time",
+    "default": null,
+    "desc": "zıplama anı (kalkış); null ise ayakta durur"
+   }
+  }
+ },
+ {
+  "name": "character-actions/run-cycle",
+  "status": "draft",
+  "desc": "Koşu döngüsündeki insan figürü; döngüsel bacak-kol salınımı ve ayak tozu efekti",
+  "tags": [
+   "koşu",
+   "koşmak",
+   "koşan",
+   "sprint",
+   "depar",
+   "run",
+   "running",
+   "runner",
+   "sprint"
+  ],
+  "anchor": "ayaklar (0,0); koşu yönü +x (sağa)",
+  "box": [
+   -150,
+   -300,
+   150,
+   24
+  ],
+  "points": [
+   "head",
+   "chest",
+   "foot"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "cycle": {
+    "type": "time",
+    "default": null,
+    "desc": "koşu döngüsü başlangıç anı; null ise t=0'dan başlar"
+   }
+  }
+ },
+ {
+  "name": "character-actions/sit",
+  "status": "draft",
+  "desc": "Taburede oturan insan figürü; nefes alıp veren canlı duruş",
+  "tags": [
+   "oturma",
+   "oturmak",
+   "sandalyede oturma",
+   "dinlenme",
+   "oturuş",
+   "sit",
+   "sitting",
+   "rest",
+   "seated"
+  ],
+  "anchor": "zemin (0,0); tabure üstü ~-96",
+  "box": [
+   -110,
+   -300,
+   120,
+   24
+  ],
+  "points": [
+   "head",
+   "seat",
+   "hand"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   }
+  }
+ },
+ {
+  "name": "character-actions/wave",
+  "status": "draft",
+  "desc": "El sallayan insan figürü; kol kalkar, el yana salınır, sonra iner",
+  "tags": [
+   "el sallama",
+   "selam",
+   "merhaba",
+   "veda",
+   "sallamak",
+   "wave",
+   "waving",
+   "hello",
+   "goodbye"
+  ],
+  "anchor": "ayaklar (0,0); sağ el yukarıda sallanır",
+  "box": [
+   -120,
+   -345,
+   140,
+   24
+  ],
+  "points": [
+   "head",
+   "hand",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "wave": {
+    "type": "time",
+    "default": null,
+    "desc": "el sallama anı; null ise sürekli yavaşça sallar"
+   }
+  }
+ },
+ {
   "name": "characters/crowd",
   "status": "draft",
   "desc": "5–12 kişilik kalabalık; iki sıra, hafif salınımlı sade figürler",
@@ -3819,6 +4108,266 @@
   }
  },
  {
+  "name": "nature-fx/clouds-drift",
+  "status": "draft",
+  "desc": "Üç derinlikte sürüklenen bulutlar; kenardan girip kenardan çıkan döngüsel yatay kayma",
+  "tags": [
+   "bulut",
+   "gökyüzü",
+   "rüzgar",
+   "sürüklenme",
+   "hava",
+   "cloud",
+   "sky",
+   "drift",
+   "wind",
+   "cumulus"
+  ],
+  "anchor": "gökyüzü merkezi (0,0)",
+  "box": [
+   -180,
+   -110,
+   180,
+   110
+  ],
+  "points": [
+   "top",
+   "centre"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "drift": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "sürüklenme hızı 0–1"
+   }
+  }
+ },
+ {
+  "name": "nature-fx/leaves-fall",
+  "status": "draft",
+  "desc": "Daldan salınarak düşen yapraklar; fall anında rüzgâr esip yaprak savurur",
+  "tags": [
+   "yaprak",
+   "sonbahar",
+   "düşen",
+   "rüzgar",
+   "dal",
+   "leaves",
+   "falling",
+   "autumn",
+   "wind",
+   "leaf"
+  ],
+  "anchor": "dal (sol üst, -100,-100); yapraklar y=150 civarına düşer",
+  "box": [
+   -150,
+   -140,
+   150,
+   170
+  ],
+  "points": [
+   "branch",
+   "ground"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "leaf": {
+    "type": "color",
+    "default": "green"
+   },
+   "fall": {
+    "type": "time",
+    "default": null,
+    "desc": "rüzgâr esme anı: dal sallanır, yapraklar savrulur (1.2 sn)"
+   },
+   "density": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "sürekli düşen yaprak yoğunluğu 0–1"
+   }
+  }
+ },
+ {
+  "name": "nature-fx/sunrise",
+  "status": "draft",
+  "desc": "Ufuk çizgisinden doğan güneş; rise anında yükselip turuncudan beyaza renk geçişi yapar",
+  "tags": [
+   "güneş",
+   "doğuş",
+   "sabah",
+   "ufuk",
+   "ışın",
+   "sunrise",
+   "sun",
+   "dawn",
+   "horizon",
+   "morning"
+  ],
+  "anchor": "ufuk çizgisi (0,80); güneş onun üstünde doğar",
+  "box": [
+   -160,
+   -170,
+   160,
+   130
+  ],
+  "points": [
+   "sun",
+   "horizon"
+  ],
+  "params": {
+   "sun": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "ground": {
+    "type": "color",
+    "default": "dim"
+   },
+   "rise": {
+    "type": "time",
+    "default": null,
+    "desc": "doğuş anı: güneş 1.2 sn'de ufuktan yükselir, renk geçişi"
+   }
+  }
+ },
+ {
+  "name": "nature-fx/volcano",
+  "status": "draft",
+  "desc": "Yanardağ konisi; erupt anında lav fışkırır ve duman bulutu yükselir, boşta krater parlar",
+  "tags": [
+   "yanardağ",
+   "lav",
+   "püskürme",
+   "krater",
+   "duman",
+   "volcano",
+   "lava",
+   "eruption",
+   "crater",
+   "magma"
+  ],
+  "anchor": "taban (0,140); krater (0,-110)",
+  "box": [
+   -170,
+   -190,
+   170,
+   160
+  ],
+  "points": [
+   "crater",
+   "top",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "lava": {
+    "type": "color",
+    "default": "red"
+   },
+   "erupt": {
+    "type": "time",
+    "default": null,
+    "desc": "püskürme anı: lav fışkırması + duman (1.5 sn)"
+   }
+  }
+ },
+ {
+  "name": "nature-fx/waterfall",
+  "status": "draft",
+  "desc": "Uçurumdan dökülen şelale; döngüsel akan su çizgileri ve tabanda kabaran köpük",
+  "tags": [
+   "şelale",
+   "su",
+   "akıntı",
+   "uçurum",
+   "köpük",
+   "waterfall",
+   "cascade",
+   "water",
+   "foam",
+   "falls"
+  ],
+  "anchor": "kaya kenarı (0,-95); su y=150 civarında köpürür",
+  "box": [
+   -150,
+   -150,
+   150,
+   180
+  ],
+  "points": [
+   "top",
+   "bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "water": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "flow": {
+    "type": "number",
+    "default": 0.8,
+    "desc": "akış şiddeti 0–1: çizgi yoğunluğu ve hız"
+   }
+  }
+ },
+ {
+  "name": "nature-fx/waves",
+  "status": "draft",
+  "desc": "Üst üste iki dalga bandı; faz döngüsüyle sürekli dalgalanan köpüklü su yüzeyi",
+  "tags": [
+   "dalga",
+   "deniz",
+   "okyanus",
+   "köpük",
+   "su",
+   "wave",
+   "sea",
+   "ocean",
+   "surf",
+   "water"
+  ],
+  "anchor": "dalga merkezi (0,15)",
+  "box": [
+   -160,
+   -90,
+   160,
+   120
+  ],
+  "points": [
+   "crest",
+   "trough"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "water": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "swell": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "dalga yüksekliği 0–1: genlik ve hız"
+   }
+  }
+ },
+ {
   "name": "nature/flower",
   "status": "draft",
   "desc": "Saplı çiçek; bloom anında tomurcuk çiçeğe açılır, sap rüzgârda salınır",
@@ -6322,6 +6871,285 @@
     "type": "number",
     "default": 0.4,
     "desc": "tekerlek dönüş hızı (0-1)"
+   }
+  }
+ },
+ {
+  "name": "ui-animated/modal-pop",
+  "status": "draft",
+  "desc": "Diyalog penceresi; pop girişiyle açılır, onay düğmesi nabız gibi parlar",
+  "tags": [
+   "modal",
+   "pencere",
+   "diyalog",
+   "popup",
+   "onay",
+   "uyarı kutusu",
+   "dialog",
+   "popup window",
+   "confirm",
+   "alert box"
+  ],
+  "anchor": "pencere merkezi (0,0)",
+  "box": [
+   -250,
+   -180,
+   250,
+   180
+  ],
+  "points": [
+   "confirm",
+   "cancel",
+   "title"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel"
+   },
+   "title": {
+    "type": "text",
+    "default": "Emin misin?"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "açılma anı: ölçekli pop girişi"
+   }
+  }
+ },
+ {
+  "name": "ui-animated/skeleton-loader",
+  "status": "draft",
+  "desc": "Yükleme iskeleti; üzerinden döngüsel parlama bandı kayar (shimmer)",
+  "tags": [
+   "skeleton",
+   "yükleme",
+   "iskelet",
+   "shimmer",
+   "bekleme",
+   "placeholder",
+   "loading",
+   "yükleniyor",
+   "parlama",
+   "skeleton loader"
+  ],
+  "anchor": "iskelet merkezi (0,0)",
+  "box": [
+   -260,
+   -110,
+   260,
+   110
+  ],
+  "points": [
+   "avatar",
+   "line1"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "giriş anı: yumuşak belirme"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "shimmer hızı çarpanı"
+   }
+  }
+ },
+ {
+  "name": "ui-animated/tab-bar",
+  "status": "draft",
+  "desc": "Alt sekme çubuğu; kayarak girer, aktif sekme vurgu hapıyla öne çıkar",
+  "tags": [
+   "tab",
+   "sekme",
+   "çubuk",
+   "navigasyon",
+   "menü",
+   "alt bar",
+   "tab bar",
+   "navigation",
+   "bottom bar",
+   "menu"
+  ],
+  "anchor": "çubuk merkezi (0,0)",
+  "box": [
+   -300,
+   -95,
+   300,
+   190
+  ],
+  "points": [
+   "tab1",
+   "tab2",
+   "tab3",
+   "tab4"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel"
+   },
+   "active": {
+    "type": "enum",
+    "default": "1",
+    "values": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "desc": "aktif sekme"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "giriş anı: aşağıdan kayarak gelir"
+   }
+  }
+ },
+ {
+  "name": "ui-animated/toast",
+  "status": "draft",
+  "desc": "Bildirim toast kartı; yukarıdan kayarak girer, bir süre durur, aşağı kayarak kaybolur",
+  "tags": [
+   "toast",
+   "bildirim",
+   "kart",
+   "mesaj",
+   "uyarı",
+   "popup",
+   "notification",
+   "alert",
+   "toast message",
+   "bildirim kartı"
+  ],
+  "anchor": "kart merkezi (0,0)",
+  "box": [
+   -230,
+   -200,
+   230,
+   100
+  ],
+  "points": [
+   "icon",
+   "card"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel"
+   },
+   "title": {
+    "type": "text",
+    "default": "Kopyalandı"
+   },
+   "text": {
+    "type": "text",
+    "default": "Bağlantı kopyalandı."
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "giriş anı: yukarıdan kayarak gelir"
+   },
+   "hold": {
+    "type": "number",
+    "default": 2,
+    "desc": "ekranda kalma süresi (sn); sonra aşağı kayarak kaybolur"
+   }
+  }
+ },
+ {
+  "name": "ui-animated/toggle-switch",
+  "status": "draft",
+  "desc": "Açma/kapama anahtarı; at anında düğme kayar ve ray rengi geçiş yapar",
+  "tags": [
+   "toggle",
+   "anahtar",
+   "açma",
+   "kapama",
+   "düğme",
+   "ayar",
+   "switch",
+   "on off",
+   "geçiş",
+   "toggle switch"
+  ],
+  "anchor": "anahtar merkezi (0,0)",
+  "box": [
+   -140,
+   -80,
+   140,
+   80
+  ],
+  "points": [
+   "knobOff",
+   "knobOn"
+  ],
+  "params": {
+   "state": {
+    "type": "enum",
+    "default": "on",
+    "values": [
+     "off",
+     "on"
+    ],
+    "desc": "anahtar konumu"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "geçiş anı: düğme kayar"
+   }
+  }
+ },
+ {
+  "name": "ui-animated/tooltip",
+  "status": "draft",
+  "desc": "İpucu baloncuğu; pop girişiyle belirir ve hafifçe yüzer, kuyruk hedefi gösterir",
+  "tags": [
+   "tooltip",
+   "ipucu",
+   "baloncuk",
+   "bilgi",
+   "yardım",
+   "pop",
+   "tooltip bubble",
+   "hint",
+   "info",
+   "ipucu balonu"
+  ],
+  "anchor": "kuyruğun işaret ettiği uç (0,0)",
+  "box": [
+   -215,
+   -205,
+   215,
+   20
+  ],
+  "points": [
+   "tip",
+   "bubble"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "text": {
+    "type": "text",
+    "default": "Biliyor muydun?"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "belirme anı: pop girişi"
    }
   }
  },

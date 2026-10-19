@@ -98,9 +98,9 @@ Her kategori 4–6 çizim; stil STYLE.md'ye uyar; her çizim 2 tur görsel kontr
 - [x] X14 weather-fx — rainbow, lightning-storm, fog, tornado, hail, aurora
 - [x] X15 space — astronaut, ufo, galaxy, satellite-dish, space-station, comet (params: fly time)
 - [x] X16 fx-2 — teleport, heal-glow, poison-cloud, frost, shockwave-air, energy-beam (hepsi animasyonlu)
-- [ ] X17 character-actions — run-cycle, jump, fall, wave, sit, dance (person ailesi, time-param aksiyonlar)
-- [ ] X18 nature-fx — waterfall, leaves-fall, waves, clouds-drift, sunrise, volcano (döngüsel animasyonlar)
-- [ ] X19 ui-animated — toast, tooltip, modal-pop, skeleton-loader, toggle-switch, tab-bar (at ile giriş animasyonu)
+- [x] X17 character-actions — run-cycle, jump, fall, wave, sit, dance (person ailesi, time-param aksiyonlar)
+- [x] X18 nature-fx — waterfall, leaves-fall, waves, clouds-drift, sunrise, volcano (döngüsel animasyonlar)
+- [x] X19 ui-animated — toast, tooltip, modal-pop, skeleton-loader, toggle-switch, tab-bar (at ile giriş animasyonu)
 - [ ] X20 combat-fx — slash, punch-impact, block-shield, dash-trail, charge-up, ko-stars (vuruş efektleri)
 - [ ] X21 vehicle-fx — exhaust-smoke, drift-skid, headlight-beam, siren-light, propeller-spin, tire-tracks
 - [ ] X22 magic-2 — summon-circle, spell-cast, levitate, morph, invisibility, time-rewind
