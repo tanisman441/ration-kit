@@ -3936,6 +3936,246 @@
   }
  },
  {
+  "name": "gesture-fx/fist-pump",
+  "status": "draft",
+  "desc": "Yukarı pompalanan yumruk; pompalama anında fırlar, parçacık saçar",
+  "tags": [
+   "yumruk",
+   "zafer",
+   "pompalama",
+   "kutlama",
+   "fist",
+   "pump",
+   "victory",
+   "celebration"
+  ],
+  "anchor": "yumruk merkezi (0,0); dinlenmede alt orta",
+  "box": [
+   -125,
+   -155,
+   125,
+   100
+  ],
+  "points": [
+   "fist",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "el rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "pompalama anı: yumruk fırlar, parçacık saçar"
+   }
+  }
+ },
+ {
+  "name": "gesture-fx/pinch-zoom",
+  "status": "draft",
+  "desc": "Sıkıştırma hareketi yapan iki parmak; sıkıştırma anında kapanır, halka ve çizgiler patlatır",
+  "tags": [
+   "sıkıştır",
+   "yakınlaştır",
+   "uzaklaştır",
+   "pinch",
+   "zoom",
+   "parmak",
+   "iki parmak"
+  ],
+  "anchor": "sıkıştırma merkezi (0,0)",
+  "box": [
+   -125,
+   -125,
+   125,
+   125
+  ],
+  "points": [
+   "center",
+   "fingerTop",
+   "fingerBottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "parmak rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sıkıştırma anı: parmaklar kapanır, halka patlar"
+   }
+  }
+ },
+ {
+  "name": "gesture-fx/point-finger",
+  "status": "draft",
+  "desc": "Sağa işaret eden el; tıklama anında parmak içeri basar, parmak ucunda halka flaşı patlar",
+  "tags": [
+   "işaret",
+   "parmak",
+   "tıkla",
+   "tıklama",
+   "göster",
+   "point",
+   "finger",
+   "tap",
+   "click",
+   "indicate"
+  ],
+  "anchor": "bilek hizası (0,0); parmak sağa uzar",
+  "box": [
+   -170,
+   -95,
+   170,
+   95
+  ],
+  "points": [
+   "tip",
+   "wrist"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "el rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tıklama anı: parmak basar + halka flaşı"
+   }
+  }
+ },
+ {
+  "name": "gesture-fx/swipe-arrow",
+  "status": "draft",
+  "desc": "Kaydırma hareketini simgeleyen kalın ok; kaydırma anında fırlar, arkasında iz bırakır",
+  "tags": [
+   "kaydır",
+   "kaydırma",
+   "ok",
+   "swipe",
+   "arrow",
+   "geçiş",
+   "slide",
+   "yön"
+  ],
+  "anchor": "ok merkezi (0,0)",
+  "box": [
+   -180,
+   -75,
+   180,
+   75
+  ],
+  "points": [
+   "head",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "ok rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kaydırma anı: ok 0.45 sn fırlar, iz bırakır"
+   },
+   "dir": {
+    "type": "enum",
+    "default": "right",
+    "values": [
+     "right",
+     "left"
+    ],
+    "desc": "kaydırma yönü (dikey için filmde rot: 90 kullanın)"
+   }
+  }
+ },
+ {
+  "name": "gesture-fx/thumbs-up-pop",
+  "status": "draft",
+  "desc": "Yukarı bakan başparmak eli; belirdiğinde yaylanarak pop olur, halka saçar",
+  "tags": [
+   "başparmak",
+   "beğeni",
+   "onay",
+   "thumbs up",
+   "like",
+   "approve",
+   "el",
+   "güzel"
+  ],
+  "anchor": "el merkezi (0,0)",
+  "box": [
+   -120,
+   -120,
+   120,
+   120
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "el rengi"
+   },
+   "pop": {
+    "type": "time",
+    "default": null,
+    "desc": "belirme anı: 0.35 sn yaylı pop + halka"
+   }
+  }
+ },
+ {
+  "name": "gesture-fx/wave-hand",
+  "status": "draft",
+  "desc": "Bilekten salınan açık el; sürekli yavaş sallar, vurgu anında hızlı üç salınım yapar",
+  "tags": [
+   "el sallama",
+   "selam",
+   "merhaba",
+   "veda",
+   "sallamak",
+   "wave",
+   "waving",
+   "hello",
+   "hand"
+  ],
+  "anchor": "bilek (0,0); el yukarı salınır",
+  "box": [
+   -150,
+   -170,
+   150,
+   120
+  ],
+  "points": [
+   "wrist",
+   "tips"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "el rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "selam vurgusu: 0.9 sn hızlı salınım + yay çizgileri"
+   }
+  }
+ },
+ {
   "name": "health/ambulance",
   "status": "draft",
   "desc": "Yandan ambulans; tepe lambası dönüşümlü yanıp söner, siren anında hızlı flaş + ses dalgaları yayar",
@@ -5593,6 +5833,248 @@
      "oceania"
     ],
     "desc": "vurgulanan bölge"
+   }
+  }
+ },
+ {
+  "name": "money-fx/card-swipe",
+  "status": "draft",
+  "desc": "Kredi kartı kaydırma: at anında kart sağa fırlar, ardında hayalet iz ve oklar bırakır",
+  "tags": [
+   "kart",
+   "kredi kartı",
+   "kaydırma",
+   "ödeme",
+   "swipe",
+   "card",
+   "payment",
+   "temassız",
+   "contactless"
+  ],
+  "anchor": "kaydırma çizgisi merkezi (0,0)",
+  "box": [
+   -235,
+   -90,
+   235,
+   90
+  ],
+  "points": [
+   "start",
+   "end"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kaydırma anı (0.55 sn uçuş)"
+   }
+  }
+ },
+ {
+  "name": "money-fx/cash-rain",
+  "status": "draft",
+  "desc": "Sallanarak düşen banknotlar: at anında başlayan, takla atan döngülü para yağmuru",
+  "tags": [
+   "para",
+   "banknot",
+   "yağmur",
+   "düşüş",
+   "cash",
+   "banknote",
+   "money",
+   "rain",
+   "fall",
+   "zengin"
+  ],
+  "anchor": "yağmur alanı merkezi (0,0) — yer çizgisi y=+140",
+  "box": [
+   -130,
+   -170,
+   130,
+   150
+  ],
+  "points": [
+   "rain",
+   "ground"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "count": {
+    "type": "number",
+    "default": 10,
+    "desc": "aynı anda düşen banknot sayısı"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yağmurun başlama anı"
+   }
+  }
+ },
+ {
+  "name": "money-fx/coin-spin-glow",
+  "status": "draft",
+  "desc": "Dönen parlayan coin: sürekli spin, nabız gibi atan kenar parıltısı ve yörünge kıvılcımları",
+  "tags": [
+   "para",
+   "madeni para",
+   "dön",
+   "spin",
+   "parıltı",
+   "coin",
+   "money",
+   "glow",
+   "altın",
+   "gold"
+  ],
+  "anchor": "coin merkezi (0,0)",
+  "box": [
+   -80,
+   -85,
+   80,
+   85
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "period": {
+    "type": "number",
+    "default": 1.8,
+    "desc": "bir tam spin süresi (sn)"
+   }
+  }
+ },
+ {
+  "name": "money-fx/coins-fall",
+  "status": "draft",
+  "desc": "Yukarıdan yağan madeni paralar: at anında başlayan döngülü yağmur, yere çarpınca mini sıçrama",
+  "tags": [
+   "para",
+   "madeni para",
+   "yağmur",
+   "yağış",
+   "coin",
+   "money",
+   "rain",
+   "fall",
+   "altın",
+   "gold"
+  ],
+  "anchor": "yağmur alanı merkezi (0,0) — yer çizgisi y=+140",
+  "box": [
+   -130,
+   -170,
+   130,
+   150
+  ],
+  "points": [
+   "rain",
+   "ground"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "count": {
+    "type": "number",
+    "default": 12,
+    "desc": "aynı anda düşen coin sayısı"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yağmurun başlama anı (öncesi yerde coin yığını)"
+   }
+  }
+ },
+ {
+  "name": "money-fx/price-drop",
+  "status": "draft",
+  "desc": "Düşen fiyat etiketi: at anında etiket düşer, inerken zıplar ve kırmızı indirim oku atar",
+  "tags": [
+   "etiket",
+   "fiyat",
+   "indirim",
+   "düşüş",
+   "price",
+   "drop",
+   "discount",
+   "tag",
+   "sale",
+   "kampanya"
+  ],
+  "anchor": "düşüş alanı merkezi (0,0) — etiket dinlenme noktası y=+46",
+  "box": [
+   -100,
+   -170,
+   100,
+   130
+  ],
+  "points": [
+   "tag",
+   "drop"
+  ],
+  "params": {
+   "text": {
+    "type": "text",
+    "default": "%",
+    "desc": "etiketteki yazı"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "düşüş anı (0.5 sn düşüş + zıplama)"
+   }
+  }
+ },
+ {
+  "name": "money-fx/wallet-open",
+  "status": "draft",
+  "desc": "Açılan cüzdan: at anında kapak kalkar, içinden kartlar ve coinler yükselir",
+  "tags": [
+   "cüzdan",
+   "para",
+   "kart",
+   "açılma",
+   "wallet",
+   "money",
+   "open",
+   "card",
+   "coin"
+  ],
+  "anchor": "cüzdan merkezi (0,0) — açıklık y=-58 çizgisinde",
+  "box": [
+   -110,
+   -90,
+   110,
+   90
+  ],
+  "points": [
+   "opening",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "açılma anı (0.6 sn kapak kalkışı)"
    }
   }
  },
@@ -8183,6 +8665,261 @@
     "type": "number",
     "default": 0.5,
     "desc": "titreme şiddeti 0–1"
+   }
+  }
+ },
+ {
+  "name": "social-fx/comment-typing",
+  "status": "draft",
+  "desc": "Speech bubble with three dots jumping in a loop, like someone is typing",
+  "tags": [
+   "yorum",
+   "comment",
+   "yazıyor",
+   "typing",
+   "balon",
+   "bubble",
+   "mesaj",
+   "message",
+   "chat"
+  ],
+  "anchor": "balon merkezi",
+  "box": [
+   -130,
+   -100,
+   130,
+   100
+  ],
+  "points": [
+   "bubble",
+   "tail",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "vurgu anı: balon bir an büyür (0.4 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "purple"
+   },
+   "rate": {
+    "type": "number",
+    "default": 4,
+    "desc": "nokta zıplama hızı (2-8)"
+   }
+  }
+ },
+ {
+  "name": "social-fx/follow-pop",
+  "status": "draft",
+  "desc": "Person icon with a plus badge that pops and rings on the follow moment",
+  "tags": [
+   "takip",
+   "follow",
+   "takipçi",
+   "follower",
+   "abone ol",
+   "kişi",
+   "person",
+   "plus",
+   "add"
+  ],
+  "anchor": "kişi ikonunun merkezi",
+  "box": [
+   -110,
+   -115,
+   110,
+   115
+  ],
+  "points": [
+   "person",
+   "badge",
+   "head"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "takip anı: pop + rozetten halka (0.7 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "green"
+   }
+  }
+ },
+ {
+  "name": "social-fx/like-burst",
+  "status": "draft",
+  "desc": "Big heart that pops on the tap moment and bursts mini hearts outward",
+  "tags": [
+   "beğeni",
+   "like",
+   "kalp",
+   "heart",
+   "patlama",
+   "burst",
+   "beğenme",
+   "sevme",
+   "love"
+  ],
+  "anchor": "kalbin merkezi",
+  "box": [
+   -120,
+   -110,
+   120,
+   110
+  ],
+  "points": [
+   "heart",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "beğenme anı: kalp büyür + mini kalpler fırlar (0.9 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "parts": {
+    "type": "number",
+    "default": 6,
+    "desc": "fırlayan mini kalp sayısı (3-8)"
+   }
+  }
+ },
+ {
+  "name": "social-fx/share-arrows",
+  "status": "draft",
+  "desc": "Three curved arrows looping around a centre point, bursting outward on tap",
+  "tags": [
+   "paylaş",
+   "share",
+   "ok",
+   "arrow",
+   "gönder",
+   "send",
+   "döngü",
+   "loop",
+   "forward"
+  ],
+  "anchor": "döngü merkezi",
+  "box": [
+   -130,
+   -130,
+   130,
+   130
+  ],
+  "points": [
+   "centre",
+   "out1"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "paylaşım anı: oklar dışa fırlar + iz bırakır (0.9 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1.4,
+    "desc": "döngü hızı (rad/sn, 0.5-3)"
+   }
+  }
+ },
+ {
+  "name": "social-fx/subscribe-bell",
+  "status": "draft",
+  "desc": "Notification bell that swings and rings out sound arcs on the ring moment",
+  "tags": [
+   "zil",
+   "bell",
+   "abone",
+   "subscribe",
+   "bildirim",
+   "notification",
+   "ding",
+   "çalma"
+  ],
+  "anchor": "zilin askı noktası (0,-70)",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "top",
+   "clapper",
+   "bell"
+  ],
+  "params": {
+   "ring": {
+    "type": "time",
+    "default": null,
+    "desc": "zil çalma anı: sallanma + ses dalgası (1.2 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "social-fx/view-count-up",
+  "status": "draft",
+  "desc": "Eye icon above a 7-segment counter that ticks upward on the count moment",
+  "tags": [
+   "izlenme",
+   "views",
+   "görüntülenme",
+   "sayaç",
+   "counter",
+   "göz",
+   "eye",
+   "izleyici",
+   "viewer"
+  ],
+  "anchor": "göz ile sayaç arası merkez",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "eye",
+   "counter"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sayım anı: sayaç artar + artı işareti yükselir (0.8 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   },
+   "start": {
+    "type": "number",
+    "default": 1280,
+    "desc": "başlangıç sayısı (0-9999)"
+   },
+   "step": {
+    "type": "number",
+    "default": 137,
+    "desc": "at anında eklenen izlenme (1-999)"
    }
   }
  },
