@@ -4721,6 +4721,253 @@
   }
  },
  {
+  "name": "kitchen-fx/chop",
+  "status": "draft",
+  "desc": "Doğrama tahtası üzerindeki bıçak; chop anında hızla vurup sebze dilimlerini sıçratır",
+  "tags": [
+   "doğrama",
+   "bıçak",
+   "kesme",
+   "tahta",
+   "sebze",
+   "doğra",
+   "chop",
+   "knife",
+   "cutting board",
+   "chopping",
+   "vegetable"
+  ],
+  "anchor": "tahtanın merkezi (0,20)",
+  "box": [
+   -160,
+   -150,
+   160,
+   90
+  ],
+  "points": [
+   "blade_tip",
+   "board",
+   "slice",
+   "handle_top"
+  ],
+  "params": {
+   "chop": {
+    "type": "time",
+    "default": null,
+    "desc": "vuruş anı: bıçak tahtaya iner, dilimler sıçrar (0.3 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "kitchen-fx/crack-egg",
+  "status": "draft",
+  "desc": "Yumurta: crack anında kabuk ikiye ayrılır, sarısı damlayarak aşağı düşüp birikir",
+  "tags": [
+   "yumurta",
+   "kırma",
+   "sarı",
+   "damla",
+   "kabuk",
+   "crack",
+   "egg",
+   "yolk",
+   "cracking egg",
+   "drip"
+  ],
+  "anchor": "yumurta merkezi (0,0)",
+  "box": [
+   -120,
+   -120,
+   120,
+   130
+  ],
+  "points": [
+   "shell_top",
+   "shell_bottom",
+   "yolk",
+   "crack_line"
+  ],
+  "params": {
+   "crack": {
+    "type": "time",
+    "default": null,
+    "desc": "kırılma anı (0.8 sn): kabuklar ayrılır, sarı düşer"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   }
+  }
+ },
+ {
+  "name": "kitchen-fx/sizzle",
+  "status": "draft",
+  "desc": "Tavada kızaran yemek parçaları; yağ cızırtısı, duman ve sizzle anında büyük kıvılcım patlaması",
+  "tags": [
+   "tava",
+   "kızartma",
+   "cızırtı",
+   "yağ",
+   "duman",
+   "yemek pişirme",
+   "sizzle",
+   "frying pan",
+   "oil sizzle",
+   "steam",
+   "cooking"
+  ],
+  "anchor": "tava gövdesinin merkezi (0,0)",
+  "box": [
+   -170,
+   -140,
+   205,
+   100
+  ],
+  "points": [
+   "pan",
+   "food",
+   "steam",
+   "handle_tip"
+  ],
+  "params": {
+   "sizzle": {
+    "type": "time",
+    "default": null,
+    "desc": "cızırtı patlaması anı (kıvılcım + buhar püskürmesi, ~1 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "kitchen-fx/steam-puff",
+  "status": "draft",
+  "desc": "Alttan yükselip kıvrılarak genişleyen buhar; puff anında ani ve yoğun buhar püskürmesi",
+  "tags": [
+   "buhar",
+   "duman",
+   "sıcak",
+   "yükselen",
+   "püskürme",
+   "steam",
+   "vapor",
+   "puff",
+   "rising steam",
+   "hot"
+  ],
+  "anchor": "buharın çıktığı taban (0,60)",
+  "box": [
+   -130,
+   -150,
+   130,
+   90
+  ],
+  "points": [
+   "base",
+   "top",
+   "edge"
+  ],
+  "params": {
+   "puff": {
+    "type": "time",
+    "default": null,
+    "desc": "ani buhar püskürmesi anı (0.9 sn): yoğun, genişleyen bulut"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "kitchen-fx/stir",
+  "status": "draft",
+  "desc": "Tencere içinde dairesel dönen kaşık ve sıvı yüzeyinde girdap; stir anında hızlı karıştırma ve damla sıçraması",
+  "tags": [
+   "karıştırma",
+   "tencere",
+   "kaşık",
+   "çorba",
+   "girdap",
+   "stir",
+   "mixing",
+   "pot",
+   "spoon",
+   "swirl",
+   "soup"
+  ],
+  "anchor": "tencere merkezi (0,20)",
+  "box": [
+   -165,
+   -140,
+   165,
+   120
+  ],
+  "points": [
+   "pot",
+   "spoon_tip",
+   "swirl",
+   "handle"
+  ],
+  "params": {
+   "stir": {
+    "type": "time",
+    "default": null,
+    "desc": "hızlı karıştırma patlaması anı (1 sn): kaşık hızlanır, damlalar sıçrar"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "kitchen-fx/whisk-spin",
+  "status": "draft",
+  "desc": "Tel çırpıcı: halkalar dönüşü simüle eder; spin anında hızlı döndürme, bulanıklık ve damla savurma",
+  "tags": [
+   "çırpıcı",
+   "tel çırpıcı",
+   "çırpma",
+   "döndürme",
+   "mutfak",
+   "whisk",
+   "spin",
+   "beating",
+   "mixing",
+   "kitchen"
+  ],
+  "anchor": "sapın ortası (0,-60)",
+  "box": [
+   -110,
+   -140,
+   110,
+   140
+  ],
+  "points": [
+   "handle_top",
+   "wires",
+   "tip"
+  ],
+  "params": {
+   "spin": {
+    "type": "time",
+    "default": null,
+    "desc": "hızlı döndürme olayı (0.8 sn): tel bulanıklığı + damla savurma"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
   "name": "liquid-fx/bubble-pop",
   "status": "draft",
   "desc": "Havada süzülüp sallanan baloncuk; at anında patlayıp parçaları etrafa savrulur",
@@ -5350,6 +5597,261 @@
   }
  },
  {
+  "name": "music-fx/beat-pulse",
+  "status": "draft",
+  "desc": "Speaker core radiating rhythm rings like a heartbeat, flashing on each beat",
+  "tags": [
+   "ritim",
+   "nabız",
+   "beat",
+   "vuruş",
+   "halka",
+   "heartbeat",
+   "pulse",
+   "rhythm ring",
+   "kalp atışı"
+  ],
+  "anchor": "(0,0) hoparlör çekirdeği; halkalar merkezden dışa yayılır",
+  "box": [
+   -170,
+   -130,
+   170,
+   130
+  ],
+  "points": [
+   "core",
+   "edge",
+   "top"
+  ],
+  "params": {
+   "beat": {
+    "type": "time",
+    "default": null,
+    "desc": "vuruş anı: parlama + genişleyen halka (0.4 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "rings": {
+    "type": "number",
+    "default": 3,
+    "desc": "yayılan halka sayısı (2-4)"
+   }
+  }
+ },
+ {
+  "name": "music-fx/equalizer-bars",
+  "status": "draft",
+  "desc": "Equalizer bars dancing to the beat, all jumping together on a kick",
+  "tags": [
+   "ekolayzer",
+   "equalizer",
+   "ses",
+   "bar",
+   "müzik",
+   "bass",
+   "bars",
+   "vu meter",
+   "vuruş"
+  ],
+  "anchor": "taban çizgisi (0,60); çubuklar yukarı uzar",
+  "box": [
+   -170,
+   -140,
+   170,
+   90
+  ],
+  "points": [
+   "base",
+   "peak",
+   "left",
+   "right"
+  ],
+  "params": {
+   "kick": {
+    "type": "time",
+    "default": null,
+    "desc": "bas vuruşu: tüm çubuklar zıplar (0.3 sn)"
+   },
+   "bars": {
+    "type": "number",
+    "default": 6,
+    "desc": "çubuk sayısı (5-7)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "music-fx/note-float",
+  "status": "draft",
+  "desc": "A music note floating upward and fading, launched with sparkles on play",
+  "tags": [
+   "nota",
+   "müzik notası",
+   "note",
+   "müzik",
+   "music",
+   "yükselmek",
+   "float",
+   "melodi",
+   "süzülme"
+  ],
+  "anchor": "(0,40) notanın dinlenme konumu; yukarı süzülür",
+  "box": [
+   -100,
+   -160,
+   100,
+   100
+  ],
+  "points": [
+   "note",
+   "top",
+   "base"
+  ],
+  "params": {
+   "play": {
+    "type": "time",
+    "default": null,
+    "desc": "nota fırlatma anı: yükselir + parıltı (1.2 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "music-fx/sound-wave",
+  "status": "draft",
+  "desc": "Speaker emitting travelling sine sound waves that swell on a burst",
+  "tags": [
+   "ses dalgası",
+   "sound wave",
+   "dalga",
+   "hoparlör",
+   "speaker",
+   "ses",
+   "audio",
+   "sine",
+   "yayılma"
+  ],
+  "anchor": "(0,0) dalgaların merkezi; hoparlör solda",
+  "box": [
+   -180,
+   -100,
+   180,
+   100
+  ],
+  "points": [
+   "speaker",
+   "mouth",
+   "tip"
+  ],
+  "params": {
+   "burst": {
+    "type": "time",
+    "default": null,
+    "desc": "ani ses patlaması: dalgalar büyür + halka (0.8 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "waves": {
+    "type": "number",
+    "default": 3,
+    "desc": "dalga çizgisi sayısı (2-4)"
+   }
+  }
+ },
+ {
+  "name": "music-fx/speaker-thump",
+  "status": "draft",
+  "desc": "Bass speaker whose cone punches outward on each thump, pushing an air shockwave",
+  "tags": [
+   "hoparlör",
+   "bas",
+   "speaker",
+   "bass",
+   "koni",
+   "thump",
+   "vuruş",
+   "subwoofer",
+   "gümbürtü"
+  ],
+  "anchor": "(0,0) koni merkezi",
+  "box": [
+   -140,
+   -115,
+   140,
+   115
+  ],
+  "points": [
+   "cone",
+   "cabinet",
+   "edge"
+  ],
+  "params": {
+   "thump": {
+    "type": "time",
+    "default": null,
+    "desc": "bas vuruşu: koni dışa fırlar + hava dalgası (0.5 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "music-fx/vinyl-spin",
+  "status": "draft",
+  "desc": "Spinning grooved vinyl record with a two-tone label; the needle drops with a bounce",
+  "tags": [
+   "plak",
+   "vinil",
+   "vinyl",
+   "record",
+   "plak çalar",
+   "turntable",
+   "dönmek",
+   "spin",
+   "iğne"
+  ],
+  "anchor": "(0,0) plak merkezi",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "centre",
+   "edge",
+   "arm"
+  ],
+  "params": {
+   "drop": {
+    "type": "time",
+    "default": null,
+    "desc": "iğne düşürme anı: kol iner, sıçrama + çizgi efekti (0.8 sn)"
+   },
+   "speed": {
+    "type": "number",
+    "default": 2.2,
+    "desc": "dönüş hızı rad/sn"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
   "name": "music/drum",
   "status": "draft",
   "desc": "Trampet davul; hit anında bagetler vurur, deride dalga yayılır",
@@ -5579,6 +6081,286 @@
     "type": "number",
     "default": 0.8,
     "desc": "bas nabzı şiddeti (0=kapalı)"
+   }
+  }
+ },
+ {
+  "name": "nature-cycle/bloom",
+  "status": "draft",
+  "desc": "Çiçek açma: bloom anında taç yapraklar açılır, polen parıltısı saçılır",
+  "tags": [
+   "çiçek",
+   "tomurcuk",
+   "açma",
+   "bahar",
+   "polen",
+   "taçyaprak",
+   "flower",
+   "bloom",
+   "bud",
+   "petal",
+   "spring"
+  ],
+  "anchor": "çiçek merkezi (0,0); sap tabanda (0,110)",
+  "box": [
+   -140,
+   -130,
+   140,
+   130
+  ],
+  "points": [
+   "flower",
+   "bud",
+   "stem",
+   "base"
+  ],
+  "params": {
+   "bloom": {
+    "type": "time",
+    "default": null,
+    "desc": "açma anı: 1.2 sn'de taç yapraklar açılır, polen parıltısı saçılır"
+   },
+   "petal": {
+    "type": "color",
+    "default": "purple"
+   },
+   "leaf": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "nature-cycle/day-night",
+  "status": "draft",
+  "desc": "Gündüz-gece döngüsü: cycle anında güneş batıp ay doğar, yıldızlar belirir",
+  "tags": [
+   "gündüz",
+   "gece",
+   "gün",
+   "döngü",
+   "güneş",
+   "ay",
+   "yıldız",
+   "day",
+   "night",
+   "cycle",
+   "sun",
+   "moon",
+   "stars"
+  ],
+  "anchor": "ufuk çizgisi (0,90); sahne merkezi",
+  "box": [
+   -170,
+   -140,
+   170,
+   140
+  ],
+  "points": [
+   "sun",
+   "moon",
+   "ground",
+   "tree",
+   "sky"
+  ],
+  "params": {
+   "cycle": {
+    "type": "time",
+    "default": null,
+    "desc": "gün→gece geçiş anı: 1.5 sn'de güneş batar, ay doğar, yıldızlar belirir"
+   },
+   "sun": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "ground": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "nature-cycle/rain-shower",
+  "status": "draft",
+  "desc": "Yağmur sağanağı: burst anında damlalar sıklaşır ve hızlanır, bulut kararır",
+  "tags": [
+   "yağmur",
+   "sağanak",
+   "bulut",
+   "şiddetli",
+   "damla",
+   "hava",
+   "rain",
+   "shower",
+   "downpour",
+   "cloud",
+   "storm"
+  ],
+  "anchor": "bulut merkezi (0,-60); damlalar alta düşer",
+  "box": [
+   -170,
+   -130,
+   170,
+   140
+  ],
+  "points": [
+   "cloud",
+   "rain",
+   "puddle"
+  ],
+  "params": {
+   "burst": {
+    "type": "time",
+    "default": null,
+    "desc": "sağanak anı: 0.8 sn'de yağış yoğunlaşır, bulut kararır ve sıkışır"
+   },
+   "cloud": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "drop": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "nature-cycle/seasons",
+  "status": "draft",
+  "desc": "Tek ağaçta dört mevsim: season anında yapraklar dökülür/açar, renk ve kar değişir",
+  "tags": [
+   "mevsim",
+   "ilkbahar",
+   "yaz",
+   "sonbahar",
+   "kış",
+   "ağaç",
+   "yaprak",
+   "season",
+   "spring",
+   "summer",
+   "autumn",
+   "winter",
+   "tree"
+  ],
+  "anchor": "gövde tabanı (0,110); yapraklar üstte",
+  "box": [
+   -160,
+   -140,
+   160,
+   140
+  ],
+  "points": [
+   "tree",
+   "ground",
+   "top"
+  ],
+  "params": {
+   "season": {
+    "type": "time",
+    "default": null,
+    "desc": "mevsim geçiş anı: 1.2 sn'de yapraklar dökülür/açar, renk ve kar değişir"
+   },
+   "phase": {
+    "type": "number",
+    "default": 0,
+    "desc": "mevsim: 0=ilkbahar 1=yaz 2=sonbahar 3=kış (season anında bir sonrakine geçer)"
+   },
+   "ground": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "nature-cycle/snowfall",
+  "status": "draft",
+  "desc": "Bulutlu kar yağışı: gust anında rüzgâr taneleri yana savurur, yağış hızlanır",
+  "tags": [
+   "kar",
+   "bulut",
+   "rüzgar",
+   "kış",
+   "tipi",
+   "yağış",
+   "snow",
+   "snowfall",
+   "cloud",
+   "wind",
+   "gust",
+   "winter"
+  ],
+  "anchor": "bulut merkezi (0,-75); kar alanı",
+  "box": [
+   -170,
+   -140,
+   170,
+   150
+  ],
+  "points": [
+   "cloud",
+   "snowfall",
+   "ground"
+  ],
+  "params": {
+   "gust": {
+    "type": "time",
+    "default": null,
+    "desc": "rüzgâr anı: 1.0 sn taneler yana savrulur, yağış hızlanır"
+   },
+   "cloud": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "flake": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "nature-cycle/tide",
+  "status": "draft",
+  "desc": "Gel-git sahnesi: tide anında su seviyesi yükselir, yüzey boşta sürekli dalgalanır",
+  "tags": [
+   "gelgit",
+   "dalga",
+   "deniz",
+   "su",
+   "kıyı",
+   "yükselme",
+   "tide",
+   "wave",
+   "sea",
+   "water",
+   "shore"
+  ],
+  "anchor": "kıyı kayası solda; su seviyesi alçak (60) ↔ yüksek (-10)",
+  "box": [
+   -170,
+   -130,
+   170,
+   140
+  ],
+  "points": [
+   "water",
+   "shore",
+   "surface",
+   "lowmark"
+  ],
+  "params": {
+   "tide": {
+    "type": "time",
+    "default": null,
+    "desc": "gel-git anı: 1.0 sn'de su seviyesi alçaktan yükseğe çıkar"
+   },
+   "water": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "rock": {
+    "type": "color",
+    "default": "dim"
    }
   }
  },
