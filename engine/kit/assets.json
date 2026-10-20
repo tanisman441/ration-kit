@@ -1,5 +1,243 @@
 [
  {
+  "name": "alert-fx/alarm-blink",
+  "status": "draft",
+  "desc": "Duvara monte kırmızı alarm lambası; yanıp sönen kubbe ve patlama hüzmeleri",
+  "tags": [
+   "alarm",
+   "alarm lambası",
+   "uyarı",
+   "siren",
+   "tehlike",
+   "alarm lamp",
+   "siren",
+   "warning",
+   "danger",
+   "beacon"
+  ],
+  "anchor": "montaj tabanı (0,30)",
+  "box": [
+   -100,
+   -125,
+   100,
+   45
+  ],
+  "points": [
+   "lens",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "alarm anı: parlama + ışık hüzmeleri (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "alert-fx/danger-ping",
+  "status": "draft",
+  "desc": "Ünlemli uyarı üçgeni merkezli, sürekli genişleyen tehlike ping halkaları",
+  "tags": [
+   "uyarı",
+   "tehlike",
+   "ping",
+   "alarm",
+   "ikaz",
+   "warning",
+   "danger",
+   "alert",
+   "ping",
+   "exclamation"
+  ],
+  "anchor": "merkez (üçgenin ortası)",
+  "box": [
+   -130,
+   -130,
+   130,
+   130
+  ],
+  "points": [
+   "centre"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "ping": {
+    "type": "time",
+    "default": null,
+    "desc": "güçlü ping anı: kalın halka + üçgen parlaması (0.6 sn)"
+   }
+  }
+ },
+ {
+  "name": "alert-fx/radar-alert",
+  "status": "draft",
+  "desc": "Dönen taramalı radar ekranı; at anında kırmızı uyarı halkası ve ünlem belirir",
+  "tags": [
+   "radar",
+   "tarama",
+   "uyarı",
+   "alarm",
+   "tehlike",
+   "sweep",
+   "radar",
+   "scan",
+   "alert",
+   "warning",
+   "sweep"
+  ],
+  "anchor": "ekran merkezi",
+  "box": [
+   -115,
+   -115,
+   115,
+   115
+  ],
+  "points": [
+   "centre"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "uyarı anı: kırmızı halka + ünlem + flaş (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "alert-fx/shield-up",
+  "status": "draft",
+  "desc": "Up anında patlayarak beliren kalkan; sonra yumuşak nabızla durur",
+  "tags": [
+   "kalkan",
+   "koruma",
+   "savunma",
+   "aktifleşme",
+   "güvenlik",
+   "shield",
+   "protection",
+   "defense",
+   "activate",
+   "security"
+  ],
+  "anchor": "kalkan merkezi",
+  "box": [
+   -95,
+   -105,
+   95,
+   105
+  ],
+  "points": [
+   "top",
+   "centre"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "up": {
+    "type": "time",
+    "default": null,
+    "desc": "kalkanın belirme anı: patlama + halka (0.6 sn)"
+   }
+  }
+ },
+ {
+  "name": "alert-fx/sonar-ping",
+  "status": "draft",
+  "desc": "Tabandaki yayıcıdan açılan, sürekli genişleyen sonar halkaları",
+  "tags": [
+   "sonar",
+   "radar",
+   "ping",
+   "dalga",
+   "taramak",
+   "deniz",
+   "sonar",
+   "ping",
+   "wave",
+   "scan",
+   "detection"
+  ],
+  "anchor": "yayıcı merkezi (0,55)",
+  "box": [
+   -140,
+   -120,
+   140,
+   90
+  ],
+  "points": [
+   "emitter"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "ping": {
+    "type": "time",
+    "default": null,
+    "desc": "güçlü ping anı: çift halka + geri dönüş sinyali (0.5 sn)"
+   }
+  }
+ },
+ {
+  "name": "alert-fx/warning-bar",
+  "status": "draft",
+  "desc": "Kayan çizgili sarı-kırmızı ikaz şeridi; flash anında parlayarak dikkat çeker",
+  "tags": [
+   "ikaz",
+   "uyarı şeridi",
+   "dikkat bandı",
+   "tehlike",
+   "şerit",
+   "warning bar",
+   "caution tape",
+   "alert",
+   "hazard",
+   "danger"
+  ],
+  "anchor": "şerit merkezi",
+  "box": [
+   -160,
+   -34,
+   160,
+   34
+  ],
+  "points": [
+   "left",
+   "right"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "flash": {
+    "type": "time",
+    "default": null,
+    "desc": "flash anı: bant parlama + glow (0.8 sn)"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "çizgi kayma hızı (0-2)"
+   }
+  }
+ },
+ {
   "name": "animals/bee",
   "status": "draft",
   "desc": "Uçan arı, yandan görünüm; kanatlar hızla vızıldar, sting olayında iğne batırır",
@@ -216,6 +454,267 @@
     "type": "time",
     "default": null,
     "desc": "baş eğme — selam/onay hareketi (0.7 sn)"
+   }
+  }
+ },
+ {
+  "name": "battle-fx/armor-crack",
+  "status": "draft",
+  "desc": "Zırh çatlağı: darbe anında kalkan plakadan yayılan çatlaklar ve fırlayan zırh parçaları",
+  "tags": [
+   "zırh",
+   "kalkan",
+   "çatlak",
+   "kırılma",
+   "darbe",
+   "armor",
+   "shield",
+   "crack",
+   "break"
+  ],
+  "anchor": "plakanın merkezi (0,0)",
+  "box": [
+   -160,
+   -140,
+   160,
+   140
+  ],
+  "points": [
+   "impact",
+   "top",
+   "rim"
+  ],
+  "params": {
+   "hit": {
+    "type": "time",
+    "default": null,
+    "desc": "çarpma anı (0.9 sn: çatlaklar yayılır + parçalar fırlar)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: zırh büyüklüğü"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "battle-fx/blast-shock",
+  "status": "draft",
+  "desc": "Şok dalgası: patlama merkezinden genişleyen çift halka, sıcak çekirdek ve savrulan toz bulutu",
+  "tags": [
+   "şok",
+   "dalga",
+   "patlama",
+   "bomba",
+   "halka",
+   "shock",
+   "blast",
+   "explosion",
+   "wave"
+  ],
+  "anchor": "patlama merkezi (0,0)",
+  "box": [
+   -180,
+   -180,
+   180,
+   180
+  ],
+  "points": [
+   "center",
+   "rim"
+  ],
+  "params": {
+   "blast": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı (0.7 sn: çekirdek + çift halka + toz)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: dalga büyüklüğü"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "battle-fx/bullet-time",
+  "status": "draft",
+  "desc": "Mermi izi yavaşlama: ağır çekimde süzülen mermi, arkasında iz çizgileri ve genişleyen dalga halkaları",
+  "tags": [
+   "mermi",
+   "kurşun",
+   "yavaşlama",
+   "ağır çekim",
+   "iz",
+   "bullet",
+   "slow motion",
+   "trail",
+   "shot"
+  ],
+  "anchor": "geçişin orta noktası (0,0)",
+  "box": [
+   -190,
+   -110,
+   190,
+   110
+  ],
+  "points": [
+   "head",
+   "tail"
+  ],
+  "params": {
+   "fire": {
+    "type": "time",
+    "default": null,
+    "desc": "ateş anı (1.2 sn: mermi soldan sağa ağır çekimde geçer)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: mermi büyüklüğü"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "battle-fx/dodge-ghost",
+  "status": "draft",
+  "desc": "Kaçınma hayalet izi: sağa fırlayan figürün arkasında kalan solan hayalet silüetler",
+  "tags": [
+   "kaçınma",
+   "kaçış",
+   "hayalet",
+   "iz",
+   "hız",
+   "dodge",
+   "ghost",
+   "dash",
+   "evade",
+   "afterimage"
+  ],
+  "anchor": "figürün başlangıç noktası (0,0)",
+  "box": [
+   -190,
+   -130,
+   190,
+   130
+  ],
+  "points": [
+   "start",
+   "end"
+  ],
+  "params": {
+   "dodge": {
+    "type": "time",
+    "default": null,
+    "desc": "kaçınma anı (0.9 sn: sağa fırlama + 3 hayalet iz)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: figür büyüklüğü"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "battle-fx/hit-spark",
+  "status": "draft",
+  "desc": "Vuruş parıltısı: darbe anında 4-köşe yıldız çakması ve etrafa saçılan ince kıvılcım çizgileri",
+  "tags": [
+   "vuruş",
+   "darbe",
+   "parıltı",
+   "kıvılcım",
+   "çarpma",
+   "hit",
+   "spark",
+   "strike",
+   "impact"
+  ],
+  "anchor": "vuruş noktası (0,0)",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "center",
+   "edge"
+  ],
+  "params": {
+   "hit": {
+    "type": "time",
+    "default": null,
+    "desc": "vuruş anı (0.35 sn: yıldız çakması + kıvılcımlar)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: parıltı büyüklüğü"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "battle-fx/sword-clash",
+  "status": "draft",
+  "desc": "Kılıç çarpışması: çaprazlanan iki kılıcın temas noktasından saçılan kıvılcım yağmuru",
+  "tags": [
+   "kılıç",
+   "çarpışma",
+   "kıvılcım",
+   "dövüş",
+   "savaş",
+   "sword",
+   "clash",
+   "spark",
+   "fight"
+  ],
+  "anchor": "kılıçların temas noktası (0,0)",
+  "box": [
+   -170,
+   -170,
+   170,
+   170
+  ],
+  "points": [
+   "contact",
+   "tipA",
+   "tipB"
+  ],
+  "params": {
+   "clash": {
+    "type": "time",
+    "default": null,
+    "desc": "temas anı (0.5 sn: çakma + kıvılcım yağmuru)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: kılıç boyutu"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
    }
   }
  },
@@ -8068,6 +8567,243 @@
     "type": "number",
     "default": 1,
     "desc": "patlama büyüklüğü çarpanı"
+   }
+  }
+ },
+ {
+  "name": "pointer-fx/cursor-click-pop",
+  "status": "draft",
+  "desc": "Fare imleci; click anında uçtan patlayan halka ve okta hafif çökme",
+  "tags": [
+   "imleç",
+   "tıklama",
+   "tık",
+   "fare",
+   "halka",
+   "patlama",
+   "cursor",
+   "click",
+   "pointer",
+   "mouse"
+  ],
+  "anchor": "imleç ucu (0,0)",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "tip"
+  ],
+  "params": {
+   "click": {
+    "type": "time",
+    "default": null,
+    "desc": "tıklama anı: halka patlar, ok 0.35 sn çöküp döner"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "pointer-fx/double-click",
+  "status": "draft",
+  "desc": "Çift tıklama: 0.18 sn arayla art arda iki halka dalgası yayılır",
+  "tags": [
+   "çift",
+   "tık",
+   "tıklama",
+   "imleç",
+   "dalga",
+   "fare",
+   "double",
+   "click",
+   "cursor",
+   "pointer"
+  ],
+  "anchor": "imleç ucu (0,0)",
+  "box": [
+   -130,
+   -130,
+   130,
+   130
+  ],
+  "points": [
+   "tip"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ilk tık anı: iki dalga 0.18 sn arayla yayılır (toplam ~0.75 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "pointer-fx/drag-trail",
+  "status": "draft",
+  "desc": "Sürükleme: drag anında hafif eğri yolda ilerleyen nokta, arkasında sönen ışık izi",
+  "tags": [
+   "sürükleme",
+   "sürükle",
+   "iz",
+   "kuyruk",
+   "fare",
+   "drag",
+   "trail",
+   "swipe",
+   "pointer",
+   "gesture"
+  ],
+  "anchor": "izin başlangıç noktası (0,0)",
+  "box": [
+   -180,
+   -90,
+   180,
+   90
+  ],
+  "points": [
+   "start",
+   "end"
+  ],
+  "params": {
+   "drag": {
+    "type": "time",
+    "default": null,
+    "desc": "sürükleme başlangıcı: nokta 0.9 sn yolda ilerler"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "pointer-fx/hover-glow",
+  "status": "draft",
+  "desc": "Hover efekti: kart hover anında parlar ve 1.0 sn boyunca yumuşak şekilde söner",
+  "tags": [
+   "hover",
+   "parlama",
+   "üzerine",
+   "gelince",
+   "ışık",
+   "buton",
+   "kart",
+   "glow",
+   "pointer",
+   "mouse"
+  ],
+  "anchor": "kart merkezi (0,0)",
+  "box": [
+   -140,
+   -100,
+   140,
+   100
+  ],
+  "points": [
+   "center",
+   "top"
+  ],
+  "params": {
+   "hover": {
+    "type": "time",
+    "default": null,
+    "desc": "üzerine gelme anı: parlama 0.18 sn yükselir, 0.8 sn söner"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "pointer-fx/loading-ring",
+  "status": "draft",
+  "desc": "Dönen yükleme halkası; done anında büzülüp onay tikine dönüşür",
+  "tags": [
+   "yükleme",
+   "yükleniyor",
+   "halka",
+   "dönüyor",
+   "bekle",
+   "tamam",
+   "tik",
+   "loading",
+   "spinner",
+   "done"
+  ],
+  "anchor": "halka merkezi (0,0)",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "done": {
+    "type": "time",
+    "default": null,
+    "desc": "yükleme bitti anı: halka 0.4 sn içinde tike dönüşür"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "dönüş hızı çarpanı (0.5–2)"
+   }
+  }
+ },
+ {
+  "name": "pointer-fx/scroll-flash",
+  "status": "draft",
+  "desc": "Kaydırma çubuğu; scroll anında parmak sıçrar ve yukarı-aşağı hız çizgileri çakar",
+  "tags": [
+   "kaydırma",
+   "kaydır",
+   "scroll",
+   "çubuk",
+   "hız",
+   "parmak",
+   "flaş",
+   "bar",
+   "flash",
+   "pointer"
+  ],
+  "anchor": "çubuk merkezi (0,0)",
+  "box": [
+   -90,
+   -150,
+   90,
+   150
+  ],
+  "points": [
+   "thumb",
+   "top",
+   "bottom"
+  ],
+  "params": {
+   "scroll": {
+    "type": "time",
+    "default": null,
+    "desc": "kaydırma anı: parmak 0.5 sn zıplar + hız çizgileri"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
    }
   }
  },
