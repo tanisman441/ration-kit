@@ -719,6 +719,248 @@
   }
  },
  {
+  "name": "celebration-fx/balloon-rise",
+  "status": "draft",
+  "desc": "Yükselen balon: salınarak yavaşça yukarı süzülen, ipli kutlama balonu",
+  "tags": [
+   "balon",
+   "uçan balon",
+   "yükselme",
+   "parti",
+   "kutlama",
+   "balloon",
+   "rise",
+   "party",
+   "celebration",
+   "float"
+  ],
+  "anchor": "balon merkezi (0,0)",
+  "box": [
+   -75,
+   -165,
+   75,
+   165
+  ],
+  "points": [
+   "top",
+   "string_end"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "balon rengi (tek vurgu rengi)"
+   }
+  }
+ },
+ {
+  "name": "celebration-fx/banner-drop",
+  "status": "draft",
+  "desc": "Açılan kutlama bandı: at anında düşüp sallanarak duran, yazılı afiş bandı",
+  "tags": [
+   "band",
+   "afiş",
+   "tebrik",
+   "kutlama",
+   "süs",
+   "yazı",
+   "banner",
+   "celebration",
+   "ribbon",
+   "congratulations",
+   "decoration"
+  ],
+  "anchor": "asılma noktası (0,0) — çubuk merkezi",
+  "box": [
+   -235,
+   -45,
+   235,
+   130
+  ],
+  "points": [
+   "hang",
+   "left",
+   "right"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "band rengi (tek vurgu rengi)"
+   },
+   "text": {
+    "type": "text",
+    "default": "TEBRİKLER",
+    "desc": "band üzerindeki yazı"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "açılma anı: band düşer ve salınarak durur"
+   }
+  }
+ },
+ {
+  "name": "celebration-fx/champagne-pop",
+  "status": "draft",
+  "desc": "Şampanya patlaması: at anında fırlayan mantar ve fışkıran köpük; şişe her zaman görünür",
+  "tags": [
+   "şampanya",
+   "patlama",
+   "mantar",
+   "köpük",
+   "kutlama",
+   "şişe",
+   "champagne",
+   "pop",
+   "cork",
+   "celebration",
+   "bottle"
+  ],
+  "anchor": "şişe gövde merkezi (0,0)",
+  "box": [
+   -95,
+   -175,
+   95,
+   175
+  ],
+  "points": [
+   "mouth",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "şişe rengi (tek vurgu rengi)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı: mantar fırlar, köpük 0.2-0.6 sn fışkırır"
+   }
+  }
+ },
+ {
+  "name": "celebration-fx/fireworks",
+  "status": "draft",
+  "desc": "Havai fişek patlaması: at anında flaş, sonra sönümlenen tek renkli kıvılcım halkası",
+  "tags": [
+   "havai fişek",
+   "fişek",
+   "patlama",
+   "kutlama",
+   "gösteri",
+   "gece",
+   "fireworks",
+   "pyrotechnic",
+   "burst",
+   "celebration",
+   "spark",
+   "display"
+  ],
+  "anchor": "patlama merkezi (0,0)",
+  "box": [
+   -140,
+   -140,
+   140,
+   140
+  ],
+  "points": [
+   "burst"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "fişek rengi (tek vurgu rengi)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı: 0.15 sn flaş + 0.4-0.8 sn sönümlenen halka"
+   }
+  }
+ },
+ {
+  "name": "celebration-fx/party-popper",
+  "status": "draft",
+  "desc": "Konfeti patlatan koni: at anında sarsılıp yukarı konfeti fışkırtan parti konisi",
+  "tags": [
+   "konfeti",
+   "koni",
+   "parti",
+   "patlama",
+   "kutlama",
+   "eğlence",
+   "popper",
+   "confetti",
+   "party",
+   "celebration",
+   "cone"
+  ],
+  "anchor": "koni merkezi (0,0)",
+  "box": [
+   -125,
+   -145,
+   125,
+   125
+  ],
+  "points": [
+   "mouth",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "koni + konfeti vurgu rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı: koni sarsılır, konfeti 0.5-0.8 sn fışkırır"
+   }
+  }
+ },
+ {
+  "name": "celebration-fx/trophy-glow",
+  "status": "draft",
+  "desc": "Parlayan kupa: nabız gibi atan ışıltı ve yıldız parıltılarıyla kutlama kupası",
+  "tags": [
+   "kupa",
+   "ödül",
+   "şampiyon",
+   "birincilik",
+   "parlama",
+   "zafer",
+   "trophy",
+   "award",
+   "champion",
+   "winner",
+   "glow",
+   "celebration"
+  ],
+  "anchor": "kupa gövde merkezi (0,0)",
+  "box": [
+   -95,
+   -135,
+   95,
+   135
+  ],
+  "points": [
+   "top",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "kupa rengi (tek vurgu rengi)"
+   }
+  }
+ },
+ {
   "name": "character-actions/dance",
   "status": "draft",
   "desc": "Dans eden insan figürü; 4 vuruşluk ritmik kol-bacak hareketi ve süzülen notalar",
@@ -2521,6 +2763,250 @@
   }
  },
  {
+  "name": "door-fx/bell-ding",
+  "status": "draft",
+  "desc": "Kapı zili: buton basılır, ses halkaları yayılır, butonda parlama nabzı",
+  "tags": [
+   "zil",
+   "kapı",
+   "buton",
+   "ding",
+   "ses",
+   "halka",
+   "ziyaretçi",
+   "doorbell",
+   "bell",
+   "ding",
+   "chime",
+   "ring"
+  ],
+  "anchor": "taban (0,0): duvar panelinin alt merkezi",
+  "box": [
+   -160,
+   -170,
+   160,
+   20
+  ],
+  "points": [
+   "button"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "zile basılma anı (buton çöker, 3 ses halkası yayılır)"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2",
+    "desc": "zil paneli rengi"
+   }
+  }
+ },
+ {
+  "name": "door-fx/creak-open",
+  "status": "draft",
+  "desc": "Aralık açılan kapı: kanat yavaşça aralanır, aralıktan ışık sızar, ışık titrer",
+  "tags": [
+   "kapı",
+   "aralık",
+   "açılmak",
+   "gıcırdamak",
+   "ışık",
+   "sızma",
+   "door",
+   "ajar",
+   "creak",
+   "open",
+   "light"
+  ],
+  "anchor": "taban (0,0): kapı kasasının alt merkezi",
+  "box": [
+   -150,
+   -230,
+   170,
+   12
+  ],
+  "points": [
+   "handle",
+   "gap"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "aralığın açılmaya başladığı an (0.75 sn yavaş açılış)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kapı kanadı rengi"
+   }
+  }
+ },
+ {
+  "name": "door-fx/door-slam",
+  "status": "draft",
+  "desc": "Çarpan kapı: at anında aralık kanat kasaya kapanır, sarsıntı + toz ve darbe çizgileri",
+  "tags": [
+   "kapı",
+   "çarpmak",
+   "kapatmak",
+   "sarsıntı",
+   "toz",
+   "güm",
+   "door",
+   "slam",
+   "shut",
+   "bang"
+  ],
+  "anchor": "taban (0,0): kapı kasasının alt merkezi",
+  "box": [
+   -150,
+   -230,
+   150,
+   12
+  ],
+  "points": [
+   "handle",
+   "hinge"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kapının kapandığı an (0.18 sn kapanış + 0.15 sn sarsıntı)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kapı kanadı rengi"
+   }
+  }
+ },
+ {
+  "name": "door-fx/knock-wave",
+  "status": "draft",
+  "desc": "Kapı vurma: tokmak 3 kez vurur, her vuruşta halka dalgası yayılır, tokmakta parlama nabzı",
+  "tags": [
+   "kapı",
+   "vurmak",
+   "tokmak",
+   "tık",
+   "halka",
+   "dalga",
+   "knock",
+   "door",
+   "knocker",
+   "tap",
+   "wave"
+  ],
+  "anchor": "taban (0,0): kapı kasasının alt merkezi",
+  "box": [
+   -150,
+   -230,
+   150,
+   12
+  ],
+  "points": [
+   "knocker",
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ilk vuruş anı; 2. ve 3. vuruş +0.18 / +0.36 sn"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kapı kanadı rengi"
+   }
+  }
+ },
+ {
+  "name": "door-fx/lock-click",
+  "status": "draft",
+  "desc": "Kilitlenme: sürgü kapıdan kasaya kayar, klik anında sarı yıldız parıltısı çakar",
+  "tags": [
+   "kilit",
+   "sürgü",
+   "klik",
+   "anahtar",
+   "güvenlik",
+   "lock",
+   "bolt",
+   "deadbolt",
+   "click",
+   "keyhole"
+  ],
+  "anchor": "taban (0,0): kapı diliminin alt kenarının merkezi",
+  "box": [
+   -150,
+   -130,
+   150,
+   70
+  ],
+  "points": [
+   "keyhole",
+   "bolt"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sürgünün kaymaya başladığı an (0.22 sn kayar, sonunda klik)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kapı dilimi rengi"
+   }
+  }
+ },
+ {
+  "name": "door-fx/peek-eye",
+  "status": "draft",
+  "desc": "Aralıktan bakan göz: aralık genişleyip göz açılır, boşta kırpma ve bakış gezinmesi",
+  "tags": [
+   "kapı",
+   "göz",
+   "bakmak",
+   "aralık",
+   "gizlenmek",
+   "merak",
+   "door",
+   "eye",
+   "peek",
+   "spy",
+   "blink"
+  ],
+  "anchor": "taban (0,0): kapı kasasının alt merkezi",
+  "box": [
+   -150,
+   -230,
+   150,
+   12
+  ],
+  "points": [
+   "eye",
+   "handle"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "gözün belirme anı (aralık genişler, göz 0.3 sn'de açılır)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kapı kanadı rengi"
+   }
+  }
+ },
+ {
   "name": "economy/bank",
   "status": "draft",
   "desc": "Klasik banka binası cephesi; alınlık, dört sütun, kapı ve merdiven",
@@ -3262,6 +3748,251 @@
     "type": "time",
     "default": null,
     "desc": "vurulma anı: toz + parça + çatlak"
+   }
+  }
+ },
+ {
+  "name": "fail-fx/crash-shatter",
+  "status": "draft",
+  "desc": "Darbe noktasından yayılan çatlaklı kırık cam ekran",
+  "tags": [
+   "kırık",
+   "çatlak",
+   "cam",
+   "ekran",
+   "kırılma",
+   "başarısız",
+   "crash",
+   "shatter",
+   "glass",
+   "crack",
+   "broken",
+   "fail"
+  ],
+  "anchor": "ekran merkezi (darbe noktası biraz üstte)",
+  "box": [
+   -110,
+   -95,
+   110,
+   95
+  ],
+  "points": [
+   "impact",
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kırılma anı: 0.3-0.7 sn çatlak yayılması + parça uçuşması"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "fail-fx/down-arrow-fall",
+  "status": "draft",
+  "desc": "Yere saplanmış, sekip salınan kırmızı düşüş oku",
+  "tags": [
+   "düşüş",
+   "ok",
+   "batış",
+   "düşen",
+   "kriz",
+   "çöküş",
+   "fall",
+   "down",
+   "arrow",
+   "crash",
+   "decline",
+   "drop",
+   "fail"
+  ],
+  "anchor": "ucun saplandığı yer (0,78)",
+  "box": [
+   -85,
+   -125,
+   85,
+   125
+  ],
+  "points": [
+   "tip",
+   "top",
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "saplanma anı: ok düşer, 0.2 sn sekme"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "fail-fx/error-scan",
+  "status": "draft",
+  "desc": "Kırmızı tarama çizgili panel ve beliren uyarı üçgeni",
+  "tags": [
+   "tarama",
+   "hata",
+   "uyarı",
+   "tarayıcı",
+   "tehlike",
+   "arama",
+   "error",
+   "scan",
+   "warning",
+   "alert",
+   "fail"
+  ],
+  "anchor": "panel merkezi (0,0)",
+  "box": [
+   -115,
+   -95,
+   115,
+   95
+  ],
+  "points": [
+   "top",
+   "center",
+   "warning"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tarama anı: 0.5 sn kırmızı çizgi geçişi + uyarı üçgeni"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "fail-fx/glitch-burst",
+  "status": "draft",
+  "desc": "Yatay dilim kaymalı, kırmızı hayaletli glitch patlaması",
+  "tags": [
+   "glitch",
+   "hata",
+   "bozulma",
+   "sinyal",
+   "dijital",
+   "arıza",
+   "fail",
+   "glitch",
+   "error",
+   "corrupt",
+   "digital"
+  ],
+  "anchor": "kart merkezi (0,0)",
+  "box": [
+   -115,
+   -85,
+   115,
+   85
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "glitch anı: 0.15-0.4 sn dilim kayması + kırmızı hayalet"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "fail-fx/red-x-stamp",
+  "status": "draft",
+  "desc": "Sarsıntıyla basılan kırmızı X mührü",
+  "tags": [
+   "mühür",
+   "damga",
+   "reddedildi",
+   "x",
+   "hata",
+   "yanlış",
+   "stamp",
+   "rejected",
+   "denied",
+   "fail",
+   "error",
+   "wrong"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -95,
+   -95,
+   95,
+   95
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "mühür basma anı: hızlı büyüme + 0.1 sn sarsıntı"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "fail-fx/smoke-fizzle",
+  "status": "draft",
+  "desc": "Sönüp duman çıkaran kıvılcım; ince duman sürekli yükselir",
+  "tags": [
+   "kıvılcım",
+   "duman",
+   "sönme",
+   "arıza",
+   "yanma",
+   "fiyasko",
+   "spark",
+   "smoke",
+   "fizzle",
+   "fail",
+   "dying",
+   "ember"
+  ],
+  "anchor": "kıvılcım tabanı (0,60)",
+  "box": [
+   -95,
+   -115,
+   95,
+   115
+  ],
+  "points": [
+   "ember",
+   "smoke_top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sönüş anı: 0.4-0.8 sn kıvılcım saçılımı"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
    }
   }
  },
