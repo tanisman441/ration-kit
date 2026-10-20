@@ -1278,6 +1278,269 @@
   }
  },
  {
+  "name": "chat-fx/emoji-react",
+  "status": "draft",
+  "desc": "Emoji tepkisi: at anında seçilen emoji mesajın üstünde parçacıklarla patlayıp belirir, sonra süzülür",
+  "tags": [
+   "emoji",
+   "tepki",
+   "kalp",
+   "beğen",
+   "kahkaha",
+   "reaksiyon",
+   "reaction",
+   "like",
+   "heart",
+   "laugh",
+   "message"
+  ],
+  "anchor": "mesaj balonunun merkezi (0,0)",
+  "box": [
+   -150,
+   -200,
+   150,
+   70
+  ],
+  "points": [
+   "emoji",
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tepkinin patlama anı"
+   },
+   "emoji": {
+    "type": "enum",
+    "default": "heart",
+    "values": [
+     "heart",
+     "laugh",
+     "like"
+    ],
+    "desc": "emoji türü"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   }
+  }
+ },
+ {
+  "name": "chat-fx/message-pop",
+  "status": "draft",
+  "desc": "Gelen mesaj balonu: at anında alttan yukarı fırlayıp esneyerek oturur, içinde sahte metin çizgileri",
+  "tags": [
+   "mesaj",
+   "message",
+   "balon",
+   "gelen",
+   "sohbet",
+   "chat",
+   "pop",
+   "bubble",
+   "notification",
+   "incoming"
+  ],
+  "anchor": "balonun altı (0,0)",
+  "box": [
+   -170,
+   -160,
+   170,
+   60
+  ],
+  "points": [
+   "top",
+   "center",
+   "tail"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "mesajın gelme anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "lines": {
+    "type": "number",
+    "default": 3,
+    "desc": "metin çizgisi sayısı (1-4)"
+   }
+  }
+ },
+ {
+  "name": "chat-fx/read-checks",
+  "status": "draft",
+  "desc": "Okundu tikleri: at öncesi tek gri tik, at anında ikinci tik kayarak gelir ve ikisi de renge dönüşür",
+  "tags": [
+   "tik",
+   "okundu",
+   "görüldü",
+   "mesaj",
+   "whatsapp",
+   "read",
+   "check",
+   "seen",
+   "ticks",
+   "message",
+   "double"
+  ],
+  "anchor": "tiklerin merkezi (0,0)",
+  "box": [
+   -80,
+   -60,
+   80,
+   60
+  ],
+  "points": [
+   "center",
+   "right"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "okunma anı (tek → çift tik)"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "chat-fx/sticker-slam",
+  "status": "draft",
+  "desc": "Çarpan çıkartma: yıldız rozet at anında yukarıdan düşüp zemin çizgisine çarpar, toz halkası yayar",
+  "tags": [
+   "çıkartma",
+   "sticker",
+   "çarpma",
+   "slam",
+   "yıldız",
+   "rozette",
+   "star",
+   "badge",
+   "impact",
+   "chat"
+  ],
+  "anchor": "çarpma noktası / zemin (0,0)",
+  "box": [
+   -150,
+   -430,
+   150,
+   80
+  ],
+  "points": [
+   "impact",
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yapıştırma (çarpma) anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "chat-fx/typing-dots",
+  "status": "draft",
+  "desc": "Yazıyor göstergesi: sohbet balonunda üç nokta 1.5 sn döngüyle sırayla zıplar, at anında balon belirir",
+  "tags": [
+   "yazıyor",
+   "typing",
+   "nokta",
+   "mesaj",
+   "sohbet",
+   "chat",
+   "dots",
+   "indicator",
+   "bubble",
+   "messaging"
+  ],
+  "anchor": "balon merkezi (0,0)",
+  "box": [
+   -150,
+   -90,
+   150,
+   90
+  ],
+  "points": [
+   "center",
+   "tail"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "balonun belirme anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "period": {
+    "type": "number",
+    "default": 1.5,
+    "desc": "nokta döngüsü süresi (sn)"
+   }
+  }
+ },
+ {
+  "name": "chat-fx/voice-wave",
+  "status": "draft",
+  "desc": "Sesli mesaj balonu: oynat üçgeni + 11 ses çubuğu; active anında çubuklar yükselip ritmik dans eder",
+  "tags": [
+   "ses",
+   "sesli",
+   "mesaj",
+   "dalga",
+   "voice",
+   "audio",
+   "waveform",
+   "chat",
+   "oynat",
+   "message"
+  ],
+  "anchor": "balon merkezi (0,0)",
+  "box": [
+   -180,
+   -70,
+   180,
+   70
+  ],
+  "points": [
+   "play",
+   "center",
+   "right"
+  ],
+  "params": {
+   "active": {
+    "type": "time",
+    "default": null,
+    "desc": "sesin aktifleşme (çalma) anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "bars": {
+    "type": "number",
+    "default": 11,
+    "desc": "dalga çubuğu sayısı"
+   }
+  }
+ },
+ {
   "name": "combat-fx/block-shield",
   "status": "draft",
   "desc": "Blok kalkanı: block anında altıgen kalkan flaşı ve dalgalanma halkası, boşta hafif titreme",
@@ -8123,6 +8386,267 @@
   }
  },
  {
+  "name": "progress-fx/combo-counter",
+  "status": "draft",
+  "desc": "Kombo sayacı: vuruş anında \"xN\" pop ile büyür, alev kıvılcımları saçılır",
+  "tags": [
+   "kombo",
+   "combo",
+   "sayaç",
+   "counter",
+   "vuruş",
+   "hit",
+   "streak",
+   "seri",
+   "skor",
+   "score"
+  ],
+  "anchor": "metin merkezi (0,0)",
+  "box": [
+   -140,
+   -85,
+   140,
+   85
+  ],
+  "points": [
+   "center",
+   "flames"
+  ],
+  "params": {
+   "combo": {
+    "type": "number",
+    "default": 5,
+    "desc": "gösterilen kombo sayısı"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "vuruş anı: sayaç büyür + alev kıvılcımı (0.6 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "progress-fx/level-up",
+  "status": "draft",
+  "desc": "Seviye atlama anı: ışık sütunu yükselir, yıldızlar saçılır, seviye rozeti belirir",
+  "tags": [
+   "seviye",
+   "level",
+   "seviye atlama",
+   "level up",
+   "başarı",
+   "achievement",
+   "başarım",
+   "ilerleme",
+   "progress",
+   "rozet"
+  ],
+  "anchor": "sütun tabanı (zemin), (0,0)",
+  "box": [
+   -150,
+   -200,
+   150,
+   40
+  ],
+  "points": [
+   "badge",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "seviye atlama anı: ışık sütunu + yıldız patlaması + rozet pop (1.2 sn)"
+   },
+   "level": {
+    "type": "number",
+    "default": 2,
+    "desc": "rozet üstünde yazan seviye numarası"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "progress-fx/milestone-flag",
+  "status": "draft",
+  "desc": "Kilometre taşı bayrağı: ulaşma anında bayrak dalgalanır, konfeti patlar",
+  "tags": [
+   "bayrak",
+   "flag",
+   "kilometre taşı",
+   "milestone",
+   "başarı",
+   "achievement",
+   "hedef",
+   "goal",
+   "konfeti",
+   "confetti"
+  ],
+  "anchor": "direk tabanı (0,0)",
+  "box": [
+   -120,
+   -170,
+   120,
+   120
+  ],
+  "points": [
+   "base",
+   "tip",
+   "pole"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ulaşma anı: güçlü dalgalanma + konfeti patlaması (1.2 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "green"
+   }
+  }
+ },
+ {
+  "name": "progress-fx/rank-badge",
+  "status": "draft",
+  "desc": "Derece rozeti: bronze/silver/gold metali, belirme anında pop ile büyür",
+  "tags": [
+   "rozet",
+   "badge",
+   "madalya",
+   "medal",
+   "derece",
+   "rank",
+   "altın",
+   "gümüş",
+   "bronz",
+   "gold",
+   "sıralama",
+   "başarı"
+  ],
+  "anchor": "rozet merkezi (0,0)",
+  "box": [
+   -95,
+   -125,
+   95,
+   105
+  ],
+  "points": [
+   "center",
+   "ribbon"
+  ],
+  "params": {
+   "rank": {
+    "type": "enum",
+    "default": "gold",
+    "values": [
+     "bronze",
+     "silver",
+     "gold"
+    ],
+    "desc": "rozetin metali (renk değiştirir)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "belirme anı: overshoot pop ile belirme (0.7 sn)"
+   }
+  }
+ },
+ {
+  "name": "progress-fx/trophy-shine",
+  "status": "draft",
+  "desc": "Altın kupa: parıltı anında ışık bandı kupayı süpürür, parıltı yıldızları saçılır",
+  "tags": [
+   "kupa",
+   "trophy",
+   "ödül",
+   "award",
+   "şampiyon",
+   "champion",
+   "kazanma",
+   "win",
+   "parıltı",
+   "shine"
+  ],
+  "anchor": "kaide tabanı (0,0)",
+  "box": [
+   -120,
+   -130,
+   120,
+   120
+  ],
+  "points": [
+   "cup",
+   "base",
+   "handleL",
+   "handleR"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "parıltı anı: ışık süpürmesi + parıltı yıldızları (0.9 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "progress-fx/xp-bar-fill",
+  "status": "draft",
+  "desc": "Deneyim puanı barı: olay anında animasyonla dolar, kıvılcımlar saçılır",
+  "tags": [
+   "xp",
+   "deneyim",
+   "experience",
+   "bar",
+   "ilerleme",
+   "progress",
+   "dolum",
+   "fill",
+   "tecrübe",
+   "seviye barı"
+  ],
+  "anchor": "bar merkezi (0,0)",
+  "box": [
+   -180,
+   -50,
+   180,
+   50
+  ],
+  "points": [
+   "left",
+   "right",
+   "top"
+  ],
+  "params": {
+   "fill": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "xp doluluk oranı (0-1)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "dolma anı: bar sıfırdan hedefe dolar + kıvılcım (0.8 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
   "name": "school/backpack",
   "status": "draft",
   "desc": "Ön cepli, askılı okul çantası; bounce anında havaya zıplayıp esneyerek iner",
@@ -10681,6 +11205,263 @@
     "type": "time",
     "default": null,
     "desc": "belirme anı: bulut zıplayarak büyür (0.55 sn)"
+   }
+  }
+ },
+ {
+  "name": "time-fx/calendar-flip",
+  "status": "draft",
+  "desc": "Spiralli duvar takvimi; at anında yaprak çevrilir, yeni gün açığa çıkar",
+  "tags": [
+   "takvim",
+   "gün",
+   "tarih",
+   "sayfa",
+   "çevirme",
+   "calendar",
+   "date",
+   "flip",
+   "time",
+   "gün"
+  ],
+  "anchor": "takvim merkezi (0,0)",
+  "box": [
+   -110,
+   -125,
+   110,
+   125
+  ],
+  "points": [
+   "face",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "day": {
+    "type": "number",
+    "default": 15,
+    "desc": "gün numarası"
+   },
+   "month": {
+    "type": "text",
+    "default": "EKİM",
+    "desc": "ay adı (kısa)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yaprak çevirme anı (0.7 sn)"
+   }
+  }
+ },
+ {
+  "name": "time-fx/clock-tick",
+  "status": "draft",
+  "desc": "Mekanik tik sesiyle atlayan saniye ibresli analog saat; tick anında parlama",
+  "tags": [
+   "saat",
+   "analog",
+   "tik",
+   "zaman",
+   "saniye",
+   "clock",
+   "tick",
+   "watch",
+   "time"
+  ],
+  "anchor": "kadran merkezi (0,0)",
+  "box": [
+   -120,
+   -120,
+   120,
+   120
+  ],
+  "points": [
+   "face",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "time": {
+    "type": "number",
+    "default": 12.5,
+    "desc": "saat (ondalıklı, ör. 12.5 = 12:30)"
+   },
+   "tick": {
+    "type": "time",
+    "default": null,
+    "desc": "tik anı: ibre ucunda parlama + ses dalgası"
+   }
+  }
+ },
+ {
+  "name": "time-fx/countdown-ring",
+  "status": "draft",
+  "desc": "Geri sayan halka ilerleme çemberi; sıfıra ulaşınca flaş patlaması",
+  "tags": [
+   "geri sayım",
+   "sayaç",
+   "halka",
+   "süre",
+   "zamanlayıcı",
+   "countdown",
+   "ring",
+   "timer",
+   "time",
+   "süre"
+  ],
+  "anchor": "halka merkezi (0,0)",
+  "box": [
+   -140,
+   -140,
+   140,
+   140
+  ],
+  "points": [
+   "face",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "from": {
+    "type": "number",
+    "default": 10,
+    "desc": "geri sayım süresi (sn)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sayım bitiş anı: flaş patlaması"
+   }
+  }
+ },
+ {
+  "name": "time-fx/fast-forward",
+  "status": "draft",
+  "desc": "İleri sarma çift okları; active anında hız çizgileriyle patlama yapar",
+  "tags": [
+   "ileri sar",
+   "hızlandır",
+   "ok",
+   "hız",
+   "video",
+   "fast forward",
+   "speed",
+   "arrow",
+   "time"
+  ],
+  "anchor": "oklar merkezi (0,0)",
+  "box": [
+   -165,
+   -85,
+   165,
+   85
+  ],
+  "points": [
+   "tip",
+   "face"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "active": {
+    "type": "time",
+    "default": null,
+    "desc": "aktifleşme anı: hız patlaması (0.6 sn)"
+   }
+  }
+ },
+ {
+  "name": "time-fx/hourglass-flow",
+  "status": "draft",
+  "desc": "Sürekli kum akan kum saati; at anında çevirme animasyonu",
+  "tags": [
+   "kum saati",
+   "kum",
+   "zaman",
+   "süre",
+   "çevirme",
+   "hourglass",
+   "sand",
+   "time",
+   "timer"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -160,
+   -160,
+   160,
+   160
+  ],
+  "points": [
+   "face",
+   "top",
+   "bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çevirme anı: 180° dönüş (0.7 sn)"
+   }
+  }
+ },
+ {
+  "name": "time-fx/timer-alarm",
+  "status": "draft",
+  "desc": "Klasik çalar saat; at anında ziller sallanır ve ses halkaları yayılır",
+  "tags": [
+   "çalar saat",
+   "alarm",
+   "zil",
+   "uyandırma",
+   "zaman",
+   "alarm clock",
+   "bell",
+   "time",
+   "wake"
+  ],
+  "anchor": "gövde merkezi (0,10)",
+  "box": [
+   -125,
+   -140,
+   125,
+   135
+  ],
+  "points": [
+   "face",
+   "bellL",
+   "bellR"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "time": {
+    "type": "number",
+    "default": 7,
+    "desc": "saat (ondalıklı, ör. 7 = 07:00)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "alarm anı: zil sallanması + halkalar (1.2 sn)"
    }
   }
  },
