@@ -1527,6 +1527,238 @@
   }
  },
  {
+  "name": "construction-fx/crane-swing",
+  "status": "draft",
+  "desc": "Crane hook swinging on a cable like a pendulum, carrying a small crate",
+  "tags": [
+   "vinç",
+   "kanca",
+   "halat",
+   "salınım",
+   "yük",
+   "inşaat",
+   "crane",
+   "hook",
+   "swing",
+   "cable",
+   "load"
+  ],
+  "anchor": "halat üstü (0,-140)",
+  "box": [
+   -70,
+   -140,
+   70,
+   140
+  ],
+  "points": [
+   "hook",
+   "top"
+  ],
+  "params": {
+   "sway": {
+    "type": "number",
+    "default": 1,
+    "desc": "salınım genliği çarpanı (0 = asılı durur)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "construction-fx/crumble",
+  "status": "draft",
+  "desc": "Brick wall that cracks and crumbles when at hits, with falling bricks, debris and dust",
+  "tags": [
+   "yıkım",
+   "duvar",
+   "moloz",
+   "çatlak",
+   "enkaz",
+   "inşaat",
+   "crumble",
+   "wall",
+   "rubble",
+   "debris",
+   "collapse"
+  ],
+  "anchor": "duvar tabanı (0,100)",
+  "box": [
+   -120,
+   -110,
+   120,
+   120
+  ],
+  "points": [
+   "center",
+   "debris"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "duvarın çatlayıp dökülmeye başladığı an"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "construction-fx/drill-spark",
+  "status": "draft",
+  "desc": "Power drill with vibrating bit and a spark burst at the contact point when at hits",
+  "tags": [
+   "matkap",
+   "şarjlı matkap",
+   "kıvılcım",
+   "delme",
+   "inşaat",
+   "drill",
+   "spark",
+   "boring",
+   "power tool"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -150,
+   -80,
+   190,
+   110
+  ],
+  "points": [
+   "tip",
+   "grip"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "matkap ucunda kıvılcım patlaması anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "construction-fx/hammer-hit",
+  "status": "draft",
+  "desc": "Hammer striking a nail into wood, with an impact star flash and shockwave when at hits",
+  "tags": [
+   "çekiç",
+   "çivi",
+   "vuruş",
+   "çarpma",
+   "inşaat",
+   "hammer",
+   "nail",
+   "strike",
+   "impact"
+  ],
+  "anchor": "çivi başı (0,8)",
+  "box": [
+   -110,
+   -140,
+   110,
+   120
+  ],
+  "points": [
+   "impact",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çekicin çiviye vurduğu an (çakma + şok halkası)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "construction-fx/saw-dust",
+  "status": "draft",
+  "desc": "Circular saw with a spinning blade and looping dust puffs thrown off the cutting point",
+  "tags": [
+   "testere",
+   "daire testere",
+   "toz",
+   "kesme",
+   "inşaat",
+   "saw",
+   "circular saw",
+   "dust",
+   "cutting"
+  ],
+  "anchor": "testere merkezi (0,10)",
+  "box": [
+   -120,
+   -115,
+   120,
+   120
+  ],
+  "points": [
+   "blade",
+   "contact"
+  ],
+  "params": {
+   "spin": {
+    "type": "number",
+    "default": 1,
+    "desc": "testere dönüş hızı çarpanı (0 = durur)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "construction-fx/weld-flash",
+  "status": "draft",
+  "desc": "Welding torch with a flickering tip spark and a bright weld strike flash when at hits",
+  "tags": [
+   "kaynak",
+   "torç",
+   "kaynak makinesi",
+   "çakma",
+   "inşaat",
+   "welding",
+   "torch",
+   "flash",
+   "spark"
+  ],
+  "anchor": "torç gövde merkezi (0,0)",
+  "box": [
+   -110,
+   -90,
+   120,
+   110
+  ],
+  "points": [
+   "tip",
+   "grip"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kaynak vuruşu anı (parlak çakma + kıvılcımlar + duman)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
   "name": "economy/bank",
   "status": "draft",
   "desc": "Klasik banka binası cephesi; alınlık, dört sütun, kapı ve merdiven",
@@ -3462,6 +3694,244 @@
    "color": {
     "type": "color",
     "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "gadget-fx/battery-charge",
+  "status": "draft",
+  "desc": "Battery with adjustable fill level; a lightning bolt flashes when charge reaches full",
+  "tags": [
+   "pil",
+   "batarya",
+   "şarj",
+   "doluyor",
+   "enerji",
+   "battery",
+   "charge",
+   "energy",
+   "power"
+  ],
+  "anchor": "pil gövdesi merkezi",
+  "box": [
+   -150,
+   -90,
+   150,
+   90
+  ],
+  "points": [
+   "terminal",
+   "body",
+   "bolt"
+  ],
+  "params": {
+   "charge": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "doluluk 0-1 (1 = tam dolu, şimşek çakar)"
+   },
+   "color": {
+    "type": "color",
+    "default": "green"
+   }
+  }
+ },
+ {
+  "name": "gadget-fx/radar-sweep",
+  "status": "draft",
+  "desc": "Radar: rotating sweep beam with echo blips that flash as the beam passes, plus a ping burst event",
+  "tags": [
+   "radar",
+   "tarama",
+   "taramak",
+   "hedef",
+   "sonar",
+   "scan",
+   "sweep",
+   "blip",
+   "echo"
+  ],
+  "anchor": "radar merkezi",
+  "box": [
+   -160,
+   -160,
+   160,
+   160
+  ],
+  "points": [
+   "center",
+   "rim",
+   "north"
+  ],
+  "params": {
+   "sweep": {
+    "type": "time",
+    "default": null,
+    "desc": "ping anı: merkezden genişleyen parlak halka"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "gadget-fx/scan-line",
+  "status": "draft",
+  "desc": "Scan line: a vertical beam sweeps across a screen; a bright highlight pass fires on at",
+  "tags": [
+   "tarama",
+   "ekran",
+   "çizgi",
+   "analiz",
+   "yükleniyor",
+   "scan",
+   "screen",
+   "line",
+   "analyze",
+   "loading"
+  ],
+  "anchor": "ekran merkezi",
+  "box": [
+   -180,
+   -130,
+   180,
+   130
+  ],
+  "points": [
+   "screen",
+   "left",
+   "right",
+   "led"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tarama geçiş anı: parlak dikey çizgi ekranı süpürür (1.2 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "gadget-fx/signal-bars",
+  "status": "draft",
+  "desc": "Signal bars: four rounded bars that pulse gently and bounce in a wave on activity",
+  "tags": [
+   "sinyal",
+   "çubuk",
+   "bağlantı",
+   "seviye",
+   "kablosuz",
+   "signal",
+   "bars",
+   "reception",
+   "strength"
+  ],
+  "anchor": "taban çizgisi merkezi",
+  "box": [
+   -140,
+   -190,
+   140,
+   40
+  ],
+  "points": [
+   "base",
+   "top"
+  ],
+  "params": {
+   "activity": {
+    "type": "time",
+    "default": null,
+    "desc": "sinyal aktivite anı: çubuklar dalga gibi zıplar"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "gadget-fx/touch-ripple",
+  "status": "draft",
+  "desc": "Touch ripple: expanding rings radiate from a tap point when touched",
+  "tags": [
+   "dokunma",
+   "dokun",
+   "halka",
+   "dalga",
+   "parmak",
+   "touch",
+   "ripple",
+   "tap",
+   "wave"
+  ],
+  "anchor": "dokunma noktası",
+  "box": [
+   -190,
+   -190,
+   190,
+   190
+  ],
+  "points": [
+   "center",
+   "edge"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "dokunma anı: üç kademeli halka yayılır"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "gadget-fx/wifi-radiate",
+  "status": "draft",
+  "desc": "Wifi signal: arc waves radiating upward from a source point, with a pulse burst event",
+  "tags": [
+   "wifi",
+   "sinyal",
+   "dalga",
+   "kablosuz",
+   "internet",
+   "wireless",
+   "radiate",
+   "signal waves"
+  ],
+  "anchor": "(0,0) kaynak nokta (router ışığı); dalgalar yukarı doğru yayılır",
+  "box": [
+   -170,
+   -130,
+   170,
+   110
+  ],
+  "points": [
+   "source",
+   "top",
+   "edge"
+  ],
+  "params": {
+   "pulse": {
+    "type": "time",
+    "default": null,
+    "desc": "dalga patlaması anı: parlak halka yayılır"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent"
+   },
+   "arcs": {
+    "type": "number",
+    "default": 4,
+    "desc": "yay sayısı (3-5)"
    }
   }
  },
@@ -8446,6 +8916,252 @@
     "type": "time",
     "default": null,
     "desc": "yazmaya başlama anı"
+   }
+  }
+ },
+ {
+  "name": "thought-fx/brain-wave",
+  "status": "draft",
+  "desc": "Cute head icon with a brain inside and looping pulse waves radiating from the top",
+  "tags": [
+   "beyin",
+   "kafa",
+   "düşünce",
+   "dalga",
+   "brain",
+   "head",
+   "mind",
+   "wave",
+   "pulse",
+   "zeka"
+  ],
+  "anchor": "kafa merkezi (0,0)",
+  "box": [
+   -88,
+   -92,
+   88,
+   78
+  ],
+  "points": [
+   "head",
+   "brain",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "dalga rengi"
+   },
+   "pulse": {
+    "type": "number",
+    "default": 1,
+    "desc": "nabız hızı çarpanı (0.2–3)"
+   }
+  }
+ },
+ {
+  "name": "thought-fx/idea-burst",
+  "status": "draft",
+  "desc": "Bright core with radiating spark lines that shoot outward on the at moment",
+  "tags": [
+   "fikir",
+   "patlama",
+   "parlak",
+   "idea",
+   "burst",
+   "spark",
+   "kıvılcım",
+   "flash",
+   "ilham",
+   "inspiration"
+  ],
+  "anchor": "patlama merkezi (0,0)",
+  "box": [
+   -118,
+   -118,
+   118,
+   118
+  ],
+  "points": [
+   "core",
+   "ray",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "patlama rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı: ışınlar dışa fırlar (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "thought-fx/lightbulb-flicker",
+  "status": "draft",
+  "desc": "Light bulb that flickers for 0.7s on the at moment, then turns on bright with rays",
+  "tags": [
+   "ampul",
+   "fikir",
+   "ışık",
+   "parlak fikir",
+   "lightbulb",
+   "idea",
+   "flicker",
+   "light",
+   "eureka",
+   "bulb"
+  ],
+  "anchor": "cam merkezi (0,0)",
+  "box": [
+   -92,
+   -98,
+   92,
+   72
+  ],
+  "points": [
+   "glass",
+   "base",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "ışık rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kıvılcım anı: 0.7 sn titreyip sonra tam yanar"
+   }
+  }
+ },
+ {
+  "name": "thought-fx/memory-rewind",
+  "status": "draft",
+  "desc": "Memory card whose inner scene scrolls backward with rewind arrows on the at moment",
+  "tags": [
+   "anı",
+   "kart",
+   "geri sarma",
+   "hafıza",
+   "memory",
+   "rewind",
+   "card",
+   "nostalji",
+   "tape",
+   "flashback"
+  ],
+  "anchor": "kart merkezi (0,0)",
+  "box": [
+   -122,
+   -116,
+   122,
+   96
+  ],
+  "points": [
+   "card",
+   "picture",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2",
+    "desc": "kart rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "geri sarma anı: sarsıntı + sahne kayması + oklar (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "thought-fx/question-spin",
+  "status": "draft",
+  "desc": "Question mark that floats gently and spins a full turn on the spin moment",
+  "tags": [
+   "soru",
+   "işaret",
+   "merak",
+   "şüphe",
+   "question",
+   "mark",
+   "spin",
+   "why",
+   "curiosity",
+   "wonder"
+  ],
+  "anchor": "dönüş merkezi (0,0)",
+  "box": [
+   -78,
+   -86,
+   78,
+   66
+  ],
+  "points": [
+   "top",
+   "dot",
+   "centre"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "işaret rengi"
+   },
+   "spin": {
+    "type": "time",
+    "default": null,
+    "desc": "360° dönüş anı (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "thought-fx/thought-bubble-pop",
+  "status": "draft",
+  "desc": "Thought bubble cloud that pops in with a springy bounce, trailing tail dots",
+  "tags": [
+   "düşünce",
+   "bulut",
+   "fikir",
+   "akıl",
+   "thought",
+   "bubble",
+   "cloud",
+   "pop",
+   "idea",
+   "mind"
+  ],
+  "anchor": "bulut merkezi (0,0); kuyruk aşağı sola sarkar",
+  "box": [
+   -125,
+   -110,
+   125,
+   112
+  ],
+  "points": [
+   "centre",
+   "top",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2",
+    "desc": "bulut rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "belirme anı: bulut zıplayarak büyür (0.55 sn)"
    }
   }
  },
