@@ -128,3 +128,8 @@ Her kategori 4–6 çizim; stil STYLE.md'ye uyar; her çizim 2 tur görsel kontr
 - [x] X44 celebration-fx — fireworks, balloon-rise, champagne-pop, banner-drop, trophy-glow, party-popper (kutlama animasyonları)
 - [x] X45 fail-fx — crash-shatter, glitch-burst, red-x-stamp, down-arrow-fall, error-scan, smoke-fizzle (hata/başarısızlık efektleri)
 - [x] X46 door-fx — door-slam, knock-wave, lock-click, creak-open, peek-eye, bell-ding (kapı/kilit aksiyon animasyonları)
+- [ ] X47 crowd-reactions — cheer-burst (params: at zaman), boo-shake, wave-pass, clap-sync, gasp-hands, sing-along (kalabalık tepki animasyonları)
+- [ ] X48 mechanics-fx — gear-turn (params: spin 0-1), piston-pump, belt-drive, spring-bounce (params: pull zaman), crank-rotate, valve-steam (params: open zaman) (makine hareket animasyonları)
+- [ ] X49 lab-fx — fizz-bubble, titration-drip (params: drop zaman), stir-spin, flame-test (params: ignite zaman), crystallize, spill-spread (laboratuvar deney animasyonları)
+- [ ] X50 disaster-fx — earthquake-shake (params: shake 0-1), lightning-strike (params: at zaman), tsunami-wave, wildfire-spread, landslide-tumble, flood-rise (afet animasyonları)
+- [ ] X51 travel-fx — ticket-scan (params: scan zaman), passport-stamp (params: stamp zaman), luggage-roll, boarding-pass-pop, takeoff-roll, landing-gear (params: down zaman) (seyahat aksiyon animasyonları)
