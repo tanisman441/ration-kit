@@ -3032,6 +3032,261 @@
   }
  },
  {
+  "name": "disaster-fx/earthquake-shake",
+  "status": "draft",
+  "desc": "Deprem: sallanan ev ve ağaç, zemin çatlağı, toz, sismik dalgalar",
+  "tags": [
+   "deprem",
+   "sarsıntı",
+   "yerkabuğu",
+   "çatlak",
+   "afet",
+   "earthquake",
+   "shake",
+   "quake",
+   "disaster",
+   "tremor"
+  ],
+  "anchor": "zemin ortası (0,0)",
+  "box": [
+   -150,
+   -110,
+   150,
+   90
+  ],
+  "points": [
+   "crack",
+   "house",
+   "tree",
+   "wave"
+  ],
+  "params": {
+   "shake": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "sarsıntı şiddeti 0–1 (nesne sarsıntısı, çatlak genişliği, toz yoğunluğu)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "zemin rengi"
+   }
+  }
+ },
+ {
+  "name": "disaster-fx/flood-rise",
+  "status": "draft",
+  "desc": "Sel: yükselen su, yüzeyde sürüklenen kutu ve tahta, girdap halkaları",
+  "tags": [
+   "sel",
+   "taşkın",
+   "su",
+   "yükselen su",
+   "sürüklenme",
+   "afet",
+   "flood",
+   "water",
+   "rise",
+   "deluge",
+   "disaster"
+  ],
+  "anchor": "sahne ortası (0,0)",
+  "box": [
+   -150,
+   -110,
+   150,
+   90
+  ],
+  "points": [
+   "water_top",
+   "crate",
+   "plank"
+  ],
+  "params": {
+   "level": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "su seviyesi 0–1 (su bu seviyeye yumuşak geçişle yükselir/alçalır)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "su rengi"
+   }
+  }
+ },
+ {
+  "name": "disaster-fx/landslide-tumble",
+  "status": "draft",
+  "desc": "Heyelan: yamacından kopup dönen kayalar ve ardında kalan toz bulutu",
+  "tags": [
+   "heyelan",
+   "kaya",
+   "toprak kayması",
+   "çığ",
+   "toz",
+   "yamaç",
+   "afet",
+   "landslide",
+   "rocks",
+   "avalanche",
+   "dust",
+   "disaster"
+  ],
+  "anchor": "yamaç tabanı (0,0)",
+  "box": [
+   -150,
+   -120,
+   150,
+   80
+  ],
+  "points": [
+   "slope_top",
+   "base",
+   "dust"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kopma anı (kayalar 1.2 sn boyunca yuvarlanır, toz 1.6 sn sürer)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "yamaç rengi"
+   }
+  }
+ },
+ {
+  "name": "disaster-fx/lightning-strike",
+  "status": "draft",
+  "desc": "Yıldırım: kara buluttan yere inen zigzag çakım, flaş ve dalga halkası",
+  "tags": [
+   "yıldırım",
+   "şimşek",
+   "çakım",
+   "bulut",
+   "fırtına",
+   "afet",
+   "lightning",
+   "strike",
+   "bolt",
+   "thunderstorm",
+   "flash"
+  ],
+  "anchor": "çarpma noktası (0,0)",
+  "box": [
+   -130,
+   -130,
+   130,
+   70
+  ],
+  "points": [
+   "strike",
+   "cloud",
+   "bolt_mid"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çarpma anı (çakım 0.45 sn boyunca görünür, sonra söner)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "çakım rengi"
+   }
+  }
+ },
+ {
+  "name": "disaster-fx/tsunami-wave",
+  "status": "draft",
+  "desc": "Tsunami: kabaran dev dalga, köpük tepesi, kırılma ve su püskürmesi",
+  "tags": [
+   "tsunami",
+   "dalga",
+   "dev dalga",
+   "sel",
+   "köpük",
+   "afet",
+   "wave",
+   "tsunami",
+   "surf",
+   "foam",
+   "disaster",
+   "flood"
+  ],
+  "anchor": "dalga tabanı (0,0)",
+  "box": [
+   -150,
+   -130,
+   150,
+   60
+  ],
+  "points": [
+   "crest",
+   "foam",
+   "base"
+  ],
+  "params": {
+   "surge": {
+    "type": "time",
+    "default": null,
+    "desc": "dalganın kabarıp kırıldığı an (0.9 sn sürer, sonra geri çekilir)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "su rengi"
+   }
+  }
+ },
+ {
+  "name": "disaster-fx/wildfire-spread",
+  "status": "draft",
+  "desc": "Orman yangını: yayılan alevler, kıvılcım yağmuru ve duman sütunu",
+  "tags": [
+   "yangın",
+   "ateş",
+   "alev",
+   "orman yangını",
+   "duman",
+   "kıvılcım",
+   "afet",
+   "wildfire",
+   "fire",
+   "flame",
+   "smoke",
+   "embers"
+  ],
+  "anchor": "ateş tabanı (0,0)",
+  "box": [
+   -150,
+   -150,
+   150,
+   60
+  ],
+  "points": [
+   "fire",
+   "smoke",
+   "tree"
+  ],
+  "params": {
+   "spread": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "yangının yayılma derecesi 0–1 (alev alanı genişliği ve yüksekliği)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "alev vurgu rengi"
+   }
+  }
+ },
+ {
   "name": "door-fx/bell-ding",
   "status": "draft",
   "desc": "Kapı zili: buton basılır, ses halkaları yayılır, butonda parlama nabzı",
@@ -4535,6 +4790,258 @@
     "type": "time",
     "default": null,
     "desc": "büyü atma anı: kıvılcım yağmuru"
+   }
+  }
+ },
+ {
+  "name": "fire-fx/campfire-dance",
+  "status": "draft",
+  "desc": "Kamp ateşi: odunların üstünde titreyen alevler, kor nabzı ve yükselen kıvılcımlar",
+  "tags": [
+   "kamp",
+   "ateş",
+   "kamp ateşi",
+   "alev",
+   "odun",
+   "kıvılcım",
+   "campfire",
+   "fire",
+   "flame",
+   "bonfire"
+  ],
+  "anchor": "ateş tabanı (0,0)",
+  "box": [
+   -130,
+   -180,
+   130,
+   50
+  ],
+  "points": [
+   "base",
+   "top"
+  ],
+  "params": {
+   "burn": {
+    "type": "number",
+    "default": 0.8,
+    "desc": "0–1: yanma şiddeti (alev boyu + kıvılcım)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "dış alev tonu"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: ateş büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "fire-fx/ember-burst",
+  "status": "draft",
+  "desc": "Kor fışkırması: parlayan kor parçacıkları havaya savrulur, sönümlenerek düşer",
+  "tags": [
+   "kor",
+   "kıvılcım",
+   "fışkırma",
+   "ateş",
+   "sönümlenme",
+   "ember",
+   "burst",
+   "spark",
+   "fire",
+   "glow"
+  ],
+  "anchor": "fışkırma merkezi (0,0)",
+  "box": [
+   -120,
+   -170,
+   120,
+   50
+  ],
+  "points": [
+   "origin",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fışkırma anı (0.9 sn: korlar savrulur, sönümlenip düşer)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: efekt büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "fire-fx/extinguisher-spray",
+  "status": "draft",
+  "desc": "Söndürücü püskürtme: nozuldan yayılan sis konisi, hedefteki alevler sönümlenir",
+  "tags": [
+   "söndürücü",
+   "püskürtme",
+   "sis",
+   "söndürme",
+   "yangın",
+   "extinguisher",
+   "spray",
+   "mist",
+   "fire",
+   "foam"
+  ],
+  "anchor": "nozul ucu (0,0)",
+  "box": [
+   -90,
+   -110,
+   230,
+   90
+  ],
+  "points": [
+   "nozzle",
+   "flame"
+  ],
+  "params": {
+   "spray": {
+    "type": "number",
+    "default": 0.8,
+    "desc": "0–1: püskürtme şiddeti (sis yoğunluğu + söndürme)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: sahne büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "fire-fx/flame-fan",
+  "status": "draft",
+  "desc": "Yelpaze ile alev: fan çalıştıkça pervane döner, rüzgâr çizgileri eser, alev yana eğilir",
+  "tags": [
+   "fan",
+   "yelpaze",
+   "rüzgâr",
+   "alev",
+   "eğilme",
+   "ateş",
+   "fan",
+   "wind",
+   "flame",
+   "blow",
+   "fire"
+  ],
+  "anchor": "fan tabanı + alev tabanı ortası (0,0)",
+  "box": [
+   -150,
+   -180,
+   150,
+   60
+  ],
+  "points": [
+   "base",
+   "flame",
+   "fan"
+  ],
+  "params": {
+   "fan": {
+    "type": "number",
+    "default": 0.8,
+    "desc": "0–1: fan hızı (pervane dönüşü + alev eğilmesi)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: sahne büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "fire-fx/ignition-flare",
+  "status": "draft",
+  "desc": "Tutuşma flaşı: beyaz çakma, genişleyen halka, fırlayan kıvılcımlar ve tutuşan ilk alev",
+  "tags": [
+   "tutuşma",
+   "çakma",
+   "alev",
+   "kıvılcım",
+   "ateş",
+   "ignition",
+   "flare",
+   "flash",
+   "fire",
+   "spark"
+  ],
+  "anchor": "tutuşma noktası (0,0)",
+  "box": [
+   -130,
+   -130,
+   130,
+   130
+  ],
+  "points": [
+   "origin",
+   "flame"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tutuşma anı (0.8 sn: çakma + halka + kıvılcım + ilk alev)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: efekt büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "fire-fx/smoke-column",
+  "status": "draft",
+  "desc": "Yükselen duman sütunu: kıvrılarak yukarı süzülen puflar, yoğunluğa göre kalınlık ve hız",
+  "tags": [
+   "duman",
+   "sütun",
+   "yükselme",
+   "kıvrılma",
+   "yangın",
+   "smoke",
+   "column",
+   "rising",
+   "fire",
+   "haze"
+  ],
+  "anchor": "sütunun tabanı (0,0)",
+  "box": [
+   -130,
+   -200,
+   130,
+   40
+  ],
+  "points": [
+   "base",
+   "top"
+  ],
+  "params": {
+   "intensity": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "0–1: duman yoğunluğu (kalınlık + yükselme hızı)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "duman tonu"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: sütun büyüklüğü"
    }
   }
  },
@@ -13872,6 +14379,257 @@
     "type": "number",
     "default": 0.4,
     "desc": "tekerlek dönüş hızı (0-1)"
+   }
+  }
+ },
+ {
+  "name": "travel-fx/boarding-pass-pop",
+  "status": "draft",
+  "desc": "QR kodlu biniş kartı at anında pop animasyonuyla belirir, konfeti saçar, sonra hafifçe salınır",
+  "tags": [
+   "biniş kartı",
+   "uçuş",
+   "QR",
+   "bilet",
+   "check-in",
+   "havayolu",
+   "boarding pass",
+   "flight",
+   "QR code",
+   "ticket",
+   "airline",
+   "departure"
+  ],
+  "anchor": "kartın ortası (0,0)",
+  "box": [
+   -130,
+   -100,
+   130,
+   100
+  ],
+  "points": [
+   "top",
+   "qr",
+   "stub"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": 0,
+    "desc": "kartın giriş anı (pop animasyonu + konfeti)"
+   }
+  }
+ },
+ {
+  "name": "travel-fx/landing-gear",
+  "status": "draft",
+  "desc": "Uçak gövdesinin altında down anında iniş takımı kapakları açılır, tekerlekler iner, kilit sinyali yanar",
+  "tags": [
+   "iniş takımı",
+   "tekerlek",
+   "uçak",
+   "iniş",
+   "sinyal",
+   "kilit",
+   "landing gear",
+   "wheels",
+   "airplane",
+   "landing",
+   "signal",
+   "locked"
+  ],
+  "anchor": "gövde karnının ortası (0,0)",
+  "box": [
+   -160,
+   -75,
+   160,
+   95
+  ],
+  "points": [
+   "left_gear",
+   "right_gear",
+   "beacon"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "down": {
+    "type": "time",
+    "default": null,
+    "desc": "iniş takımı açılış anı (tekerlekler iner, kilitlenir)"
+   }
+  }
+ },
+ {
+  "name": "travel-fx/luggage-roll",
+  "status": "draft",
+  "desc": "Teleskop saplı tekerlekli bavul; roll hızlandıkça tekerlekler döner, gövde sallanır, hız çizgileri belirir",
+  "tags": [
+   "bavul",
+   "valiz",
+   "tekerlek",
+   "seyahat",
+   "yolculuk",
+   "havaalanı",
+   "luggage",
+   "suitcase",
+   "wheel",
+   "travel",
+   "trolley",
+   "airport"
+  ],
+  "anchor": "bavul gövdesinin ortası (0,0)",
+  "box": [
+   -155,
+   -100,
+   155,
+   90
+  ],
+  "points": [
+   "handle",
+   "wheel_front",
+   "wheel_back"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "roll": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "yuvarlanma hızı (0-1); tekerlek dönüşü + sallanma + hız çizgisi"
+   }
+  }
+ },
+ {
+  "name": "travel-fx/passport-stamp",
+  "status": "draft",
+  "desc": "Açık pasaportun üstündeki mühür stamp anında sayfaya iner, mürekkep halkası saçar ve damga izi bırakır",
+  "tags": [
+   "pasaport",
+   "damga",
+   "mühür",
+   "vize",
+   "gümrük",
+   "sınır",
+   "passport",
+   "stamp",
+   "seal",
+   "visa",
+   "customs",
+   "border"
+  ],
+  "anchor": "pasaport sayfalarının ortası (0,0)",
+  "box": [
+   -150,
+   -212,
+   150,
+   118
+  ],
+  "points": [
+   "seal",
+   "stamp",
+   "pages"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "stamp": {
+    "type": "time",
+    "default": null,
+    "desc": "damga vuruş anı (mühür iner, mürekkep saçar)"
+   }
+  }
+ },
+ {
+  "name": "travel-fx/takeoff-roll",
+  "status": "draft",
+  "desc": "Pistteki uçak roll ilerledikçe hız çizgileri uzar, titrer, burun kalkar ve tekerlekler yerden kesilir",
+  "tags": [
+   "uçak",
+   "kalkış",
+   "pist",
+   "havalanma",
+   "uçuş",
+   "havaalanı",
+   "airplane",
+   "takeoff",
+   "runway",
+   "flight",
+   "departure",
+   "airport"
+  ],
+  "anchor": "gövdenin ortası (0,0); pist y=58 çizgisi",
+  "box": [
+   -175,
+   -85,
+   175,
+   85
+  ],
+  "points": [
+   "nose",
+   "tail_fin",
+   "wheels"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "roll": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "kalkış ilerlemesi (0 = pistte duruyor, 1 = havada tırmanıyor)"
+   }
+  }
+ },
+ {
+  "name": "travel-fx/ticket-scan",
+  "status": "draft",
+  "desc": "Bilet kartı tarayıcıdan geçerken tarama ışığı süpürür, sonunda onay tik’i belirir",
+  "tags": [
+   "bilet",
+   "tarama",
+   "turnike",
+   "bilet kontrol",
+   "tarayıcı",
+   "ticket",
+   "scan",
+   "barcode",
+   "turnstile",
+   "gate",
+   "check-in"
+  ],
+  "anchor": "tarayıcı direği ile bilet kartının ortası (0,0)",
+  "box": [
+   -150,
+   -85,
+   150,
+   85
+  ],
+  "points": [
+   "ticket",
+   "scanner",
+   "check"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "scan": {
+    "type": "time",
+    "default": null,
+    "desc": "tarama anı (ışık kartı süpürür, onay tik’i çıkar)"
    }
   }
  },
