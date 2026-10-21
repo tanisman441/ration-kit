@@ -3825,6 +3825,260 @@
   }
  },
  {
+  "name": "electric-fx/arc-zap",
+  "status": "draft",
+  "desc": "İki elektrot arasında at anında flaşla çakan, dallanan elektrik arkı",
+  "tags": [
+   "elektrik",
+   "ark",
+   "çarpma",
+   "yıldırım",
+   "voltaj",
+   "şok",
+   "electric",
+   "arc",
+   "zap",
+   "lightning",
+   "shock",
+   "voltage"
+  ],
+  "anchor": "ark orta noktası (0,0)",
+  "box": [
+   -90,
+   -110,
+   90,
+   110
+  ],
+  "points": [
+   "top",
+   "bottom",
+   "mid"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ark çakma anı: 0.15 sn flaş + dallanan şimşek"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "electric-fx/circuit-trace",
+  "status": "draft",
+  "desc": "Devre kartı; izler boyunca akan döngüsel nabız ışığı, pulse anında ekstra dalga",
+  "tags": [
+   "devre",
+   "kart",
+   "elektronik",
+   "nabız",
+   "sinyal",
+   "çip",
+   "circuit",
+   "board",
+   "pcb",
+   "trace",
+   "pulse",
+   "signal",
+   "electronics"
+  ],
+  "anchor": "kart merkezi (0,0)",
+  "box": [
+   -100,
+   -75,
+   100,
+   75
+  ],
+  "points": [
+   "a",
+   "b",
+   "chip",
+   "via"
+  ],
+  "params": {
+   "pulse": {
+    "type": "time",
+    "default": null,
+    "desc": "ekstra nabız dalgası anı (0.6 sn parlak geçiş)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "electric-fx/fuse-blow",
+  "status": "draft",
+  "desc": "Cam gövdeli sigorta; blow anında flaşla patlar, camı çatlar, dumanı yükselir",
+  "tags": [
+   "sigorta",
+   "patlama",
+   "arıza",
+   "elektrik",
+   "devre",
+   "duman",
+   "fuse",
+   "blow",
+   "explosion",
+   "fault",
+   "electric",
+   "smoke"
+  ],
+  "anchor": "sigorta gövde merkezi (0,0)",
+  "box": [
+   -90,
+   -85,
+   90,
+   85
+  ],
+  "points": [
+   "left",
+   "right",
+   "top"
+  ],
+  "params": {
+   "blow": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı: 0.2 sn flaş, 1.2 sn duman"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "electric-fx/neon-flicker",
+  "status": "draft",
+  "desc": "Titreyen neon tüpü; idle’da voltaj dalgalanır, dip anında kısa kararma olur",
+  "tags": [
+   "neon",
+   "ışık",
+   "titreme",
+   "tabela",
+   "ışıldama",
+   "voltaj",
+   "neon",
+   "flicker",
+   "light",
+   "sign",
+   "glow",
+   "voltage",
+   "tube"
+  ],
+  "anchor": "tüp merkezi (0,0)",
+  "box": [
+   -100,
+   -60,
+   100,
+   60
+  ],
+  "points": [
+   "left",
+   "right",
+   "centre"
+  ],
+  "params": {
+   "dip": {
+    "type": "time",
+    "default": null,
+    "desc": "kararma anı: 0.35 sn derin voltaj düşüşü"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "electric-fx/plug-zap",
+  "status": "draft",
+  "desc": "İki uçlu elektrik fişi; zap anında uçlardan kıvılcım patlaması olur",
+  "tags": [
+   "fiş",
+   "priz",
+   "kıvılcım",
+   "elektrik",
+   "kablo",
+   "çarpma",
+   "plug",
+   "zap",
+   "spark",
+   "socket",
+   "electric",
+   "cable"
+  ],
+  "anchor": "fiş gövde merkezi (-50,0)",
+  "box": [
+   -110,
+   -60,
+   60,
+   60
+  ],
+  "points": [
+   "tip_a",
+   "tip_b",
+   "cable"
+  ],
+  "params": {
+   "zap": {
+    "type": "time",
+    "default": null,
+    "desc": "kıvılcım anı: 0.18 sn flaş + uçlardan saçılma"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "electric-fx/spark-shower",
+  "status": "draft",
+  "desc": "Yukarıdan yağan kıvılcım yağmuru; at anında yoğun patlama, idle’da damla damla süzülür",
+  "tags": [
+   "kıvılcım",
+   "yağmur",
+   "parıltı",
+   "kaynak",
+   "patlama",
+   "ateş",
+   "spark",
+   "shower",
+   "rain",
+   "sparks",
+   "welding",
+   "glow"
+  ],
+  "anchor": "yayılım merkezi (0,-55)",
+  "box": [
+   -100,
+   -110,
+   100,
+   110
+  ],
+  "points": [
+   "emitter",
+   "fall_zone"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı: 0.9 sn yoğun kıvılcım yağmuru"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
   "name": "environment/barrel",
   "status": "draft",
   "desc": "Metal varil; fuel varyantı sarı ikaz şeritli, water varyantı mavi dalga şeritli",
@@ -15980,6 +16234,249 @@
   }
  },
  {
+  "name": "water-fx-2/drip-ripple",
+  "status": "draft",
+  "desc": "Musluktan düşen damla ve çarpınca yayılan halka dalgaları",
+  "tags": [
+   "damla",
+   "drip",
+   "halka",
+   "dalga",
+   "musluk",
+   "su yüzeyi",
+   "ripple",
+   "drop",
+   "rings",
+   "faucet"
+  ],
+  "anchor": "su yüzeyi merkezi (0,0)",
+  "box": [
+   -125,
+   -205,
+   125,
+   60
+  ],
+  "points": [
+   "spout",
+   "impact"
+  ],
+  "params": {
+   "drip": {
+    "type": "time",
+    "default": null,
+    "desc": "damlanın çarptığı an (öncesinde 0.5 sn düşer)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "su rengi"
+   }
+  }
+ },
+ {
+  "name": "water-fx-2/fountain-arcs",
+  "status": "draft",
+  "desc": "Fıskiye: yanal su yayları ve dikey jet, damlalar parabol boyunca akar",
+  "tags": [
+   "fıskiye",
+   "fountain",
+   "su yayı",
+   "jet",
+   "havuz",
+   "süs havuzu",
+   "water jets",
+   "arcs",
+   "park",
+   "meydan"
+  ],
+  "anchor": "su havzası merkezi (0,0)",
+  "box": [
+   -175,
+   -185,
+   175,
+   60
+  ],
+  "points": [
+   "jet",
+   "left",
+   "right",
+   "basin"
+  ],
+  "params": {
+   "spurt": {
+    "type": "time",
+    "default": null,
+    "desc": "yayların yükseldiği an (0.8 sn sürer)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "su rengi"
+   }
+  }
+ },
+ {
+  "name": "water-fx-2/geyser-burst",
+  "status": "draft",
+  "desc": "Kayalık ağızdan yukarı fışkıran gayzer sütunu, damlalar ve buhar",
+  "tags": [
+   "gayzer",
+   "geyser",
+   "fışkırma",
+   "patlama",
+   "su sütunu",
+   "buhar",
+   "eruption",
+   "burst",
+   "kaplıca",
+   "fıskiye"
+  ],
+  "anchor": "püskürme ağzı (0,0)",
+  "box": [
+   -140,
+   -205,
+   140,
+   45
+  ],
+  "points": [
+   "vent",
+   "crown"
+  ],
+  "params": {
+   "burst": {
+    "type": "time",
+    "default": null,
+    "desc": "püskürme anı (sütun 1.2 sn yükselir, sonra söner)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "su rengi"
+   }
+  }
+ },
+ {
+  "name": "water-fx-2/ice-spread",
+  "status": "draft",
+  "desc": "Yayılan buz: merkezden dışa büyüyen kristaller ve buz tabakası",
+  "tags": [
+   "buz",
+   "ice",
+   "donma",
+   "kristal",
+   "kar tanesi",
+   "yayılma",
+   "frost",
+   "freeze",
+   "crystal",
+   "snowflake",
+   "spread"
+  ],
+  "anchor": "yayılma merkezi (0,0)",
+  "box": [
+   -150,
+   -115,
+   150,
+   115
+  ],
+  "points": [
+   "center",
+   "edge"
+  ],
+  "params": {
+   "spread": {
+    "type": "time",
+    "default": null,
+    "desc": "buzun yayılmaya başladığı an (1.3 sn sürer)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "buz rengi"
+   }
+  }
+ },
+ {
+  "name": "water-fx-2/tidal-surge",
+  "status": "draft",
+  "desc": "Gelgit: dalgalanan deniz bandı, surge anında köpüklü dalga duvarı süpürür",
+  "tags": [
+   "gelgit",
+   "tidal",
+   "dalga",
+   "deniz",
+   "surge",
+   "kıyı",
+   "wave",
+   "tide",
+   "sea",
+   "su seviyesi"
+  ],
+  "anchor": "deniz bandının ortası (0,0)",
+  "box": [
+   -175,
+   -105,
+   175,
+   75
+  ],
+  "points": [
+   "crest",
+   "level",
+   "shore"
+  ],
+  "params": {
+   "surge": {
+    "type": "time",
+    "default": null,
+    "desc": "dalganın süpürdüğü an (1.4 sn; köpüklü duvar soldan sağa)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "su rengi"
+   }
+  }
+ },
+ {
+  "name": "water-fx-2/whirlpool",
+  "status": "draft",
+  "desc": "Yukarıdan görülen dönen girdap: spiral kollar ve içe sürüklenen köpük",
+  "tags": [
+   "girdap",
+   "whirlpool",
+   "dönme",
+   "su",
+   "spiraller",
+   "vortex",
+   "swirl",
+   "spin",
+   "su girdabı"
+  ],
+  "anchor": "girdap merkezi (0,0)",
+  "box": [
+   -150,
+   -115,
+   150,
+   115
+  ],
+  "points": [
+   "center",
+   "edge"
+  ],
+  "params": {
+   "spin": {
+    "type": "time",
+    "default": null,
+    "desc": "dönüşün hızlandığı an (1.2 sn sürer)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "su rengi"
+   }
+  }
+ },
+ {
   "name": "weapons/bullet",
   "status": "draft",
   "desc": "Yandan görünüm mermi; flying anında hızla uçar ve parlak iz bırakır",
@@ -16483,6 +16980,268 @@
     "type": "number",
     "default": 0.7,
     "desc": "hortum şiddeti 0–1: yalpa genliği ve huni genişliği"
+   }
+  }
+ },
+ {
+  "name": "wind-fx/dust-blow",
+  "status": "draft",
+  "desc": "Toz savrulması: havada süzülen sakin zerreler, blow anında girdaplı toz bulutu sağa savrulur",
+  "tags": [
+   "toz",
+   "savrulma",
+   "bulut",
+   "girdap",
+   "rüzgar",
+   "dust",
+   "blow",
+   "cloud",
+   "swirl",
+   "wind"
+  ],
+  "anchor": "toz kaynağı (0,0)",
+  "box": [
+   -110,
+   -100,
+   180,
+   90
+  ],
+  "points": [
+   "source",
+   "drift"
+  ],
+  "params": {
+   "blow": {
+    "type": "time",
+    "default": null,
+    "desc": "toz savrulma anı (0.9 sn: toz bulutu girdapla sağa savrulur)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: bulut büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "wind-fx/flag-flap",
+  "status": "draft",
+  "desc": "Rüzgarda dalgalanan bayrak: sürekli kumaş dalgası, gust anında genliği büyüyüp sertçe çırpınır",
+  "tags": [
+   "bayrak",
+   "dalga",
+   "rüzgar",
+   "direk",
+   "çırpınma",
+   "flag",
+   "wave",
+   "wind",
+   "pole",
+   "flap"
+  ],
+  "anchor": "direk tabanı (0,0)",
+  "box": [
+   -45,
+   -155,
+   235,
+   135
+  ],
+  "points": [
+   "poletop",
+   "flagtip"
+  ],
+  "params": {
+   "gust": {
+    "type": "time",
+    "default": null,
+    "desc": "kuvvetli esinti anı (1.0 sn: dalga genliği büyür, bayrak gerilip çırpınır)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: bayrak büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "wind-fx/kite-dive",
+  "status": "draft",
+  "desc": "Dalış yapan uçurtma: ipte hafif salınım, dive anında yay çizerek dalış ve arkasında hız çizgileri",
+  "tags": [
+   "uçurtma",
+   "dalış",
+   "rüzgar",
+   "ip",
+   "kuyruk",
+   "kite",
+   "dive",
+   "wind",
+   "string",
+   "tail"
+  ],
+  "anchor": "ip tutma noktası (0,0)",
+  "box": [
+   -150,
+   -160,
+   150,
+   140
+  ],
+  "points": [
+   "kite",
+   "tail"
+  ],
+  "params": {
+   "dive": {
+    "type": "time",
+    "default": null,
+    "desc": "dalış anı (1.2 sn: uçurtma yay çizerek dalar, hız çizgileri belirir)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: uçurtma büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "wind-fx/leaf-tumble",
+  "status": "draft",
+  "desc": "Rüzgarda takla atan yaprak: sürekli döngülü savrulma, tumble anında hızlı 360° spin ve hayalet iz",
+  "tags": [
+   "yaprak",
+   "takla",
+   "rüzgar",
+   "sonbahar",
+   "savrulma",
+   "leaf",
+   "tumble",
+   "wind",
+   "autumn",
+   "flutter"
+  ],
+  "anchor": "yaprak merkezi (0,0)",
+  "box": [
+   -120,
+   -110,
+   120,
+   110
+  ],
+  "points": [
+   "leaf"
+  ],
+  "params": {
+   "tumble": {
+    "type": "time",
+    "default": null,
+    "desc": "takla savurma anı (0.9 sn: 360° spin + hayalet iz)"
+   },
+   "color": {
+    "type": "color",
+    "default": "green"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: yaprak büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "wind-fx/wind-gust",
+  "status": "draft",
+  "desc": "Şiddetli rüzgar esintisi: akan eğri çizgiler, gust anında kalınlaşan ana bant ve savrulan toz zerreleri",
+  "tags": [
+   "rüzgar",
+   "esinti",
+   "fırtına",
+   "hava akımı",
+   "wind",
+   "gust",
+   "breeze",
+   "storm",
+   "airflow",
+   "swoosh"
+  ],
+  "anchor": "rüzgar akış merkezi (0,0)",
+  "box": [
+   -170,
+   -95,
+   170,
+   95
+  ],
+  "points": [
+   "tail",
+   "head"
+  ],
+  "params": {
+   "gust": {
+    "type": "time",
+    "default": null,
+    "desc": "şiddetli esinti anı (1.0 sn: çizgiler hızlanır, bant kalınlaşır, zerreler savrulur)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: efekt büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "wind-fx/windsock-swing",
+  "status": "draft",
+  "desc": "Rüzgar çorabı: sürekli salınım döngüsü, gust anında yatay gerilip sertçe sallanır",
+  "tags": [
+   "rüzgar çorabı",
+   "rüzgar gülü",
+   "salınım",
+   "rüzgar",
+   "havaalanı",
+   "windsock",
+   "wind",
+   "swing",
+   "airport"
+  ],
+  "anchor": "direk tabanı (0,0)",
+  "box": [
+   -50,
+   -110,
+   200,
+   135
+  ],
+  "points": [
+   "pivot",
+   "mouth"
+  ],
+  "params": {
+   "gust": {
+    "type": "time",
+    "default": null,
+    "desc": "şiddetli rüzgar anı (1.0 sn: çorap yatay gerilir, salınım sertleşir)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: çorap büyüklüğü"
    }
   }
  }
