@@ -4790,6 +4790,278 @@
   }
  },
  {
+  "name": "factory-fx/belt-blink",
+  "status": "draft",
+  "desc": "Üç lambalı bant sinyal ışığı; lambalar döngüyle yanar, alarm anında kırmızı strobo",
+  "tags": [
+   "sinyal",
+   "lamba",
+   "trafik",
+   "bant",
+   "fabrika",
+   "ikaz",
+   "alarm",
+   "signal",
+   "lamp",
+   "traffic",
+   "belt",
+   "factory",
+   "warning",
+   "alarm"
+  ],
+  "anchor": "direk tabanı (0,105)",
+  "box": [
+   -60,
+   -140,
+   60,
+   112
+  ],
+  "points": [
+   "top",
+   "base",
+   "lamp_red",
+   "lamp_yellow",
+   "lamp_green"
+  ],
+  "params": {
+   "state": {
+    "type": "enum",
+    "default": "green",
+    "values": [
+     "green",
+     "yellow",
+     "red"
+    ],
+    "desc": "aktif lamba (mode=fixed iken)"
+   },
+   "mode": {
+    "type": "enum",
+    "default": "auto",
+    "values": [
+     "auto",
+     "fixed"
+    ],
+    "desc": "auto: lambalar 3.6 sn döngüyle değişir; fixed: state’teki lamba yanar"
+   },
+   "alarm": {
+    "type": "time",
+    "default": null,
+    "desc": "alarm anı: kırmızı 1 sn strobo yapar"
+   }
+  }
+ },
+ {
+  "name": "factory-fx/conveyor-move",
+  "status": "draft",
+  "desc": "Hareket eden konveyör bandı; şerit sürekli akar, makaralar döner, paket taşınır",
+  "tags": [
+   "konveyör",
+   "bant",
+   "fabrika",
+   "üretim",
+   "taşıyıcı",
+   "makara",
+   "paket",
+   "conveyor",
+   "belt",
+   "factory",
+   "roller",
+   "package"
+  ],
+  "anchor": "bant yüzeyi (0,-24)",
+  "box": [
+   -135,
+   -70,
+   135,
+   100
+  ],
+  "points": [
+   "belt",
+   "in_left",
+   "out_right"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "bant hız çarpanı (0 = durur)"
+   }
+  }
+ },
+ {
+  "name": "factory-fx/robot-arm",
+  "status": "draft",
+  "desc": "Endüstriyel robot kolu; grab anında parçayı yakalayıp kaldırır",
+  "tags": [
+   "robot",
+   "kol",
+   "fabrika",
+   "otomasyon",
+   "kıskaç",
+   "yakalama",
+   "robot",
+   "arm",
+   "factory",
+   "automation",
+   "gripper",
+   "grab"
+  ],
+  "anchor": "taban (0,150)",
+  "box": [
+   -130,
+   -120,
+   130,
+   196
+  ],
+  "points": [
+   "base",
+   "column",
+   "claw_home"
+  ],
+  "params": {
+   "grab": {
+    "type": "time",
+    "default": null,
+    "desc": "kolun yakalama anı (uzanma 0.45 sn, kaldırma 1.15 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "factory-fx/safety-laser",
+  "status": "draft",
+  "desc": "İki direk arası güvenlik lazeri; trip anında ışın kesilir, alarm çakar",
+  "tags": [
+   "lazer",
+   "güvenlik",
+   "ışın",
+   "fabrika",
+   "alarm",
+   "kesilme",
+   "laser",
+   "safety",
+   "beam",
+   "factory",
+   "alarm",
+   "trip"
+  ],
+  "anchor": "ışın çizgisi (0,-24)",
+  "box": [
+   -132,
+   -82,
+   132,
+   82
+  ],
+  "points": [
+   "beam_left",
+   "beam_right",
+   "break",
+   "alarm"
+  ],
+  "params": {
+   "trip": {
+    "type": "time",
+    "default": null,
+    "desc": "ışının kesilme anı (0.9 sn alarm + titreyen uçlar)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "factory-fx/stamp-press",
+  "status": "draft",
+  "desc": "Hidrolik pres; at anında kafa vurur, flaş + şok halkası + ezilen parça",
+  "tags": [
+   "pres",
+   "hidrolik",
+   "damga",
+   "fabrika",
+   "ezme",
+   "vuruş",
+   "press",
+   "stamp",
+   "hydraulic",
+   "factory",
+   "crush",
+   "impact"
+  ],
+  "anchor": "taban (0,120)",
+  "box": [
+   -85,
+   -125,
+   85,
+   130
+  ],
+  "points": [
+   "die",
+   "bed",
+   "beacon"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "presin vurma anı (iniş 0.28 sn, geri kalkış 1.25 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "factory-fx/weld-sparks",
+  "status": "draft",
+  "desc": "Kaynak torcu; at anında yoğun kıvılcım konisi ve duman, idle’da tek tek patlar",
+  "tags": [
+   "kaynak",
+   "kıvılcım",
+   "torç",
+   "fabrika",
+   "metal",
+   "duman",
+   "welding",
+   "sparks",
+   "torch",
+   "factory",
+   "metal",
+   "smoke"
+  ],
+  "anchor": "torç ucu (30,10)",
+  "box": [
+   -120,
+   -90,
+   120,
+   90
+  ],
+  "points": [
+   "tip",
+   "seam",
+   "handle"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kaynağın başlama anı (1.25 sn yoğun kıvılcım)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
   "name": "fail-fx/crash-shatter",
   "status": "draft",
   "desc": "Darbe noktasından yayılan çatlaklı kırık cam ekran",
@@ -10869,6 +11141,261 @@
   }
  },
  {
+  "name": "ocean-fx/angler-glow",
+  "status": "draft",
+  "desc": "Başındaki feneri nabız gibi parlayan fenerbalığı, lure anında ışığı patlayıp hamle yapar",
+  "tags": [
+   "fenerbalığı",
+   "ışık",
+   "parlama",
+   "karanlık",
+   "hamle",
+   "anglerfish",
+   "glow",
+   "lure",
+   "deep sea",
+   "predator"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -140,
+   -90,
+   150,
+   90
+  ],
+  "points": [
+   "mouth",
+   "lure"
+  ],
+  "params": {
+   "lure": {
+    "type": "time",
+    "default": null,
+    "desc": "ışık patlaması + hamle anı (0.7 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "fener ışığı rengi"
+   },
+   "body": {
+    "type": "color",
+    "default": "ink",
+    "desc": "gövde rengi"
+   }
+  }
+ },
+ {
+  "name": "ocean-fx/bubble-column",
+  "status": "draft",
+  "desc": "Tabandan yukarı süzülen baloncuk sütunu, tepeye ulaşan baloncuk patlar",
+  "tags": [
+   "baloncuk",
+   "köpük",
+   "sütun",
+   "hava kabarcığı",
+   "sualtı",
+   "bubble",
+   "column",
+   "rising",
+   "air",
+   "underwater"
+  ],
+  "anchor": "sütunun tabanı (0,0)",
+  "box": [
+   -60,
+   -220,
+   60,
+   20
+  ],
+  "points": [
+   "base",
+   "top"
+  ],
+  "params": {
+   "burst": {
+    "type": "time",
+    "default": null,
+    "desc": "köpürme patlaması anı (0.5 sn, tabandan yukarı dalga)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "baloncuk rengi"
+   },
+   "density": {
+    "type": "number",
+    "default": 1,
+    "desc": "baloncuk yoğunluğu çarpanı (0.3–2)"
+   }
+  }
+ },
+ {
+  "name": "ocean-fx/coral-sway",
+  "status": "draft",
+  "desc": "Akıntıyla sallanan dallı mercan, swell anında eğilip polipleri açılır",
+  "tags": [
+   "mercan",
+   "sallanma",
+   "akıntı",
+   "polipler",
+   "denizaltı",
+   "coral",
+   "sway",
+   "current",
+   "polyps",
+   "reef"
+  ],
+  "anchor": "mercanın tabanı (0,0)",
+  "box": [
+   -110,
+   -170,
+   110,
+   15
+  ],
+  "points": [
+   "base",
+   "tip"
+  ],
+  "params": {
+   "swell": {
+    "type": "time",
+    "default": null,
+    "desc": "akıntı dalgası anı (0.9 sn, mercan eğilir + polipler açılır)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "mercan rengi"
+   }
+  }
+ },
+ {
+  "name": "ocean-fx/fish-school",
+  "status": "draft",
+  "desc": "Formasyon içinde dalgalanarak yüzen balık sürüsü, scatter anında dağılıp toplanır",
+  "tags": [
+   "balık",
+   "sürü",
+   "formasyon",
+   "dağılma",
+   "school",
+   "fish",
+   "schooling",
+   "scatter",
+   "swarm",
+   "underwater"
+  ],
+  "anchor": "sürünün merkezi (0,0)",
+  "box": [
+   -220,
+   -150,
+   220,
+   150
+  ],
+  "points": [
+   "centre",
+   "leader"
+  ],
+  "params": {
+   "scatter": {
+    "type": "time",
+    "default": null,
+    "desc": "dağılma anı (0.8 sn, sürü patlar sonra toplanır)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "balık rengi"
+   },
+   "count": {
+    "type": "number",
+    "default": 9,
+    "desc": "balık sayısı (4–12)"
+   }
+  }
+ },
+ {
+  "name": "ocean-fx/jellyfish-drift",
+  "status": "draft",
+  "desc": "Nabız gibi kasılan kubbesi ve dalgalanan dokunaçlarıyla yukarı süzülen denizanası",
+  "tags": [
+   "denizanası",
+   "süzülme",
+   "dokunaç",
+   "nabız",
+   "medusa",
+   "jellyfish",
+   "drift",
+   "tentacles",
+   "pulse",
+   "underwater"
+  ],
+  "anchor": "kubbenin merkezi (0,0)",
+  "box": [
+   -90,
+   -120,
+   90,
+   110
+  ],
+  "points": [
+   "dome",
+   "mouth"
+  ],
+  "params": {
+   "pulse": {
+    "type": "time",
+    "default": null,
+    "desc": "güçlü kasılma anı (0.4 sn, kubbe sıkışır + itiş)"
+   },
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "denizanası rengi"
+   }
+  }
+ },
+ {
+  "name": "ocean-fx/sonar-ripple",
+  "status": "draft",
+  "desc": "Sonar nabzı gibi merkezden yayılan halka dalgaları, at anında güçlü patlar",
+  "tags": [
+   "sonar",
+   "halka",
+   "dalga",
+   "nabız",
+   "radar",
+   "ping",
+   "ripple",
+   "echo",
+   "pulse",
+   "waves"
+  ],
+  "anchor": "sonar merkezi (0,0)",
+  "box": [
+   -130,
+   -130,
+   130,
+   130
+  ],
+  "points": [
+   "centre",
+   "edge"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sonar dalgası yayılma anı (0.9 sn, 3 halka)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "halka rengi"
+   }
+  }
+ },
+ {
   "name": "office/calendar",
   "status": "draft",
   "desc": "Duvar takvimi; sayfa çevirme anında üst sayfa yukarı kıvrılır, işaretli gün değişir",
@@ -15212,6 +15739,257 @@
     "type": "time",
     "default": null,
     "desc": "alarm anı: zil sallanması + halkalar (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "traffic-fx/airbag-pop",
+  "status": "draft",
+  "desc": "Direksiyon simidi; at anında hava yastığı açılır, şişer ve yerleşir",
+  "tags": [
+   "hava yastığı",
+   "airbag",
+   "direksiyon",
+   "kaza",
+   "güvenlik",
+   "çarpışma",
+   "kurtarma",
+   "steering",
+   "wheel",
+   "crash",
+   "safety"
+  ],
+  "anchor": "direksiyon merkezi (0,0)",
+  "box": [
+   -110,
+   -90,
+   110,
+   90
+  ],
+  "points": [
+   "bag",
+   "hub"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "açılma anı: 0.12 sn flaş, 0.35 sn şişme, 1.2 sn yerleşme"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2",
+    "desc": "yastık rengi"
+   }
+  }
+ },
+ {
+  "name": "traffic-fx/brake-skid",
+  "status": "draft",
+  "desc": "Kayma izi bırakan fren yapan tekerlek; at anında duman bulutu ve kızaran fren diski",
+  "tags": [
+   "fren",
+   "kayma",
+   "duman",
+   "tekerlek",
+   "jant",
+   "durma",
+   "ani fren",
+   "brake",
+   "skid",
+   "smoke",
+   "tire",
+   "wheel",
+   "stop"
+  ],
+  "anchor": "tekerlek merkezi (30,8)",
+  "box": [
+   -120,
+   -70,
+   120,
+   70
+  ],
+  "points": [
+   "wheel",
+   "smoke"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fren kayması anı: 0.9 sn duman + disk kızarması"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink",
+    "desc": "lastik rengi"
+   }
+  }
+ },
+ {
+  "name": "traffic-fx/drift-smoke",
+  "status": "draft",
+  "desc": "Drift yapan otomobil; at anında kayar ve ardında duman bulutları bırakır",
+  "tags": [
+   "drift",
+   "duman",
+   "otomobil",
+   "araba",
+   "kayma",
+   "yanlama",
+   "yarış",
+   "tekerlek",
+   "car",
+   "smoke",
+   "race",
+   "slide"
+  ],
+  "anchor": "araba merkezi (0,0)",
+  "box": [
+   -140,
+   -80,
+   140,
+   80
+  ],
+  "points": [
+   "nose",
+   "tail"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "drift anı: 1.2 sn kayma + duman bulutları"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "gövde rengi"
+   }
+  }
+ },
+ {
+  "name": "traffic-fx/horn-wave",
+  "status": "draft",
+  "desc": "Korna borusu; idle ses dalgaları yayar, at anında güçlü patlama yapar",
+  "tags": [
+   "korna",
+   "ses",
+   "dalga",
+   "sinyal sesi",
+   "uyarı",
+   "gürültü",
+   "horn",
+   "sound",
+   "wave",
+   "beep",
+   "warning",
+   "noise"
+  ],
+  "anchor": "boru gövde merkezi (0,0)",
+  "box": [
+   -110,
+   -80,
+   160,
+   80
+  ],
+  "points": [
+   "bell",
+   "throat"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "korna patlaması: 0.6 sn sarsıntı + büyük halkalar"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "ses dalgası rengi"
+   }
+  }
+ },
+ {
+  "name": "traffic-fx/turn-signal",
+  "status": "draft",
+  "desc": "Amber sinyal lambası; idle yanıp söner, at anında seri flaş çakar",
+  "tags": [
+   "sinyal",
+   "lamba",
+   "blink",
+   "flaşör",
+   "dönüş",
+   "far",
+   "sinyal lambası",
+   "turn",
+   "signal",
+   "blinker",
+   "indicator",
+   "lamp"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -90,
+   -90,
+   90,
+   90
+  ],
+  "points": [
+   "lens",
+   "mount"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sinyal patlaması: 0.6 sn seri flaş + halka dalgası"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "lens rengi"
+   }
+  }
+ },
+ {
+  "name": "traffic-fx/wipers-swipe",
+  "status": "draft",
+  "desc": "Ön camda periyodik salınan silecek; at anında tek manuel silme yapar",
+  "tags": [
+   "silecek",
+   "cam",
+   "yağmur",
+   "ön cam",
+   "silme",
+   "wiper",
+   "windshield",
+   "rain",
+   "swipe",
+   "car",
+   "glass"
+  ],
+  "anchor": "cam merkezi (0,0)",
+  "box": [
+   -130,
+   -90,
+   130,
+   90
+  ],
+  "points": [
+   "pivot",
+   "restTip"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "manuel silme: 1 sn sağa-dönüş salınımı"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "cam çerçeve rengi"
    }
   }
  },
