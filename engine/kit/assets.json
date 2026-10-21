@@ -3032,6 +3032,266 @@
   }
  },
  {
+  "name": "cyber-fx/data-shred",
+  "status": "draft",
+  "desc": "Alttan şerit şerit parçalanan belge; at anında yoğun parçalanma patlaması",
+  "tags": [
+   "veri",
+   "parçalama",
+   "belge",
+   "shred",
+   "dosya",
+   "siber",
+   "yıkım",
+   "kağıt",
+   "data",
+   "shred",
+   "document",
+   "destroy",
+   "cyber",
+   "particles"
+  ],
+  "anchor": "belge merkezi (0,-25)",
+  "box": [
+   -120,
+   -120,
+   120,
+   120
+  ],
+  "points": [
+   "doc",
+   "fall"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "parçalanma anı: 0.9 sn yoğun parça patlaması"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "cyber-fx/firewall-block",
+  "status": "draft",
+  "desc": "Altıgen bloklardan güvenlik duvarı; at anında kırmızı kalkan belirip çarpma dalgası yayar",
+  "tags": [
+   "güvenlik",
+   "duvar",
+   "kalkan",
+   "firewall",
+   "engel",
+   "koruma",
+   "siber",
+   "savunma",
+   "firewall",
+   "shield",
+   "block",
+   "security",
+   "defense",
+   "cyber"
+  ],
+  "anchor": "duvar merkezi (0,0)",
+  "box": [
+   -130,
+   -90,
+   130,
+   90
+  ],
+  "points": [
+   "gate",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "engel anı: kırmızı kalkan belirir + 0.5 sn çarpma dalgası"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "cyber-fx/glitch-reveal",
+  "status": "draft",
+  "desc": "Glitch içinden beliren kilit; at anında 0.3 sn RGB kayma + dilim bozulması yaşar",
+  "tags": [
+   "glitch",
+   "kilit",
+   "belirme",
+   "rgb",
+   "bozulma",
+   "siber",
+   "güvenlik",
+   "dijital",
+   "glitch",
+   "lock",
+   "reveal",
+   "rgb",
+   "cyber",
+   "digital",
+   "security"
+  ],
+  "anchor": "kilit merkezi (0,0)",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "center",
+   "lock"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "belirme anı: 0.3 sn glitch (RGB kayma + dilim) sonra kilit netleşir"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "cyber-fx/hack-pulse",
+  "status": "draft",
+  "desc": "Terminal ekranından yayılan yeşil veri nabız dalgası; at anında güçlü nabız patlar",
+  "tags": [
+   "hack",
+   "hacker",
+   "nabız",
+   "dalga",
+   "veri",
+   "siber",
+   "sinyal",
+   "terminal",
+   "ekran",
+   "pulse",
+   "hack",
+   "data",
+   "wave",
+   "signal",
+   "cyber"
+  ],
+  "anchor": "ekran merkezi (0,-10)",
+  "box": [
+   -120,
+   -120,
+   120,
+   120
+  ],
+  "points": [
+   "screen",
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "nabız anı: 0.95 sn yoğun yeşil veri dalgası yayılır"
+   },
+   "color": {
+    "type": "color",
+    "default": "green"
+   }
+  }
+ },
+ {
+  "name": "cyber-fx/keygen-spin",
+  "status": "draft",
+  "desc": "Sürekli dönen şifre üretim çarkı; at anında üretilen anahtar patlayarak belirir",
+  "tags": [
+   "şifre",
+   "anahtar",
+   "üretim",
+   "çark",
+   "keygen",
+   "siber",
+   "şifreleme",
+   "dönme",
+   "key",
+   "password",
+   "generator",
+   "spin",
+   "wheel",
+   "cyber",
+   "encryption"
+  ],
+  "anchor": "çark merkezi (0,0)",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "hub",
+   "key"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "anahtar anı: 0.35 sn pop + 0.6 sn kıvılcım yağmuru"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "cyber-fx/virus-infect",
+  "status": "draft",
+  "desc": "Dikenli virüs topu; idle’da bulaşma noktaları yayar, at anında bulaşma flaşı patlar",
+  "tags": [
+   "virüs",
+   "bulaşma",
+   "enfeksiyon",
+   "mikrop",
+   "siber",
+   "saldırı",
+   "zararlı",
+   "virus",
+   "infect",
+   "infection",
+   "malware",
+   "cyber",
+   "attack",
+   "bug"
+  ],
+  "anchor": "çekirdek merkezi (0,0)",
+  "box": [
+   -120,
+   -120,
+   120,
+   120
+  ],
+  "points": [
+   "core"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "bulaşma anı: 0.7 sn flaş + şok dalgası + parça yağmuru"
+   },
+   "color": {
+    "type": "color",
+    "default": "green"
+   }
+  }
+ },
+ {
   "name": "disaster-fx/earthquake-shake",
   "status": "draft",
   "desc": "Deprem: sallanan ev ve ağaç, zemin çatlağı, toz, sismik dalgalar",
@@ -7180,6 +7440,259 @@
     "type": "color",
     "default": "ink",
     "desc": "çerçeve rengi"
+   }
+  }
+ },
+ {
+  "name": "horror-fx/blood-drip",
+  "status": "draft",
+  "desc": "Yaradan sızan kan: yavaş sürekli damla döngüsü; at anında 0.8 sn kan fışkırıp tabanda sıçrar",
+  "tags": [
+   "kan",
+   "damla",
+   "yara",
+   "kanama",
+   "korku",
+   "kan birikintisi",
+   "blood",
+   "drip",
+   "bleed",
+   "wound",
+   "horror",
+   "blood pool"
+  ],
+  "anchor": "yaranın merkezi (0,-70)",
+  "box": [
+   -60,
+   -110,
+   60,
+   110
+  ],
+  "points": [
+   "wound",
+   "pool"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fışkırma anı: 0.8 sn yoğun kan akışı, tabanda sıçrama"
+   }
+  }
+ },
+ {
+  "name": "horror-fx/candle-blow",
+  "status": "draft",
+  "desc": "Yanan mum: alev sürekli dans eder; at anında 0.4 sn çırpınıp söner, ardından ~1.5 sn duman yükselir",
+  "tags": [
+   "mum",
+   "alev",
+   "sönme",
+   "duman",
+   "fitil",
+   "korku",
+   "candle",
+   "flame",
+   "blow out",
+   "smoke",
+   "wick",
+   "horror"
+  ],
+  "anchor": "mum tabanı (0,60)",
+  "box": [
+   -55,
+   -195,
+   55,
+   75
+  ],
+  "points": [
+   "flame",
+   "wick",
+   "smoke_top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "söndürme anı: 0.4 sn alev çırpınır ve söner, duman yükselir"
+   }
+  }
+ },
+ {
+  "name": "horror-fx/flicker-lights",
+  "status": "draft",
+  "desc": "Tavandan sarkan lamba: sürekli loş titreyen ışık; at anında 1.2 sn sert strobe patlaması",
+  "tags": [
+   "titreyen ışık",
+   "lamba",
+   "korku",
+   "strobe",
+   "elektrik arızası",
+   "sarkıt lamba",
+   "flicker",
+   "horror light",
+   "lamp",
+   "strobe light",
+   "flickering"
+  ],
+  "anchor": "lamba armatürünün merkezi (0,0)",
+  "box": [
+   -100,
+   -110,
+   100,
+   110
+  ],
+  "points": [
+   "bulb",
+   "cable_top",
+   "cone_bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sert titreme olayı: 1.2 sn strobe, sonra loş idle'a dönüş"
+   },
+   "intensity": {
+    "type": "number",
+    "default": 0.65,
+    "desc": "0.2–1: loşluk seviyesi (idle parlaklığı)"
+   }
+  }
+ },
+ {
+  "name": "horror-fx/ghost-float",
+  "status": "draft",
+  "desc": "Çarşaflı hayalet: sürekli yukarı-aşağı süzülür, eteği dalgalanır, gözleri mor parlar",
+  "tags": [
+   "hayalet",
+   "çarşaf",
+   "süzülme",
+   "ruh",
+   "korku",
+   "perili",
+   "ghost",
+   "floating",
+   "sheet ghost",
+   "spirit",
+   "haunt"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -70,
+   -95,
+   70,
+   95
+  ],
+  "points": [
+   "head",
+   "hem",
+   "eyes"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–2: süzülme ve dalgalanma hızı"
+   }
+  }
+ },
+ {
+  "name": "horror-fx/mirror-crack",
+  "status": "draft",
+  "desc": "El aynası: camda gezinen yansıma parlaması; at anında 0.7 sn içinde darbe noktasından 8 çatlak yayılır",
+  "tags": [
+   "ayna",
+   "çatlak",
+   "cam",
+   "kırılma",
+   "korku",
+   "el aynası",
+   "mirror",
+   "crack",
+   "glass",
+   "shatter",
+   "horror",
+   "hand mirror"
+  ],
+  "anchor": "ayna merkezi (0,-30)",
+  "box": [
+   -70,
+   -120,
+   70,
+   120
+  ],
+  "points": [
+   "impact",
+   "top",
+   "handle_end"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çatlama anı: 0.7 sn içinde 8 çatlak radyal yayılır, cam parlaması"
+   }
+  }
+ },
+ {
+  "name": "horror-fx/shadow-lunge",
+  "status": "draft",
+  "desc": "Karanlıkta çömelmiş gölge figür: at anında 0.9 sn içinde büyüyerek kameraya hamle yapar, kırmızı gözleri parlar",
+  "tags": [
+   "gölge",
+   "hamle",
+   "korku",
+   "canavar",
+   "karanlık figür",
+   "kırmızı göz",
+   "shadow",
+   "lunge",
+   "horror",
+   "dark figure",
+   "monster"
+  ],
+  "anchor": "figürün tabanı (0,0)",
+  "box": [
+   -160,
+   -180,
+   160,
+   90
+  ],
+  "points": [
+   "eyes",
+   "hands",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "hamle anı: 0.9 sn ileri atılma, 0.4 sn bekleme, 0.3 sn geri çekilme"
    }
   }
  },
@@ -12420,6 +12933,267 @@
     "type": "number",
     "default": 137,
     "desc": "at anında eklenen izlenme (1-999)"
+   }
+  }
+ },
+ {
+  "name": "space-fx-2/beam-up",
+  "status": "draft",
+  "desc": "Işınlanma huzmesi: yukarı süzülen parçacıklı dikey ışık sütunu, anı gelince parlar",
+  "tags": [
+   "ışınlanma",
+   "huzme",
+   "ışın",
+   "sütun",
+   "ışık",
+   "teleport",
+   "beam",
+   "teleport",
+   "column",
+   "light",
+   "sci-fi"
+  ],
+  "anchor": "zemin tabanı (0,0)",
+  "box": [
+   -90,
+   -170,
+   90,
+   40
+  ],
+  "points": [
+   "base",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ışınlanma anı: 0.9 sn huzme güçlenir, sonra söner"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: efekt büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "space-fx-2/blackhole-swirl",
+  "status": "draft",
+  "desc": "Kara delik girdabı: sürekli dönen turuncu disk ve ortasında karanlık çekirdek",
+  "tags": [
+   "kara delik",
+   "girdap",
+   "dönme",
+   "uzay",
+   "disk",
+   "akresyon",
+   "çekirdek",
+   "black hole",
+   "swirl",
+   "vortex",
+   "accretion",
+   "disk"
+  ],
+  "anchor": "çekirdek merkezi (0,0)",
+  "box": [
+   -160,
+   -110,
+   160,
+   110
+  ],
+  "points": [
+   "center",
+   "edge"
+  ],
+  "params": {
+   "spin": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.3–2: dönüş hızı"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: efekt büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "space-fx-2/meteor-burn",
+  "status": "draft",
+  "desc": "Yanan meteor: ateş topu başı ve arkasında alevli iz sürükler, anı gelince patlar",
+  "tags": [
+   "meteor",
+   "göktaşı",
+   "ateş topu",
+   "yanma",
+   "iz",
+   "patlama",
+   "meteor",
+   "fireball",
+   "burn",
+   "trail",
+   "comet"
+  ],
+  "anchor": "ateş topu merkezi (0,0)",
+  "box": [
+   -170,
+   -110,
+   170,
+   110
+  ],
+  "points": [
+   "head",
+   "trail-start"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ateş topu anı: 0.7 sn parlayıp patlar, köze dağılır"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: efekt büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "space-fx-2/solar-flare",
+  "status": "draft",
+  "desc": "Güneş patlaması: yüzeyden döngüsel alev dilleri yükselir, anı gelince dev patlama",
+  "tags": [
+   "güneş",
+   "patlama",
+   "alev",
+   "korona",
+   "erüpsiyon",
+   "yüzey",
+   "solar",
+   "flare",
+   "sun",
+   "eruption",
+   "corona",
+   "prominence"
+  ],
+  "anchor": "güneş yüzeyi (0,0)",
+  "box": [
+   -150,
+   -170,
+   150,
+   70
+  ],
+  "points": [
+   "limb",
+   "corona"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "büyük patlama anı: 1.1 sn dev alev fışkırır"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: efekt büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "space-fx-2/starfield-drift",
+  "status": "draft",
+  "desc": "Yıldız alanı: üç katmanlı paralaks yıldızlar sürekli kayar, anı gelince warp sıçraması",
+  "tags": [
+   "yıldız",
+   "uzay",
+   "paralaks",
+   "kayan",
+   "gece",
+   "warp",
+   "sıçrama",
+   "starfield",
+   "stars",
+   "parallax",
+   "drift",
+   "space",
+   "warp"
+  ],
+  "anchor": "alan merkezi (0,0)",
+  "box": [
+   -190,
+   -120,
+   190,
+   120
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "0–3: kayma hızı"
+   },
+   "warp": {
+    "type": "time",
+    "default": null,
+    "desc": "warp anı: 1.2 sn yıldızlar çizgiye uzar"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: efekt büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "space-fx-2/thruster-burn",
+  "status": "draft",
+  "desc": "Roket itici alevi: nozuldan sürekli mavi-beyaz alev çıkar, titreyerek yanar",
+  "tags": [
+   "itici",
+   "roket",
+   "alev",
+   "motor",
+   "yanma",
+   "itme",
+   "güç",
+   "thruster",
+   "rocket",
+   "engine",
+   "flame",
+   "burn",
+   "nozzle"
+  ],
+  "anchor": "nozul çıkışı (0,0)",
+  "box": [
+   -80,
+   -90,
+   80,
+   170
+  ],
+  "points": [
+   "nozzle",
+   "flame-tip"
+  ],
+  "params": {
+   "throttle": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.2–1.5: itme gücü, alev boyunu belirler"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ateşleme anı: 0.6 sn alev güçlenir, şok dalgası yayılır"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: efekt büyüklüğü"
    }
   }
  },
