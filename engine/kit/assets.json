@@ -2763,6 +2763,275 @@
   }
  },
  {
+  "name": "crowd-reactions/boo-shake",
+  "status": "draft",
+  "desc": "at anında başparmaklarını aşağı sallayıp öfkeyle sarsılan yuhalama kalabalığı",
+  "tags": [
+   "kalabalık",
+   "yuhalama",
+   "boo",
+   "kızgın",
+   "başparmak",
+   "dislike",
+   "boo",
+   "crowd",
+   "angry",
+   "fans",
+   "dislike",
+   "jeer"
+  ],
+  "anchor": "zemin (0,0); grubun ortası",
+  "box": [
+   -260,
+   -300,
+   260,
+   12
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yuhalama anı: thumbs-down sallama (yaklaşık 0.7 sn olay)"
+   },
+   "count": {
+    "type": "number",
+    "default": 6,
+    "desc": "kişi sayısı 5–8"
+   }
+  }
+ },
+ {
+  "name": "crowd-reactions/cheer-burst",
+  "status": "draft",
+  "desc": "at anında hep birlikte zıplayıp kollarını havaya kaldıran, konfetili coşku kalabalığı",
+  "tags": [
+   "kalabalık",
+   "coşku",
+   "tezahürat",
+   "sevinç",
+   "zıplama",
+   "gol sevinci",
+   "cheer",
+   "crowd",
+   "celebration",
+   "jump",
+   "goal",
+   "fans"
+  ],
+  "anchor": "zemin (0,0); grubun ortası",
+  "box": [
+   -260,
+   -300,
+   260,
+   12
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "coşku anı: hep birlikte zıplama + kollar havaya (yaklaşık 1 sn olay)"
+   },
+   "count": {
+    "type": "number",
+    "default": 7,
+    "desc": "kişi sayısı 5–9"
+   }
+  }
+ },
+ {
+  "name": "crowd-reactions/clap-sync",
+  "status": "draft",
+  "desc": "tempo parametresiyle senkron el çırpan kalabalık; her alkışta mini çırpma ışıltısı",
+  "tags": [
+   "kalabalık",
+   "alkış",
+   "el çırpma",
+   "applause",
+   "clap",
+   "crowd",
+   "senkron",
+   "ritim",
+   "sync",
+   "rhythm",
+   "fans",
+   "tezahürat"
+  ],
+  "anchor": "zemin (0,0); grubun ortası",
+  "box": [
+   -260,
+   -300,
+   260,
+   12
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "tempo": {
+    "type": "number",
+    "default": 3,
+    "desc": "saniyedeki alkış sayısı (1–6)"
+   },
+   "count": {
+    "type": "number",
+    "default": 7,
+    "desc": "kişi sayısı 5–9"
+   }
+  }
+ },
+ {
+  "name": "crowd-reactions/gasp-hands",
+  "status": "draft",
+  "desc": "at anında elleri başına götürüp şaşkınlıkla donakalan kalabalık; şok çizgili",
+  "tags": [
+   "kalabalık",
+   "şaşkınlık",
+   "gasp",
+   "şok",
+   "hands on head",
+   "shock",
+   "crowd",
+   "surprised",
+   "astonished",
+   "fans",
+   "şaşırma"
+  ],
+  "anchor": "zemin (0,0); grubun ortası",
+  "box": [
+   -260,
+   -300,
+   260,
+   12
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "şaşkınlık anı: eller 0.15 sn'de başa, 0.5 sn tutma (yaklaşık 0.9 sn olay)"
+   },
+   "count": {
+    "type": "number",
+    "default": 6,
+    "desc": "kişi sayısı 5–8"
+   }
+  }
+ },
+ {
+  "name": "crowd-reactions/sing-along",
+  "status": "draft",
+  "desc": "kaldırılmış telefon ışıklarıyla ritmik sallanan, şarkı söyleyen kalabalık; canlı idle salınım",
+  "tags": [
+   "kalabalık",
+   "şarkı",
+   "sing along",
+   "telefon ışığı",
+   "konser",
+   "sallanma",
+   "concert",
+   "crowd",
+   "phone light",
+   "singing",
+   "fans",
+   "glow"
+  ],
+  "anchor": "zemin (0,0); grubun ortası",
+  "box": [
+   -260,
+   -320,
+   260,
+   12
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "count": {
+    "type": "number",
+    "default": 6,
+    "desc": "kişi sayısı 5–8"
+   },
+   "sway": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "salınım genişliği 0–1"
+   }
+  }
+ },
+ {
+  "name": "crowd-reactions/wave-pass",
+  "status": "draft",
+  "desc": "soldan sağa geçen meksika dalgası; her figür sırayla yükselir, kollarını kaldırır, sarı ışıltı çıkarır",
+  "tags": [
+   "kalabalık",
+   "meksika dalgası",
+   "dalga",
+   "tezahürat",
+   "stadyum",
+   "sırayla",
+   "wave",
+   "crowd",
+   "stadium",
+   "mexican wave",
+   "fans",
+   "cheer"
+  ],
+  "anchor": "zemin (0,0); grubun ortası",
+  "box": [
+   -260,
+   -320,
+   260,
+   12
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "dalganın merkezden geçiş anı (figürler 0.28 sn arayla yükselir)"
+   },
+   "count": {
+    "type": "number",
+    "default": 7,
+    "desc": "kişi sayısı 5–9 (tek sıra)"
+   }
+  }
+ },
+ {
   "name": "door-fx/bell-ding",
   "status": "draft",
   "desc": "Kapı zili: buton basılır, ses halkaları yayılır, butonda parlama nabzı",
@@ -6701,6 +6970,251 @@
   }
  },
  {
+  "name": "lab-fx/crystallize",
+  "status": "draft",
+  "desc": "Kristal büyümesi: petri kabında büyüyen fasetli kristaller ve kıvılcımlar",
+  "tags": [
+   "kristal",
+   "büyüme",
+   "petri",
+   "kristalleşme",
+   "deney",
+   "crystal",
+   "growth",
+   "crystallize",
+   "petri",
+   "sparkle"
+  ],
+  "anchor": "petri merkezi (0,0)",
+  "box": [
+   -95,
+   -70,
+   95,
+   22
+  ],
+  "points": [
+   "center",
+   "rim",
+   "dish"
+  ],
+  "params": {
+   "grow": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "kristal büyümesi 0-1 (boyut)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "kristal rengi"
+   }
+  }
+ },
+ {
+  "name": "lab-fx/fizz-bubble",
+  "status": "draft",
+  "desc": "Köpüren deney sıvısı: erlenmayerde yükselen baloncuklar ve kabaran köpük",
+  "tags": [
+   "köpük",
+   "köpurme",
+   "baloncuk",
+   "deney",
+   "kimya",
+   "fizz",
+   "bubbles",
+   "foam",
+   "fizzing",
+   "lab"
+  ],
+  "anchor": "taban (0,0)",
+  "box": [
+   -85,
+   -185,
+   85,
+   12
+  ],
+  "points": [
+   "mouth",
+   "liquid",
+   "base"
+  ],
+  "params": {
+   "intensity": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "köpürme yoğunluğu 0-1 (baloncuk sayısı ve köpük yüksekliği)"
+   },
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "sıvı rengi"
+   }
+  }
+ },
+ {
+  "name": "lab-fx/flame-test",
+  "status": "draft",
+  "desc": "Bunsen beki: tutuşma anında beliren, titreyen laboratuvar alevi",
+  "tags": [
+   "bunsen",
+   "alev",
+   "ateş",
+   "tutuşma",
+   "deney",
+   "flame",
+   "fire",
+   "burner",
+   "ignite",
+   "lab"
+  ],
+  "anchor": "ayak tabanı (0,0)",
+  "box": [
+   -75,
+   -200,
+   75,
+   12
+  ],
+  "points": [
+   "nozzle",
+   "base",
+   "hose"
+  ],
+  "params": {
+   "ignite": {
+    "type": "time",
+    "default": null,
+    "desc": "tutuşma anı (alev 0.3 sn içinde belirir, sonra titreyerek yanar)"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "alev test rengi (element rengi)"
+   }
+  }
+ },
+ {
+  "name": "lab-fx/spill-spread",
+  "status": "draft",
+  "desc": "Dökülen sıvı: merkezden genişleyen birikinti, sıçramalar ve ıslak iz",
+  "tags": [
+   "dökülme",
+   "sıvı",
+   "birikinti",
+   "yayılma",
+   "leke",
+   "spill",
+   "spread",
+   "puddle",
+   "leak",
+   "lab"
+  ],
+  "anchor": "dökülme merkezi (0,0)",
+  "box": [
+   -125,
+   -25,
+   125,
+   25
+  ],
+  "points": [
+   "center",
+   "edge"
+  ],
+  "params": {
+   "spill": {
+    "type": "time",
+    "default": null,
+    "desc": "dökülme anı (birikinti 1.2 sn boyunca sönümlü genişler)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "sıvı rengi"
+   }
+  }
+ },
+ {
+  "name": "lab-fx/stir-spin",
+  "status": "draft",
+  "desc": "Manyetik karıştırıcı: tabandaki dönen bar ile girdaplı deney kabı",
+  "tags": [
+   "karıştırıcı",
+   "manyetik",
+   "dönme",
+   "girdap",
+   "deney",
+   "stirrer",
+   "spin",
+   "mix",
+   "vortex",
+   "lab"
+  ],
+  "anchor": "taban (0,0)",
+  "box": [
+   -85,
+   -170,
+   85,
+   12
+  ],
+  "points": [
+   "mouth",
+   "bar",
+   "surface"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "karıştırma hızı 0-1"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "sıvı rengi"
+   }
+  }
+ },
+ {
+  "name": "lab-fx/titration-drip",
+  "status": "draft",
+  "desc": "Damla damlatan büret: mezürlü cam tüp, musluk ve uçtan düşen damla",
+  "tags": [
+   "büret",
+   "damla",
+   "damlama",
+   "titrasyon",
+   "deney",
+   "burette",
+   "drop",
+   "drip",
+   "titration",
+   "lab"
+  ],
+  "anchor": "üst merkez (0,0) — kıskaç/üst uç",
+  "box": [
+   -55,
+   -15,
+   55,
+   185
+  ],
+  "points": [
+   "tip",
+   "valve",
+   "scale"
+  ],
+  "params": {
+   "drop": {
+    "type": "time",
+    "default": null,
+    "desc": "damla düşme anı (damla kopar, düşer, halka olur)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "sıvı rengi"
+   }
+  }
+ },
+ {
   "name": "liquid-fx/bubble-pop",
   "status": "draft",
   "desc": "Havada süzülüp sallanan baloncuk; at anında patlayıp parçaları etrafa savrulur",
@@ -7326,6 +7840,240 @@
      "oceania"
     ],
     "desc": "vurgulanan bölge"
+   }
+  }
+ },
+ {
+  "name": "mechanics-fx/belt-drive",
+  "status": "draft",
+  "desc": "İki kasnak arasında akan kayış; speed kasnak dönüş hızını ayarlar",
+  "tags": [
+   "kayış",
+   "kasnak",
+   "makaralı sistem",
+   "mekanik",
+   "belt",
+   "pulley",
+   "drive",
+   "machine",
+   "mechanism"
+  ],
+  "anchor": "iki kasnağın ortası (0,0)",
+  "box": [
+   -140,
+   -85,
+   140,
+   85
+  ],
+  "points": [
+   "left_axle",
+   "right_axle",
+   "belt_top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "speed": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "sistem hızı (0-1); 0 = en yavaş idle"
+   }
+  }
+ },
+ {
+  "name": "mechanics-fx/crank-rotate",
+  "status": "draft",
+  "desc": "Döner krank kolu; crank anında hızlı tam tur atar",
+  "tags": [
+   "krank",
+   "kol",
+   "çevirme",
+   "mekanik",
+   "mil",
+   "crank",
+   "handle",
+   "rotate",
+   "machine",
+   "mechanism"
+  ],
+  "anchor": "mil merkezi (0,0)",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "hub"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "crank": {
+    "type": "time",
+    "default": null,
+    "desc": "tam tur anı (0.9 sn hızlı dönüş)"
+   }
+  }
+ },
+ {
+  "name": "mechanics-fx/gear-turn",
+  "status": "draft",
+  "desc": "spin hızında dönen dişli çark; mil, 4 kol ve cıvatalı göbek",
+  "tags": [
+   "dişli",
+   "çark",
+   "mekanik",
+   "makine",
+   "dönüş",
+   "gear",
+   "cog",
+   "machine",
+   "mechanism",
+   "rotate"
+  ],
+  "anchor": "dişli merkezi (0,0)",
+  "box": [
+   -115,
+   -115,
+   115,
+   115
+  ],
+  "points": [
+   "hub"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "spin": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "dönüş hızı (0-1); 0 = en yavaş idle dönüş"
+   }
+  }
+ },
+ {
+  "name": "mechanics-fx/piston-pump",
+  "status": "draft",
+  "desc": "Silindir içinde yukarı-aşağı çalışan piston; cycle hızını ayarlar",
+  "tags": [
+   "piston",
+   "silindir",
+   "pompa",
+   "motor",
+   "biyel",
+   "piston",
+   "cylinder",
+   "pump",
+   "engine",
+   "mechanism"
+  ],
+  "anchor": "silindir gövde merkezi (0,0)",
+  "box": [
+   -110,
+   -115,
+   110,
+   115
+  ],
+  "points": [
+   "vent",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "cycle": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "pompalama hızı (0-1); 0 = en yavaş idle"
+   }
+  }
+ },
+ {
+  "name": "mechanics-fx/spring-bounce",
+  "status": "draft",
+  "desc": "Üst brakete asılı helezon yay; pull anında çekilip sönümlü salınır",
+  "tags": [
+   "yay",
+   "helezon",
+   "salınım",
+   "sönümlü",
+   "esneklik",
+   "spring",
+   "coil",
+   "bounce",
+   "oscillation",
+   "mechanism"
+  ],
+  "anchor": "yay merkezi (0,0)",
+  "box": [
+   -90,
+   -110,
+   90,
+   110
+  ],
+  "points": [
+   "top_mount",
+   "weight"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "pull": {
+    "type": "time",
+    "default": null,
+    "desc": "çekme anı; ardından sönümlü salınım"
+   }
+  }
+ },
+ {
+  "name": "mechanics-fx/valve-steam",
+  "status": "draft",
+  "desc": "Buhar vanası; open anında çark döner ve bacadan buhar fışkırır",
+  "tags": [
+   "vana",
+   "buhar",
+   "boru",
+   "basınç",
+   "makine",
+   "valve",
+   "steam",
+   "pipe",
+   "pressure",
+   "machine"
+  ],
+  "anchor": "vana gövde merkezi (0,0)",
+  "box": [
+   -110,
+   -124,
+   110,
+   120
+  ],
+  "points": [
+   "vent",
+   "wheel",
+   "pipe_left",
+   "pipe_right"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "open": {
+    "type": "time",
+    "default": null,
+    "desc": "vananın açılma anı; buhar fışkırır"
    }
   }
  },
