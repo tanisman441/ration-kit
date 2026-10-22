@@ -458,6 +458,239 @@
   }
  },
  {
+  "name": "arcade-fx/coin-insert",
+  "status": "draft",
+  "desc": "Retro arcade kabini; jeton yuvaya kayar, LED ve ekran tepki verir",
+  "tags": [
+   "jeton",
+   "arcade",
+   "atari",
+   "oyun makinesi",
+   "jeton atma",
+   "coin",
+   "insert coin",
+   "arcade machine",
+   "token",
+   "slot"
+  ],
+  "anchor": "taban (0,0); kabin yukarı uzar",
+  "box": [
+   -120,
+   -320,
+   120,
+   10
+  ],
+  "points": [
+   "slot",
+   "screen"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "jetonun yuvaya giriş anı (0.9 sn: kayma + flaş)"
+   },
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "kabinin yan şerit ve marquee vurgu rengi"
+   }
+  }
+ },
+ {
+  "name": "arcade-fx/game-over-flash",
+  "status": "draft",
+  "desc": "Olay anında yanıp sönen GAME OVER arcade ekranı",
+  "tags": [
+   "game over",
+   "oyun bitti",
+   "ekran",
+   "yanıp sönme",
+   "arcade",
+   "game over",
+   "flash",
+   "screen",
+   "arcade",
+   "blink"
+  ],
+  "anchor": "ekran merkezi (0,0)",
+  "box": [
+   -195,
+   -125,
+   195,
+   125
+  ],
+  "points": [
+   "center",
+   "screen"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "GAME OVER flaş anı (1.2 sn yanıp sönme)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "yazı ve flaş rengi"
+   }
+  }
+ },
+ {
+  "name": "arcade-fx/highscore-pop",
+  "status": "draft",
+  "desc": "Yaylanarak beliren yeni rekor madalyonu; yıldız + REKOR kurdelesi",
+  "tags": [
+   "rekor",
+   "yüksek skor",
+   "madalya",
+   "ödül",
+   "yeni rekor",
+   "high score",
+   "new record",
+   "medal",
+   "trophy",
+   "award"
+  ],
+  "anchor": "madalyon merkezi (0,0)",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "centre"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "rekorun belirme anı (0.55 sn yaylanma + 0.9 sn ışıma)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "madalyon rengi"
+   }
+  }
+ },
+ {
+  "name": "arcade-fx/joystick-wiggle",
+  "status": "draft",
+  "desc": "Sürekli hafifçe sallanan arcade joystick; topuz vurgu renkli",
+  "tags": [
+   "joystick",
+   "kol",
+   "arcade",
+   "atari",
+   "oyun kolu",
+   "sallanma",
+   "joystick",
+   "arcade stick",
+   "wiggle",
+   "controller"
+  ],
+  "anchor": "taban (0,0); kol yukarı uzar",
+  "box": [
+   -120,
+   -235,
+   120,
+   10
+  ],
+  "points": [
+   "top",
+   "pivot"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "topuz rengi"
+   }
+  }
+ },
+ {
+  "name": "arcade-fx/pixel-explosion",
+  "status": "draft",
+  "desc": "Merkezden dışa uçan retro piksel karelerden patlama efekti",
+  "tags": [
+   "patlama",
+   "piksel",
+   "retro",
+   "efekt",
+   "arcade",
+   "explosion",
+   "pixel",
+   "burst",
+   "retro",
+   "blast"
+  ],
+  "anchor": "patlama merkezi (0,0)",
+  "box": [
+   -160,
+   -160,
+   160,
+   160
+  ],
+  "points": [
+   "centre"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı (0.8 sn, 14 piksel)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "ana piksel rengi"
+   }
+  }
+ },
+ {
+  "name": "arcade-fx/screen-crack",
+  "status": "draft",
+  "desc": "Çarpma anında çatlayan arcade monitörü; çatlaklar büyür, kıvılcım saçar",
+  "tags": [
+   "çatlak",
+   "kırık ekran",
+   "monitör",
+   "hasar",
+   "arcade",
+   "crack",
+   "broken screen",
+   "damage",
+   "monitor",
+   "shatter"
+  ],
+  "anchor": "ekran merkezi (0,0)",
+  "box": [
+   -170,
+   -130,
+   170,
+   150
+  ],
+  "points": [
+   "screen",
+   "impact"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çatlama anı (0.6 sn büyüme + kıvılcım)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "ekran oyun pikseli rengi"
+   }
+  }
+ },
+ {
   "name": "battle-fx/armor-crack",
   "status": "draft",
   "desc": "Zırh çatlağı: darbe anında kalkan plakadan yayılan çatlaklar ve fırlayan zırh parçaları",
@@ -2278,6 +2511,246 @@
     "type": "number",
     "default": 11,
     "desc": "dalga çubuğu sayısı"
+   }
+  }
+ },
+ {
+  "name": "circus-fx/clown-balloon",
+  "status": "draft",
+  "desc": "Balon tutan palyaço: pop anında balon patlar, parçacıklar saçılır",
+  "tags": [
+   "palyaço",
+   "balon",
+   "patlama",
+   "sirk",
+   "clown",
+   "balloon",
+   "pop",
+   "circus",
+   "party"
+  ],
+  "anchor": "palyaçonun ayakları (0,0)",
+  "box": [
+   -160,
+   -345,
+   160,
+   45
+  ],
+  "points": [
+   "hand",
+   "balloon",
+   "head",
+   "nose"
+  ],
+  "params": {
+   "pop": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı (öncesi 0.15 sn şişme, 0.5 sn parçacık)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "balon + burun rengi"
+   }
+  }
+ },
+ {
+  "name": "circus-fx/fire-breath",
+  "status": "draft",
+  "desc": "Sağa doğru alev püskürten sirk sanatçısı, kor parçacıklı",
+  "tags": [
+   "ateş",
+   "alev",
+   "püskürtme",
+   "sirk",
+   "fire",
+   "breath",
+   "flame",
+   "circus",
+   "show"
+  ],
+  "anchor": "sanatçının ayakları (0,0)",
+  "box": [
+   -130,
+   -300,
+   235,
+   45
+  ],
+  "points": [
+   "mouth",
+   "head",
+   "foot"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ateş püskürtme anı (0.8 sn alev konisi + korlar)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "kostüm rengi"
+   }
+  }
+ },
+ {
+  "name": "circus-fx/hoop-jump",
+  "status": "draft",
+  "desc": "Halkadan atlayan akrobat: çömelme, parabolik takla, iniş pozu",
+  "tags": [
+   "halka",
+   "atlama",
+   "akrobat",
+   "sirk",
+   "hoop",
+   "jump",
+   "acrobat",
+   "circus",
+   "takla"
+  ],
+  "anchor": "zemin (0,0) — halka standının tabanı",
+  "box": [
+   -225,
+   -270,
+   235,
+   45
+  ],
+  "points": [
+   "hoop",
+   "standBase",
+   "crouch",
+   "land"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "atlama anı (0.7 sn: çömelmeden halka içinden inişe)"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "kostüm rengi"
+   }
+  }
+ },
+ {
+  "name": "circus-fx/juggling",
+  "status": "draft",
+  "desc": "Top çeviren jonglör: 3 top elips yörüngede döner, throw anında yükselir",
+  "tags": [
+   "jonglör",
+   "top çevirme",
+   "sirk",
+   "juggler",
+   "juggling",
+   "balls",
+   "circus",
+   "atış"
+  ],
+  "anchor": "jonglörün ayakları (0,0)",
+  "box": [
+   -180,
+   -480,
+   180,
+   45
+  ],
+  "points": [
+   "handL",
+   "handR",
+   "head",
+   "apex"
+  ],
+  "params": {
+   "throw": {
+    "type": "time",
+    "default": null,
+    "desc": "atış anı: toplar 0.6 sn yükselir, hız çizgileri"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "jonglör kostümü + top rengi"
+   }
+  }
+ },
+ {
+  "name": "circus-fx/tightrope-walk",
+  "status": "draft",
+  "desc": "Gerili ip üzerinde denge sopasıyla yürüyen cambaz, sallantılı",
+  "tags": [
+   "cambaz",
+   "ip",
+   "denge",
+   "sirk",
+   "tightrope",
+   "walker",
+   "balance",
+   "circus",
+   "akrobat"
+  ],
+  "anchor": "ipin merkezi (0,0) — cambazın bastığı nokta",
+  "box": [
+   -225,
+   -290,
+   225,
+   60
+  ],
+  "points": [
+   "footL",
+   "footR",
+   "ropeL",
+   "ropeR",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "kostüm rengi"
+   }
+  }
+ },
+ {
+  "name": "circus-fx/trapeze-swing",
+  "status": "draft",
+  "desc": "Trapezde periyodik salınım yapan sanatçı, dizler karnına çekili",
+  "tags": [
+   "trapez",
+   "salınım",
+   "sirk",
+   "akrobat",
+   "trapeze",
+   "swing",
+   "circus",
+   "acrobat",
+   "hava"
+  ],
+  "anchor": "trapez barının merkezi (0,0)",
+  "box": [
+   -215,
+   -45,
+   215,
+   350
+  ],
+  "points": [
+   "barL",
+   "barR",
+   "hands",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "kostüm rengi"
+   },
+   "speed": {
+    "type": "number",
+    "default": 3.4,
+    "desc": "salınım periyodu (sn)"
    }
   }
  },
@@ -5822,6 +6295,234 @@
     "type": "time",
     "default": null,
     "desc": "büyü atma anı: kıvılcım yağmuru"
+   }
+  }
+ },
+ {
+  "name": "farm-fx/chick-hatch",
+  "status": "draft",
+  "desc": "Yumurtadan çıkan civciv; at anında kabuk çatlar, üst kapak fırlar, civciv başını çıkarır",
+  "tags": [
+   "civciv",
+   "yumurta",
+   "kuluçka",
+   "çiftlik",
+   "kuş",
+   "chick",
+   "hatch",
+   "egg",
+   "farm"
+  ],
+  "anchor": "yumurta tabanı (0,0)",
+  "box": [
+   -105,
+   -160,
+   105,
+   15
+  ],
+  "points": [
+   "top",
+   "chick"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kırılma anı — kabuk çatlar, üst kapak fırlar, civciv çıkar (1 sn)"
+   }
+  }
+ },
+ {
+  "name": "farm-fx/chicken-run",
+  "status": "draft",
+  "desc": "Koşan tavuk, yandan görünüm; run anında bacaklar hızlı döner, hız çizgileri ve toz çıkar",
+  "tags": [
+   "tavuk",
+   "koşan",
+   "koşu",
+   "çiftlik",
+   "kümes",
+   "kanatlı",
+   "chicken",
+   "running",
+   "farm",
+   "hen"
+  ],
+  "anchor": "ayak tabanı (0,0)",
+  "box": [
+   -120,
+   -115,
+   120,
+   12
+  ],
+  "points": [
+   "head",
+   "feet",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "run": {
+    "type": "time",
+    "default": null,
+    "desc": "koşu anı — bacaklar hızlı döner, hız çizgileri + toz (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "farm-fx/milk-splash",
+  "status": "draft",
+  "desc": "Sıçrayan süt; at anında damla düşer, taç sıçrama ve damlacıklar saçılır",
+  "tags": [
+   "süt",
+   "sıçrama",
+   "damla",
+   "sıvı",
+   "çiftlik",
+   "inek",
+   "milk",
+   "splash",
+   "drop",
+   "liquid"
+  ],
+  "anchor": "süt birikintisi merkezi (0,0)",
+  "box": [
+   -120,
+   -165,
+   120,
+   25
+  ],
+  "points": [
+   "top",
+   "splash"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "damlanın düşüş anı — taç sıçrama + damlacıklar (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "farm-fx/scarecrow-wave",
+  "status": "draft",
+  "desc": "El sallayan korkuluk; wave anında sağ kol kalkar ve sallar, rüzgarda sürekli salınır",
+  "tags": [
+   "korkuluk",
+   "çiftlik",
+   "tarla",
+   "saman",
+   "el sallama",
+   "scarecrow",
+   "farm",
+   "wave",
+   "straw"
+  ],
+  "anchor": "direk tabanı (0,0)",
+  "box": [
+   -115,
+   -210,
+   115,
+   45
+  ],
+  "points": [
+   "hand",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "wave": {
+    "type": "time",
+    "default": null,
+    "desc": "el sallama — sağ kol kalkar, 1 sn boyunca sallar"
+   }
+  }
+ },
+ {
+  "name": "farm-fx/sunflower-turn",
+  "status": "draft",
+  "desc": "Güneşe dönen ayçiçeği; başı yavaşça güneşi takip eder, turn anında hızlıca döner",
+  "tags": [
+   "ayçiçeği",
+   "çiçek",
+   "güneş",
+   "bitki",
+   "tarla",
+   "sunflower",
+   "flower",
+   "sun",
+   "plant"
+  ],
+  "anchor": "sap tabanı (0,0)",
+  "box": [
+   -125,
+   -215,
+   125,
+   20
+  ],
+  "points": [
+   "head",
+   "stem"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green"
+   },
+   "turn": {
+    "type": "time",
+    "default": null,
+    "desc": "güneşe hızlı dönüş — baş 0.8 snde hedefine döner"
+   }
+  }
+ },
+ {
+  "name": "farm-fx/tractor-bounce",
+  "status": "draft",
+  "desc": "Hoplayan traktör, yandan görünüm; gövde süspansiyonda sürekli salınır, tekerler döner, egzoz duman çıkarır",
+  "tags": [
+   "traktör",
+   "çiftlik",
+   "tarla",
+   "araç",
+   "hoplama",
+   "süspansiyon",
+   "tractor",
+   "farm",
+   "vehicle",
+   "bounce"
+  ],
+  "anchor": "teker tabanı (0,0)",
+  "box": [
+   -135,
+   -150,
+   135,
+   35
+  ],
+  "points": [
+   "cabin",
+   "hood",
+   "exhaust"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
    }
   }
  },
