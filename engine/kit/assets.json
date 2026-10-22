@@ -2282,6 +2282,252 @@
   }
  },
  {
+  "name": "classroom-fx/beaker-pop",
+  "status": "draft",
+  "desc": "Deney beheri: idle kabarcıklanma + at anında köpük patlaması",
+  "tags": [
+   "beher",
+   "deney",
+   "köpük",
+   "patlama",
+   "kimya",
+   "beaker",
+   "experiment",
+   "foam",
+   "bubble",
+   "fen"
+  ],
+  "anchor": "beher merkezi",
+  "box": [
+   -75,
+   -105,
+   75,
+   65
+  ],
+  "points": [
+   "mouth",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "sıvı rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "köpük patlaması anı (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "classroom-fx/chalk-write",
+  "status": "draft",
+  "desc": "Tebeşirle yazı yazma: mini tahtada harfler sırayla belirir, tebeşir ucu takip eder",
+  "tags": [
+   "tebeşir",
+   "yazı",
+   "tahta",
+   "yazma",
+   "chalk",
+   "writing",
+   "board",
+   "ders",
+   "lesson",
+   "okul"
+  ],
+  "anchor": "tahta merkezi",
+  "box": [
+   -115,
+   -75,
+   115,
+   75
+  ],
+  "points": [
+   "tip",
+   "topleft",
+   "bottomright"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink",
+    "desc": "tebeşir rengi"
+   },
+   "text": {
+    "type": "text",
+    "default": "2+2=4",
+    "desc": "tahtaya yazılacak metin (en fazla 12 harf)"
+   },
+   "write": {
+    "type": "time",
+    "default": null,
+    "desc": "yazma anı — harfler 0.9 snde sırayla belirir"
+   }
+  }
+ },
+ {
+  "name": "classroom-fx/eraser-wipe",
+  "status": "draft",
+  "desc": "Tahta silgisiyle silme: iki geçiş, temizlenen şerit ve toz zerrecikleri",
+  "tags": [
+   "silgi",
+   "tahta silgisi",
+   "silme",
+   "temizleme",
+   "eraser",
+   "wipe",
+   "board",
+   "toz",
+   "dust",
+   "sınıf"
+  ],
+  "anchor": "tahta merkezi",
+  "box": [
+   -115,
+   -65,
+   115,
+   65
+  ],
+  "points": [
+   "eraser",
+   "board"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "silgi gövde rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "silme anı — 1 snde iki geçiş + toz"
+   }
+  }
+ },
+ {
+  "name": "classroom-fx/hand-raise",
+  "status": "draft",
+  "desc": "Parmak kaldıran figür: at anında kol yukarı fırlar ve el sallar",
+  "tags": [
+   "parmak kaldır",
+   "el kaldır",
+   "kol",
+   "söz hakkı",
+   "raise hand",
+   "hand up",
+   "sınıf",
+   "class",
+   "öğrenci",
+   "student"
+  ],
+  "anchor": "gövde merkezi",
+  "box": [
+   -120,
+   -140,
+   120,
+   76
+  ],
+  "points": [
+   "hand",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "gövde rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kolun kalkma anı (0.55 sn fırlama + el sallama)"
+   }
+  }
+ },
+ {
+  "name": "classroom-fx/page-flip",
+  "status": "draft",
+  "desc": "Kitap sayfası çevirme: sağ sayfa 0.4 snde sola uçar, köşe idle kıpırdanır",
+  "tags": [
+   "kitap",
+   "sayfa",
+   "sayfa çevirme",
+   "okuma",
+   "book",
+   "page",
+   "flip",
+   "reading",
+   "ders",
+   "study"
+  ],
+  "anchor": "kitap merkezi (cilt)",
+  "box": [
+   -110,
+   -62,
+   110,
+   62
+  ],
+  "points": [
+   "spine",
+   "corner"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "kapak rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sayfa çevirme anı (0.4 sn dönme)"
+   }
+  }
+ },
+ {
+  "name": "classroom-fx/paper-plane",
+  "status": "draft",
+  "desc": "Süzülen kağıt uçak: idle salınım + fly anında hız iziyle ileri fırlama",
+  "tags": [
+   "kağıt uçak",
+   "uçak",
+   "süzülme",
+   "uçma",
+   "paper plane",
+   "plane",
+   "fly",
+   "glide",
+   "oyun",
+   "play"
+  ],
+  "anchor": "uçak merkezi",
+  "box": [
+   -100,
+   -60,
+   100,
+   60
+  ],
+  "points": [
+   "nose",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2",
+    "desc": "kağıt rengi"
+   },
+   "fly": {
+    "type": "time",
+    "default": null,
+    "desc": "fırlama anı — 0.7 sn ileri süzülme + iz"
+   }
+  }
+ },
+ {
   "name": "combat-fx/block-shield",
   "status": "draft",
   "desc": "Blok kalkanı: block anında altıgen kalkan flaşı ve dalgalanma halkası, boşta hafif titreme",
@@ -13954,6 +14200,253 @@
   }
  },
  {
+  "name": "spell-duel/ice-shard",
+  "status": "draft",
+  "desc": "Süzülen buz kristali parçası; soğuk parıltı titremesiyle at anında kırılma flaşı",
+  "tags": [
+   "buz",
+   "kristal",
+   "soğuk",
+   "büyü",
+   "kırağı",
+   "ice",
+   "shard",
+   "crystal",
+   "frost",
+   "magic"
+  ],
+  "anchor": "kristalin merkezi (0,0)",
+  "box": [
+   -80,
+   -130,
+   80,
+   130
+  ],
+  "points": [
+   "top",
+   "bottom",
+   "centre"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kırılma anı (0.3 sn: parıltı patlaması)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "kristal rengi"
+   }
+  }
+ },
+ {
+  "name": "spell-duel/lightning-arc",
+  "status": "draft",
+  "desc": "Çatallı şimşek; at anında 0.15 sn flaşla çakar, idle'da elektrik gibi titrer",
+  "tags": [
+   "şimşek",
+   "yıldırım",
+   "elektrik",
+   "büyü",
+   "çarpma",
+   "lightning",
+   "bolt",
+   "thunder",
+   "electric",
+   "zap"
+  ],
+  "anchor": "şimşeğin üst başlangıç noktası (0,0)",
+  "box": [
+   -110,
+   -140,
+   110,
+   140
+  ],
+  "points": [
+   "strike",
+   "top",
+   "centre"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "şimşek çakma anı (0.15 sn flaş + kalın ark)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "şimşek rengi"
+   }
+  }
+ },
+ {
+  "name": "spell-duel/magic-missile",
+  "status": "draft",
+  "desc": "Kuyruklu parlak büyü mermisi, sağa bakıyor; at anında fırlayıp parlar",
+  "tags": [
+   "büyü",
+   "mermi",
+   "sihir",
+   "füze",
+   "ateşleme",
+   "magic",
+   "missile",
+   "bolt",
+   "projectile",
+   "spell"
+  ],
+  "anchor": "merminin merkezi (0,0)",
+  "box": [
+   -130,
+   -70,
+   130,
+   70
+  ],
+  "points": [
+   "tip",
+   "tail",
+   "centre"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fırlatma anı (0.35 sn: parlama + ileri hamle)"
+   },
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "mermi rengi"
+   }
+  }
+ },
+ {
+  "name": "spell-duel/mana-burst",
+  "status": "draft",
+  "desc": "Büyü enerjisi patlaması; at anında 14 parçacık saçılır ve 0.6 sn'de söner",
+  "tags": [
+   "patlama",
+   "büyü",
+   "enerji",
+   "mana",
+   "sihir",
+   "parçacık",
+   "burst",
+   "explosion",
+   "mana",
+   "particles",
+   "magic"
+  ],
+  "anchor": "patlamanın merkezi (0,0)",
+  "box": [
+   -140,
+   -140,
+   140,
+   140
+  ],
+  "points": [
+   "centre",
+   "edge"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı (0.6 sn: parçacıklar saçılıp sönümlenir)"
+   },
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "enerji rengi"
+   }
+  }
+ },
+ {
+  "name": "spell-duel/shield-bubble",
+  "status": "draft",
+  "desc": "Yarı saydam koruyucu büyü küresi; at anında belirip genişler, sonra nabız gibi atar",
+  "tags": [
+   "kalkan",
+   "büyü",
+   "küre",
+   "koruma",
+   "savunma",
+   "shield",
+   "bubble",
+   "protection",
+   "ward",
+   "magic"
+  ],
+  "anchor": "kürenin merkezi (0,0)",
+  "box": [
+   -140,
+   -140,
+   140,
+   140
+  ],
+  "points": [
+   "centre",
+   "top",
+   "edge"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kalkanın kurulma anı (0.45 sn: belirip genişleme)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "kalkan rengi"
+   }
+  }
+ },
+ {
+  "name": "spell-duel/summon-rune",
+  "status": "draft",
+  "desc": "Tepeden görülen büyülü rün dairesi; at anında çizilir, sonra döner ve parıldar",
+  "tags": [
+   "rün",
+   "büyü",
+   "sihir",
+   "çağırma",
+   "daire",
+   "mühür",
+   "rune",
+   "summon",
+   "circle",
+   "seal",
+   "magic"
+  ],
+  "anchor": "dairenin merkezi (0,0)",
+  "box": [
+   -140,
+   -140,
+   140,
+   140
+  ],
+  "points": [
+   "centre",
+   "edge",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "rünün çizilme anı (0.6 sn: çizgiler saat yönünde belirir)"
+   },
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "rün rengi"
+   }
+  }
+ },
+ {
   "name": "sports-fx/crowd-wave",
   "status": "draft",
   "desc": "Tribün kesiti: üç sıra taraftar, soldan sağa gezen döngüsel Meksika dalgasıyla zıplar",
@@ -14394,6 +14887,243 @@
     "type": "time",
     "default": null,
     "desc": "çalma anı (ses çizgileri + titreşim 0.3 sn)"
+   }
+  }
+ },
+ {
+  "name": "superhero-fx/cape-flutter",
+  "status": "draft",
+  "desc": "Rüzgârda sürekli dalgalanan süper kahraman pelerini: omuzdan takılır, ucu rüzgârla salınır",
+  "tags": [
+   "pelerin",
+   "kahraman",
+   "süper",
+   "dalgalanma",
+   "rüzgar",
+   "cape",
+   "hero",
+   "flutter",
+   "wind"
+  ],
+  "anchor": "pelerinin takıldığı omuz (0,0)",
+  "box": [
+   -70,
+   -100,
+   160,
+   115
+  ],
+  "points": [
+   "shoulder",
+   "tip"
+  ],
+  "params": {
+   "wind": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "0–1: rüzgar şiddeti; arttıkça dalga genliği büyür"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "superhero-fx/hero-landing",
+  "status": "draft",
+  "desc": "Klasik kahraman inişi pozu: at anında toz bulutu ve şok dalgası patlar",
+  "tags": [
+   "iniş",
+   "kahraman",
+   "diz",
+   "toz",
+   "şok",
+   "dalga",
+   "landing",
+   "hero",
+   "dust",
+   "shockwave"
+  ],
+  "anchor": "yumruğun yere değdiği nokta (0,0)",
+  "box": [
+   -205,
+   -215,
+   205,
+   35
+  ],
+  "points": [
+   "fist",
+   "head",
+   "ground"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "iniş anı (toz bulutu + şok dalgası, 0.6 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "superhero-fx/laser-eyes",
+  "status": "draft",
+  "desc": "Maskeli kahraman kafası: at anında gözlerden iki lazer ışını fırlatır, boşta gözler nabız gibi parlar",
+  "tags": [
+   "lazer",
+   "göz",
+   "kahraman",
+   "maske",
+   "ışın",
+   "laser",
+   "eyes",
+   "hero",
+   "mask",
+   "beam"
+  ],
+  "anchor": "kafa merkezi (0,0)",
+  "box": [
+   -115,
+   -95,
+   215,
+   95
+  ],
+  "points": [
+   "head",
+   "eyeTop",
+   "eyeBottom",
+   "beamEnd"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "lazer anı (gözlerden ışın, 0.5 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "superhero-fx/power-punch",
+  "status": "draft",
+  "desc": "Süper güçlü yumruk: at anında güç halkası ve radyal darbe çizgileri saçan vuruş",
+  "tags": [
+   "yumruk",
+   "vuruş",
+   "güç",
+   "darbe",
+   "patlama",
+   "punch",
+   "power",
+   "hit",
+   "impact"
+  ],
+  "anchor": "yumruğun merkezi (0,0)",
+  "box": [
+   -150,
+   -130,
+   190,
+   130
+  ],
+  "points": [
+   "impact",
+   "wrist"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yumruğun çarpma anı (güç halkası + darbe çizgileri, 0.4 sn)"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: yumruk + efekt büyüklüğü"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "superhero-fx/speed-lines",
+  "status": "draft",
+  "desc": "Hız çizgisi patlaması: at anında çizgiler merkezden dışa fırlar, boşta hafif titrer",
+  "tags": [
+   "hız",
+   "çizgi",
+   "patlama",
+   "hareket",
+   "sürat",
+   "speed",
+   "lines",
+   "burst",
+   "motion"
+  ],
+  "anchor": "patlamanın merkezi (0,0)",
+  "box": [
+   -185,
+   -185,
+   185,
+   185
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "hız patlaması anı (çizgiler dışa fırlar, 0.4 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "superhero-fx/web-shot",
+  "status": "draft",
+  "desc": "Bilekten fırlayan ağ ipi: at anında hedefe doğru eğri çizilerek uzayan ağ atışı",
+  "tags": [
+   "ağ",
+   "ip",
+   "örümcek",
+   "fırlatma",
+   "kahraman",
+   "web",
+   "shot",
+   "spider",
+   "line"
+  ],
+  "anchor": "bilek / ağ fırlatıcı (0,0)",
+  "box": [
+   -85,
+   -115,
+   215,
+   115
+  ],
+  "points": [
+   "wrist",
+   "target"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ağ atışı anı (ip eğri çizilerek uzar, 0.5 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
    }
   }
  },
