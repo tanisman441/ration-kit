@@ -11813,6 +11813,249 @@
   }
  },
  {
+  "name": "medieval-fx/arrow-rain",
+  "status": "draft",
+  "desc": "Ok yağmuru; at anında oklar gökten inip yere saplanır, toz bulutları çıkar",
+  "tags": [
+   "ok",
+   "yağmur",
+   "savaş",
+   "saldırı",
+   "ortaçağ",
+   "arrow",
+   "rain",
+   "volley",
+   "medieval",
+   "war"
+  ],
+  "anchor": "zemin (0,0)",
+  "box": [
+   -190,
+   -280,
+   190,
+   20
+  ],
+  "points": [
+   "sky",
+   "ground"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ok yağmuru anı (1.6 sn: iniş + saplanma + toz)"
+   },
+   "count": {
+    "type": "number",
+    "default": 12,
+    "desc": "uçan ok sayısı (4–20)"
+   }
+  }
+ },
+ {
+  "name": "medieval-fx/drawbridge-lower",
+  "status": "draft",
+  "desc": "Kale kapısında asma köprü; at anında 90° dikeyden hendek üstüne yataya iner",
+  "tags": [
+   "asma köprü",
+   "kale",
+   "kapı",
+   "zincir",
+   "hendek",
+   "kuşatma",
+   "ortaçağ",
+   "drawbridge",
+   "castle",
+   "moat",
+   "medieval"
+  ],
+  "anchor": "zemin (0,0); köprü menteşesi (0,-34)",
+  "box": [
+   -235,
+   -250,
+   235,
+   15
+  ],
+  "points": [
+   "hinge",
+   "gate",
+   "moat"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "köprü indirme anı (1.4 sn: 90°→0° + toz)"
+   }
+  }
+ },
+ {
+  "name": "medieval-fx/knight-march",
+  "status": "draft",
+  "desc": "Zırhlı şövalye yürüyüşü; stomp anında yere basar, toz çıkarır, sancak dalgalanır",
+  "tags": [
+   "şövalye",
+   "zırh",
+   "yürüyüş",
+   "sancak",
+   "savaşçı",
+   "ortaçağ",
+   "knight",
+   "armor",
+   "march",
+   "banner"
+  ],
+  "anchor": "ayaklar (0,0); boy ~245 birim",
+  "box": [
+   -140,
+   -265,
+   140,
+   15
+  ],
+  "points": [
+   "head",
+   "banner",
+   "shield",
+   "feet"
+  ],
+  "params": {
+   "stomp": {
+    "type": "time",
+    "default": null,
+    "desc": "yere basma (0.5 sn: çökme + toz halkası)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "zırh rengi"
+   }
+  }
+ },
+ {
+  "name": "medieval-fx/shield-wall",
+  "status": "draft",
+  "desc": "Kalkan duvarı; push anında öne itiş yapar, boşta kalkanlar titrer",
+  "tags": [
+   "kalkan",
+   "duvar",
+   "savaş",
+   "lejyon",
+   "saldırı",
+   "ortaçağ",
+   "shield",
+   "wall",
+   "phalanx",
+   "medieval",
+   "war"
+  ],
+  "anchor": "ayaklar (0,0)",
+  "box": [
+   -200,
+   -215,
+   200,
+   15
+  ],
+  "points": [
+   "front",
+   "top",
+   "centre"
+  ],
+  "params": {
+   "push": {
+    "type": "time",
+    "default": null,
+    "desc": "ileri itiş (0.9 sn: eğilme + toz + geri yaylanma)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kalkan rengi"
+   }
+  }
+ },
+ {
+  "name": "medieval-fx/torch-flicker",
+  "status": "draft",
+  "desc": "Yanan meşale; alev sürekli titrer, burst anında parlayıp kıvılcım saçar",
+  "tags": [
+   "meşale",
+   "alev",
+   "ateş",
+   "ışık",
+   "kale",
+   "gece",
+   "torch",
+   "flame",
+   "fire",
+   "medieval",
+   "light"
+  ],
+  "anchor": "taban (0,0)",
+  "box": [
+   -85,
+   -235,
+   85,
+   15
+  ],
+  "points": [
+   "flame",
+   "base"
+  ],
+  "params": {
+   "intensity": {
+    "type": "number",
+    "default": 1,
+    "desc": "alev büyüklüğü (0.4–1.8)"
+   },
+   "burst": {
+    "type": "time",
+    "default": null,
+    "desc": "alev parlaması (0.6 sn: büyüme + kıvılcım)"
+   }
+  }
+ },
+ {
+  "name": "medieval-fx/trebuchet-launch",
+  "status": "draft",
+  "desc": "Mancınık; at anında kol savrulur, taş balistik bir yay çizerek uçar",
+  "tags": [
+   "mancınık",
+   "trebuchet",
+   "taş",
+   "fırlatma",
+   "kuşatma",
+   "ortaçağ",
+   "siege",
+   "catapult",
+   "medieval",
+   "war"
+  ],
+  "anchor": "zemin (0,0); pivot (0,-115)",
+  "box": [
+   -180,
+   -250,
+   300,
+   15
+  ],
+  "points": [
+   "pivot",
+   "counterweight",
+   "release"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fırlatma anı (2.4 sn: kol savrulması + taş uçuşu + iniş)"
+   },
+   "power": {
+    "type": "number",
+    "default": 1,
+    "desc": "fırlatma gücü (0.6–1.4)"
+   }
+  }
+ },
+ {
   "name": "money-fx/card-swipe",
   "status": "draft",
   "desc": "Kredi kartı kaydırma: at anında kart sağa fırlar, ardında hayalet iz ve oklar bırakır",

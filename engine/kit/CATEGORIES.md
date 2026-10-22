@@ -161,4 +161,4 @@ Her kategori 4–6 çizim; stil STYLE.md'ye uyar; her çizim 2 tur görsel kontr
 - [x] X77 camping-fx — campfire-sparks, lantern-swing, marshmallow-toast (params: at zaman), hammock-sway, owl-hoot (params: at zaman), tent-pitch (kamp sahnesi animasyonları)
 - [x] X78 desert-fx — tumbleweed-roll, mirage-shimmer, cactus-sway, sandstorm-sweep, oasis-ripple, camel-walk (çöl sahnesi animasyonları)
 - [x] X79 volcano-fx — eruption-burst (params: at zaman), lava-flow, ash-fall, magma-bubble, steam-vent, pyroclast-surge (yanardağ animasyonları)
-- [ ] X80 medieval-fx — knight-march, arrow-rain (params: at zaman), torch-flicker, trebuchet-launch (params: at zaman), drawbridge-lower (params: at zaman), shield-wall (ortaçağ savaş animasyonları)
+- [x] X80 medieval-fx — knight-march, arrow-rain (params: at zaman), torch-flicker, trebuchet-launch (params: at zaman), drawbridge-lower (params: at zaman), shield-wall (ortaçağ savaş animasyonları)
