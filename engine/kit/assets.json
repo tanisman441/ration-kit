@@ -12909,6 +12909,250 @@
   }
  },
  {
+  "name": "robot-fx/charge-plug",
+  "status": "draft",
+  "desc": "Prize takılan şarj fişi; takılma anında kıvılcım, üstte dolan pil göstergesi",
+  "tags": [
+   "şarj",
+   "fiş",
+   "priz",
+   "charge",
+   "plug",
+   "socket",
+   "pil",
+   "battery",
+   "kıvılcım",
+   "spark",
+   "enerji"
+  ],
+  "anchor": "priz merkezi (-75,0)",
+  "box": [
+   -175,
+   -115,
+   175,
+   115
+  ],
+  "points": [
+   "socket",
+   "cable"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fişin prize takılma anı (kıvılcım + kayma)"
+   },
+   "charge": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "pil doluluk seviyesi (0-1)"
+   }
+  }
+ },
+ {
+  "name": "robot-fx/drone-hover",
+  "status": "draft",
+  "desc": "Havada asılı duran dört pervaneli drone; pervane dönüşü, süzülme ve LED animasyonlu",
+  "tags": [
+   "drone",
+   "insansız hava aracı",
+   "uçan robot",
+   "pervane",
+   "hover",
+   "quadcopter",
+   "uçuş",
+   "ihа",
+   "havada",
+   "gözlem"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -170,
+   -95,
+   170,
+   95
+  ],
+  "points": [
+   "top",
+   "bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "rotor": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "pervane dönüş hızı (0-1)"
+   },
+   "tilt": {
+    "type": "number",
+    "default": 0,
+    "desc": "gövde eğimi (derece)"
+   }
+  }
+ },
+ {
+  "name": "robot-fx/hologram-flicker",
+  "status": "draft",
+  "desc": "Projektörden yükselen mavi ışık konisi içinde süzülen titreşen hologram küp",
+  "tags": [
+   "hologram",
+   "projeksiyon",
+   "3d",
+   "küp",
+   "flicker",
+   "titreme",
+   "ışık konisi",
+   "sanal",
+   "teknoloji",
+   "cyber"
+  ],
+  "anchor": "projektör tabanı (0,50)",
+  "box": [
+   -150,
+   -165,
+   150,
+   70
+  ],
+  "points": [
+   "projector",
+   "image"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "robot-fx/laser-scan",
+  "status": "draft",
+  "desc": "Tarama ünitesinden çıkan kırmızı lazer çizgisi nesneyi yukarıdan aşağıya tarar",
+  "tags": [
+   "lazer",
+   "tarama",
+   "scan",
+   "laser",
+   "scanner",
+   "kırmızı ışın",
+   "sensör",
+   "robot",
+   "okuma",
+   "tarayıcı"
+  ],
+  "anchor": "tarama alanı merkezi (0,0)",
+  "box": [
+   -190,
+   -120,
+   190,
+   120
+  ],
+  "points": [
+   "source"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tarama başlangıç anı; null ise sürekli tarama döngüsü"
+   }
+  }
+ },
+ {
+  "name": "robot-fx/mech-step",
+  "status": "draft",
+  "desc": "Adım atan mekanik robot bacağı: ayak kalkar, ileri uzanır, basar ve toz kaldırır",
+  "tags": [
+   "robot bacağı",
+   "yürüme",
+   "adım",
+   "mech",
+   "robot leg",
+   "step",
+   "walk",
+   "mekanik",
+   "ayak",
+   "tozu"
+  ],
+  "anchor": "kalça eklemi yakını (0,-110)",
+  "box": [
+   -160,
+   -155,
+   160,
+   85
+  ],
+  "points": [
+   "hip",
+   "foot"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "step": {
+    "type": "time",
+    "default": null,
+    "desc": "adım anı: kalkış → ileri uzanma → basış (~0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "robot-fx/robot-eye-glow",
+  "status": "draft",
+  "desc": "Parlayan göz vizörlü robot kafası; nabız ve tarama animasyonu, tehlike modunda gözler kırmızı",
+  "tags": [
+   "robot kafası",
+   "robot gözü",
+   "vizör",
+   "robot head",
+   "eye",
+   "göz",
+   "parlama",
+   "glow",
+   "tehlike",
+   "danger",
+   "android"
+  ],
+  "anchor": "kafa merkezi (0,0)",
+  "box": [
+   -130,
+   -115,
+   130,
+   115
+  ],
+  "points": [
+   "top",
+   "panel"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "danger": {
+    "type": "enum",
+    "default": "off",
+    "values": [
+     "off",
+     "on"
+    ],
+    "desc": "tehlike modu: gözler kırmızıya döner"
+   }
+  }
+ },
+ {
   "name": "school/backpack",
   "status": "draft",
   "desc": "Ön cepli, askılı okul çantası; bounce anında havaya zıplayıp esneyerek iner",
@@ -13967,6 +14211,247 @@
     "type": "number",
     "default": 1,
     "desc": "0.5–1.5: efekt büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "space-travel/comet-tail",
+  "status": "draft",
+  "desc": "Kuyruklu yıldız: nabız gibi parlayan baş, dalgalanan kuyruk ve kopan parçacıklar",
+  "tags": [
+   "kuyruklu yıldız",
+   "kuyruk",
+   "uzay",
+   "uzay yolculuğu",
+   "göktaşı",
+   "meteor",
+   "comet",
+   "tail",
+   "meteor",
+   "space travel",
+   "kuyrukluyıldız"
+  ],
+  "anchor": "kuyruklu yıldız baş merkezi (0,0)",
+  "box": [
+   -260,
+   -110,
+   150,
+   110
+  ],
+  "points": [
+   "head",
+   "tail"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "0-1: akış hızı (dalgalanma + parçacık)"
+   }
+  }
+ },
+ {
+  "name": "space-travel/gravity-float",
+  "status": "draft",
+  "desc": "Sıfır yerçekiminde süzülen kasklı astronot: salınım, savrulan uzuvlar, vizör parlaması",
+  "tags": [
+   "astronot",
+   "ağırlıksız",
+   "yerçekimsiz",
+   "süzülme",
+   "uzay",
+   "uzay yolculuğu",
+   "kask",
+   "astronaut",
+   "zero gravity",
+   "float",
+   "spacesuit",
+   "weightless"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -180,
+   -200,
+   180,
+   200
+  ],
+  "points": [
+   "head",
+   "hand",
+   "foot"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral"
+    ]
+   }
+  }
+ },
+ {
+  "name": "space-travel/moon-base-light",
+  "status": "draft",
+  "desc": "Gece ışıklı ay üssü kubbesi: yanıp sönen pencereler, anten sinyali ve kubbe parlaması",
+  "tags": [
+   "ay üssü",
+   "kubbe",
+   "ay",
+   "üs",
+   "koloni",
+   "uzay",
+   "gece",
+   "moon base",
+   "dome",
+   "lunar",
+   "colony",
+   "uzay üssü",
+   "ışık"
+  ],
+  "anchor": "zemin çizgisi (0,0): üs tabanı",
+  "box": [
+   -210,
+   -190,
+   210,
+   60
+  ],
+  "points": [
+   "door",
+   "antenna",
+   "dome"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   }
+  }
+ },
+ {
+  "name": "space-travel/oxygen-bubble",
+  "status": "draft",
+  "desc": "Hortumdan yükselen oksijen kabarcıkları: titreşimli akış ve patlayan baloncuklar",
+  "tags": [
+   "oksijen",
+   "kabarcık",
+   "hava",
+   "solunum",
+   "hortum",
+   "uzay",
+   "oxygen",
+   "bubble",
+   "air",
+   "breath",
+   "hose",
+   "baloncuk"
+  ],
+  "anchor": "hortum ağzı (0,0)",
+  "box": [
+   -130,
+   -230,
+   130,
+   130
+  ],
+  "points": [
+   "nozzle",
+   "top"
+  ],
+  "params": {
+   "flow": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "0-1: oksijen akış yoğunluğu"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "space-travel/rocket-dock",
+  "status": "draft",
+  "desc": "Roketin istasyon portuna kenetlenmesi: yaklaşma, temas kıvılcımı ve kenetli ışık",
+  "tags": [
+   "roket",
+   "kenetlenme",
+   "istasyon",
+   "uzay",
+   "uzay yolculuğu",
+   "yaklaşma",
+   "temas",
+   "rocket",
+   "docking",
+   "space station",
+   "rendezvous",
+   "uzay istasyonu",
+   "docking port"
+  ],
+  "anchor": "temas noktası (0,0): istasyon port ağzı",
+  "box": [
+   -400,
+   -130,
+   200,
+   130
+  ],
+  "points": [
+   "dock",
+   "nose",
+   "nozzle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kenetlenme anı (yaklaşma + kıvılcım + kelepçe)"
+   }
+  }
+ },
+ {
+  "name": "space-travel/wormhole-spin",
+  "status": "draft",
+  "desc": "Dönen solucan deliği portalı: spiral enerji halkaları ve nabız gibi atan parlak merkez",
+  "tags": [
+   "solucan deliği",
+   "portal",
+   "uzay",
+   "uzay yolculuğu",
+   "dönme",
+   "girdap",
+   "uzay portalı",
+   "wormhole",
+   "portal",
+   "space travel",
+   "spin",
+   "vortex",
+   "warp"
+  ],
+  "anchor": "portal merkezi (0,0)",
+  "box": [
+   -170,
+   -120,
+   170,
+   120
+  ],
+  "points": [
+   "center",
+   "rim"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "0-1: dönüş hızı"
    }
   }
  },
@@ -19524,6 +20009,254 @@
     "type": "number",
     "default": 1,
     "desc": "0.5–1.5: çorap büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "winter-fx/avalanche-roll",
+  "status": "draft",
+  "desc": "Yokuş aşağı yuvarlanıp büyüyen kar topu; at anında 1.1 sn yuvarlanma, arkasında kar bulutu ve bitişte patlama halkası",
+  "tags": [
+   "çığ",
+   "kar topu",
+   "yuvarlanma",
+   "kış",
+   "kar",
+   "avalanche",
+   "snowball",
+   "roll",
+   "snow",
+   "winter",
+   "downhill"
+  ],
+  "anchor": "sahne merkezi (0,0); yokuş sol üstten sağ alta iner",
+  "box": [
+   -185,
+   -135,
+   185,
+   135
+  ],
+  "points": [
+   "centre",
+   "start",
+   "finish"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yuvarlanma başlangıcı (1.1 sn: top büyür, kar bulutu arkasında sürüklenir)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "winter-fx/ice-skate",
+  "status": "draft",
+  "desc": "Buzda kayan patenci: glide ile uzayan buz izi, hız çizgileri, parlayan buz yüzeyi ve denge sallantısı",
+  "tags": [
+   "buz pateni",
+   "paten",
+   "kayma",
+   "kış",
+   "buz",
+   "ice skate",
+   "skating",
+   "glide",
+   "winter",
+   "ice"
+  ],
+  "anchor": "ayaklar (0,0); buz çizgisi y=4",
+  "box": [
+   -170,
+   -160,
+   170,
+   30
+  ],
+  "points": [
+   "head",
+   "feet",
+   "trail"
+  ],
+  "params": {
+   "glide": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "0–1: kayma şiddeti (buz izi uzunluğu, hız çizgileri, eğim)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "winter-fx/igloo-wind",
+  "status": "draft",
+  "desc": "İglo: blok desenli kubbe, kapıdan sızan titrek sıcak ışık, sürekli esen rüzgar çizgileri ve savrulan kar; gust anında fırtına",
+  "tags": [
+   "iglo",
+   "rüzgar",
+   "kış",
+   "kar",
+   "fırtına",
+   "barınak",
+   "igloo",
+   "wind",
+   "winter",
+   "snow",
+   "storm",
+   "shelter"
+  ],
+  "anchor": "iglo taban merkezi (0,10)",
+  "box": [
+   -195,
+   -155,
+   195,
+   60
+  ],
+  "points": [
+   "door",
+   "top",
+   "centre"
+  ],
+  "params": {
+   "gust": {
+    "type": "time",
+    "default": null,
+    "desc": "şiddetli esinti anı (0.8 sn: çizgiler kalınlaşır, kar savrulur, ışık parlar)"
+   },
+   "wind": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "0–1: sürekli rüzgar şiddeti"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "winter-fx/penguin-slide",
+  "status": "draft",
+  "desc": "Karnı üstünde kayan penguen: zıplayan süzülme, çırpınan yüzgeçler, arkada kar spreyi ve hız çizgileri",
+  "tags": [
+   "penguen",
+   "kayma",
+   "kış",
+   "kar",
+   "kızak",
+   "penguin",
+   "slide",
+   "sliding",
+   "winter",
+   "snow"
+  ],
+  "anchor": "kar zemini (0, 30); penguen gövde merkezi ~(-10,-20)",
+  "box": [
+   -185,
+   -105,
+   185,
+   60
+  ],
+  "points": [
+   "head",
+   "belly",
+   "tail"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "0–1: kayma hızı (zıplama, sprey ve çizgi yoğunluğu)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "winter-fx/snowball-throw",
+  "status": "draft",
+  "desc": "Eldivenli el kar topu fırlatır: geri sarım, kol savrulması, parabolik uçuş ve hedefte kar bulutu patlaması",
+  "tags": [
+   "kar topu",
+   "fırlatma",
+   "atış",
+   "kış",
+   "kar",
+   "snowball",
+   "throw",
+   "toss",
+   "winter",
+   "snow"
+  ],
+  "anchor": "sahne merkezi (0,0); atış soldan sağa",
+  "box": [
+   -180,
+   -120,
+   180,
+   120
+  ],
+  "points": [
+   "hand",
+   "target",
+   "centre"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "atış anı (1.55 sn: geri sarım → savrulma → uçuş → patlama)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "winter-fx/snowman-build",
+  "status": "draft",
+  "desc": "Kardan adam: şapkalı, kömür gözlü, havuç burunlu; nefes alır, çevresinde kar yağar, atkısı dalgalanır, wave anında kol sallar",
+  "tags": [
+   "kardan adam",
+   "kar",
+   "kış",
+   "noel",
+   "snowman",
+   "snow",
+   "winter",
+   "carrot",
+   "hat",
+   "christmas"
+  ],
+  "anchor": "ayaklar (0,0); boy ~240 birim",
+  "box": [
+   -140,
+   -250,
+   140,
+   25
+  ],
+  "points": [
+   "head",
+   "top",
+   "hand"
+  ],
+  "params": {
+   "wave": {
+    "type": "time",
+    "default": null,
+    "desc": "kol sallama anı (0.9 sn: sağ kol kalkar, el sallar)"
+   },
+   "scarf": {
+    "type": "color",
+    "default": "ink"
    }
   }
  }
