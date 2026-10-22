@@ -9216,6 +9216,249 @@
   }
  },
  {
+  "name": "kitchen-fx-2/blender-swirl",
+  "status": "draft",
+  "desc": "Çalışan blender: meyve suyu sürekli girdapla döner; pulse anında turbo hız, sıçrama ve sarsıntı",
+  "tags": [
+   "blender",
+   "mikser",
+   "girdap",
+   "dönme",
+   "meyve suyu",
+   "mutfak",
+   "smoothie",
+   "vortex",
+   "mixer",
+   "juice"
+  ],
+  "anchor": "tabanın merkezi (0,120)",
+  "box": [
+   -120,
+   -170,
+   120,
+   150
+  ],
+  "points": [
+   "base",
+   "lid",
+   "vortex"
+  ],
+  "params": {
+   "pulse": {
+    "type": "time",
+    "default": null,
+    "desc": "turbo nabız anı (0.8 sn): girdap hızlanır, sıvı sıçrar, gövde sarsılır"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "kitchen-fx-2/cheese-pull",
+  "status": "draft",
+  "desc": "Uzayan peynir: pull anında kaldırılan pizza dilimi yükselir, peynir iplikleri gerilip uzar",
+  "tags": [
+   "peynir",
+   "pizza",
+   "uzayan peynir",
+   "cheese pull",
+   "yemek",
+   "stretchy cheese",
+   "pizza slice",
+   "yummy"
+  ],
+  "anchor": "alttaki peynir kütlesinin merkezi (0,60)",
+  "box": [
+   -145,
+   -160,
+   145,
+   145
+  ],
+  "points": [
+   "slice",
+   "strings",
+   "cheese",
+   "plate"
+  ],
+  "params": {
+   "pull": {
+    "type": "time",
+    "default": null,
+    "desc": "uzatma anı (1.0 sn): dilim yükselir, peynir iplikleri gerilir ve damlar"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "kitchen-fx-2/pan-flip",
+  "status": "draft",
+  "desc": "Sote tavası savurması: at anında tava öne eğilir, yemek parçaları havaya fırlar ve tavaya geri düşer",
+  "tags": [
+   "tava",
+   "savurma",
+   "flip",
+   "sote",
+   "yemek pişirme",
+   "pan flip",
+   "toss",
+   "stir fry",
+   "sauté",
+   "cooking"
+  ],
+  "anchor": "tava gövdesinin merkezi (0,0)",
+  "box": [
+   -180,
+   -215,
+   225,
+   105
+  ],
+  "points": [
+   "pan",
+   "food",
+   "apex",
+   "handle_tip"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "savurma anı (0.6 sn): tava eğilir, malzemeler havaya fırlar ve geri düşer"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "kitchen-fx-2/popcorn-pop",
+  "status": "draft",
+  "desc": "Mısır kutusu: at anında patlamış mısırlar havaya fırlar; boşta hafif sallantı ve ısı dalgası",
+  "tags": [
+   "mısır",
+   "patlamış mısır",
+   "popcorn",
+   "sinema",
+   "atıştırmalık",
+   "kutu",
+   "patlama",
+   "popping corn",
+   "snack",
+   "cinema"
+  ],
+  "anchor": "kutu tabanının merkezi (0,110)",
+  "box": [
+   -135,
+   -205,
+   135,
+   130
+  ],
+  "points": [
+   "box",
+   "pile",
+   "pop_apex"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı (1.0 sn): mısırlar havaya fırlar, ısı halkaları yayılır"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "kitchen-fx-2/soda-fizz",
+  "status": "draft",
+  "desc": "Köpüren gazoz bardağı: kabarcıklar sürekli yükselir; shake anında bardak çalkalanır ve köpük taşar",
+  "tags": [
+   "gazoz",
+   "soda",
+   "köpük",
+   "bardak",
+   "kabarcık",
+   "fizz",
+   "soda glass",
+   "bubbles",
+   "foam",
+   "carbonated"
+  ],
+  "anchor": "bardak tabanının merkezi (0,95)",
+  "box": [
+   -100,
+   -195,
+   100,
+   125
+  ],
+  "points": [
+   "glass",
+   "soda",
+   "foam",
+   "overflow"
+  ],
+  "params": {
+   "shake": {
+    "type": "time",
+    "default": null,
+    "desc": "çalkalanıp taşma anı (1.0 sn): bardak sallanır, köpük fırlar ve kenardan akar"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "kitchen-fx-2/soup-simmer",
+  "status": "draft",
+  "desc": "Kaynayan çorba tenceresi: sürekli kabarcık ve buhar; boil anında büyük fokurdama ve kenardan taşma",
+  "tags": [
+   "çorba",
+   "tencere",
+   "kaynama",
+   "fokurdama",
+   "buhar",
+   "kabarcık",
+   "yemek pişirme",
+   "soup",
+   "simmer",
+   "boil",
+   "steam"
+  ],
+  "anchor": "tencere tabanının merkezi (0,100)",
+  "box": [
+   -145,
+   -175,
+   145,
+   125
+  ],
+  "points": [
+   "pot",
+   "soup",
+   "steam",
+   "rim"
+  ],
+  "params": {
+   "boil": {
+    "type": "time",
+    "default": null,
+    "desc": "fokurdama taşması (1.0 sn): büyük kabarcık patlar, çorba kenardan taşar"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
   "name": "kitchen-fx/chop",
   "status": "draft",
   "desc": "Doğrama tahtası üzerindeki bıçak; chop anında hızla vurup sebze dilimlerini sıçratır",
@@ -12798,6 +13041,257 @@
   }
  },
  {
+  "name": "pet-fx/cat-pounce",
+  "status": "draft",
+  "desc": "Pusuya yatmış kedi, poposu kıpırdar; at anında gerinip avının üzerine fırlar",
+  "tags": [
+   "kedi",
+   "evcil hayvan",
+   "pusu",
+   "zıplama",
+   "av",
+   "patiler",
+   "cat",
+   "pounce",
+   "pet",
+   "jump",
+   "hunt"
+  ],
+  "anchor": "patiler (0,0)",
+  "box": [
+   -150,
+   -200,
+   150,
+   10
+  ],
+  "points": [
+   "head",
+   "tail",
+   "paws"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "üzerine atlama — kedi fırlar, gövde gerilir, pençeler ileri (1.1 sn)"
+   }
+  }
+ },
+ {
+  "name": "pet-fx/dog-tail-wag",
+  "status": "draft",
+  "desc": "Oturan köpek, kuyruğunu sürekli sallar; excite anında sevinçle havaya zıplar",
+  "tags": [
+   "köpek",
+   "evcil hayvan",
+   "kuyruk sallama",
+   "sevinç",
+   "mutlu",
+   "pati",
+   "dog",
+   "tail wag",
+   "puppy",
+   "pet",
+   "happy"
+  ],
+  "anchor": "patiler (0,0); boy ~250 birim",
+  "box": [
+   -135,
+   -260,
+   170,
+   10
+  ],
+  "points": [
+   "head",
+   "nose",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "excite": {
+    "type": "time",
+    "default": null,
+    "desc": "heyecan anı — sevinçle zıplar, kuyruk çılgınca sallanır (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "pet-fx/fish-bowl-bubbles",
+  "status": "draft",
+  "desc": "Yuvarlak cam fanusta yüzen balık, sürekli yükselen baloncuklar; cama vurulunca balık ürker",
+  "tags": [
+   "balık",
+   "fanus",
+   "akvaryum",
+   "evcil hayvan",
+   "baloncuk",
+   "su",
+   "fish",
+   "fishbowl",
+   "aquarium",
+   "pet",
+   "bubbles"
+  ],
+  "anchor": "masa (0,0); fanus çapı ~190 birim",
+  "box": [
+   -125,
+   -230,
+   125,
+   15
+  ],
+  "points": [
+   "top",
+   "water",
+   "fish"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "tap": {
+    "type": "time",
+    "default": null,
+    "desc": "cama vurulma — halka dalgaları yayılır, balık ürker ve kaçar (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "pet-fx/hamster-wheel",
+  "status": "draft",
+  "desc": "Dönen çarkın içinde koşan hamster; speed hızı belirler, trip anında tökezleyip takla atar",
+  "tags": [
+   "hamster",
+   "evcil hayvan",
+   "çark",
+   "koşma",
+   "kemirgen",
+   "kafes",
+   "hamster",
+   "wheel",
+   "pet",
+   "run",
+   "rodent"
+  ],
+  "anchor": "zemin (0,0); çark merkezi (0,-92)",
+  "box": [
+   -125,
+   -200,
+   125,
+   15
+  ],
+  "points": [
+   "hub",
+   "top",
+   "ground"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "speed": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "çark hızı 0–1 — dönüş hızı ve bacak temposu"
+   },
+   "trip": {
+    "type": "time",
+    "default": null,
+    "desc": "tökezleme anı — hamster takla atar, çark sallar (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "pet-fx/parrot-flap",
+  "status": "draft",
+  "desc": "Tünekte kanat çırpan papağan; squawk anında gagasını açıp ses dalgaları yayar",
+  "tags": [
+   "papağan",
+   "kuş",
+   "evcil hayvan",
+   "kanat",
+   "ötme",
+   "tüy",
+   "parrot",
+   "bird",
+   "pet",
+   "wings",
+   "squawk"
+  ],
+  "anchor": "tünek (0,0); boy ~230 birim",
+  "box": [
+   -140,
+   -240,
+   140,
+   10
+  ],
+  "points": [
+   "head",
+   "beak",
+   "wing"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green"
+   },
+   "squawk": {
+    "type": "time",
+    "default": null,
+    "desc": "ötme anı — gaga açılır, baş geriye atılır, ses dalgaları (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "pet-fx/tail-chase",
+  "status": "draft",
+  "desc": "Daire çizerek kendi kuyruğunu kovalayan köpek; catch anında durup kuyruğu ısırır",
+  "tags": [
+   "köpek",
+   "evcil hayvan",
+   "kuyruk",
+   "kovalama",
+   "dönme",
+   "oyun",
+   "dog",
+   "tail chase",
+   "pet",
+   "spin",
+   "play"
+  ],
+  "anchor": "zemin (0,0); dönüş merkezi (0,-120)",
+  "box": [
+   -130,
+   -265,
+   130,
+   10
+  ],
+  "points": [
+   "centre",
+   "tail",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "catch": {
+    "type": "time",
+    "default": null,
+    "desc": "kuyruğu yakalama — dönüş durur, kafa uzanır, ısırır (0.9 sn)"
+   }
+  }
+ },
+ {
   "name": "pointer-fx/cursor-click-pop",
   "status": "draft",
   "desc": "Fare imleci; click anında uçtan patlayan halka ve okta hafif çökme",
@@ -16073,6 +16567,260 @@
     "type": "time",
     "default": null,
     "desc": "çalma anı (ses çizgileri + titreşim 0.3 sn)"
+   }
+  }
+ },
+ {
+  "name": "stage-fx/crowd-surf",
+  "status": "draft",
+  "desc": "Zıplayan kalabalığın elleri üstünde yatay sörf yapan kişi; at anında havaya kalkar",
+  "tags": [
+   "kalabalık",
+   "konser",
+   "sörf",
+   "sahne",
+   "eğlence",
+   "crowd",
+   "surf",
+   "concert",
+   "stage",
+   "party"
+  ],
+  "anchor": "kalabalığın tabanı (0,0)",
+  "box": [
+   -220,
+   -305,
+   220,
+   60
+  ],
+  "points": [
+   "surfer",
+   "head",
+   "crowd"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sörfçünün havaya kaldırıldığı an (0.6 sn yükselme)"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "surprised"
+    ],
+    "desc": "sörfçü yüz ifadesi"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "sörfçü tişört rengi"
+   }
+  }
+ },
+ {
+  "name": "stage-fx/curtain-open",
+  "status": "draft",
+  "desc": "İki yana açılan kırmızı sahne perdesi; at anında sahne görünür",
+  "tags": [
+   "perde",
+   "sahne",
+   "tiyatro",
+   "açılış",
+   "gösteri",
+   "curtain",
+   "stage",
+   "theater",
+   "opening",
+   "show"
+  ],
+  "anchor": "perdenin üst ortası (0,0)",
+  "box": [
+   -235,
+   -30,
+   235,
+   300
+  ],
+  "points": [
+   "top",
+   "center",
+   "reveal"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "perdenin iki yana açıldığı an (0.8 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "perde rengi"
+   }
+  }
+ },
+ {
+  "name": "stage-fx/mic-drop",
+  "status": "draft",
+  "desc": "Mikrofon standdan düşer, iki kez sekip yere yatar; çarpışmalarda şok dalgası",
+  "tags": [
+   "mikrofon",
+   "düşme",
+   "sahne",
+   "konser",
+   "mic",
+   "drop",
+   "microphone",
+   "stage",
+   "concert"
+  ],
+  "anchor": "zemin merkezi (0,0)",
+  "box": [
+   -170,
+   -300,
+   170,
+   40
+  ],
+  "points": [
+   "head",
+   "stand",
+   "impact"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "düşüş anı (0.45 sn çarpma, 0.9 sn yatma)"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "mikrofon halka + detay rengi"
+   }
+  }
+ },
+ {
+  "name": "stage-fx/smoke-machine",
+  "status": "draft",
+  "desc": "Duman makinesi: boşta ince kıvrım, puff anında yoğun duman püskürtür",
+  "tags": [
+   "duman",
+   "sis",
+   "makine",
+   "sahne",
+   "konser",
+   "efekt",
+   "smoke",
+   "fog",
+   "machine",
+   "stage"
+  ],
+  "anchor": "makinenin taban merkezi (0,0)",
+  "box": [
+   -95,
+   -140,
+   370,
+   40
+  ],
+  "points": [
+   "nozzle",
+   "top"
+  ],
+  "params": {
+   "puff": {
+    "type": "time",
+    "default": null,
+    "desc": "yoğun duman püskürtme anı (1.2 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "LED + nozul halka rengi"
+   }
+  }
+ },
+ {
+  "name": "stage-fx/spotlight-sweep",
+  "status": "draft",
+  "desc": "Sağa sola salınan sahne spotu; at anında merkeze kilitlenip parlar",
+  "tags": [
+   "spot",
+   "ışık",
+   "sahne",
+   "konser",
+   "ışın",
+   "spotlight",
+   "stage",
+   "beam",
+   "light",
+   "show"
+  ],
+  "anchor": "spot gövdesinin truss bağlantı noktası (0,0)",
+  "box": [
+   -210,
+   -190,
+   210,
+   150
+  ],
+  "points": [
+   "mount",
+   "lens",
+   "pool"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ışının merkeze kilitlenip parladığı an (0.4 sn flaş)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "ışın + lens rengi"
+   }
+  }
+ },
+ {
+  "name": "stage-fx/stage-lights-flash",
+  "status": "draft",
+  "desc": "Truss üzerindeki 4 sahne lambası nabızla yanar; at anında flaş patlar",
+  "tags": [
+   "ışık",
+   "sahne",
+   "flaş",
+   "konser",
+   "lamba",
+   "lights",
+   "flash",
+   "stage",
+   "concert",
+   "par"
+  ],
+  "anchor": "truss ortası (0,0)",
+  "box": [
+   -265,
+   -70,
+   265,
+   210
+  ],
+  "points": [
+   "truss",
+   "lens",
+   "floor"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "flaş patlaması anı (0.2 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "ışın + lens rengi"
    }
   }
  },
