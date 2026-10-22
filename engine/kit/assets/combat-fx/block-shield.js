@@ -38,7 +38,7 @@ export default {
     ctx.fill();
 
     // 2) kalkan gövdesi — altıgen
-    ctx.fillStyle = k.col(p.color);
+    ctx.fillStyle = k.rgba(p.color, 1);
     hex(0, 0, 88, Math.PI / 2);
     ctx.fill();
     // sol üst parlama — beyaz alfa 0.10, kontursuz

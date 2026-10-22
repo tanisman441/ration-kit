@@ -1209,6 +1209,282 @@
   }
  },
  {
+  "name": "camping-fx/campfire-sparks",
+  "status": "draft",
+  "desc": "Kamp ateşi: taş halka içinde titreyen alevler, kor nabzı ve sürekli yükselen kıvılcımlar",
+  "tags": [
+   "kamp",
+   "ateş",
+   "kamp ateşi",
+   "alev",
+   "kıvılcım",
+   "odun",
+   "taş halka",
+   "campfire",
+   "fire",
+   "flame",
+   "sparks",
+   "bonfire"
+  ],
+  "anchor": "ateş tabanı (0,0)",
+  "box": [
+   -125,
+   -215,
+   125,
+   48
+  ],
+  "points": [
+   "base",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "dış alev tonu"
+   },
+   "intensity": {
+    "type": "number",
+    "default": 0.75,
+    "desc": "0–1: alev boyu ve kıvılcım yoğunluğu"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: ateş büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "camping-fx/hammock-sway",
+  "status": "draft",
+  "desc": "İki direk arası hamak: sürekli yana salınır, kumaşı esneyip yastıkla battaniye taşır",
+  "tags": [
+   "hamak",
+   "kamp",
+   "dinlenme",
+   "salınım",
+   "doğa",
+   "hammock",
+   "camping",
+   "rest",
+   "sway",
+   "relax"
+  ],
+  "anchor": "hamak kumaş ortası (0,0)",
+  "box": [
+   -140,
+   -85,
+   140,
+   55
+  ],
+  "points": [
+   "left",
+   "right",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "hamak kumaş tonu"
+   },
+   "sway": {
+    "type": "number",
+    "default": 1,
+    "desc": "0–1: salınım genliği"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: sahne büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "camping-fx/lantern-swing",
+  "status": "draft",
+  "desc": "Asılı kamp feneri: sarkaç gibi salınır, cam içindeki alev titrek yanar",
+  "tags": [
+   "fener",
+   "kamp feneri",
+   "kamp lambası",
+   "asılı",
+   "salınım",
+   "ışık",
+   "lantern",
+   "lamp",
+   "swing",
+   "camping light"
+  ],
+  "anchor": "askı halkası (0,0)",
+  "box": [
+   -85,
+   -30,
+   85,
+   160
+  ],
+  "points": [
+   "hook",
+   "flame"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "alev/ışık tonu"
+   },
+   "sway": {
+    "type": "number",
+    "default": 1,
+    "desc": "0–1: salınım genliği"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: fener büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "camping-fx/marshmallow-toast",
+  "status": "draft",
+  "desc": "Çubukta marshmallow: at anında alevde kızarıp altın-kahveye döner",
+  "tags": [
+   "marshmallow",
+   "kızarmış",
+   "kamp",
+   "çubuk",
+   "ateş",
+   "kızartma",
+   "marshmallow",
+   "toasted",
+   "campfire",
+   "stick"
+  ],
+  "anchor": "marshmallow merkezi (çubuk ucu, 0,0)",
+  "box": [
+   -140,
+   -90,
+   60,
+   65
+  ],
+  "points": [
+   "tip",
+   "grip"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kızarma anı (0.9 sn: beyaz → altın → kahve, alev parlaması)"
+   },
+   "toast": {
+    "type": "number",
+    "default": 1,
+    "desc": "0–1: kızarma hedef derinliği"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: sahne büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "camping-fx/owl-hoot",
+  "status": "draft",
+  "desc": "Dalda baykuş: at anında öter (gaga açılır, ses dalgaları), boşta göz kırpıp nefes alır",
+  "tags": [
+   "baykuş",
+   "kuş",
+   "gece",
+   "ötme",
+   "dal",
+   "kamp",
+   "owl",
+   "bird",
+   "hoot",
+   "night",
+   "perch"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -110,
+   -120,
+   110,
+   70
+  ],
+  "points": [
+   "head",
+   "beak",
+   "perch"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ötme anı (0.85 sn: gaga açılır, 3 ses dalgası yayılır)"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2",
+    "desc": "tüy tonu"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: baykuş büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "camping-fx/tent-pitch",
+  "status": "draft",
+  "desc": "Çadır kurma sahnesi: at anında dürülü çadır 1.15 sn’de açılıp gerilir, bayrağı dalgalanır",
+  "tags": [
+   "çadır",
+   "kamp",
+   "kurma",
+   "kamp alanı",
+   "doğa",
+   "tent",
+   "camping",
+   "pitch",
+   "outdoors",
+   "setup"
+  ],
+  "anchor": "çadır tabanı merkezi (0,0)",
+  "box": [
+   -130,
+   -125,
+   130,
+   45
+  ],
+  "points": [
+   "apex",
+   "pegL",
+   "pegR"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kurma anı (1.15 sn: direkler kalkar, kumaş açılır, ipler gerilir)"
+   },
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "çadır kumaş tonu"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.5–1.5: sahne büyüklüğü"
+   }
+  }
+ },
+ {
   "name": "celebration-fx/balloon-rise",
   "status": "draft",
   "desc": "Yükselen balon: salınarak yavaşça yukarı süzülen, ipli kutlama balonu",
@@ -4264,6 +4540,249 @@
    "color": {
     "type": "color",
     "default": "green"
+   }
+  }
+ },
+ {
+  "name": "desert-fx/cactus-sway",
+  "status": "draft",
+  "desc": "Rüzgârda salınan saguaro kaktüsü, gust anında iyice eğilip diken savurur",
+  "tags": [
+   "kaktüs",
+   "saguaro",
+   "salınım",
+   "rüzgar",
+   "çöl",
+   "diken",
+   "cactus",
+   "sway",
+   "desert",
+   "wind"
+  ],
+  "anchor": "kaktüsün tabanı (0,0)",
+  "box": [
+   -120,
+   -270,
+   120,
+   20
+  ],
+  "points": [
+   "base",
+   "top"
+  ],
+  "params": {
+   "gust": {
+    "type": "time",
+    "default": null,
+    "desc": "rüzgâr hamlesi (0.9 sn, kaktüs eğilir + dikenler uçar)"
+   },
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "kaktüs rengi"
+   }
+  }
+ },
+ {
+  "name": "desert-fx/camel-walk",
+  "status": "draft",
+  "desc": "Yürüyen deve, yandan görünüm; snort anında başını sallayıp toz püskürtür",
+  "tags": [
+   "deve",
+   "yürüyüş",
+   "çöl",
+   "kervan",
+   "adım",
+   "pacing",
+   "camel",
+   "walk",
+   "desert",
+   "caravan"
+  ],
+  "anchor": "ayaklar (0,0); boy ~245 birim",
+  "box": [
+   -165,
+   -255,
+   195,
+   15
+  ],
+  "points": [
+   "back",
+   "head",
+   "feet"
+  ],
+  "params": {
+   "snort": {
+    "type": "time",
+    "default": null,
+    "desc": "burun püskürtme (0.6 sn, baş sallanır + toz)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "deve rengi"
+   }
+  }
+ },
+ {
+  "name": "desert-fx/mirage-shimmer",
+  "status": "draft",
+  "desc": "Kum üstünde titreyen serap bandı, at anında ısı dalgasıyla güçlenir",
+  "tags": [
+   "serap",
+   "mirage",
+   "çöl",
+   "sıcak",
+   "dalgalanma",
+   "yansıma",
+   "heat haze",
+   "shimmer",
+   "desert",
+   "illusion"
+  ],
+  "anchor": "kum yüzeyi (0,0); serap bandı (0,-72)",
+  "box": [
+   -150,
+   -130,
+   150,
+   20
+  ],
+  "points": [
+   "surface",
+   "mirage"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ısı dalgası anı (0.8 sn, serap güçlenir + ikinci bant)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "serap suyu rengi"
+   }
+  }
+ },
+ {
+  "name": "desert-fx/oasis-ripple",
+  "status": "draft",
+  "desc": "Vaha suyu: damla düşüp halka dalgaları yayar, palmiye yaprakları sallanır",
+  "tags": [
+   "vaha",
+   "oasis",
+   "su",
+   "dalga",
+   "halka",
+   "palmiye",
+   "çöl",
+   "water",
+   "ripple",
+   "palm",
+   "desert"
+  ],
+  "anchor": "su yüzeyi merkezi (0,0)",
+  "box": [
+   -155,
+   -200,
+   155,
+   25
+  ],
+  "points": [
+   "surface",
+   "palm",
+   "drop"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "damla düşme anı (0.9 sn, sıçrama + 3 halka)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "su rengi"
+   }
+  }
+ },
+ {
+  "name": "desert-fx/sandstorm-sweep",
+  "status": "draft",
+  "desc": "Soldan sağa süpüren kum fırtınası cephesi, at anında kutuyu kaplar",
+  "tags": [
+   "kum fırtınası",
+   "sandstorm",
+   "fırtına",
+   "rüzgar",
+   "çöl",
+   "toz",
+   "storm",
+   "dust",
+   "wind",
+   "desert"
+  ],
+  "anchor": "rüzgâr merkezi (0,0)",
+  "box": [
+   -170,
+   -140,
+   170,
+   60
+  ],
+  "points": [
+   "start",
+   "end"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fırtına geçişi (1.2 sn, cephe soldan sağa süpürür)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "kum vurgu rengi"
+   }
+  }
+ },
+ {
+  "name": "desert-fx/tumbleweed-roll",
+  "status": "draft",
+  "desc": "Rüzgârla yuvarlanan kuru çalı topu, roll anında zıplayarak soldan sağa gider",
+  "tags": [
+   "yuvarlanan çalı",
+   "tumbleweed",
+   "çöl",
+   "rüzgar",
+   "batı",
+   "kuru çalı",
+   "rolling weed",
+   "desert",
+   "wind",
+   "dry bush"
+  ],
+  "anchor": "zemin (0,0); topun merkezi (0,-58)",
+  "box": [
+   -140,
+   -140,
+   140,
+   20
+  ],
+  "points": [
+   "centre",
+   "ground"
+  ],
+  "params": {
+   "roll": {
+    "type": "time",
+    "default": null,
+    "desc": "yuvarlanma geçişi (0.9 sn, soldan sağa zıplayarak)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kuru dal rengi"
    }
   }
  },
@@ -20926,6 +21445,225 @@
     "type": "time",
     "default": null,
     "desc": "düdük anı: buhar fışkırır + hareket izi (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "volcano-fx/ash-fall",
+  "status": "draft",
+  "desc": "Rüzgarla salınarak sürekli yağan volkan külü; arada sönmekte olan turuncu köz parçacıkları",
+  "tags": [
+   "kül",
+   "kül yağmuru",
+   "ash",
+   "fall",
+   "volkanik kül",
+   "toz",
+   "düşen parçacık"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -150,
+   -140,
+   150,
+   140
+  ],
+  "points": [],
+  "params": {
+   "density": {
+    "type": "number",
+    "default": 1,
+    "desc": "kül yoğunluğu 0-1.5"
+   },
+   "wind": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "rüzgar -1 (sola) ile 1 (sağa) arası"
+   }
+  }
+ },
+ {
+  "name": "volcano-fx/eruption-burst",
+  "status": "draft",
+  "desc": "Yanardağ konisi; at anında kraterde flaş, alev topu, kaya parçacıkları ve kül sütunu yükselir",
+  "tags": [
+   "yanardağ",
+   "patlama",
+   "erüpsiyon",
+   "volcano",
+   "eruption",
+   "burst",
+   "lava",
+   "kül"
+  ],
+  "anchor": "koni taban merkezi (0,0)",
+  "box": [
+   -140,
+   -170,
+   140,
+   140
+  ],
+  "points": [
+   "crater"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "büyüklük çarpanı"
+   }
+  }
+ },
+ {
+  "name": "volcano-fx/lava-flow",
+  "status": "draft",
+  "desc": "Kaya kanalında akan lav nehri: hareketli parlak şeritler, döngüsel kabarcıklar ve nabız gibi atan sıcaklık ışması",
+  "tags": [
+   "lav",
+   "akan lav",
+   "lava",
+   "flow",
+   "magma akışı",
+   "eriyik",
+   "nehir"
+  ],
+  "anchor": "kanal merkezi (0,0)",
+  "box": [
+   -150,
+   -80,
+   150,
+   80
+  ],
+  "points": [
+   "inlet",
+   "outlet"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "akış hızı 0-2"
+   },
+   "heat": {
+    "type": "number",
+    "default": 1,
+    "desc": "sıcaklık 0-1 (nabız genliği)"
+   }
+  }
+ },
+ {
+  "name": "volcano-fx/magma-bubble",
+  "status": "draft",
+  "desc": "Kaynayan magma gölü: katılaşmış kabuk parçaları arasında şişip patlayan kabarcıklar, at ile büyük sıçrama",
+  "tags": [
+   "magma",
+   "kabarcık",
+   "bubble",
+   "lava gölü",
+   "kaynama",
+   "lav havuzu",
+   "volcano"
+  ],
+  "anchor": "göl yüzeyi merkezi (0,0)",
+  "box": [
+   -140,
+   -110,
+   140,
+   110
+  ],
+  "points": [
+   "surface"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "büyük kabarcık patlaması anı"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "büyüklük çarpanı"
+   }
+  }
+ },
+ {
+  "name": "volcano-fx/pyroclast-surge",
+  "status": "draft",
+  "desc": "Piroklastik akıntı dalgası: at anında zeminden süpürerek geçen kül bulutu, ön cephesinde köz parıltısı",
+  "tags": [
+   "piroklastik",
+   "akıntı",
+   "dalga",
+   "pyroclastic",
+   "surge",
+   "kül bulutu",
+   "süpürme",
+   "volkan"
+  ],
+  "anchor": "zemin çizgisi merkezi (0,0)",
+  "box": [
+   -170,
+   -130,
+   170,
+   80
+  ],
+  "points": [
+   "start",
+   "crest"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "dalganın süpürme anı"
+   },
+   "size": {
+    "type": "number",
+    "default": 1,
+    "desc": "büyüklük çarpanı"
+   }
+  }
+ },
+ {
+  "name": "volcano-fx/steam-vent",
+  "status": "draft",
+  "desc": "Kaya bacasından nefes gibi nabızla yükselen buhar sütunu; puff anında güçlü buhar patlaması",
+  "tags": [
+   "buhar",
+   "baca",
+   "steam",
+   "vent",
+   "gayzer",
+   "fümerol",
+   "buhar çıkışı",
+   "volkan"
+  ],
+  "anchor": "baca taban merkezi (0,0)",
+  "box": [
+   -120,
+   -190,
+   120,
+   120
+  ],
+  "points": [
+   "vent"
+  ],
+  "params": {
+   "puff": {
+    "type": "time",
+    "default": null,
+    "desc": "güçlü buhar patlaması anı"
+   },
+   "density": {
+    "type": "number",
+    "default": 1,
+    "desc": "buhar yoğunluğu 0-1.5"
    }
   }
  },
