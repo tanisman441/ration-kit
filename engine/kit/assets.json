@@ -458,6 +458,263 @@
   }
  },
  {
+  "name": "aquarium-fx/air-bubbles",
+  "status": "draft",
+  "desc": "Havalandırma taşından yükselen kabarcık akıntısı, tepeye ulaşan kabarcık patlar",
+  "tags": [
+   "kabarcık",
+   "hava",
+   "havalandırma",
+   "köpük",
+   "akvaryum",
+   "bubble",
+   "air",
+   "aerator",
+   "rising",
+   "aquarium"
+  ],
+  "anchor": "havalandırma taşının tabanı (0,0)",
+  "box": [
+   -55,
+   -180,
+   55,
+   25
+  ],
+  "points": [
+   "base",
+   "top"
+  ],
+  "params": {
+   "burst": {
+    "type": "time",
+    "default": null,
+    "desc": "köpük patlaması anı (0.5 sn, köpük dalgası yükselir)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "kabarcık rengi"
+   },
+   "density": {
+    "type": "number",
+    "default": 1,
+    "desc": "kabarcık yoğunluğu çarpanı (0.3–2)"
+   }
+  }
+ },
+ {
+  "name": "aquarium-fx/diver-light",
+  "status": "draft",
+  "desc": "El feneriyle etrafı aydınlatan mini dalgıç figürü, sweep anında ışını tarama yapar",
+  "tags": [
+   "dalgıç",
+   "fener",
+   "ışın",
+   "tarama",
+   "su altı",
+   "diver",
+   "flashlight",
+   "beam",
+   "sweep",
+   "underwater"
+  ],
+  "anchor": "dalgıcın gövde merkezi (0,0), sağa bakar",
+  "box": [
+   -80,
+   -85,
+   165,
+   85
+  ],
+  "points": [
+   "lamp",
+   "beam_end",
+   "helmet"
+  ],
+  "params": {
+   "sweep": {
+    "type": "time",
+    "default": null,
+    "desc": "ışın taraması anı (1.0 sn, ışın yukarı-aşağı salınır)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "dalgıç kıyafeti rengi"
+   }
+  }
+ },
+ {
+  "name": "aquarium-fx/fish-glide",
+  "status": "draft",
+  "desc": "Kuyruğu dalgalanarak süzülen yan görünümlü akvaryum balığı, dart anında ileri atılır",
+  "tags": [
+   "balık",
+   "akvaryum",
+   "yüzme",
+   "süzülme",
+   "kuyruk",
+   "fish",
+   "glide",
+   "swim",
+   "aquarium",
+   "aquatic"
+  ],
+  "anchor": "gövdenin merkezi (0,0), balık sağa bakar",
+  "box": [
+   -120,
+   -55,
+   120,
+   55
+  ],
+  "points": [
+   "head",
+   "tail",
+   "back"
+  ],
+  "params": {
+   "dart": {
+    "type": "time",
+    "default": null,
+    "desc": "ileri atılma anı (0.5 sn, kuyruk hızlanır + hız çizgileri)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "balık rengi"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "süzülme hızı çarpanı (0.5–2)"
+   }
+  }
+ },
+ {
+  "name": "aquarium-fx/octopus-ink",
+  "status": "draft",
+  "desc": "Kolları dalgalanan ahtapot, at anında mürekkep püskürtüp geri fırlar",
+  "tags": [
+   "ahtapot",
+   "mürekkep",
+   "kaçış",
+   "bulut",
+   "akvaryum",
+   "octopus",
+   "ink",
+   "escape",
+   "tentacles",
+   "underwater"
+  ],
+  "anchor": "mantonun merkezi (0,0)",
+  "box": [
+   -130,
+   -95,
+   130,
+   115
+  ],
+  "points": [
+   "head",
+   "siphon"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "mürekkep püskürtme anı (0.8 sn, bulut genişler + geri tepme)"
+   },
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "ahtapot rengi"
+   }
+  }
+ },
+ {
+  "name": "aquarium-fx/plant-sway",
+  "status": "draft",
+  "desc": "Akıntıda salınan su yosunu demeti, wave anında akıntı dalgası yaprakları yatırır",
+  "tags": [
+   "yosun",
+   "su bitkisi",
+   "salınım",
+   "akvaryum bitkisi",
+   "akıntı",
+   "seaweed",
+   "plant",
+   "sway",
+   "aquarium",
+   "aquatic"
+  ],
+  "anchor": "bitkinin tabanı (0,0)",
+  "box": [
+   -80,
+   -210,
+   80,
+   30
+  ],
+  "points": [
+   "base",
+   "tip"
+  ],
+  "params": {
+   "wave": {
+    "type": "time",
+    "default": null,
+    "desc": "akıntı dalgası anı (0.8 sn, yapraklar yana yatar)"
+   },
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "yosun rengi"
+   },
+   "blades": {
+    "type": "number",
+    "default": 5,
+    "desc": "yaprak sayısı (3–7)"
+   }
+  }
+ },
+ {
+  "name": "aquarium-fx/treasure-glow",
+  "status": "draft",
+  "desc": "Aralığından altın ışık sızan hazine sandığı, burst anında kapak açılıp ışık patlar",
+  "tags": [
+   "hazine",
+   "sandık",
+   "altın",
+   "parıltı",
+   "ışık",
+   "treasure",
+   "chest",
+   "gold",
+   "glow",
+   "sparkle"
+  ],
+  "anchor": "sandığın tabanı (0,0)",
+  "box": [
+   -110,
+   -120,
+   110,
+   30
+  ],
+  "points": [
+   "lid",
+   "glow"
+  ],
+  "params": {
+   "burst": {
+    "type": "time",
+    "default": null,
+    "desc": "kapak açılışı anı (0.6 sn, ışık patlaması + altınlar savrulur)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "altın/ışık rengi"
+   }
+  }
+ },
+ {
   "name": "arcade-fx/coin-insert",
   "status": "draft",
   "desc": "Retro arcade kabini; jeton yuvaya kayar, LED ve ekran tepki verir",
@@ -7934,6 +8191,229 @@
     "type": "number",
     "default": 4,
     "desc": "yay sayısı (3-5)"
+   }
+  }
+ },
+ {
+  "name": "garden-fx/apple-pick",
+  "status": "draft",
+  "desc": "Elma dalı: yapraklar salınır, pick anında bir elma kopup düşer, seker ve yerde kalır",
+  "tags": [
+   "elma",
+   "elma toplama",
+   "ağaç",
+   "dal",
+   "hasat",
+   "meyve",
+   "apple",
+   "picking",
+   "harvest",
+   "tree",
+   "fruit"
+  ],
+  "anchor": "dalın sol ucu (-140,-112); zemin y=115",
+  "box": [
+   -160,
+   -150,
+   160,
+   130
+  ],
+  "points": [
+   "branch",
+   "picked",
+   "ground"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "elma rengi"
+   },
+   "pick": {
+    "type": "time",
+    "default": null,
+    "desc": "elma koparılıp düşer: düşüş + sekme + toz (1.4 sn)"
+   }
+  }
+ },
+ {
+  "name": "garden-fx/butterfly-flap",
+  "status": "draft",
+  "desc": "Kanat çırpan kelebek: üst-alt kanat çiftleri ritmik çırpar, gövde süzülerek salınır",
+  "tags": [
+   "kelebek",
+   "kanat",
+   "uçuş",
+   "kanat çırpma",
+   "butterfly",
+   "wings",
+   "flap",
+   "bahçe",
+   "insect"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -80,
+   -70,
+   80,
+   70
+  ],
+  "points": [
+   "body"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "kanat rengi"
+   }
+  }
+ },
+ {
+  "name": "garden-fx/mower-pass",
+  "status": "draft",
+  "desc": "Yandan çim biçme makinesi: dönen tekerlekler, savrulan çim kırpıntıları; pass anında ileri hamle yapar",
+  "tags": [
+   "çim biçme",
+   "çimen",
+   "bahçe",
+   "çimen biçme makinesi",
+   "lawn mower",
+   "mower",
+   "garden",
+   "çim"
+  ],
+  "anchor": "zemin (y=70), gövde merkezi",
+  "box": [
+   -150,
+   -100,
+   150,
+   90
+  ],
+  "points": [
+   "deck",
+   "handle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "makine gövde rengi"
+   },
+   "pass": {
+    "type": "time",
+    "default": null,
+    "desc": "biçme atağı: ileri hamle + çim püskürmesi (0.6 sn)"
+   }
+  }
+ },
+ {
+  "name": "garden-fx/rain-barrel-drip",
+  "status": "draft",
+  "desc": "Yağmur varili: musluktan döngülü damla düşer, birikintide halka oluşur, yağmur varile yağar",
+  "tags": [
+   "yağmur varili",
+   "fıçı",
+   "su biriktirme",
+   "damlama",
+   "su",
+   "rain barrel",
+   "water",
+   "drip",
+   "garden",
+   "barrel"
+  ],
+  "anchor": "varil tabanı merkezi (0,95)",
+  "box": [
+   -100,
+   -160,
+   100,
+   120
+  ],
+  "points": [
+   "spout",
+   "puddle",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "su rengi"
+   }
+  }
+ },
+ {
+  "name": "garden-fx/sprinkler-spray",
+  "status": "draft",
+  "desc": "Bahçe fıskiyesi: kubbeli başlıktan iki yana su yayı püskürür, baş hafif salınır, spray anında basınç artar",
+  "tags": [
+   "fıskiye",
+   "yağmurlama",
+   "sulama",
+   "sprinkler",
+   "bahçe sulama",
+   "çim sulama",
+   "su püskürtme",
+   "water spray",
+   "garden sprinkler"
+  ],
+  "anchor": "taban plakası merkezi (0,105)",
+  "box": [
+   -140,
+   -120,
+   140,
+   120
+  ],
+  "points": [
+   "head",
+   "groundL",
+   "groundR"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "fıskiye gövde rengi"
+   },
+   "spray": {
+    "type": "time",
+    "default": null,
+    "desc": "basınç patlaması: su yayı güçlenir (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "garden-fx/worm-dig",
+  "status": "draft",
+  "desc": "Toprak kazan solucan: yüzeye çıkar, sallanır, toprağa dalar; her dalışta toprak püskürür",
+  "tags": [
+   "solucan",
+   "toprak",
+   "kazma",
+   "bahçe",
+   "worm",
+   "digging",
+   "soil",
+   "earthworm",
+   "garden",
+   "toprak kazma"
+  ],
+  "anchor": "toprak yüzeyi merkezi (0,40)",
+  "box": [
+   -120,
+   -70,
+   120,
+   100
+  ],
+  "points": [
+   "mound"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "solucan rengi"
    }
   }
  },
@@ -21706,6 +22186,310 @@
    "scarf": {
     "type": "color",
     "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "workout-fx/dumbbell-lift",
+  "status": "draft",
+  "desc": "Dambılla çift kol pres yapan insan figürü (önden); tekrarla kollar baş üstüne kalkar",
+  "tags": [
+   "dambıl",
+   "dambıl kaldırma",
+   "ağırlık",
+   "dumbbell",
+   "weight lifting",
+   "overhead press",
+   "egzersiz",
+   "workout",
+   "fitness"
+  ],
+  "anchor": "ayaklar (0,0); boy ~290 birim",
+  "box": [
+   -115,
+   -350,
+   115,
+   16
+  ],
+  "points": [
+   "head",
+   "handL",
+   "handR",
+   "dumbbellL",
+   "dumbbellR",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "rep": {
+    "type": "time",
+    "default": null,
+    "desc": "tekrarın başlangıcı — bir tam pres döngüsü (1.2 sn); null ise dinlenme"
+   }
+  }
+ },
+ {
+  "name": "workout-fx/jump-rope",
+  "status": "draft",
+  "desc": "İp atlayan insan figürü (önden); tekrar başına ip bir tam tur döner, figür zıplar",
+  "tags": [
+   "ip atlama",
+   "atlama ipi",
+   "ip",
+   "jump rope",
+   "skipping",
+   "kardiyo",
+   "cardio",
+   "egzersiz",
+   "workout"
+  ],
+  "anchor": "ayaklar (0,0); boy ~290 birim, ip yarıçapı ~132",
+  "box": [
+   -150,
+   -330,
+   150,
+   14
+  ],
+  "points": [
+   "head",
+   "chest",
+   "feet",
+   "rope"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "rep": {
+    "type": "time",
+    "default": null,
+    "desc": "ip turunun başlangıcı — bir tam tur (1.0 sn); null ise ip sarkık bekler"
+   }
+  }
+ },
+ {
+  "name": "workout-fx/plank-wobble",
+  "status": "draft",
+  "desc": "Dirsek üstü plank duran insan figürü (yandan); sürekli hafif titrer, tekrarla güçlü wobble dalgası gelir",
+  "tags": [
+   "plank",
+   "plank duruşu",
+   "core",
+   "karın kası",
+   "titreme",
+   "wobble",
+   "planking",
+   "egzersiz",
+   "workout",
+   "fitness"
+  ],
+  "anchor": "yer (0,0); baş solda (~-100), ayaklar sağda (~136)",
+  "box": [
+   -155,
+   -130,
+   155,
+   16
+  ],
+  "points": [
+   "head",
+   "elbow",
+   "hip",
+   "foot"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "rep": {
+    "type": "time",
+    "default": null,
+    "desc": "titreme dalgasının başlangıcı — güçlü wobble (0.8 sn); null ise hafif idle titreme"
+   }
+  }
+ },
+ {
+  "name": "workout-fx/pushup",
+  "status": "draft",
+  "desc": "Şınav çeken insan figürü (yandan); tekrarla gövde alçalıp yükselir, dirsekler bükülür",
+  "tags": [
+   "şınav",
+   "şınav çekme",
+   "pushup",
+   "push-up",
+   "press-up",
+   "egzersiz",
+   "workout",
+   "fitness",
+   "kol gücü"
+  ],
+  "anchor": "yer (0,0); baş solda (~-95), ayaklar sağda (~138)",
+  "box": [
+   -150,
+   -155,
+   155,
+   16
+  ],
+  "points": [
+   "head",
+   "chest",
+   "hand",
+   "foot"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "rep": {
+    "type": "time",
+    "default": null,
+    "desc": "tekrarın başlangıcı — bir tam şınav döngüsü (1.2 sn); null ise dinlenme"
+   }
+  }
+ },
+ {
+  "name": "workout-fx/treadmill-run",
+  "status": "draft",
+  "desc": "Koşu bandında koşan insan figürü (yandan); tekrarla bir tam adım turu atar, bant sürekli kayar",
+  "tags": [
+   "koşu bandı",
+   "koşu",
+   "koşmak",
+   "treadmill",
+   "running",
+   "run",
+   "kardiyo",
+   "cardio",
+   "egzersiz",
+   "workout"
+  ],
+  "anchor": "bant üstü (~-28); figür sola bakar, konsol sağda",
+  "box": [
+   -140,
+   -300,
+   140,
+   14
+  ],
+  "points": [
+   "head",
+   "chest",
+   "console",
+   "beltFront"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "rep": {
+    "type": "time",
+    "default": null,
+    "desc": "adım döngüsünün başlangıcı — bir tam adım turu (0.9 sn); null ise ayakta bekler"
+   }
+  }
+ },
+ {
+  "name": "workout-fx/yoga-stretch",
+  "status": "draft",
+  "desc": "Yana esneyen yoga figürü (önden); tekrarla gövde sola eğilip kol baş üstünden uzar",
+  "tags": [
+   "yoga",
+   "esneme",
+   "esneme hareketi",
+   "yoga",
+   "stretch",
+   "stretching",
+   "esneklik",
+   "flexibility",
+   "sakin"
+  ],
+  "anchor": "ayaklar (0,0); mat zeminde, boy ~290 birim",
+  "box": [
+   -125,
+   -350,
+   125,
+   16
+  ],
+  "points": [
+   "head",
+   "stretchHand",
+   "feet",
+   "mat"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "rep": {
+    "type": "time",
+    "default": null,
+    "desc": "esneme döngüsünün başlangıcı — yana eğilme (1.5 sn); null ise dik duruş"
    }
   }
  }
