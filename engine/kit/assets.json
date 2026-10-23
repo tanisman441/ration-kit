@@ -3783,6 +3783,501 @@
   }
  },
  {
+  "name": "combat-hits-2/counter-flash",
+  "status": "draft",
+  "desc": "Karşı saldırı flaşı: merkezde kısa patlama ve X şeklinde dışa vuran dört ışık kolu",
+  "tags": [
+   "karşı",
+   "saldırı",
+   "flaş",
+   "çapraz",
+   "patlama",
+   "ışık",
+   "counter",
+   "flash",
+   "strike",
+   "burst",
+   "cross",
+   "x"
+  ],
+  "anchor": "patlamanın merkezi (0,0)",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "karşı saldırı anı (flaş + X kolları, ~0.5 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "combat-hits-2/finisher-zoom",
+  "status": "draft",
+  "desc": "Bitirici darbe: merkeze çöken yakınlaşma halkaları, flaş ve yıldız patlama",
+  "tags": [
+   "bitirici",
+   "yakınlaşma",
+   "odak",
+   "flaş",
+   "darbe",
+   "patlama",
+   "finisher",
+   "zoom",
+   "flash",
+   "focus",
+   "strike",
+   "burst"
+  ],
+  "anchor": "bitirici darbenin vuruş noktası (0,0)",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "bitirici darbe anı (halka çöküşü + flaş, ~0.6 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "combat-hits-2/guard-block",
+  "status": "draft",
+  "desc": "Blok kalkanı: darbe anında geri itme, temas noktasında genişleyen halka ve kıvılcım patlaması",
+  "tags": [
+   "kalkan",
+   "blok",
+   "savunma",
+   "darbe",
+   "temas",
+   "kıvılcım",
+   "guard",
+   "block",
+   "shield",
+   "impact",
+   "defense",
+   "sparks"
+  ],
+  "anchor": "kalkanın merkezi (0,0)",
+  "box": [
+   -120,
+   -120,
+   120,
+   120
+  ],
+  "points": [
+   "contact"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "darbe anı (geri itme + halka + kıvılcım, ~0.8 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   }
+  }
+ },
+ {
+  "name": "combat-hits-2/knockback-dust",
+  "status": "draft",
+  "desc": "Savrulma efekti: darbe anında yükselen toz bulutu, hız çizgileri ve yer şok halkası",
+  "tags": [
+   "savrulma",
+   "toz",
+   "hız",
+   "çarpışma",
+   "darbe",
+   "bulut",
+   "knockback",
+   "dust",
+   "speed",
+   "impact",
+   "cloud"
+  ],
+  "anchor": "darbenin alındığı nokta (0,0)",
+  "box": [
+   -160,
+   -120,
+   140,
+   120
+  ],
+  "points": [
+   "hit"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "savrulma anı (toz + hız çizgileri, ~0.8 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "combat-hits-2/rage-aura",
+  "status": "draft",
+  "desc": "Öfke aurası: charge ile büyüyen, boşta sürekli titreyen alevler içinde sıkılmış yumruk",
+  "tags": [
+   "öfke",
+   "aura",
+   "alev",
+   "şarj",
+   "güç",
+   "yumruk",
+   "kızgınlık",
+   "rage",
+   "aura",
+   "flame",
+   "charge",
+   "power",
+   "fist"
+  ],
+  "anchor": "yumruğun merkezi (0,0)",
+  "box": [
+   -120,
+   -150,
+   120,
+   150
+  ],
+  "points": [
+   "fist",
+   "top"
+  ],
+  "params": {
+   "charge": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "öfke yoğunluğu 0-1 (alev boyu, sayısı, parlama)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "combat-hits-2/stun-stars",
+  "status": "draft",
+  "desc": "Sersemleme yıldızları: sürekli dönen yörüngede nabız atan yıldızlar, yoğunluk ayarlı",
+  "tags": [
+   "sersem",
+   "yıldız",
+   "dönme",
+   "nabız",
+   "baygın",
+   "sersemlik",
+   "stun",
+   "stars",
+   "dizzy",
+   "spin",
+   "pulse",
+   "orbit"
+  ],
+  "anchor": "yıldız yörüngesinin merkezi (0,0)",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "intensity": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "sersemlik yoğunluğu 0-1 (yıldız boyu, parlaklık, yörünge genişliği)"
+   },
+   "count": {
+    "type": "number",
+    "default": 5,
+    "desc": "yıldız sayısı (3-7)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "commerce-fx/barcode-scan",
+  "status": "draft",
+  "desc": "Barkod paneli üzerinde soldan sağa süpüren lazer çizgisi ve bip halkalarıyla tarama",
+  "tags": [
+   "barkod",
+   "tarama",
+   "lazer",
+   "bip",
+   "kasa",
+   "market",
+   "barcode",
+   "scan",
+   "laser",
+   "scanner",
+   "beep",
+   "checkout"
+  ],
+  "anchor": "panelin merkezi (barkodun ortası)",
+  "box": [
+   -120,
+   -95,
+   120,
+   95
+  ],
+  "points": [
+   "code",
+   "beep"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tarama anı: lazer süpürür (0.5 sn) + bip halkaları (1.1 sn)"
+   }
+  }
+ },
+ {
+  "name": "commerce-fx/cart-fill",
+  "status": "draft",
+  "desc": "Doluluk seviyesi ayarlanabilen alışveriş sepeti; ürün düşme anında sepet yaylanır",
+  "tags": [
+   "sepet",
+   "alışveriş",
+   "market",
+   "ürün",
+   "doldur",
+   "cart",
+   "shopping",
+   "basket",
+   "market",
+   "grocery",
+   "shop"
+  ],
+  "anchor": "tekerlerin altı (0,0)",
+  "box": [
+   -125,
+   -245,
+   115,
+   25
+  ],
+  "points": [
+   "basket",
+   "handle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "full": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "sepet doluluk oranı (0-1)"
+   },
+   "pop": {
+    "type": "time",
+    "default": null,
+    "desc": "ürün düşme anı: ürün sepete düşer + sepet yaylanır (0.7 sn)"
+   }
+  }
+ },
+ {
+  "name": "commerce-fx/coupon-tear",
+  "status": "draft",
+  "desc": "Perforasyonlu indirim kuponu; yırtılma anında iki parça zikzak kenarla ayrılır",
+  "tags": [
+   "kupon",
+   "indirim",
+   "yırtılma",
+   "kampanya",
+   "çek",
+   "coupon",
+   "discount",
+   "tear",
+   "voucher",
+   "promo",
+   "sale"
+  ],
+  "anchor": "kuponun merkezi (yırtılma çizgisi x=0)",
+  "box": [
+   -145,
+   -85,
+   145,
+   85
+  ],
+  "points": [
+   "tear",
+   "left",
+   "right"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yırtılma anı: zikzak flaş + parçalar ayrılır (1 sn)"
+   }
+  }
+ },
+ {
+  "name": "commerce-fx/price-drop",
+  "status": "draft",
+  "desc": "İpten asılı fiyat etiketi; düşen ok, patlama yıldızı ve sallanan etiketle fiyat düşüşü",
+  "tags": [
+   "fiyat",
+   "indirim",
+   "etiket",
+   "ucuzluk",
+   "düşüş",
+   "price",
+   "discount",
+   "price tag",
+   "sale",
+   "drop",
+   "cheap"
+  ],
+  "anchor": "etiketin merkezi (0,-5); ip üstten asılı",
+  "box": [
+   -130,
+   -170,
+   130,
+   115
+  ],
+  "points": [
+   "tag",
+   "impact",
+   "string_top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fiyat düşüş anı: ok saplanır + yıldız patlar + etiket sallanır (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "commerce-fx/receipt-print",
+  "status": "draft",
+  "desc": "Üstten fiş çıkaran yazıcı; başlık mekik hareketi yapar, fiş uzunluğu print ile ayarlanır",
+  "tags": [
+   "fiş",
+   "yazıcı",
+   "fatura",
+   "kasa",
+   "baskı",
+   "receipt",
+   "printer",
+   "invoice",
+   "print",
+   "checkout",
+   "bill"
+  ],
+  "anchor": "yazıcının tabanı (0,72)",
+  "box": [
+   -125,
+   -270,
+   125,
+   105
+  ],
+  "points": [
+   "slot",
+   "paper_top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "print": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "fişin çıkış ilerlemesi (0-1)"
+   }
+  }
+ },
+ {
+  "name": "commerce-fx/sale-banner",
+  "status": "draft",
+  "desc": "Çubuktan sarkan SALE afişi; açılma anında yaylanır ve konfeti saçar",
+  "tags": [
+   "indirim",
+   "afiş",
+   "saten",
+   "kampanya",
+   "sale",
+   "banner",
+   "discount",
+   "konfeti",
+   "confetti",
+   "shop",
+   "mağaza"
+  ],
+  "anchor": "asma çubuğunun merkezi (0,-140)",
+  "box": [
+   -135,
+   -155,
+   135,
+   55
+  ],
+  "points": [
+   "rod",
+   "cloth",
+   "bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "afiş açılma anı: yaylanarak açılır + konfeti (1.4 sn)"
+   }
+  }
+ },
+ {
   "name": "construction-fx/crane-swing",
   "status": "draft",
   "desc": "Crane hook swinging on a cable like a pendulum, carrying a small crate",
@@ -17118,6 +17613,248 @@
     "type": "time",
     "default": null,
     "desc": "ışın demeti aç/kapa anı: 1.2 sn (açılma 0.3 + sönme 0.9)"
+   }
+  }
+ },
+ {
+  "name": "spell-casting/arc-lightning",
+  "status": "draft",
+  "desc": "Büyücünün elinden hedefe sıçrayan mor şimşek yayı; at anında flaşla patlar, idle'da elektrik gibi titrer",
+  "tags": [
+   "şimşek",
+   "yıldırım",
+   "elektrik",
+   "büyü",
+   "ark",
+   "arc",
+   "lightning",
+   "zap",
+   "spell",
+   "magic"
+  ],
+  "anchor": "arkın orta noktası (0,0); el solda (-110,0), hedef sağda (110,0)",
+  "box": [
+   -130,
+   -90,
+   130,
+   90
+  ],
+  "points": [
+   "hand",
+   "target",
+   "centre"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "arkın çakma anı (0.15 sn flaş + hedef ucunda patlama)"
+   },
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "ark rengi"
+   }
+  }
+ },
+ {
+  "name": "spell-casting/fireball-cast",
+  "status": "draft",
+  "desc": "Uçan ateş topu; at anında geri tepme + kıvılcım patlamasıyla fırlar, idle'da alevleri dalgalanır",
+  "tags": [
+   "ateş",
+   "alev",
+   "ateş topu",
+   "büyü",
+   "fırlatma",
+   "fireball",
+   "fire",
+   "flame",
+   "cast",
+   "spell"
+  ],
+  "anchor": "ateş topunun merkezi (0,0); uçuş yönü +x",
+  "box": [
+   -150,
+   -95,
+   150,
+   95
+  ],
+  "points": [
+   "launch",
+   "centre",
+   "tail"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fırlatma anı (geri tepme 0.25 sn + kıvılcım patlaması)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "ateş rengi"
+   }
+  }
+ },
+ {
+  "name": "spell-casting/frost-nova",
+  "status": "draft",
+  "desc": "Buz dalgası patlaması; at anında genişleyen halka + uçuşan kristaller, idle'da buz parıltısı",
+  "tags": [
+   "buz",
+   "don",
+   "kar",
+   "dalga",
+   "patlama",
+   "büyü",
+   "frost",
+   "ice",
+   "nova",
+   "freeze"
+  ],
+  "anchor": "patlama merkezi (0,0)",
+  "box": [
+   -135,
+   -135,
+   135,
+   135
+  ],
+  "points": [
+   "centre",
+   "edge"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "buz dalgası patlama anı (halka genişlemesi 0.5 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "buz rengi"
+   }
+  }
+ },
+ {
+  "name": "spell-casting/heal-glow",
+  "status": "draft",
+  "desc": "Yeşil şifa parıltısı; at anında ışık dalgası + yükselen artı parçacıkları, idle'da nefes alan ışık",
+  "tags": [
+   "şifa",
+   "iyileşme",
+   "yeşil",
+   "parıltı",
+   "büyü",
+   "ışık",
+   "heal",
+   "glow",
+   "magic",
+   "cure"
+  ],
+  "anchor": "şifa merkezi (0,0)",
+  "box": [
+   -120,
+   -120,
+   120,
+   120
+  ],
+  "points": [
+   "centre"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "şifa dalgası anı (0.6 sn genişleyen ışık + artı yağmuru)"
+   },
+   "color": {
+    "type": "color",
+    "default": "green",
+    "desc": "şifa rengi"
+   }
+  }
+ },
+ {
+  "name": "spell-casting/meteor-fall",
+  "status": "draft",
+  "desc": "Düşen meteor; at anında çarpma flaşı + duman bulutu + şok dalgası, idle'da alev kuyruğu dalgalanır",
+  "tags": [
+   "meteor",
+   "göktaşı",
+   "düşme",
+   "çarpma",
+   "ateş",
+   "uzay",
+   "meteor",
+   "fall",
+   "impact",
+   "comet"
+  ],
+  "anchor": "meteor çekirdeği (0,0); düşüş yönü sol-şağa",
+  "box": [
+   -160,
+   -160,
+   160,
+   160
+  ],
+  "points": [
+   "head",
+   "impact",
+   "tail"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çarpma anı (flaş 0.15 sn + duman 0.8 sn + şok dalgası)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "alev rengi"
+   }
+  }
+ },
+ {
+  "name": "spell-casting/shadow-portal",
+  "status": "draft",
+  "desc": "Mor gölge girdabı; kolları sürekli dönen, nabız atan canlı portal (open ile açıklık ayarlanır)",
+  "tags": [
+   "portal",
+   "girdap",
+   "gölge",
+   "mor",
+   "büyü",
+   "geçit",
+   "portal",
+   "vortex",
+   "shadow",
+   "swirl"
+  ],
+  "anchor": "portal merkezi (0,0)",
+  "box": [
+   -115,
+   -95,
+   115,
+   95
+  ],
+  "points": [
+   "centre",
+   "rim"
+  ],
+  "params": {
+   "open": {
+    "type": "number",
+    "default": 1,
+    "desc": "portal açıklığı 0 (kapalı) – 1 (tam açık)"
+   },
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "girdap rengi"
    }
   }
  },
