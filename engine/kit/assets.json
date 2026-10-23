@@ -14838,6 +14838,267 @@
   }
  },
  {
+  "name": "night-fx/firefly-drift",
+  "status": "draft",
+  "desc": "Süzülen ateş böcekleri sürüsü; karınları faz farklı yanıp söner",
+  "tags": [
+   "ateş böceği",
+   "böcek",
+   "gece",
+   "sürü",
+   "ışık",
+   "yanıp sönme",
+   "firefly",
+   "night",
+   "glow",
+   "swarm",
+   "insect"
+  ],
+  "anchor": "sürü merkezi (0,0)",
+  "box": [
+   -160,
+   -110,
+   160,
+   110
+  ],
+  "points": [
+   "swarm",
+   "centre"
+  ],
+  "params": {
+   "glow": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "count": {
+    "type": "number",
+    "default": 7,
+    "desc": "5–9: ateş böceği sayısı"
+   }
+  }
+ },
+ {
+  "name": "night-fx/moon-rise",
+  "status": "draft",
+  "desc": "Kraterli dolunay; rise ile ufuktan yükselir, yavaş döngüyle salınır",
+  "tags": [
+   "ay",
+   "dolunay",
+   "gece",
+   "gökyüzü",
+   "ufuk",
+   "krater",
+   "moon",
+   "night",
+   "sky",
+   "horizon",
+   "lunar"
+  ],
+  "anchor": "merkez (0,0); ufuk çizgisi y=110",
+  "box": [
+   -170,
+   -170,
+   170,
+   140
+  ],
+  "points": [
+   "crest",
+   "horizon"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "rise": {
+    "type": "number",
+    "default": 0.65,
+    "desc": "0–1: ayın ufuk üstü yüksekliği (0=ufukta, 1=tepede)"
+   }
+  }
+ },
+ {
+  "name": "night-fx/neon-sign-buzz",
+  "status": "draft",
+  "desc": "Neon tabela: çerçeve + şimşek motifi; vızıltı titremesi, buzz anında düşüp çakar",
+  "tags": [
+   "neon",
+   "tabela",
+   "vızıltı",
+   "ışık",
+   "gece",
+   "reklam",
+   "neon sign",
+   "buzz",
+   "night",
+   "glow",
+   "billboard"
+  ],
+  "anchor": "tabela merkezi (0,0); üst askı y=-80",
+  "box": [
+   -160,
+   -95,
+   160,
+   95
+  ],
+  "points": [
+   "top",
+   "centre",
+   "bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "purple"
+   },
+   "buzz": {
+    "type": "time",
+    "default": null,
+    "desc": "vızıltı kesintisi anı: 0.5 sn düşüp yeniden çakma"
+   }
+  }
+ },
+ {
+  "name": "night-fx/owl-blink",
+  "status": "draft",
+  "desc": "Tüneyen baykuş; göz kırpma + kafa salınımı, at anında göz parlaması",
+  "tags": [
+   "baykuş",
+   "kuş",
+   "gece",
+   "göz",
+   "kırpma",
+   "parlama",
+   "owl",
+   "night",
+   "bird",
+   "blink",
+   "eyes"
+  ],
+  "anchor": "gövde merkezi (0,10); dal y=78",
+  "box": [
+   -95,
+   -115,
+   95,
+   105
+  ],
+  "points": [
+   "eyeL",
+   "eyeR",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "glow": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "gece gözü parlaması anı (1.2 sn: gözler ışık yansıtır)"
+   }
+  }
+ },
+ {
+  "name": "night-fx/streetlight-flicker",
+  "status": "draft",
+  "desc": "Sokak lambası: titreyen ışık konisi, flicker anında kısa stroboskop kesintisi",
+  "tags": [
+   "sokak lambası",
+   "lamba",
+   "ışık",
+   "gece",
+   "titreme",
+   "flicker",
+   "streetlight",
+   "lamp",
+   "night",
+   "light"
+  ],
+  "anchor": "lamba kafası merkezi (0,-30); direk tabanı y=130",
+  "box": [
+   -110,
+   -90,
+   170,
+   150
+  ],
+  "points": [
+   "base",
+   "light",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "glow": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "flicker": {
+    "type": "time",
+    "default": null,
+    "desc": "elektrik kesintisi anı: 0.6 sn stroboskop (sön-yan)"
+   },
+   "intensity": {
+    "type": "number",
+    "default": 1,
+    "desc": "0–1.3: ışık şiddeti çarpanı"
+   }
+  }
+ },
+ {
+  "name": "night-fx/window-lights",
+  "status": "draft",
+  "desc": "Gece apartmanı: pencereler dalga döngüsüyle yanıp söner, lights yoğunluğu ayarlar",
+  "tags": [
+   "apartman",
+   "bina",
+   "pencere",
+   "gece",
+   "ışık",
+   "şehir",
+   "apartment",
+   "building",
+   "window",
+   "night",
+   "city",
+   "lights"
+  ],
+  "anchor": "bina merkezi (0,0); çatı y=-105, zemin y=95",
+  "box": [
+   -150,
+   -125,
+   150,
+   105
+  ],
+  "points": [
+   "roof",
+   "door",
+   "centre"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "glow": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "lights": {
+    "type": "number",
+    "default": 0.55,
+    "desc": "0–1: yanan pencere yoğunluğu"
+   }
+  }
+ },
+ {
   "name": "ocean-fx/angler-glow",
   "status": "draft",
   "desc": "Başındaki feneri nabız gibi parlayan fenerbalığı, lure anında ışığı patlayıp hamle yapar",
@@ -16847,6 +17108,248 @@
   }
  },
  {
+  "name": "retail-fx/bag-pack",
+  "status": "draft",
+  "desc": "Açık alışveriş poşeti; düşen ürün poşete girince poşet esner ve toz çizgileri çıkar",
+  "tags": [
+   "poşet",
+   "çanta",
+   "paketleme",
+   "kasa",
+   "alışveriş",
+   "market",
+   "bag",
+   "pack",
+   "shopping",
+   "checkout",
+   "paper bag"
+  ],
+  "anchor": "poşetin merkezi (0,50); ağız üstte (0,-10)",
+  "box": [
+   -130,
+   -145,
+   130,
+   130
+  ],
+  "points": [
+   "mouth",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ürün poşete düşme anı: düşüş (0.35 sn) + poşet esnemesi (~1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "retail-fx/price-tag-flip",
+  "status": "draft",
+  "desc": "İpten asılı fiyat etiketi; çevrilince eski fiyatın üstü çizilip yeni fiyat görünür",
+  "tags": [
+   "etiket",
+   "fiyat",
+   "çevirme",
+   "indirim",
+   "kasa",
+   "mağaza",
+   "price",
+   "tag",
+   "flip",
+   "discount",
+   "label",
+   "retail"
+  ],
+  "anchor": "etiketin merkezi (0,-10); ip üstten asılı",
+  "box": [
+   -120,
+   -175,
+   120,
+   125
+  ],
+  "points": [
+   "top",
+   "tag"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "etiket çevirme anı: kart döner, yeni fiyat belirir (~1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "retail-fx/queue-snake",
+  "status": "draft",
+  "desc": "Yılan gibi kıvrımlı müşteri kuyruğu; renkli figürler yol boyunca ilerleyip salınır",
+  "tags": [
+   "kuyruk",
+   "müşteri",
+   "sıra",
+   "kasa",
+   "mağaza",
+   "kalabalık",
+   "queue",
+   "line",
+   "customers",
+   "checkout",
+   "store",
+   "crowd"
+  ],
+  "anchor": "kuyruk alanının merkezi (0,0); ön uç sağ altta",
+  "box": [
+   -180,
+   -120,
+   180,
+   120
+  ],
+  "points": [
+   "front",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent"
+   }
+  }
+ },
+ {
+  "name": "retail-fx/sale-sticker",
+  "status": "draft",
+  "desc": "Yıldız patlaması indirim etiketi; yapışma anında belirir, sonra nabız gibi atar",
+  "tags": [
+   "indirim",
+   "etiket",
+   "yıldız",
+   "kampanya",
+   "fırsat",
+   "mağaza",
+   "sale",
+   "sticker",
+   "discount",
+   "starburst",
+   "promo",
+   "offer"
+  ],
+  "anchor": "yıldızın merkezi (0,0)",
+  "box": [
+   -130,
+   -130,
+   130,
+   130
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yapışma anı: yıldız yaylanarak belirir + şok halkası (~0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "retail-fx/scanner-beep",
+  "status": "draft",
+  "desc": "El tipi barkod tarayıcı; ışın barkoda ulaşınca bip ışık halkaları yayılır",
+  "tags": [
+   "tarayıcı",
+   "barkod",
+   "bip",
+   "kasa",
+   "lazer",
+   "market",
+   "okutma",
+   "scanner",
+   "barcode",
+   "beep",
+   "checkout",
+   "laser"
+  ],
+  "anchor": "tarayıcı gövdesinin merkezi (-75,0)",
+  "box": [
+   -150,
+   -100,
+   150,
+   100
+  ],
+  "points": [
+   "nozzle",
+   "code",
+   "beep"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tarama anı: ışın barkoda ulaşır (0.5 sn) + bip halkaları (1.6 sn)"
+   }
+  }
+ },
+ {
+  "name": "retail-fx/shelf-restock",
+  "status": "draft",
+  "desc": "İki katlı market rafı; üstten inen kol rafa yeni ürün dizer, komşu ürünler sarsılır",
+  "tags": [
+   "raf",
+   "stok",
+   "dizme",
+   "reyon",
+   "market",
+   "ürün",
+   "perakende",
+   "shelf",
+   "restock",
+   "store",
+   "retail",
+   "products",
+   "merchandising"
+  ],
+  "anchor": "raf ünitesinin merkezi (0,0)",
+  "box": [
+   -170,
+   -135,
+   170,
+   135
+  ],
+  "points": [
+   "shelf_top",
+   "place",
+   "shelf_bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ürün dizme anı: kol iner, ürünü bırakır, çekilir (~1.3 sn)"
+   }
+  }
+ },
+ {
   "name": "robot-fx/charge-plug",
   "status": "draft",
   "desc": "Prize takılan şarj fişi; takılma anında kıvılcım, üstte dolan pil göstergesi",
@@ -17087,6 +17590,249 @@
      "on"
     ],
     "desc": "tehlike modu: gözler kırmızıya döner"
+   }
+  }
+ },
+ {
+  "name": "school-fx-2/backpack-zip",
+  "status": "draft",
+  "desc": "Sırt çantası: at anında fermuar açılır, içinden ışık ve parıltı taşar",
+  "tags": [
+   "sırt çantası",
+   "çanta",
+   "fermuar",
+   "okul çantası",
+   "backpack",
+   "bag",
+   "zip",
+   "zipper",
+   "okul",
+   "çantası"
+  ],
+  "anchor": "çanta gövde merkezi",
+  "box": [
+   -100,
+   -112,
+   100,
+   112
+  ],
+  "points": [
+   "handle",
+   "zipper"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "çanta gövde rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fermuarın açılma anı (açıl 0.5 sn + açık 0.6 sn + kapan 0.5 sn)"
+   }
+  }
+ },
+ {
+  "name": "school-fx-2/bell-ring",
+  "status": "draft",
+  "desc": "Duvar tipi okul zili: at anında sallanır, tokmak vurur, ses dalgaları yayılır",
+  "tags": [
+   "zil",
+   "okul zili",
+   "teneffüs",
+   "ders zili",
+   "çan",
+   "bell",
+   "school bell",
+   "ring",
+   "alarm",
+   "çalma"
+  ],
+  "anchor": "duvar kaidesi merkezi",
+  "box": [
+   -115,
+   -105,
+   115,
+   110
+  ],
+  "points": [
+   "mount",
+   "mouth"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "zil gövde rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çalma anı — salınım + ses dalgaları (~1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "school-fx-2/chalk-dust",
+  "status": "draft",
+  "desc": "Tebeşir tozu: at anında tebeşir tahtaya vurur, toz bulutu patlar",
+  "tags": [
+   "tebeşir",
+   "toz",
+   "tahta",
+   "vuruş",
+   "bulut",
+   "chalk",
+   "dust",
+   "board",
+   "hit",
+   "okul",
+   "sınıf",
+   "parçacık"
+  ],
+  "anchor": "sahne merkezi",
+  "box": [
+   -115,
+   -95,
+   115,
+   95
+  ],
+  "points": [
+   "impact",
+   "chalk"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tebeşirin tahtaya vurma anı (toz patlaması ~1.1 sn)"
+   }
+  }
+ },
+ {
+  "name": "school-fx-2/class-dismiss",
+  "status": "draft",
+  "desc": "Ders bitişi: at anında kapı açılır, dört öğrenci figürü dışarı akar",
+  "tags": [
+   "ders bitişi",
+   "teneffüs",
+   "kapı",
+   "öğrenci",
+   "çıkış",
+   "class",
+   "dismiss",
+   "door",
+   "students",
+   "okul",
+   "zil"
+  ],
+  "anchor": "kapı merkezi",
+  "box": [
+   -140,
+   -130,
+   170,
+   70
+  ],
+  "points": [
+   "door",
+   "exit"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "kapı kanadı rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kapının açılma anı (0.6 sn açılma + öğrenci akını)"
+   }
+  }
+ },
+ {
+  "name": "school-fx-2/flag-raise",
+  "status": "draft",
+  "desc": "Bayrak direği: raise ile bayrak yükselir, kumaş sürekli dalgalanır",
+  "tags": [
+   "bayrak",
+   "direk",
+   "gönder",
+   "flag",
+   "flagpole",
+   "raise",
+   "tören",
+   "okul",
+   "dalgalanma",
+   "istiklal"
+  ],
+  "anchor": "direk tabanı",
+  "box": [
+   -60,
+   -135,
+   168,
+   135
+  ],
+  "points": [
+   "top",
+   "base"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "bayrağı otomatik çek (0 → 1, 1.4 sn)"
+   },
+   "raise": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "bayrak yüksekliği: 0 = altta, 1 = tepede"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "bayrak rengi"
+   }
+  }
+ },
+ {
+  "name": "school-fx-2/locker-slam",
+  "status": "draft",
+  "desc": "Okul dolabı: at anında kapak hızla kapanır, toz ve sarsıntı efekti olur",
+  "tags": [
+   "dolap",
+   "okul dolabı",
+   "kapak",
+   "çarpma",
+   "locker",
+   "slam",
+   "door",
+   "okul",
+   "koridor",
+   "gürültü"
+  ],
+  "anchor": "dolap gövde merkezi",
+  "box": [
+   -95,
+   -118,
+   95,
+   118
+  ],
+  "points": [
+   "door",
+   "vent"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "kapak rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kapağın çarpma anı (0.2 sn kapanma + sarsıntı)"
    }
   }
  },
