@@ -3288,6 +3288,253 @@
   }
  },
  {
+  "name": "city-fx/crane-swing-2",
+  "status": "draft",
+  "desc": "Kule vinç; bom ve asılı yük sarkaç gibi salınır, ikaz lambası yanıp söner",
+  "tags": [
+   "vinç",
+   "kule vinç",
+   "inşaat",
+   "şantiye",
+   "bom",
+   "yük",
+   "kaldırma",
+   "şehir",
+   "crane",
+   "tower crane",
+   "construction",
+   "jib",
+   "hook",
+   "city"
+  ],
+  "anchor": "kule tabanı (0,170)",
+  "box": [
+   -170,
+   -228,
+   170,
+   170
+  ],
+  "points": [
+   "hook"
+  ],
+  "params": {
+   "swing": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "salınım genliği (0–1)"
+   }
+  }
+ },
+ {
+  "name": "city-fx/crosswalk-walk",
+  "status": "draft",
+  "desc": "Yaya geçidi; at anında figür zebra çizgilerinden karşıya yürür",
+  "tags": [
+   "yaya",
+   "yaya geçidi",
+   "zebra",
+   "karşıdan karşıya",
+   "yürümek",
+   "trafik",
+   "şehir",
+   "crosswalk",
+   "pedestrian",
+   "zebra crossing",
+   "walking",
+   "city"
+  ],
+  "anchor": "yürüme ekseni (0,0); zemin y=86",
+  "box": [
+   -165,
+   -95,
+   165,
+   95
+  ],
+  "points": [
+   "head"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yürüyüşün başlama anı (2.2 sn geçiş)"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   }
+  }
+ },
+ {
+  "name": "city-fx/elevator-doors",
+  "status": "draft",
+  "desc": "Asansör kapıları; at anında açılıp kapanır, üstte kat lambası yanar",
+  "tags": [
+   "asansör",
+   "kapı",
+   "kat",
+   "bina",
+   "ofis",
+   "açılan kapı",
+   "şehir",
+   "elevator",
+   "lift",
+   "doors",
+   "floor",
+   "building",
+   "city"
+  ],
+  "anchor": "kapı merkezi (0,0)",
+  "box": [
+   -112,
+   -152,
+   112,
+   152
+  ],
+  "points": [
+   "centre"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kapıların açılma anı (açılış 0.5 sn, kapanış 0.5 sn)"
+   },
+   "open": {
+    "type": "number",
+    "default": 0,
+    "desc": "elle açıklık (0 kapalı, 1 açık); animasyona eklenir"
+   }
+  }
+ },
+ {
+  "name": "city-fx/fountain-jets",
+  "status": "draft",
+  "desc": "Yuvarlak havuzlu fıskiye; basınçla dalgalanan parabolik su jetleri ve damlacıklar",
+  "tags": [
+   "fıskiye",
+   "fıskiyeli havuz",
+   "su",
+   "çeşme",
+   "park",
+   "şehir",
+   "su jeti",
+   "fountain",
+   "water jets",
+   "park",
+   "city",
+   "water"
+  ],
+  "anchor": "havuz tabanı (0,145)",
+  "box": [
+   -135,
+   -145,
+   135,
+   145
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "pressure": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "su basıncı (0–1): jet yüksekliği ve damlacık sayısı"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   }
+  }
+ },
+ {
+  "name": "city-fx/subway-arrive",
+  "status": "draft",
+  "desc": "Tünelden çıkıp istasyona yanaşan metro treni; at anında fren yapıp durur",
+  "tags": [
+   "metro",
+   "tren",
+   "tünel",
+   "istasyon",
+   "banliyö",
+   "raylı",
+   "şehir",
+   "subway",
+   "metro train",
+   "tunnel",
+   "station",
+   "city"
+  ],
+  "anchor": "gövde merkezi (tren durunca 0,0)",
+  "box": [
+   -200,
+   -92,
+   200,
+   92
+  ],
+  "points": [
+   "doors"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "trenin istasyona varış anı (1.5 sn fren)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "city-fx/traffic-light-cycle",
+  "status": "draft",
+  "desc": "Direkli trafik lambası; kırmızı→sarı→yeşil döngüsü LED parlamayla dönüyor",
+  "tags": [
+   "trafik",
+   "lamba",
+   "sinyal",
+   "trafik lambası",
+   "trafik ışığı",
+   "kırmızı ışık",
+   "yeşil ışık",
+   "şehir",
+   "traffic",
+   "traffic light",
+   "stoplight",
+   "signal",
+   "city"
+  ],
+  "anchor": "direk tabanı (0,152)",
+  "box": [
+   -48,
+   -152,
+   48,
+   152
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "cycle": {
+    "type": "number",
+    "default": 4.5,
+    "desc": "tam döngü süresi (sn): kırmızı→sarı→yeşil"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
   "name": "classroom-fx/beaker-pop",
   "status": "draft",
   "desc": "Deney beheri: idle kabarcıklanma + at anında köpük patlaması",
@@ -18558,6 +18805,230 @@
   }
  },
  {
+  "name": "science-fx/atom-orbit",
+  "status": "draft",
+  "desc": "Atom modeli: üç yörüngede dönen elektronlar ve nabız gibi atan parlak çekirdek",
+  "tags": [
+   "atom",
+   "elektron",
+   "yörünge",
+   "çekirdek",
+   "fizik",
+   "nabız",
+   "atom orbit",
+   "electron",
+   "nucleus",
+   "physics"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -135,
+   -135,
+   135,
+   135
+  ],
+  "points": [
+   "nucleus"
+  ],
+  "params": {
+   "electrons": {
+    "type": "number",
+    "default": 3,
+    "desc": "elektron sayısı 1–9"
+   },
+   "spin": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "yörünge dönüş hızı 0–1"
+   }
+  }
+ },
+ {
+  "name": "science-fx/beaker-fizz",
+  "status": "draft",
+  "desc": "Beherglas: at anında ağızdan taşan köpürme patlaması ve renk parlaması",
+  "tags": [
+   "beher",
+   "beherglas",
+   "kimya",
+   "köpük",
+   "kabarcık",
+   "deney",
+   "patlama",
+   "beaker fizz",
+   "chemistry",
+   "foam"
+  ],
+  "anchor": "taban (0,0)",
+  "box": [
+   -100,
+   -250,
+   100,
+   12
+  ],
+  "points": [
+   "mouth"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "köpürme patlaması anı (~1.2 sn)"
+   },
+   "bubbles": {
+    "type": "number",
+    "default": 0.4,
+    "desc": "sürekli kabarcık yoğunluğu 0–1"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "sıvı rengi"
+   }
+  }
+ },
+ {
+  "name": "science-fx/cell-divide",
+  "status": "draft",
+  "desc": "Hücre: at anında ortadan boğumlanıp iki yavru hücreye ayrılır, çekirdekler bölünür",
+  "tags": [
+   "hücre",
+   "bölünme",
+   "mitoz",
+   "biyoloji",
+   "çekirdek",
+   "yavru hücre",
+   "cell divide",
+   "mitosis",
+   "biology"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -235,
+   -135,
+   235,
+   135
+  ],
+  "points": [
+   "left",
+   "right"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "bölünmenin başlama anı (~1.1 sn sürer)"
+   }
+  }
+ },
+ {
+  "name": "science-fx/dna-unzip",
+  "status": "draft",
+  "desc": "Dikey DNA sarmalı: at anında üstten alta fermuar gibi açılır, baz çiftleri ayrılır",
+  "tags": [
+   "dna",
+   "gen",
+   "genetik",
+   "fermuar",
+   "açılma",
+   "sarmal",
+   "baz çifti",
+   "dna unzip",
+   "genetics",
+   "helix"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -115,
+   -155,
+   115,
+   155
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fermuarın açılmaya başlama anı (üstten alta ~1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "science-fx/magnet-pull",
+  "status": "draft",
+  "desc": "U mıknatıs: at anında dağınık metal parçalar kutuplara uçar ve yapışır",
+  "tags": [
+   "mıknatıs",
+   "magnet",
+   "çekim",
+   "metal",
+   "kutup",
+   "fizik",
+   "manyetik",
+   "magnet pull",
+   "attraction",
+   "physics"
+  ],
+  "anchor": "merkez (0,0)",
+  "box": [
+   -155,
+   -140,
+   155,
+   150
+  ],
+  "points": [
+   "poles"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "metal parçaların mıknatısa yapışma anı (~0.7 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "mıknatıs gövde rengi"
+   }
+  }
+ },
+ {
+  "name": "science-fx/microscope-zoom",
+  "status": "draft",
+  "desc": "Mikroskop: at anında mercekte zum olayı — büyüyen örnek detayı ve genişleyen odak halkaları",
+  "tags": [
+   "mikroskop",
+   "zum",
+   "mercek",
+   "inceleme",
+   "laboratuvar",
+   "büyütme",
+   "microscope",
+   "zoom",
+   "lens",
+   "lab"
+  ],
+  "anchor": "taban (0,0)",
+  "box": [
+   -125,
+   -245,
+   125,
+   12
+  ],
+  "points": [
+   "lens"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "zum anı (mercekte büyüyen detay + odak halkası ~1 sn)"
+   }
+  }
+ },
+ {
   "name": "science/atom",
   "status": "draft",
   "desc": "Atom modeli: parlak çekirdek ve üç eliptik yörüngede dönen elektronlar",
@@ -20607,6 +21078,243 @@
     "type": "color",
     "default": "purple",
     "desc": "rün rengi"
+   }
+  }
+ },
+ {
+  "name": "sports-action/dive-roll",
+  "status": "draft",
+  "desc": "Topa uzanmak için yana dalan kaleci; time-param at anında vücut yataylaşır, top çelir",
+  "tags": [
+   "dalış",
+   "kaleci",
+   "uzanma",
+   "kurtarış",
+   "save",
+   "dive",
+   "goalkeeper",
+   "save",
+   "kaleci dalışı",
+   "uzanış",
+   "deflect"
+  ],
+  "anchor": "dalış öncesi kalecinin ayakları (0,0); dalış +x yönüne sağa",
+  "box": [
+   -160,
+   -302,
+   250,
+   24
+  ],
+  "points": [
+   "hands"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "dalış anı: kaleci yana fırlar, topu çeler"
+   }
+  }
+ },
+ {
+  "name": "sports-action/home-run",
+  "status": "draft",
+  "desc": "Topa savrulan sopasıyla home-run vuran beyzbolcu; time-param at anında vuruş ve topun fırlayışı",
+  "tags": [
+   "home run",
+   "homerun",
+   "beyzbol",
+   "sopa",
+   "vuruş",
+   "baseball",
+   "home run",
+   "bat",
+   "batter",
+   "swing",
+   "hit"
+  ],
+  "anchor": "vurucunun ayakları (0,0); top sağdan gelir, sağ üste fırlar",
+  "box": [
+   -175,
+   -235,
+   175,
+   24
+  ],
+  "points": [
+   "bat"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "vuruş anı: sopa savrulur, top fırlatılır"
+   }
+  }
+ },
+ {
+  "name": "sports-action/penalty-kick",
+  "status": "draft",
+  "desc": "Penaltı vuran futbolcu figürü ve kale; time-param at anında bacak savrulur, top filelere fırlar",
+  "tags": [
+   "penaltı",
+   "penalti",
+   "şut",
+   "vuruş",
+   "futbol",
+   "kale",
+   "gol",
+   "penalty",
+   "penalty kick",
+   "shoot",
+   "football",
+   "soccer",
+   "goal"
+  ],
+  "anchor": "penaltı noktası (0,0); kale +x yönünde sağda, figürün ayakları zeminde",
+  "box": [
+   -180,
+   -292,
+   200,
+   24
+  ],
+  "points": [
+   "ball"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "vuruş anı: bacak savrulur, top kaleye fırlar"
+   }
+  }
+ },
+ {
+  "name": "sports-action/photo-finish",
+  "status": "draft",
+  "desc": "Bitiş çizgisinde iki koşucu silueti; döngüsel titreme + time-param at anında kamera flaşı",
+  "tags": [
+   "foto finish",
+   "bitiş",
+   "finish",
+   "photo finish",
+   "çizgi",
+   "koşu",
+   "yarış",
+   "kamera",
+   "flash",
+   "flaş",
+   "race",
+   "sprint"
+  ],
+  "anchor": "bitiş çizgisi x=0 dikeyinde; zemin y=0",
+  "box": [
+   -195,
+   -245,
+   195,
+   24
+  ],
+  "points": [
+   "line"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "deklanşör anı: kamera flaşı patlar"
+   }
+  }
+ },
+ {
+  "name": "sports-action/slam-dunk",
+  "status": "draft",
+  "desc": "Zıplayıp potaya smaç basan basketbolcu; time-param at anında yükselir, pota sallanır",
+  "tags": [
+   "smaç",
+   "smac",
+   "basketbol",
+   "basket",
+   "pota",
+   "dunk",
+   "slam dunk",
+   "basketball",
+   "hoop",
+   "jump",
+   "zıplama"
+  ],
+  "anchor": "figürün ayakları (0,0); pota +x yönünde sağda",
+  "box": [
+   -170,
+   -405,
+   170,
+   24
+  ],
+  "points": [
+   "hoop"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "smaç anı: oyuncu yükselir, topu potaya basar"
+   }
+  }
+ },
+ {
+  "name": "sports-action/whistle-blow",
+  "status": "draft",
+  "desc": "Düdük çalan hakem başı; time-param at anında yanaklar şişer, ses dalgaları yayılır",
+  "tags": [
+   "düdük",
+   "hakem",
+   "referee",
+   "whistle",
+   "whistle blow",
+   "üfleme",
+   "ses",
+   "maç",
+   "sound",
+   "blow",
+   "ref"
+  ],
+  "anchor": "baş merkezi (0,0); düdük ağzın sağında",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "mouth"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "düdük çalma anı: yanak şişmesi + ses dalgaları"
    }
   }
  },
