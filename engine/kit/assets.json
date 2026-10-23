@@ -13818,6 +13818,251 @@
   }
  },
  {
+  "name": "music-perform/crowd-jump",
+  "status": "draft",
+  "desc": "Ritimle zıplayan konser kalabalığı; drop anında hep birlikte sıçrar, konfeti patlar",
+  "tags": [
+   "kalabalık",
+   "zıplama",
+   "konser",
+   "seyirci",
+   "drop",
+   "ritim",
+   "crowd",
+   "jump",
+   "concert",
+   "fans",
+   "beat"
+  ],
+  "anchor": "zemin (0,0); kalabalığın ortası",
+  "box": [
+   -250,
+   -425,
+   250,
+   14
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "drop anı: senkron büyük sıçrama + konfeti (~0.8 sn olay)"
+   },
+   "count": {
+    "type": "number",
+    "default": 6,
+    "desc": "kişi sayısı 4–8"
+   }
+  }
+ },
+ {
+  "name": "music-perform/dj-scratch",
+  "status": "draft",
+  "desc": "Plak çizdiren DJ; scratch anında plak ileri geri fırlar, ses zigzagları çıkar",
+  "tags": [
+   "dj",
+   "plak",
+   "scratch",
+   "pikab",
+   "turntable",
+   "konser",
+   "müzik",
+   "dj scratch",
+   "vinyl",
+   "concert",
+   "music"
+  ],
+  "anchor": "zemin (0,0); masanın ortası",
+  "box": [
+   -180,
+   -250,
+   180,
+   14
+  ],
+  "points": [
+   "head",
+   "vinyl"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "scratch": {
+    "type": "time",
+    "default": null,
+    "desc": "scratch anı: plak fırlar, el savrulur (~0.8 sn olay)"
+   }
+  }
+ },
+ {
+  "name": "music-perform/drum-solo",
+  "status": "draft",
+  "desc": "Solo atan baterist; hit anında çubuklar vurur, davullar titrer",
+  "tags": [
+   "bateri",
+   "davul",
+   "baterist",
+   "davulcu",
+   "konser",
+   "müzik",
+   "drums",
+   "drummer",
+   "drum solo",
+   "concert",
+   "music"
+  ],
+  "anchor": "zemin (0,0); setin ortası",
+  "box": [
+   -200,
+   -270,
+   200,
+   14
+  ],
+  "points": [
+   "head",
+   "cymbal"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "hit": {
+    "type": "time",
+    "default": null,
+    "desc": "vuruş anı: çubuklar iner, deriler titrer (~0.4 sn olay)"
+   }
+  }
+ },
+ {
+  "name": "music-perform/encore-lights",
+  "status": "draft",
+  "desc": "Süpüren sahne spotları; flash anında tüm ışıklar patlar, hüzmeler parlar",
+  "tags": [
+   "sahne ışıkları",
+   "spot",
+   "ışık",
+   "konser",
+   "encore",
+   "flash",
+   "stage lights",
+   "spotlight",
+   "concert",
+   "encore",
+   "beam"
+  ],
+  "anchor": "zemin (0,0); ışık köprüsünün ortası",
+  "box": [
+   -280,
+   -330,
+   280,
+   16
+  ],
+  "points": [
+   "rig",
+   "stage"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "flash": {
+    "type": "time",
+    "default": null,
+    "desc": "encore flaşı: tüm hüzmeler parlar, beyaz patlama (~0.5 sn olay)"
+   }
+  }
+ },
+ {
+  "name": "music-perform/guitar-shred",
+  "status": "draft",
+  "desc": "Elektro gitarla solo atan gitarist; shred anında kol hızlı çalar, notalar fışkırır",
+  "tags": [
+   "gitar",
+   "gitarist",
+   "solo",
+   "konser",
+   "müzik",
+   "elektro gitar",
+   "guitar",
+   "guitarist",
+   "solo",
+   "shred",
+   "concert",
+   "music"
+  ],
+  "anchor": "ayaklar (0,0); gitaristin ortası",
+  "box": [
+   -170,
+   -290,
+   170,
+   14
+  ],
+  "points": [
+   "head",
+   "guitar"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "shred": {
+    "type": "time",
+    "default": null,
+    "desc": "shred anı: pençe hızlı çalar, 8 nota fışkırır (~0.9 sn olay)"
+   }
+  }
+ },
+ {
+  "name": "music-perform/stage-dive",
+  "status": "draft",
+  "desc": "Sahneden atlayıp kalabalığın kollarına düşen şarkıcı; at anında yay çizgisi ve toz bulutu",
+  "tags": [
+   "stage dive",
+   "sahne",
+   "atlayış",
+   "kalabalık",
+   "konser",
+   "rock",
+   "stage",
+   "dive",
+   "crowd",
+   "concert",
+   "rock"
+  ],
+  "anchor": "zemin (0,0); sahne ile kalabalığın ortası",
+  "box": [
+   -290,
+   -340,
+   290,
+   14
+  ],
+  "points": [
+   "stage",
+   "crowd"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "atlayış anı: şarkıcı yayı çizer, kalabalık tutar (~1.1 sn olay)"
+   }
+  }
+ },
+ {
   "name": "music/drum",
   "status": "draft",
   "desc": "Trampet davul; hit anında bagetler vurur, deride dalga yayılır",
@@ -16533,6 +16778,256 @@
   }
  },
  {
+  "name": "police-fx/evidence-tag",
+  "status": "draft",
+  "desc": "Delil etiketi: at anında düşer, ipe takılıp sarkaç gibi sallanır",
+  "tags": [
+   "delil",
+   "etiket",
+   "polis",
+   "suç",
+   "kanıt",
+   "soruşturma",
+   "evidence",
+   "tag",
+   "police",
+   "crime",
+   "investigation"
+  ],
+  "anchor": "ipin üst ucu (0,0)",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "hole",
+   "bottom"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "etiket düşme anı (0.5 sn düşüş + sönümlü sallanma)"
+   },
+   "text": {
+    "type": "text",
+    "default": "A-17",
+    "desc": "etiketteki yazı"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "police-fx/handcuff-snap",
+  "status": "draft",
+  "desc": "Kelepçe: at anında kapak şak diye kapanır (klik flaşı), boşta hafif salınır",
+  "tags": [
+   "kelepçe",
+   "polis",
+   "tutuklama",
+   "gözaltı",
+   "suç",
+   "handcuff",
+   "cuffs",
+   "police",
+   "arrest",
+   "crime"
+  ],
+  "anchor": "kelepçe halkası merkezi (0,0)",
+  "box": [
+   -95,
+   -105,
+   95,
+   75
+  ],
+  "points": [
+   "lock",
+   "link"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kelepçe kapanma anı (0.12 sn kapak, klik flaşı)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "police-fx/helicopter-spot",
+  "status": "draft",
+  "desc": "Polis helikopteri: havada salınır, pervane döner, arama ışığı zeminde gezinir",
+  "tags": [
+   "helikopter",
+   "polis",
+   "arama",
+   "ışık",
+   "hava",
+   "kovalamaca",
+   "helicopter",
+   "police",
+   "spotlight",
+   "search",
+   "chase"
+  ],
+  "anchor": "gövde merkezi (0,0); arama ışığı zeminde",
+  "box": [
+   -170,
+   -170,
+   170,
+   60
+  ],
+  "points": [
+   "rotor",
+   "spotlight",
+   "skid"
+  ],
+  "params": {
+   "sweep": {
+    "type": "number",
+    "default": 1,
+    "desc": "arama ışığı süpürme hızı (1 = ~4 sn periyot)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "police-fx/megaphone-blast",
+  "status": "draft",
+  "desc": "Megafon: at anında genişleyen ses dalgaları patlar, koni sarsılır",
+  "tags": [
+   "megafon",
+   "polis",
+   "anons",
+   "ses",
+   "dalga",
+   "duyuru",
+   "megaphone",
+   "loudspeaker",
+   "sound",
+   "wave",
+   "announce"
+  ],
+  "anchor": "gövde merkezi (0,0); ağız sağda",
+  "box": [
+   -120,
+   -95,
+   190,
+   75
+  ],
+  "points": [
+   "mouth",
+   "handle"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "anons anı: ses dalgaları patlar (0.9 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "police-fx/roadblock-rise",
+  "status": "draft",
+  "desc": "Polis bariyeri: at anında kol kalkar (tıkırtı flaşı), kapalıysa hafif titrer",
+  "tags": [
+   "bariyer",
+   "polis",
+   "yol",
+   "kontrol",
+   "kapan",
+   "roadblock",
+   "barrier",
+   "police",
+   "checkpoint",
+   "gate"
+  ],
+  "anchor": "sol direk kaidesi (0,0)",
+  "box": [
+   -165,
+   -300,
+   205,
+   40
+  ],
+  "points": [
+   "hinge",
+   "armTip"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "bariyer kalkış anı (0.6 sn, tıkırtı flaşı)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "police-fx/siren-chase",
+  "status": "draft",
+  "desc": "Yandan görünüm polis arabası: kırmızı/mavi çakar yanıp söner, gövde sarsılır, hız çizgileri",
+  "tags": [
+   "polis",
+   "araba",
+   "kovalamaca",
+   "çakar",
+   "siren",
+   "devriye",
+   "police",
+   "car",
+   "chase",
+   "siren",
+   "patrol"
+  ],
+  "anchor": "gövde merkezi (0,0); tekerler altta",
+  "box": [
+   -155,
+   -85,
+   155,
+   45
+  ],
+  "points": [
+   "lightbar",
+   "front",
+   "rear"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "çakar hızı çarpanı (1 = ~1 sn periyot)"
+   },
+   "chase": {
+    "type": "time",
+    "default": null,
+    "desc": "kovalamaca anı: hız çizgileri patlar, araç zıplar"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
   "name": "professions/chef",
   "status": "draft",
   "desc": "Şapkalı aşçı (önlük + fular); serve anında tepsiyi yukarı kaldırır, üstünden buhar yükselir",
@@ -18634,6 +19129,264 @@
     "type": "number",
     "default": 137,
     "desc": "at anında eklenen izlenme (1-999)"
+   }
+  }
+ },
+ {
+  "name": "space-action/alien-signal",
+  "status": "draft",
+  "desc": "Sinyal çanağı anı gelince titreyip dalga patlaması yayar, sonra taramaya döner",
+  "tags": [
+   "sinyal",
+   "çanak",
+   "anten",
+   "dalga",
+   "uzaylı",
+   "radyo",
+   "signal",
+   "dish",
+   "antenna",
+   "wave",
+   "alien",
+   "radio"
+  ],
+  "anchor": "çanak merkezi (0,0)",
+  "box": [
+   -150,
+   -120,
+   150,
+   120
+  ],
+  "points": [
+   "dish",
+   "base",
+   "wave"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "çanak gövde rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sinyal patlaması anı: 1.2 sn genişleyen dalgalar + çanak titremesi"
+   }
+  }
+ },
+ {
+  "name": "space-action/meteor-dodge",
+  "status": "draft",
+  "desc": "Uzay aracı ateşli meteorun yakın geçişinde sarsıntılı manevrayla yana kaçar",
+  "tags": [
+   "meteor",
+   "kaçış",
+   "göktaşı",
+   "uzay aracı",
+   "manevra",
+   "sarsıntı",
+   "meteor",
+   "dodge",
+   "evade",
+   "spacecraft",
+   "near miss",
+   "fireball"
+  ],
+  "anchor": "uzay aracı merkezi (0,0)",
+  "box": [
+   -180,
+   -110,
+   180,
+   110
+  ],
+  "points": [
+   "ship",
+   "meteor",
+   "thruster"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "gemi gövde rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "meteor yakın geçiş anı: 0.6 sn sarsıntılı kaçış"
+   }
+  }
+ },
+ {
+  "name": "space-action/oxygen-alert",
+  "status": "draft",
+  "desc": "Oksijen durum paneli; anı gelince kırmızı alarm yanıp söner, O2 simgesi nabız atar",
+  "tags": [
+   "oksijen",
+   "alarm",
+   "panel",
+   "uyarı",
+   "kırmızı ışık",
+   "molekül",
+   "oxygen",
+   "alert",
+   "alarm",
+   "warning",
+   "panel",
+   "gauge"
+  ],
+  "anchor": "panel merkezi (0,0)",
+  "box": [
+   -130,
+   -130,
+   130,
+   110
+  ],
+  "points": [
+   "light",
+   "gauge",
+   "panel"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "panel gövde rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "alarm anı: 1.5 sn kırmızı yanıp sönme + O2 nabzı"
+   }
+  }
+ },
+ {
+  "name": "space-action/planet-orbit",
+  "status": "draft",
+  "desc": "Halkalı gezegen; ayı etrafında döngüsel yörüngede döner, yüzey bantları kayar",
+  "tags": [
+   "gezegen",
+   "halka",
+   "yörünge",
+   "ay",
+   "uzay",
+   "dönme",
+   "planet",
+   "orbit",
+   "ring",
+   "moon",
+   "saturn",
+   "space"
+  ],
+  "anchor": "gezegen merkezi (0,0)",
+  "box": [
+   -150,
+   -110,
+   150,
+   110
+  ],
+  "points": [
+   "planet",
+   "ring",
+   "moon"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "gezegen ana rengi"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.2–2: yörünge ve bant kayma hızı"
+   }
+  }
+ },
+ {
+  "name": "space-action/satellite-deploy",
+  "status": "draft",
+  "desc": "Kenetli uydu anı gelince gemiden ayrılıp süzülürken güneş panellerini açar",
+  "tags": [
+   "uydu",
+   "kenetlenme",
+   "ayrılma",
+   "güneş paneli",
+   "uzay gemisi",
+   "bırakma",
+   "satellite",
+   "deploy",
+   "separation",
+   "solar panel",
+   "spacecraft",
+   "docking"
+  ],
+  "anchor": "kenetlenme noktası (0,0)",
+  "box": [
+   -180,
+   -110,
+   180,
+   110
+  ],
+  "points": [
+   "dock",
+   "sat",
+   "hull"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "ana gövde rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ayrılma anı: uydu kopar, paneller 1 sn içinde açılır"
+   }
+  }
+ },
+ {
+  "name": "space-action/zero-g-tumble",
+  "status": "draft",
+  "desc": "Astronot sıfır yerçekiminde dönerek süzülür; kollar bacaklar savrulur, vizör parlar",
+  "tags": [
+   "astronot",
+   "süzülme",
+   "dönme",
+   "yerçekimsiz",
+   "kask",
+   "uzay yürüyüşü",
+   "astronaut",
+   "tumble",
+   "zero gravity",
+   "float",
+   "spacewalk",
+   "helmet"
+  ],
+  "anchor": "gövde merkezi (0,0)",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "helmet",
+   "hand",
+   "foot"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kıyafet ana rengi"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "0.2–2: dönme ve savrulma hızı"
    }
   }
  },
