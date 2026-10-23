@@ -8050,6 +8050,267 @@
   }
  },
  {
+  "name": "food-fx-2/blender-mix",
+  "status": "draft",
+  "desc": "Stand mikser: çırpıcı sürekli döner, kasedeki hamur girdap yapar; burst anında turbo hızla hamur sıçrar",
+  "tags": [
+   "mikser",
+   "stand mikser",
+   "çırpıcı",
+   "hamur",
+   "karıştırma",
+   "mutfak",
+   "stand mixer",
+   "whisk",
+   "mixing",
+   "dough"
+  ],
+  "anchor": "taban merkezi (0,110)",
+  "box": [
+   -155,
+   -195,
+   155,
+   155
+  ],
+  "points": [
+   "base",
+   "whisk",
+   "bowl"
+  ],
+  "params": {
+   "burst": {
+    "type": "time",
+    "default": null,
+    "desc": "turbo anı (0.8 sn): çırpıcı hızlanır, hamur sıçrar, gövde sarsılır"
+   },
+   "speed": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "karıştırma hızı 0–1: çırpıcı ve girdap hızı"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "food-fx-2/frosting-squeeze",
+  "status": "draft",
+  "desc": "Krema sıkma: idle'da sallanan torbadan damla düşer; squeeze anında torba sıkışır, cupcake üstünde spiral krema büyür",
+  "tags": [
+   "krema",
+   "sıkma torbası",
+   "cupcake",
+   "pasta süsleme",
+   "spiral",
+   "frosting",
+   "piping bag",
+   "cupcake",
+   "cream swirl",
+   "baking"
+  ],
+  "anchor": "tabak merkezi (0,118)",
+  "box": [
+   -120,
+   -195,
+   120,
+   150
+  ],
+  "points": [
+   "nozzle",
+   "swirl",
+   "cupcake"
+  ],
+  "params": {
+   "squeeze": {
+    "type": "time",
+    "default": null,
+    "desc": "sıkma anı (1.2 sn): torba sıkışır, krema spiral halinde büyür"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "food-fx-2/grill-sear",
+  "status": "draft",
+  "desc": "Izgara: mühürlenen et üstte durur, boşta cızırdayan buhar yükselir; sear anında yağ sıçraması ve cızırtı patlaması",
+  "tags": [
+   "ızgara",
+   "mühürleme",
+   "et",
+   "biftek",
+   "cızırdama",
+   "grill",
+   "sear",
+   "steak",
+   "barbecue",
+   "sizzle"
+  ],
+  "anchor": "ızgara gövdesinin merkezi (0,40)",
+  "box": [
+   -150,
+   -170,
+   150,
+   135
+  ],
+  "points": [
+   "grill",
+   "steak",
+   "steam_top"
+  ],
+  "params": {
+   "sear": {
+    "type": "time",
+    "default": null,
+    "desc": "mühürleme anı (1.2 sn): yağ sıçrar, buhar patlar, ızgara parlar"
+   },
+   "done": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "mühür derecesi 0–1: etin kızarıklığı"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "food-fx-2/noodle-pull",
+  "status": "draft",
+  "desc": "Noodle çekme: çubuklardaki noodle yumağı boşta sallanır; slurp anında yukarı çekilip gerilir, sonra sarkarak yerine döner",
+  "tags": [
+   "noodle",
+   "ramen",
+   "çubuk",
+   "makarna",
+   "yemek",
+   "noodles",
+   "ramen",
+   "chopsticks",
+   "slurp",
+   "asian food"
+  ],
+  "anchor": "kase tabanı (0,125)",
+  "box": [
+   -130,
+   -200,
+   130,
+   155
+  ],
+  "points": [
+   "bowl",
+   "chopsticks",
+   "noodles"
+  ],
+  "params": {
+   "slurp": {
+    "type": "time",
+    "default": null,
+    "desc": "çekme anı (1.2 sn): noodle yukarı çekilir, gerilir, sarkarak döner"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "food-fx-2/pour-chocolate",
+  "status": "draft",
+  "desc": "Eğik cezveden akan çikolata: boşta döngülü akış, drizzle anında cezve zigzag yapıp çileğe desen çizer",
+  "tags": [
+   "çikolata",
+   "dökme",
+   "çilek",
+   "drizzle",
+   "akış",
+   "tatlı",
+   "chocolate",
+   "pour",
+   "drizzle",
+   "strawberry",
+   "dessert"
+  ],
+  "anchor": "döküm noktası (ağız ucu)",
+  "box": [
+   -140,
+   -195,
+   140,
+   165
+  ],
+  "points": [
+   "spout",
+   "pool",
+   "strawberry"
+  ],
+  "params": {
+   "drizzle": {
+    "type": "time",
+    "default": null,
+    "desc": "desen anı (1.0 sn): cezve zigzag yapar, çikolata deseni çizilir"
+   },
+   "flow": {
+    "type": "number",
+    "default": 0.8,
+    "desc": "akış şiddeti 0–1: akış kalınlığı ve hızı"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "food-fx-2/toast-pop",
+  "status": "draft",
+  "desc": "Tost makinesi: at anında tost yaylanarak fırlar, havada dönüp yuvaya düşer; boşta ısı dalgası yükselir",
+  "tags": [
+   "tost",
+   "tost makinesi",
+   "ekmek",
+   "kahvaltı",
+   "fırlama",
+   "toast",
+   "toaster",
+   "breakfast",
+   "bread",
+   "pop up"
+  ],
+  "anchor": "tost makinesi tabanı (0,90)",
+  "box": [
+   -140,
+   -205,
+   140,
+   125
+  ],
+  "points": [
+   "slot",
+   "toast",
+   "lever"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fırlama anı (0.9 sn): tost fırlar, döner, yuvaya düşer"
+   },
+   "brown": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "kızarma derecesi 0–1: tostun rengi"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
   "name": "food/apple",
   "status": "draft",
   "desc": "Hafif sağa eğik kırmızı elma; bite anında ısırık izi açılır ve bir parça uçar",
@@ -12532,6 +12793,287 @@
     "type": "time",
     "default": null,
     "desc": "vananın açılma anı; buhar fışkırır"
+   }
+  }
+ },
+ {
+  "name": "medical-emergency/bandage-wrap",
+  "status": "draft",
+  "desc": "Yatay diz/bacak; sargı rulosu bacak çevresinde döner, at anında yeni bir sargı turu sarılır",
+  "tags": [
+   "bandaj",
+   "sargı",
+   "sarma",
+   "diz",
+   "bacak",
+   "ilk yardım",
+   "bandage",
+   "wrap",
+   "knee",
+   "leg",
+   "first aid",
+   "emergency",
+   "medical"
+  ],
+  "anchor": "diz merkezi",
+  "box": [
+   -120,
+   -100,
+   120,
+   100
+  ],
+  "points": [
+   "knee",
+   "roll",
+   "thigh",
+   "shin"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sargı turu: 1 sn içinde rulo bacağı bir tur döner ve yeni şerit sarılır (0.2–1.5 sn arası)"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "döngülü sarım hızı çarpanı"
+   }
+  }
+ },
+ {
+  "name": "medical-emergency/code-blue-alarm",
+  "status": "draft",
+  "desc": "Duvara monte döner alarm lambası; döngülü mavi flaş, at anında ışık hüzmeleri ve yayılan halka",
+  "tags": [
+   "mavi kod",
+   "alarm",
+   "acil",
+   "hastane",
+   "siren",
+   "lamba",
+   "code blue",
+   "alarm",
+   "beacon",
+   "siren",
+   "emergency",
+   "hospital",
+   "medical"
+  ],
+  "anchor": "duvar bağlantısı",
+  "box": [
+   -110,
+   -100,
+   110,
+   100
+  ],
+  "points": [
+   "dome",
+   "wallLeft",
+   "base",
+   "burst"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "alarm tepe anı: 0.6 sn hüzme patlaması + yayılan halka (0.2–1.5 sn arası)"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "flaş hızı çarpanı"
+   }
+  }
+ },
+ {
+  "name": "medical-emergency/defibrillator-shock",
+  "status": "draft",
+  "desc": "Sol yanda defibrilatör ünitesi, göğüste iki palet; at anında yıldırım kıvılcımı ve gövde sıçraması",
+  "tags": [
+   "defibrilatör",
+   "şok",
+   "elektroşok",
+   "kalp",
+   "acil",
+   "defibrillator",
+   "shock",
+   "cardiac",
+   "emergency",
+   "cpr",
+   "resuscitation",
+   "medical"
+  ],
+  "anchor": "hastanın gövde merkezi",
+  "box": [
+   -120,
+   -85,
+   120,
+   85
+  ],
+  "points": [
+   "unitTop",
+   "paddleLeft",
+   "paddleRight",
+   "chest"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "şok anı: 0.15 sn yıldırım kıvılcımı + 0.7 sn gövde sıçraması (0.2–1.5 sn arası)"
+   }
+  }
+ },
+ {
+  "name": "medical-emergency/drip-adjust",
+  "status": "draft",
+  "desc": "Serum hortumu üzerinde roller kıskaç; at anında tekerlek kayar ve damla hızı artar, odacıkta döngülü damlama",
+  "tags": [
+   "serum",
+   "damla",
+   "kıskaç",
+   "akış ayarı",
+   "infüzyon",
+   "roller",
+   "drip",
+   "flow",
+   "adjust",
+   "clamp",
+   "intravenous",
+   "hospital",
+   "medical"
+  ],
+  "anchor": "roller kıskaç merkezi",
+  "box": [
+   -80,
+   -110,
+   80,
+   110
+  ],
+  "points": [
+   "inlet",
+   "outlet",
+   "chamber",
+   "roller"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "akış ayarı: 0.8 sn tekerlek aşağı kayar, damla hızı 2 katına çıkar, LED hızlanır (0.2–1.5 sn arası)"
+   },
+   "flow": {
+    "type": "number",
+    "default": 1,
+    "desc": "bazal damla hızı çarpanı"
+   }
+  }
+ },
+ {
+  "name": "medical-emergency/oxygen-mask",
+  "status": "draft",
+  "desc": "Ön görünüm yüz + burun-ağız bölgesinde oksijen maskesi; at anında maske oturur, ventilden nefes buharı çıkar",
+  "tags": [
+   "oksijen",
+   "maske",
+   "nefes",
+   "solunum",
+   "acil",
+   "hastane",
+   "oxygen",
+   "mask",
+   "breath",
+   "respiratory",
+   "emergency",
+   "medical"
+  ],
+  "anchor": "yüz merkezi",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "maskTop",
+   "maskVent",
+   "tubeEnd",
+   "forehead"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "maske takma anı: 0.4 sn üstten inip oturur, tıklama yıldızı (0.2–1.5 sn arası)"
+   }
+  }
+ },
+ {
+  "name": "medical-emergency/stretcher-roll",
+  "status": "draft",
+  "desc": "Yan görünüm sedye; tekerlekler sürekli döner, battaniye dalgalanır, hasta nefes alır",
+  "tags": [
+   "sedye",
+   "tekerlek",
+   "hasta taşıma",
+   "acil",
+   "ambulans",
+   "stretcher",
+   "gurney",
+   "wheels",
+   "emergency",
+   "patient transport",
+   "medical"
+  ],
+  "anchor": "şase merkezi",
+  "box": [
+   -120,
+   -90,
+   120,
+   90
+  ],
+  "points": [
+   "head",
+   "foot",
+   "rail",
+   "wheelRear",
+   "wheelFront"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "yuvarlanma hızı çarpanı (tekerlek dönüş + sallantı)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ani fren: 0.5 sn sarsıntı, tekerlekler kilitlenir, battaniye savrulur"
    }
   }
  },
@@ -18566,6 +19108,262 @@
     "type": "color",
     "default": "purple",
     "desc": "rün rengi"
+   }
+  }
+ },
+ {
+  "name": "sports-arena/crowd-confetti",
+  "status": "draft",
+  "desc": "Tribün bandı üstünde iki konfeti topu: at anında patlar, renkli parçalar sallanarak süzülüp söner",
+  "tags": [
+   "konfeti",
+   "tribün",
+   "kutlama",
+   "yağmur",
+   "parti",
+   "confetti",
+   "crowd",
+   "celebration",
+   "fans",
+   "party",
+   "stadium"
+  ],
+  "anchor": "tribün bandı, zemin (0,0); patlama ağızları y≈-160",
+  "box": [
+   -270,
+   -300,
+   270,
+   30
+  ],
+  "points": [
+   "burstL",
+   "burstR",
+   "stand"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı: konfetiler fırlar, 1.6 sn süzülüp söner"
+   }
+  }
+ },
+ {
+  "name": "sports-arena/goal-net-ripple",
+  "status": "draft",
+  "desc": "Cepheden futbol kalesi: golde top ağa vurur, file vuruş noktasından yayılan dalgayla kabarır",
+  "tags": [
+   "kale",
+   "gol",
+   "ağ",
+   "file",
+   "futbol",
+   "goal",
+   "net",
+   "soccer",
+   "ripple",
+   "stadium",
+   "gol anı"
+  ],
+  "anchor": "kale çizgisi, zemin (0,0); kale ortası",
+  "box": [
+   -180,
+   -260,
+   180,
+   70
+  ],
+  "points": [
+   "impact",
+   "bar",
+   "leftPost",
+   "rightPost"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "gol anı: top ağa vurur, dalga yayılır ve söner (~1.2 sn olay)"
+   }
+  }
+ },
+ {
+  "name": "sports-arena/jumbotron-flash",
+  "status": "draft",
+  "desc": "Direk üstünde dev skorboard: skor yazar, LED kenarlık titrer, flaş anında ekran beyaza çakıp ışık saçar",
+  "tags": [
+   "skorboard",
+   "ekran",
+   "skor",
+   "stadyum",
+   "flaş",
+   "ışık",
+   "jumbotron",
+   "scoreboard",
+   "screen",
+   "flash",
+   "stadium",
+   "led"
+  ],
+  "anchor": "direk tabanı (0,0); ekran merkezi",
+  "box": [
+   -190,
+   -330,
+   190,
+   45
+  ],
+  "points": [
+   "screen",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "flaş anı: ekran beyaza çakar, ışık hüzmeleri saçar (~0.6 sn olay)"
+   }
+  }
+ },
+ {
+  "name": "sports-arena/referee-card",
+  "status": "draft",
+  "desc": "Hakem figürü: at anında kolunu savurup kırmızı/sarı kartı havaya kaldırır, kart ışıldar",
+  "tags": [
+   "hakem",
+   "kart",
+   "kırmızı kart",
+   "sarı kart",
+   "faul",
+   "referee",
+   "card",
+   "red card",
+   "yellow card",
+   "foul",
+   "penalty"
+  ],
+  "anchor": "ayaklar (0,0); kafa merkezi y=-178",
+  "box": [
+   -120,
+   -280,
+   120,
+   16
+  ],
+  "points": [
+   "card",
+   "head",
+   "whistle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "card": {
+    "type": "enum",
+    "default": "red",
+    "values": [
+     "red",
+     "yellow"
+    ],
+    "desc": "gösterilen kartın rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kart gösterme anı: kol 0.25 sn'de kalkar, ışıma 0.6 sn sürer"
+   }
+  }
+ },
+ {
+  "name": "sports-arena/trophy-lift",
+  "status": "draft",
+  "desc": "Kupa tutan şampiyon: at anında kupayı göğüsten başının üstüne kaldırır, kupa parlar ve kıvılcım saçar",
+  "tags": [
+   "kupa",
+   "şampiyon",
+   "zafer",
+   "kaldırma",
+   "ödül",
+   "trophy",
+   "champion",
+   "victory",
+   "lift",
+   "celebration",
+   "winner"
+  ],
+  "anchor": "ayaklar (0,0); kafa merkezi y=-180",
+  "box": [
+   -120,
+   -300,
+   120,
+   16
+  ],
+  "points": [
+   "trophy",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kaldırış anı: kupa 0.45 sn'de yukarı çıkar, kıvılcımlar ~0.9 sn sürer"
+   }
+  }
+ },
+ {
+  "name": "sports-arena/victory-lap",
+  "status": "draft",
+  "desc": "Kutlama turu atan koşucu: döngülü adım döngüsü, arkasında dalgalanan zafer şeridi ve toz bulutları",
+  "tags": [
+   "koşu",
+   "kutlama",
+   "tur",
+   "zafer",
+   "şerit",
+   "maraton",
+   "run",
+   "victory lap",
+   "celebration",
+   "runner",
+   "ribbon",
+   "race"
+  ],
+  "anchor": "zemin (0,0); koşucu merkezi",
+  "box": [
+   -220,
+   -180,
+   220,
+   20
+  ],
+  "points": [
+   "hand",
+   "ribbon",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent"
+   },
+   "pace": {
+    "type": "number",
+    "default": 1,
+    "desc": "koşu temposu çarpanı (adım döngüsü hızı)"
    }
   }
  },
