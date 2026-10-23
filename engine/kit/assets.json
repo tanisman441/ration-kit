@@ -9672,6 +9672,234 @@
   }
  },
  {
+  "name": "health-fx-2/cast-bandage",
+  "status": "draft",
+  "desc": "Alçılı önkol; at anında 6 tur sargı şeridi belirir, sargı rulosu kayar",
+  "tags": [
+   "alçı",
+   "bandaj",
+   "sargı",
+   "kırık",
+   "kol",
+   "cast",
+   "bandage",
+   "wrap",
+   "fracture",
+   "arm",
+   "medical"
+  ],
+  "anchor": "bilek",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "elbow",
+   "wrist",
+   "cast"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sarma anı: 1 sn'de 6 şerit belirir, rulo sağa kayar"
+   }
+  }
+ },
+ {
+  "name": "health-fx-2/heartbeat-monitor",
+  "status": "draft",
+  "desc": "EKG ekranlı hasta monitörü; beat anında iz sıçrar, kalp simgesi nabızlanır",
+  "tags": [
+   "kalp atışı",
+   "ekg",
+   "monitör",
+   "nabız",
+   "kalp",
+   "heartbeat",
+   "ecg",
+   "monitor",
+   "pulse",
+   "heart",
+   "medical"
+  ],
+  "anchor": "gövde merkezi",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "screen",
+   "heart"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "beat": {
+    "type": "time",
+    "default": null,
+    "desc": "nabız atışı anı: EKG sıçrar, kalp büyür, ekran parlar (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "health-fx-2/iv-drip",
+  "status": "draft",
+  "desc": "Askıda serum torbası; drip anında damla düşer, damla odacığında halka yayılır",
+  "tags": [
+   "serum",
+   "damla",
+   "iv",
+   "infüzyon",
+   "hastane",
+   "drip",
+   "intravenous",
+   "hospital",
+   "medical",
+   "serum damlası"
+  ],
+  "anchor": "serum torbası merkezi",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "nozzle",
+   "chamber"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "drip": {
+    "type": "time",
+    "default": null,
+    "desc": "damla düşme anı: 0.38 sn düşüş + 0.5 sn halka"
+   }
+  }
+ },
+ {
+  "name": "health-fx-2/stethoscope-pulse",
+  "status": "draft",
+  "desc": "Stetoskop; diyaframdan döngülü nabız halkaları yayılır, zar hafif titrer",
+  "tags": [
+   "stetoskop",
+   "nabız",
+   "kalp",
+   "doktor",
+   "muayene",
+   "stethoscope",
+   "pulse",
+   "doctor",
+   "heartbeat",
+   "medical"
+  ],
+  "anchor": "göğüs parçası",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "diaphragm",
+   "earpiece"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "health-fx-2/surgery-light-flicker",
+  "status": "draft",
+  "desc": "Tavan kollu ameliyat lambası; ampuller hafif titrer, ışık konisi nefes alır",
+  "tags": [
+   "ameliyat",
+   "cerrahi",
+   "lamba",
+   "ışık",
+   "ameliyathane",
+   "surgery",
+   "light",
+   "operation",
+   "hospital",
+   "lamp",
+   "medical"
+  ],
+  "anchor": "lamba başlığı",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "head",
+   "beam"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "health-fx-2/xray-scan",
+  "status": "draft",
+  "desc": "Göğüs röntgeni filmi; at anında cyan tarama çizgisi süpürür, kemikler netleşir",
+  "tags": [
+   "röntgen",
+   "tarama",
+   "kemik",
+   "iskelet",
+   "film",
+   "xray",
+   "scan",
+   "bone",
+   "skeleton",
+   "medical",
+   "göğüs"
+  ],
+  "anchor": "film merkezi",
+  "box": [
+   -100,
+   -100,
+   100,
+   100
+  ],
+  "points": [
+   "chest"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tarama anı: çizgi 0.9 sn'de yukarıdan aşağı süpürür"
+   }
+  }
+ },
+ {
   "name": "health/ambulance",
   "status": "draft",
   "desc": "Yandan ambulans; tepe lambası dönüşümlü yanıp söner, siren anında hızlı flaş + ses dalgaları yayar",
@@ -14319,6 +14547,242 @@
     "type": "color",
     "default": "cyan",
     "desc": "halka rengi"
+   }
+  }
+ },
+ {
+  "name": "office-fx/call-connect",
+  "status": "draft",
+  "desc": "at anında zil titremesi, sonra genişleyen bağlantı sinyal halkaları",
+  "tags": [
+   "telefon",
+   "arama",
+   "zil",
+   "bağlantı",
+   "ahize",
+   "phone",
+   "call",
+   "ring",
+   "connect",
+   "ofis",
+   "office"
+  ],
+  "anchor": "ahize merkezi",
+  "box": [
+   -140,
+   -110,
+   140,
+   110
+  ],
+  "points": [
+   "ear",
+   "wave"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "sinyal rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "arama anı: 0.45 sn zil + 1.05 sn bağlantı dalgası"
+   }
+  }
+ },
+ {
+  "name": "office-fx/coffee-spill",
+  "status": "draft",
+  "desc": "at anında fincan devrilir, kahve fışkırır, damlar ve gölet büyür",
+  "tags": [
+   "kahve",
+   "fincan",
+   "dökülme",
+   "leke",
+   "coffee",
+   "spill",
+   "cup",
+   "mug",
+   "ofis",
+   "office",
+   "kaza",
+   "accident"
+  ],
+  "anchor": "fincan tabanı",
+  "box": [
+   -150,
+   -130,
+   150,
+   110
+  ],
+  "points": [
+   "pour",
+   "puddle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "fincan rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "devrilme anı: 0.5 sn eğilme + kahve fışkırması"
+   }
+  }
+ },
+ {
+  "name": "office-fx/deadline-clock",
+  "status": "draft",
+  "desc": "Canlı saat: ibreler döner, son 8 saniyede kırmızı nabız atar",
+  "tags": [
+   "saat",
+   "zaman",
+   "son tarih",
+   "geri sayım",
+   "deadline",
+   "clock",
+   "time",
+   "countdown",
+   "ofis",
+   "office",
+   "süre"
+  ],
+  "anchor": "kadran merkezi",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "center",
+   "rim"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "çerçeve / uyarı rengi"
+   }
+  }
+ },
+ {
+  "name": "office-fx/email-send",
+  "status": "draft",
+  "desc": "at anında zarf hız çizgileriyle yukarı-sağa fırlar ve solar",
+  "tags": [
+   "e-posta",
+   "mail",
+   "zarf",
+   "gönder",
+   "mektup",
+   "email",
+   "send",
+   "letter",
+   "envelope",
+   "ofis",
+   "office"
+  ],
+  "anchor": "zarf merkezi",
+  "box": [
+   -150,
+   -140,
+   150,
+   120
+  ],
+  "points": [
+   "mouth",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "zarf rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "gönder anı: 0.8 sn eğik uçuş + hız çizgileri"
+   }
+  }
+ },
+ {
+  "name": "office-fx/meeting-join",
+  "status": "draft",
+  "desc": "at anında 3 katılımcı pop ile girer, ortadaki el kaldırır",
+  "tags": [
+   "toplantı",
+   "katılımcı",
+   "görüşme",
+   "el kaldır",
+   "meeting",
+   "join",
+   "video call",
+   "participant",
+   "ofis",
+   "office"
+  ],
+  "anchor": "orta avatar merkezi",
+  "box": [
+   -170,
+   -100,
+   170,
+   100
+  ],
+  "points": [
+   "hand",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "avatar gövde rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "katılım anı: 0.28 sn arayla pop giriş + el kaldırma"
+   }
+  }
+ },
+ {
+  "name": "office-fx/printer-jam",
+  "status": "draft",
+  "desc": "Kağıdı sıkışmış yazıcı: gövde titrer, uyarı ışığı yanıp söner",
+  "tags": [
+   "yazıcı",
+   "kağıt sıkışması",
+   "hata",
+   "arıza",
+   "uyarı",
+   "printer",
+   "jam",
+   "paper jam",
+   "ofis",
+   "office",
+   "error"
+  ],
+  "anchor": "yazıcı tabanı",
+  "box": [
+   -130,
+   -170,
+   130,
+   70
+  ],
+  "points": [
+   "slot",
+   "light"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "yazıcı gövde rengi"
    }
   }
  },
@@ -21940,6 +22404,246 @@
   ],
   "points": [],
   "params": {}
+ },
+ {
+  "name": "vehicle-arrival/bus-arrive",
+  "status": "draft",
+  "desc": "Yandan şehir otobüsü; at anında soldan kayarak girip durur, fren tozu + esneme",
+  "tags": [
+   "otobüs",
+   "varış",
+   "durak",
+   "şehir",
+   "ulaşım",
+   "fren",
+   "bus",
+   "arrival",
+   "city bus",
+   "transport",
+   "stop"
+  ],
+  "anchor": "zemin (0,0); otobüs tabanı",
+  "box": [
+   -260,
+   -140,
+   260,
+   30
+  ],
+  "points": [
+   "door",
+   "front",
+   "roof"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "varış anı (0.9 sn kayarak giriş + fren tozu)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "vehicle-arrival/cable-car-sway",
+  "status": "draft",
+  "desc": "Teleferik kabini; kablo üzerinde gidip gelirken sarkaç gibi salınır",
+  "tags": [
+   "teleferik",
+   "kabin",
+   "kablo",
+   "dağ",
+   "ulaşım",
+   "salınım",
+   "cable car",
+   "gondola",
+   "sway",
+   "transport"
+  ],
+  "anchor": "kablo hattı (0,-120)",
+  "box": [
+   -350,
+   -180,
+   350,
+   60
+  ],
+  "points": [
+   "cable"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "ilerleme hızı çarpanı"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "vehicle-arrival/helicopter-land",
+  "status": "draft",
+  "desc": "Yandan helikopter; at anında alçalıp piste iner, rotor dönüşü + iniş tozu",
+  "tags": [
+   "helikopter",
+   "iniş",
+   "pist",
+   "rotor",
+   "hava",
+   "ulaşım",
+   "helicopter",
+   "landing",
+   "rotor",
+   "helipad",
+   "aircraft"
+  ],
+  "anchor": "zemin (0,0); iniş pisti",
+  "box": [
+   -210,
+   -330,
+   210,
+   30
+  ],
+  "points": [
+   "skid",
+   "rotor",
+   "tail"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "iniş anı (1.3 sn alçalma + toz patlaması)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "vehicle-arrival/rocket-stage",
+  "status": "draft",
+  "desc": "Önden roket; at anında ateşlenip yükselir, kademe ayrılır, alev + duman",
+  "tags": [
+   "roket",
+   "fırlatma",
+   "uzay",
+   "kademe",
+   "ateşleme",
+   "rocket",
+   "launch",
+   "space",
+   "liftoff",
+   "stage"
+  ],
+  "anchor": "fırlatma rampası tabanı (0,0)",
+  "box": [
+   -180,
+   -350,
+   180,
+   70
+  ],
+  "points": [
+   "nose",
+   "nozzle",
+   "stage"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fırlatma anı (ateşleme + yükseliş + kademe ayrılma)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "vehicle-arrival/ship-horn",
+  "status": "draft",
+  "desc": "Yandan yolcu gemisi; at anında korna çalar, ses dalgaları + su halkaları yayılır",
+  "tags": [
+   "gemi",
+   "korna",
+   "liman",
+   "deniz",
+   "vapur",
+   "ulaşım",
+   "ship",
+   "horn",
+   "harbor",
+   "sea",
+   "boat"
+  ],
+  "anchor": "su hattı (0,0)",
+  "box": [
+   -260,
+   -180,
+   260,
+   70
+  ],
+  "points": [
+   "horn",
+   "bridge",
+   "bow"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "korna anı (1.2 sn ses dalgaları + su halkaları)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "vehicle-arrival/train-pass",
+  "status": "draft",
+  "desc": "Yandan 3 vagonlu tren; sağdan sola sürekli geçer, tekerlekler döner, far yanar",
+  "tags": [
+   "tren",
+   "geçiş",
+   "ray",
+   "vagon",
+   "demiryolu",
+   "ulaşım",
+   "train",
+   "passing",
+   "railway",
+   "wagon",
+   "transport"
+  ],
+  "anchor": "zemin (0,0); raylar",
+  "box": [
+   -330,
+   -160,
+   330,
+   50
+  ],
+  "points": [
+   "rail"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 300,
+    "desc": "geçiş hızı (birim/sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
  },
  {
   "name": "vehicle-fx/drift-skid",
