@@ -1179,6 +1179,246 @@
   }
  },
  {
+  "name": "barbershop-fx/cape-flutter",
+  "status": "draft",
+  "desc": "Berber pelerini giyen müşteri; pelerin eteği dalgalanır, rüzgâr anında kabarır",
+  "tags": [
+   "pelerin",
+   "önlük",
+   "berber",
+   "rüzgâr",
+   "dalgalanma",
+   "cape",
+   "barber",
+   "flutter",
+   "wind",
+   "apron"
+  ],
+  "anchor": "gövde merkezi (0,0); baş üstte",
+  "box": [
+   -120,
+   -125,
+   120,
+   90
+  ],
+  "points": [
+   "head",
+   "shoulders",
+   "hem"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "gust": {
+    "type": "time",
+    "default": null,
+    "desc": "rüzgâr darbesi anı — pelerin kabarır, etek savrulur (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "barbershop-fx/clipper-buzz",
+  "status": "draft",
+  "desc": "Dik duran tıraş makinesi; sürekli hafif titreşir, tıraş anında güçlenip saç kırıntıları saçar",
+  "tags": [
+   "tıraş makinesi",
+   "berber",
+   "titreşim",
+   "saç kesimi",
+   "clipper",
+   "trimmer",
+   "buzz",
+   "barber",
+   "haircut",
+   "shaver"
+  ],
+  "anchor": "makine gövdesinin merkezi (0,0); boy ~190 birim",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "blade",
+   "grip",
+   "cord"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tıraş darbesi anı — titreşim güçlenir, saç kırıntıları uçar (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "barbershop-fx/hair-fall",
+  "status": "draft",
+  "desc": "Başın üstündeki saç telleri kesim anında kopup salınarak yere düşer",
+  "tags": [
+   "saç",
+   "kesim",
+   "berber",
+   "saç dökülmesi",
+   "hair",
+   "falling",
+   "barber",
+   "haircut",
+   "strands",
+   "salon"
+  ],
+  "anchor": "başın merkezi (0,0); zemin y=100",
+  "box": [
+   -120,
+   -125,
+   120,
+   110
+  ],
+  "points": [
+   "head",
+   "floor",
+   "strands"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kesim anı — saç telleri kopup düşer (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "barbershop-fx/mirror-check",
+  "status": "draft",
+  "desc": "Aynada yansıyan yüz ve arkadan görülen müşteri; kontrol anında yansıma başını eğip ayna parlar",
+  "tags": [
+   "ayna",
+   "berber",
+   "kontrol",
+   "yansıma",
+   "saç",
+   "mirror",
+   "barber",
+   "reflection",
+   "check",
+   "hair"
+  ],
+  "anchor": "aynanın merkezi (0,0)",
+  "box": [
+   -145,
+   -120,
+   145,
+   95
+  ],
+  "points": [
+   "mirror",
+   "face",
+   "person"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ayna kontrolü anı — yansıma başını eğer, ayna parlar (1.0 sn)"
+   }
+  }
+ },
+ {
+  "name": "barbershop-fx/razor-shave",
+  "status": "draft",
+  "desc": "Profliden erkek başı; ustura tıraş anında yanağı sıyırır, köpük tanecikleri uçar",
+  "tags": [
+   "ustura",
+   "tıraş",
+   "berber",
+   "köpük",
+   "yüz",
+   "razor",
+   "shave",
+   "barber",
+   "foam",
+   "face"
+  ],
+  "anchor": "başın merkezi (0,0); yüz sağa bakar",
+  "box": [
+   -130,
+   -115,
+   135,
+   95
+  ],
+  "points": [
+   "cheek",
+   "razor",
+   "chin"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ustura darbesi anı — bıçak yanağı sıyırır, köpük uçar (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "barbershop-fx/scissors-snip",
+  "status": "draft",
+  "desc": "Çapraz berber makası; kesim anında bıçaklar kapanır, kesilen saç teli düşer",
+  "tags": [
+   "makas",
+   "kesim",
+   "berber",
+   "saç",
+   "scissors",
+   "snip",
+   "barber",
+   "cut",
+   "hair",
+   "salon"
+  ],
+  "anchor": "makasın pivotu (0,0); bıçaklar sağa bakar",
+  "box": [
+   -130,
+   -85,
+   135,
+   85
+  ],
+  "points": [
+   "pivot",
+   "tips",
+   "handles"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kesim anı — bıçaklar kapanır, saç teli düşer (0.7 sn)"
+   }
+  }
+ },
+ {
   "name": "battle-fx/armor-crack",
   "status": "draft",
   "desc": "Zırh çatlağı: darbe anında kalkan plakadan yayılan çatlaklar ve fırlayan zırh parçaları",
@@ -7581,6 +7821,254 @@
   }
  },
  {
+  "name": "elevator-fx/button-press",
+  "status": "draft",
+  "desc": "Asansör kat düğmesi; at anında basılır, halka yeşil yanar ve yayılır",
+  "tags": [
+   "asansör",
+   "düğme",
+   "kat",
+   "basma",
+   "panel",
+   "çağırma",
+   "elevator",
+   "button",
+   "press",
+   "floor",
+   "panel",
+   "call"
+  ],
+  "anchor": "panel merkezi (0,0)",
+  "box": [
+   -100,
+   -140,
+   100,
+   140
+  ],
+  "points": [
+   "button",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "düğmeye basılma anı (gömülme 0.15 sn, geri çıkış 0.5 sn)"
+   },
+   "floor": {
+    "type": "number",
+    "default": 5,
+    "desc": "düğmedeki kat numarası (0-9)"
+   }
+  }
+ },
+ {
+  "name": "elevator-fx/cable-sway",
+  "status": "draft",
+  "desc": "Asansör kablosu ve makarası; kablo sarkaç gibi salınır, makara döner",
+  "tags": [
+   "asansör",
+   "kablo",
+   "makara",
+   "salınım",
+   "halat",
+   "kuyu",
+   "elevator",
+   "cable",
+   "pulley",
+   "sway",
+   "rope",
+   "shaft"
+  ],
+  "anchor": "makara merkezi (0,-100)",
+  "box": [
+   -110,
+   -140,
+   110,
+   140
+  ],
+  "points": [
+   "pulley",
+   "hook",
+   "cableMid"
+  ],
+  "params": {
+   "sway": {
+    "type": "number",
+    "default": 1,
+    "desc": "salınım genliği çarpanı (0 durgun, 1 normal)"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "salınım hızı çarpanı"
+   }
+  }
+ },
+ {
+  "name": "elevator-fx/descend-rise",
+  "status": "draft",
+  "desc": "Asansör kabini kuyuda; level kabinin katını belirler, kat işareti yanar",
+  "tags": [
+   "asansör",
+   "kabin",
+   "kuyu",
+   "kat",
+   "iniş",
+   "çıkış",
+   "bina",
+   "elevator",
+   "cabin",
+   "shaft",
+   "floor",
+   "descend",
+   "rise"
+  ],
+  "anchor": "kuyu merkezi (0,0)",
+  "box": [
+   -120,
+   -150,
+   120,
+   150
+  ],
+  "points": [
+   "cabin",
+   "top",
+   "bottom"
+  ],
+  "params": {
+   "level": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "kabin konumu (0 en alt kat, 1 en üst kat)"
+   },
+   "floors": {
+    "type": "number",
+    "default": 4,
+    "desc": "kat işareti sayısı (2-6)"
+   }
+  }
+ },
+ {
+  "name": "elevator-fx/doors-slide",
+  "status": "draft",
+  "desc": "Asansör kapıları; at anında yana kayarak açılır, aradan iç ışık sızar",
+  "tags": [
+   "asansör",
+   "kapı",
+   "kayarak açılma",
+   "kat",
+   "bina",
+   "elevator",
+   "lift",
+   "sliding doors",
+   "floor",
+   "building"
+  ],
+  "anchor": "kapı merkezi (0,0)",
+  "box": [
+   -112,
+   -150,
+   112,
+   150
+  ],
+  "points": [
+   "centre",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kapıların kayarak açılma anı (açılış 0.6 sn, kapanış 0.6 sn)"
+   },
+   "open": {
+    "type": "number",
+    "default": 0,
+    "desc": "elle açıklık (0 kapalı, 1 açık); animasyona eklenir"
+   }
+  }
+ },
+ {
+  "name": "elevator-fx/emergency-stop",
+  "status": "draft",
+  "desc": "Acil durdurma düğmesi; at anında çöker, kırmızı alarm yanıp söner",
+  "tags": [
+   "asansör",
+   "acil",
+   "durdurma",
+   "alarm",
+   "güvenlik",
+   "kırmızı düğme",
+   "elevator",
+   "emergency",
+   "stop",
+   "alarm",
+   "safety",
+   "button"
+  ],
+  "anchor": "düğme merkezi (0,0)",
+  "box": [
+   -110,
+   -130,
+   110,
+   130
+  ],
+  "points": [
+   "button",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "acil durdurmaya basılma anı (çökme 0.12 sn, alarm 1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "elevator-fx/floor-ding",
+  "status": "draft",
+  "desc": "Kat göstergesi ve zili; at anında zil sallanır, halka yayılır, ışık parlar",
+  "tags": [
+   "asansör",
+   "kat",
+   "zil",
+   "gösterge",
+   "ding",
+   "bina",
+   "elevator",
+   "floor indicator",
+   "bell",
+   "ding",
+   "building"
+  ],
+  "anchor": "gösterge merkezi (0,0)",
+  "box": [
+   -110,
+   -130,
+   110,
+   130
+  ],
+  "points": [
+   "bell",
+   "light",
+   "centre"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "zilin çalma anı (salınım 0.9 sn, halka 0.8 sn)"
+   },
+   "floor": {
+    "type": "number",
+    "default": 3,
+    "desc": "gösterilen kat numarası (0-9)"
+   }
+  }
+ },
+ {
   "name": "environment/barrel",
   "status": "draft",
   "desc": "Metal varil; fuel varyantı sarı ikaz şeritli, water varyantı mavi dalga şeritli",
@@ -13229,6 +13717,265 @@
     "type": "time",
     "default": null,
     "desc": "uyarı anı: 0.6 sn sarsıntı + flaş"
+   }
+  }
+ },
+ {
+  "name": "karaoke-fx/crowd-sing",
+  "status": "draft",
+  "desc": "Birlikte şarkı söyleyen kalabalık; ağızlar ritimle açılıp kapanır, gövdeler sallanır",
+  "tags": [
+   "kalabalık",
+   "şarkı",
+   "sing",
+   "karaoke",
+   "koro",
+   "ağız",
+   "sallanma",
+   "crowd",
+   "choir",
+   "singing",
+   "fans"
+  ],
+  "anchor": "zemin (0,0); grubun ortası",
+  "box": [
+   -260,
+   -210,
+   260,
+   12
+  ],
+  "points": [
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "gövde rengi"
+   },
+   "count": {
+    "type": "number",
+    "default": 5,
+    "desc": "kişi sayısı 4–6"
+   }
+  }
+ },
+ {
+  "name": "karaoke-fx/encore-bow",
+  "status": "draft",
+  "desc": "Şarkıcı selam verir; at anında öne eğilir, bekler, sonra doğrulur",
+  "tags": [
+   "selam",
+   "bow",
+   "eğilme",
+   "encore",
+   "alkış",
+   "şarkıcı",
+   "sahne",
+   "teşekkür",
+   "singer",
+   "stage",
+   "applause"
+  ],
+  "anchor": "ayaklar (0,0); zemin",
+  "box": [
+   -120,
+   -230,
+   120,
+   12
+  ],
+  "points": [
+   "head",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kıyafet rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "selam anı: 0.3–1.0 sn eğilme, sonra doğrulma"
+   }
+  }
+ },
+ {
+  "name": "karaoke-fx/lyric-scroll",
+  "status": "draft",
+  "desc": "Şarkı sözleri ekranı; satırlar yukarı kayar, ortadaki satır vurgu rengiyle parlar",
+  "tags": [
+   "şarkı sözleri",
+   "lyrics",
+   "karaoke",
+   "kayan yazı",
+   "ekran",
+   "şarkı",
+   "nakarat",
+   "scroll",
+   "screen",
+   "singing"
+  ],
+  "anchor": "ekran merkezi (0,0)",
+  "box": [
+   -170,
+   -112,
+   170,
+   112
+  ],
+  "points": [
+   "top",
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "ekran çerçeve rengi"
+   },
+   "accent": {
+    "type": "color",
+    "default": "accent",
+    "desc": "aktif satırın vurgu rengi"
+   },
+   "speed": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "kayma hızı 0–1"
+   }
+  }
+ },
+ {
+  "name": "karaoke-fx/mic-echo",
+  "status": "draft",
+  "desc": "El mikrofonu; at anında başından genişleyen yankı halkaları yayılır, boşta hafif sallanır",
+  "tags": [
+   "mikrofon",
+   "yankı",
+   "echo",
+   "karaoke",
+   "şarkı",
+   "ses",
+   "halka",
+   "microphone",
+   "singing",
+   "sound",
+   "ring"
+  ],
+  "anchor": "mikrofon merkezi (0,0); baş yukarıda",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "head",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "mikrofon gövde rengi"
+   },
+   "accent": {
+    "type": "color",
+    "default": "accent",
+    "desc": "yankı halkalarının rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yankı anı: halkalar 0.2–1.5 sn içinde yayılıp söner"
+   }
+  }
+ },
+ {
+  "name": "karaoke-fx/score-pop",
+  "status": "draft",
+  "desc": "Puan rozeti; at anında büyüyerek patlar, ışınlar ve kıvılcımlar saçar",
+  "tags": [
+   "puan",
+   "score",
+   "100",
+   "rozet",
+   "patlama",
+   "pop",
+   "yıldız",
+   "başarı",
+   "karaoke",
+   "star",
+   "badge",
+   "points"
+  ],
+  "anchor": "rozet merkezi (0,0)",
+  "box": [
+   -140,
+   -140,
+   140,
+   140
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "rozet rengi (tek vurgu rengi)"
+   },
+   "score": {
+    "type": "text",
+    "default": "100",
+    "desc": "rozetin üzerindeki puan"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı: rozet büyür, ışınlar 0.2–0.8 sn saçar"
+   }
+  }
+ },
+ {
+  "name": "karaoke-fx/spotlight-bounce",
+  "status": "draft",
+  "desc": "Sahne spot ışığı sarkaç gibi sallanır; ışın ve yerdeki ışık havuzu birlikte zıplar",
+  "tags": [
+   "spot",
+   "ışık",
+   "spotlight",
+   "sahne",
+   "stage",
+   "ışın",
+   "beam",
+   "konser",
+   "karaoke",
+   "sallanma",
+   "light"
+  ],
+  "anchor": "zemin (0,0); armatür tepede",
+  "box": [
+   -230,
+   -175,
+   230,
+   60
+  ],
+  "points": [
+   "fixture",
+   "floor"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "ışın ve havuz rengi (tek vurgu rengi)"
+   },
+   "swing": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "salınım genişliği 0–1"
    }
   }
  },
