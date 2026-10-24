@@ -10927,6 +10927,297 @@
   }
  },
  {
+  "name": "gym-fx/barbell-lift",
+  "status": "draft",
+  "desc": "Halterle omuzdan baş üstüne pres yapan insan figürü (önden); at anında halter yukarı kalkar",
+  "tags": [
+   "halter",
+   "halter kaldırma",
+   "ağırlık kaldırma",
+   "barbell",
+   "weightlifting",
+   "overhead press",
+   "spor salonu",
+   "gym",
+   "fitness"
+  ],
+  "anchor": "ayaklar (0,0); boy ~290 birim, halter genişliği ~300",
+  "box": [
+   -160,
+   -360,
+   160,
+   16
+  ],
+  "points": [
+   "head",
+   "barbell",
+   "handL",
+   "handR",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kaldırma anı — halter 1.2 sn içinde omuzdan baş üstüne kalkıp iner; null ise halter omuzda bekler"
+   }
+  }
+ },
+ {
+  "name": "gym-fx/bench-press",
+  "status": "draft",
+  "desc": "Sehpada yatarak halter iten insan figürü (yandan); rep anında halter göğüsten yukarı kalkar",
+  "tags": [
+   "bench press",
+   "göğüs",
+   "halter",
+   "bench",
+   "sehpa",
+   "ağırlık",
+   "spor salonu",
+   "gym",
+   "fitness"
+  ],
+  "anchor": "zemin (0,0); sehpa üstü y=-95, halter göğüs üstünde dikey hareket eder",
+  "box": [
+   -170,
+   -330,
+   170,
+   16
+  ],
+  "points": [
+   "head",
+   "barbell",
+   "hand",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "neutral",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "rep": {
+    "type": "time",
+    "default": null,
+    "desc": "tekrarın başlangıcı — halter 1.2 sn içinde göğüsten yukarı itilip geri indirilir; null ise halter kollar gergin bekler"
+   }
+  }
+ },
+ {
+  "name": "gym-fx/kettlebell-swing",
+  "status": "draft",
+  "desc": "Kettlebell savuran insan figürü (yandan); her turda gülle bacak arasından göğüs hizasına çıkar",
+  "tags": [
+   "kettlebell",
+   "gülle",
+   "savurma",
+   "kettlebell swing",
+   "ağırlık",
+   "spor salonu",
+   "gym",
+   "fitness",
+   "egzersiz"
+  ],
+  "anchor": "ayaklar (0,0); boy ~290 birim, savrulma yarıçapı ~110",
+  "box": [
+   -150,
+   -330,
+   170,
+   16
+  ],
+  "points": [
+   "head",
+   "kettlebell",
+   "hand",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "swing": {
+    "type": "time",
+    "default": null,
+    "desc": "sallama döngüsünün başlangıcı — 1.0 snlik turlar durmadan tekrarlanır; null ise gülle önde sarkık bekler"
+   }
+  }
+ },
+ {
+  "name": "gym-fx/protein-shake",
+  "status": "draft",
+  "desc": "Protein shaker şişesi; at anında çalkalanır, sıvı dalgalanır ve baloncuklar yükselir",
+  "tags": [
+   "protein",
+   "shaker",
+   "protein shake",
+   "sporcu içeceği",
+   "çalkalama",
+   "shaker bottle",
+   "spor salonu",
+   "gym",
+   "fitness"
+  ],
+  "anchor": "şişe tabanı (0,0); şişe boyu ~190 birim",
+  "box": [
+   -90,
+   -200,
+   90,
+   12
+  ],
+  "points": [
+   "top",
+   "cap",
+   "liquid",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çalkalama anı — 0.8 sn boyunca şişe hızlı sallanır, sıvı sıçrar; null ise sıvı hafif dalgalanır"
+   }
+  }
+ },
+ {
+  "name": "gym-fx/rope-skip",
+  "status": "draft",
+  "desc": "Yandan görünen ip atlayan insan figürü; ip tur başına bir kez baş üstünden ayak altına döner",
+  "tags": [
+   "ip atlama",
+   "atlama ipi",
+   "ip",
+   "rope skipping",
+   "skipping rope",
+   "kardiyo",
+   "cardio",
+   "spor salonu",
+   "gym"
+  ],
+  "anchor": "ayaklar (0,0); boy ~290 birim, ip yarıçapı ~130",
+  "box": [
+   -150,
+   -340,
+   150,
+   14
+  ],
+  "points": [
+   "head",
+   "hand",
+   "feet",
+   "rope"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "skip": {
+    "type": "time",
+    "default": null,
+    "desc": "atlama döngüsünün başlangıcı — 0.9 snlik turlar durmadan tekrarlanır; null ise ip önde sarkık bekler"
+   }
+  }
+ },
+ {
+  "name": "gym-fx/towel-throw",
+  "status": "draft",
+  "desc": "Havlusunu fırlatan insan figürü (önden); at anında havlu dalgalanarak sağa uçar",
+  "tags": [
+   "havlu",
+   "fırlatma",
+   "havlu atma",
+   "towel",
+   "towel throw",
+   "spor salonu",
+   "gym",
+   "fitness",
+   "duş"
+  ],
+  "anchor": "ayaklar (0,0); boy ~290 birim, havlu uçuşu sağa ~180 birim",
+  "box": [
+   -160,
+   -330,
+   200,
+   16
+  ],
+  "points": [
+   "head",
+   "handR",
+   "towel",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ]
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fırlatma anı — 1.6 sn içinde kol savrulur, havlu dalgalanarak uçar; null ise havlu elde bekler"
+   }
+  }
+ },
+ {
   "name": "health-fx-2/cast-bandage",
   "status": "draft",
   "desc": "Alçılı önkol; at anında 6 tur sargı şeridi belirir, sargı rulosu kayar",
@@ -13173,6 +13464,237 @@
     "type": "color",
     "default": "cyan",
     "desc": "sıvı rengi"
+   }
+  }
+ },
+ {
+  "name": "library-fx/book-fall",
+  "status": "draft",
+  "desc": "Rafta duran kitap at anında düşer, dönerek yere yatık konar ve toz kaldırır",
+  "tags": [
+   "kitap",
+   "kütüphane",
+   "düşme",
+   "raf",
+   "book",
+   "library",
+   "fall",
+   "drop",
+   "shelf"
+  ],
+  "anchor": "sahne merkezi (raf ile zemin arası)",
+  "box": [
+   -170,
+   -240,
+   170,
+   170
+  ],
+  "points": [
+   "shelf",
+   "floor",
+   "book"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kitabın düşme anı (0.9 sn: düşüş + sekme + toz)"
+   }
+  }
+ },
+ {
+  "name": "library-fx/bookmark-slide",
+  "status": "draft",
+  "desc": "Açık kitabın sağ sayfasında kurdele ayraç at anında yukarıdan aşağı kayar",
+  "tags": [
+   "kitap",
+   "ayraç",
+   "kütüphane",
+   "sayfa",
+   "okuma",
+   "book",
+   "bookmark",
+   "ribbon",
+   "library",
+   "reading"
+  ],
+  "anchor": "kitap merkezi (iki sayfa arası)",
+  "box": [
+   -170,
+   -125,
+   170,
+   125
+  ],
+  "points": [
+   "top",
+   "bottom",
+   "spine"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ayracın kayma anı (0.8 sn: yukarıdan aşağı kayış)"
+   }
+  }
+ },
+ {
+  "name": "library-fx/bookstack-wobble",
+  "status": "draft",
+  "desc": "Üst üste dizili kitap yığını döngüsel olarak sallanır, üst kitap kayar ama düşmez",
+  "tags": [
+   "kitap",
+   "yığın",
+   "kütüphane",
+   "denge",
+   "sallanma",
+   "book",
+   "stack",
+   "library",
+   "wobble",
+   "balance"
+  ],
+  "anchor": "yığın tabanı (zemin)",
+  "box": [
+   -150,
+   -175,
+   150,
+   35
+  ],
+  "points": [
+   "top",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "wobble": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "sallanma genliği (0–1)"
+   }
+  }
+ },
+ {
+  "name": "library-fx/dust-mote-drift",
+  "status": "draft",
+  "desc": "Kütüphane güneş ışını içinde toz zerreleri döngüsel olarak süzülür ve parıldar",
+  "tags": [
+   "toz",
+   "güneş",
+   "ışın",
+   "kütüphane",
+   "süzülme",
+   "hava",
+   "dust",
+   "sunbeam",
+   "library",
+   "motes",
+   "drift"
+  ],
+  "anchor": "sahne merkezi (ışın ortası)",
+  "box": [
+   -185,
+   -125,
+   185,
+   125
+  ],
+  "points": [
+   "beamTop",
+   "beamBottom"
+  ],
+  "params": {
+   "density": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "toz zerresi yoğunluğu (0–1)"
+   }
+  }
+ },
+ {
+  "name": "library-fx/ladder-roll",
+  "status": "draft",
+  "desc": "Kitaplık merdiveni at anında ray boyunca yana kayar, tekerlekleri döner",
+  "tags": [
+   "merdiven",
+   "kütüphane",
+   "kitaplık",
+   "ray",
+   "tekerlek",
+   "ladder",
+   "library",
+   "shelf",
+   "roll",
+   "bookshelf"
+  ],
+  "anchor": "merdiven merkezi",
+  "box": [
+   -185,
+   -165,
+   185,
+   165
+  ],
+  "points": [
+   "rail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "merdivenin kayma anı (0.9 sn: yana kayış + tekerlek dönüşü)"
+   }
+  }
+ },
+ {
+  "name": "library-fx/stamp-due",
+  "status": "draft",
+  "desc": "Kütüphane mührü at anında kartın üstüne basılır, kırmızı mühür izi ve sarsıntı oluşur",
+  "tags": [
+   "mühür",
+   "damga",
+   "kütüphane",
+   "kart",
+   "iade",
+   "stamp",
+   "library",
+   "due",
+   "card",
+   "ink"
+  ],
+  "anchor": "kart merkezi",
+  "box": [
+   -170,
+   -145,
+   170,
+   145
+  ],
+  "points": [
+   "card",
+   "stamp"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "mührün basma anı (0.5 sn: iniş + iz + sarsıntı)"
    }
   }
  },
@@ -30193,6 +30715,250 @@
     "type": "time",
     "default": null,
     "desc": "esneme döngüsünün başlangıcı — yana eğilme (1.5 sn); null ise dik duruş"
+   }
+  }
+ },
+ {
+  "name": "zoo-fx/elephant-spray",
+  "status": "draft",
+  "desc": "Yandan duran fil; püskürtme anında hortumunu kaldırır ve su damlaları saçar",
+  "tags": [
+   "fil",
+   "hortum",
+   "su püskürtme",
+   "hayvanat bahçesi",
+   "elephant",
+   "trunk",
+   "spray",
+   "water",
+   "zoo",
+   "safari"
+  ],
+  "anchor": "ayaklar (0,0); boy ~195 birim",
+  "box": [
+   -185,
+   -205,
+   205,
+   10
+  ],
+  "points": [
+   "head",
+   "trunk",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "su püskürtme anı — hortum kalkar, damlalar saçar (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "zoo-fx/giraffe-neck",
+  "status": "draft",
+  "desc": "Yandan duran benekli zürafa; boynu tilt ile öne eğilir, geriye kalkar",
+  "tags": [
+   "zürafa",
+   "boyun",
+   "benek",
+   "hayvanat bahçesi",
+   "giraffe",
+   "neck",
+   "spots",
+   "zoo",
+   "safari",
+   "tall"
+  ],
+  "anchor": "ayaklar (0,0); baş yüksekliği ~260 birim",
+  "box": [
+   -155,
+   -315,
+   205,
+   10
+  ],
+  "points": [
+   "head",
+   "muzzle",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "tilt": {
+    "type": "number",
+    "default": 0,
+    "desc": "boyun eğimi (-1 geriye, 0 dik, 1 öne eğik)"
+   }
+  }
+ },
+ {
+  "name": "zoo-fx/keeper-feed",
+  "status": "draft",
+  "desc": "Şapkalı hayvanat bahçesi bakıcısı; besleme anında kolunu savurup yem tanelerini kaba saçar",
+  "tags": [
+   "bakıcı",
+   "besleme",
+   "hayvanat bahçesi",
+   "yem",
+   "kova",
+   "keeper",
+   "feed",
+   "zookeeper",
+   "zoo",
+   "feeding",
+   "bucket"
+  ],
+  "anchor": "ayaklar (0,0); boy ~215 birim",
+  "box": [
+   -145,
+   -225,
+   165,
+   10
+  ],
+  "points": [
+   "head",
+   "hand",
+   "bowl"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "besleme anı — kol savrulur, yem taneleri kaba uçar (1.0 sn)"
+   }
+  }
+ },
+ {
+  "name": "zoo-fx/lion-roar",
+  "status": "draft",
+  "desc": "Yandan duran aslan; kükreme anında başını geriye atar, ağzını açar, ses dalgaları yayılır",
+  "tags": [
+   "aslan",
+   "kükreme",
+   "hayvanat bahçesi",
+   "vahşi",
+   "kral",
+   "lion",
+   "roar",
+   "zoo",
+   "wild",
+   "king",
+   "safari"
+  ],
+  "anchor": "patiler (0,0); boy ~200 birim",
+  "box": [
+   -175,
+   -215,
+   195,
+   10
+  ],
+  "points": [
+   "head",
+   "mouth",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kükreme anı — ağız açılır, baş geriye atılır, ses dalgaları yayılır (1.0 sn)"
+   }
+  }
+ },
+ {
+  "name": "zoo-fx/monkey-swing",
+  "status": "draft",
+  "desc": "Daldan iki eliyle sarkan maymun; sarkaç gibi döngüsel sallanır, kuyruğu kıvrılır",
+  "tags": [
+   "maymun",
+   "salıncak",
+   "dal",
+   "sallanma",
+   "hayvanat bahçesi",
+   "monkey",
+   "swing",
+   "branch",
+   "jungle",
+   "zoo",
+   "ape"
+  ],
+  "anchor": "dal hattı (y=-230); maymun daldan sarkar",
+  "box": [
+   -185,
+   -245,
+   185,
+   15
+  ],
+  "points": [
+   "hands",
+   "head",
+   "tail"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "sallanma hızı/genliği (0-1)"
+   }
+  }
+ },
+ {
+  "name": "zoo-fx/penguin-waddle",
+  "status": "draft",
+  "desc": "Dik duran penguen; gövdesi sağa sola yalpalar, ayakları sırayla adım atar",
+  "tags": [
+   "penguen",
+   "paytak",
+   "yürüme",
+   "buz",
+   "hayvanat bahçesi",
+   "penguin",
+   "waddle",
+   "walk",
+   "ice",
+   "zoo",
+   "bird"
+  ],
+  "anchor": "ayaklar (0,0); boy ~185 birim",
+  "box": [
+   -95,
+   -195,
+   95,
+   10
+  ],
+  "points": [
+   "head",
+   "beak",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "yürüme hızı (0-1)"
    }
   }
  }
