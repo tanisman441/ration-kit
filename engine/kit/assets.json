@@ -10652,6 +10652,255 @@
   }
  },
  {
+  "name": "history-fx/cave-fire",
+  "status": "draft",
+  "desc": "Mağara duvarı önünde kamp ateşi; alevler titrer, duvarda ateşin gölgesi oynar",
+  "tags": [
+   "mağara",
+   "ateş",
+   "kamp",
+   "tarih",
+   "taş devri",
+   "gölge",
+   "ocak",
+   "cave",
+   "fire",
+   "campfire",
+   "prehistoric",
+   "shadow"
+  ],
+  "anchor": "mağara tabanı (0,0)",
+  "box": [
+   -148,
+   -188,
+   148,
+   24
+  ],
+  "points": [
+   "top",
+   "fire"
+  ],
+  "params": {
+   "intensity": {
+    "type": "number",
+    "default": 0.7,
+    "desc": "ateş yoğunluğu 0–1 (0 = sönük köz)"
+   },
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "history-fx/column-topple",
+  "status": "draft",
+  "desc": "Antik yivli sütun; at anında sağa devrilir, tabanda toz bulutu ve moloz bırakır",
+  "tags": [
+   "sütun",
+   "antik",
+   "yıkım",
+   "tarih",
+   "yunan",
+   "roma",
+   "deprem",
+   "harabe",
+   "column",
+   "ancient",
+   "ruin",
+   "topple",
+   "collapse"
+  ],
+  "anchor": "kaide merkezi (0,0)",
+  "box": [
+   -135,
+   -205,
+   245,
+   32
+  ],
+  "points": [
+   "base",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "devrilme anı (0.9 sn hızlanan düşüş + toz bulutu + moloz)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "history-fx/flag-plant",
+  "status": "draft",
+  "desc": "Tarihi sancak; at anında direk toprağa saplanır, bayrak kumaşı rüzgarda dalgalanır",
+  "tags": [
+   "sancak",
+   "bayrak",
+   "tarih",
+   "fetih",
+   "direk",
+   "rüzgar",
+   "zafer",
+   "flag",
+   "banner",
+   "history",
+   "plant",
+   "conquest",
+   "victory"
+  ],
+  "anchor": "zemin (0,0)",
+  "box": [
+   -152,
+   -205,
+   152,
+   24
+  ],
+  "points": [
+   "top",
+   "ground"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "saplanma anı (0.45 sn: direk iner + toz + sancak açılır)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red"
+   }
+  }
+ },
+ {
+  "name": "history-fx/pyramid-rise",
+  "status": "draft",
+  "desc": "Piramit silueti; build 0→1 ile katmanlar alttan üste yükselir, kum rüzgarı çizgileri eser",
+  "tags": [
+   "piramit",
+   "mısır",
+   "tarih",
+   "antik",
+   "çöl",
+   "inşaat",
+   "giza",
+   "pyramid",
+   "egypt",
+   "history",
+   "desert",
+   "ancient"
+  ],
+  "anchor": "zemin merkezi (0,0)",
+  "box": [
+   -168,
+   -188,
+   168,
+   30
+  ],
+  "points": [
+   "apex",
+   "base"
+  ],
+  "params": {
+   "build": {
+    "type": "number",
+    "default": 1,
+    "desc": "inşaat ilerlemesi 0–1 (katmanlar alttan üste yükselir)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "history-fx/quill-write",
+  "status": "draft",
+  "desc": "Tüy kalemle yazı yazma; write 0→1 mürekkep satırını ilerletir, kalem ucu boşta sallanır",
+  "tags": [
+   "tüy kalem",
+   "yazı",
+   "kağıt",
+   "tarih",
+   "mürekkep",
+   "imza",
+   "fırça",
+   "quill",
+   "writing",
+   "paper",
+   "ink",
+   "history",
+   "feather"
+  ],
+  "anchor": "kağıt merkezi (0,0)",
+  "box": [
+   -152,
+   -118,
+   152,
+   118
+  ],
+  "points": [
+   "lineend",
+   "inkwell"
+  ],
+  "params": {
+   "write": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "yazının ilerlemesi 0–1 (mürekkep satırı soldan sağa)"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   }
+  }
+ },
+ {
+  "name": "history-fx/scroll-unroll",
+  "status": "draft",
+  "desc": "Antika parşömen tomarı; at anında soldan sağa açılır, mürekkep satırlar ve mühür belirir",
+  "tags": [
+   "parşömen",
+   "tomar",
+   "tarih",
+   "antik",
+   "yazı",
+   "mühür",
+   "fırça",
+   "scroll",
+   "parchment",
+   "history",
+   "ancient",
+   "manuscript"
+  ],
+  "anchor": "tomarın merkezi (0,0); açılma soldan sağa",
+  "box": [
+   -178,
+   -64,
+   178,
+   64
+  ],
+  "points": [
+   "tip",
+   "roll"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tomarın açılma anı (1.2 sn: rulo açılışı + satırlar + mühür)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
   "name": "home/bed",
   "status": "draft",
   "desc": "Yandan tek kişilik yatak: başlık, yastık ve nefes alan yorgan",
@@ -16788,6 +17037,259 @@
   }
  },
  {
+  "name": "pirate-fx/anchor-drop",
+  "status": "draft",
+  "desc": "Gemi çapası: at anında yukarıdan düşer, dibe vuruşta su halkası ve toz yayılır; boşta hafif sallanır",
+  "tags": [
+   "çapa",
+   "gemi",
+   "demir",
+   "düşme",
+   "korsan",
+   "deniz",
+   "anchor",
+   "drop",
+   "ship",
+   "pirate",
+   "sea",
+   "splash"
+  ],
+  "anchor": "çapa tacı (dibe değen orta nokta)",
+  "box": [
+   -120,
+   -230,
+   120,
+   110
+  ],
+  "points": [
+   "top",
+   "bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "çapa demiri rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "düşüş anı: 0–0.2 sn düşer, 0.2–1.0 sn su halkası"
+   }
+  }
+ },
+ {
+  "name": "pirate-fx/cannon-fire",
+  "status": "draft",
+  "desc": "Eski kara topu: at anında namlu flaşı, geri tepme ve yayılan duman bulutu; boşta fitil parlıyor",
+  "tags": [
+   "top",
+   "ateş",
+   "korsan",
+   "gülle",
+   "duman",
+   "namlu",
+   "savaş",
+   "cannon",
+   "fire",
+   "pirate",
+   "smoke",
+   "muzzle",
+   "ship"
+  ],
+  "anchor": "kızak tabanı merkezi (tekerleklerin yere değdiği nokta)",
+  "box": [
+   -170,
+   -110,
+   200,
+   100
+  ],
+  "points": [
+   "muzzle",
+   "breech"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "namlu rengi (demir)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ateş anı: flaş (0–0.18 sn), geri tepme, duman (0–1.1 sn)"
+   }
+  }
+ },
+ {
+  "name": "pirate-fx/chest-open",
+  "status": "draft",
+  "desc": "Hazine sandığı: at anında kapak yana açılır, altın ışık ve parıltılar yükselir; kilit boşta parlar",
+  "tags": [
+   "sandık",
+   "hazine",
+   "altın",
+   "korsan",
+   "ganimet",
+   "kilit",
+   "chest",
+   "treasure",
+   "gold",
+   "pirate",
+   "loot",
+   "lock"
+  ],
+  "anchor": "taban merkezi",
+  "box": [
+   -140,
+   -170,
+   140,
+   100
+  ],
+  "points": [
+   "lock",
+   "inside",
+   "lid"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2",
+    "desc": "sandık gövdesi (ahşap)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kapak açılma anı: 0–0.5 sn açılır, altın ışık yükselir"
+   }
+  }
+ },
+ {
+  "name": "pirate-fx/ship-rock",
+  "status": "draft",
+  "desc": "Korsan yelkenlisi: dalgalar üzerinde sürekli salınıyor (rot + y), yelkenler hafif kabarıyor, dalgalar akıyor",
+  "tags": [
+   "gemi",
+   "korsan gemisi",
+   "yelkenli",
+   "dalga",
+   "yelken",
+   "deniz",
+   "salınım",
+   "ship",
+   "pirate",
+   "sail",
+   "wave",
+   "sea",
+   "galleon",
+   "rocking"
+  ],
+  "anchor": "su hattı (0,0)",
+  "box": [
+   -185,
+   -205,
+   185,
+   70
+  ],
+  "points": [
+   "mast",
+   "bow",
+   "keel"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2",
+    "desc": "gövde rengi (ahşap)"
+   },
+   "sail": {
+    "type": "color",
+    "default": "dim",
+    "desc": "yelken kumaşı"
+   }
+  }
+ },
+ {
+  "name": "pirate-fx/skull-flag",
+  "status": "draft",
+  "desc": "Kuru kafa desenli korsan bayrağı: kumaş rüzgarda sürekli döngülü dalgalanır, desen dalgayı takip eder",
+  "tags": [
+   "korsan bayrağı",
+   "kuru kafa",
+   "jolly roger",
+   "bayrak",
+   "rüzgar",
+   "gemi",
+   "skull",
+   "pirate",
+   "flag",
+   "jolly roger",
+   "banner",
+   "wind"
+  ],
+  "anchor": "direk tabanı",
+  "box": [
+   -115,
+   -135,
+   115,
+   110
+  ],
+  "points": [
+   "top",
+   "fly"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink",
+    "desc": "bayrak kumaşı"
+   }
+  }
+ },
+ {
+  "name": "pirate-fx/spyglass-zoom",
+  "status": "draft",
+  "desc": "Pirinç dürbün: zoom yükseldikçe boru uzar, mercek halkaları ve görüş dairesi genişler; mercek parlıyor",
+  "tags": [
+   "dürbün",
+   "teleskop",
+   "korsan",
+   "zoom",
+   "mercek",
+   "gözlem",
+   "pirinç",
+   "spyglass",
+   "telescope",
+   "pirate",
+   "zoom",
+   "lens",
+   "brass"
+  ],
+  "anchor": "dürbün gövde merkezi",
+  "box": [
+   -145,
+   -90,
+   200,
+   90
+  ],
+  "points": [
+   "lens",
+   "eyepiece"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "pirinç gövde rengi (tek vurgu)"
+   },
+   "zoom": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "büyütme 0–1: boru uzar, halkalar ve görüş dairesi büyür"
+   }
+  }
+ },
+ {
   "name": "pointer-fx/cursor-click-pop",
   "status": "draft",
   "desc": "Fare imleci; click anında uçtan patlayan halka ve okta hafif çökme",
@@ -22015,6 +22517,265 @@
     "type": "time",
     "default": null,
     "desc": "çalma anı (ses çizgileri + titreşim 0.3 sn)"
+   }
+  }
+ },
+ {
+  "name": "spy-fx/briefcase-handoff",
+  "status": "draft",
+  "desc": "Koyu evrak çantası: kapağı açılıyor, içinden parlayan belgeler yükseliyor",
+  "tags": [
+   "çanta",
+   "evrak",
+   "belge",
+   "ajan",
+   "takas",
+   "gizli",
+   "briefcase",
+   "documents",
+   "spy",
+   "handoff",
+   "secret"
+  ],
+  "anchor": "çanta gövdesi merkezi (0,0)",
+  "box": [
+   -140,
+   -225,
+   140,
+   120
+  ],
+  "points": [
+   "handle",
+   "latch",
+   "document",
+   "corner_bl"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kapak açılma anı (0.9 sn: kapak döner, belgeler yükselir)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink",
+    "desc": "çanta ana rengi"
+   }
+  }
+ },
+ {
+  "name": "spy-fx/disguise-swap",
+  "status": "draft",
+  "desc": "Ajan yüz maskesi: bir göz kırpmasıyla yüz değişiyor, bıyık beliriyor",
+  "tags": [
+   "maske",
+   "yüz",
+   "kılık",
+   "değiştirme",
+   "ajan",
+   "gizli",
+   "bıyık",
+   "mask",
+   "face",
+   "disguise",
+   "spy",
+   "morph"
+  ],
+  "anchor": "yüz merkezi (0,0)",
+  "box": [
+   -110,
+   -130,
+   110,
+   130
+  ],
+  "points": [
+   "eyes",
+   "nose",
+   "mouth",
+   "forehead"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kılık değiştirme anı: 0.5 sn morph + tarama çizgisi"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink",
+    "desc": "maske ana rengi"
+   }
+  }
+ },
+ {
+  "name": "spy-fx/drone-launch",
+  "status": "draft",
+  "desc": "Küçük casus dron: pervaneler dönerek yerden kalkıyor, havada süzülüyor",
+  "tags": [
+   "dron",
+   "uçuş",
+   "kalkış",
+   "ajan",
+   "gözetleme",
+   "pervane",
+   "drone",
+   "launch",
+   "spy",
+   "surveillance",
+   "uav"
+  ],
+  "anchor": "dron gövde merkezi (0,0) — kalkış öncesi konum",
+  "box": [
+   -150,
+   -130,
+   150,
+   130
+  ],
+  "points": [
+   "camera",
+   "pad",
+   "rotor_l",
+   "rotor_r"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kalkış anı: dron 0.8 snde yükselir, toz bulutu çıkar"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "dron gövde rengi"
+   }
+  }
+ },
+ {
+  "name": "spy-fx/laser-grid-breach",
+  "status": "draft",
+  "desc": "Kırmızı lazer ızgara duvarı: bir lazer çizgisi kesiliyor, kesik uçta kıvılcımlar uçuşuyor",
+  "tags": [
+   "lazer",
+   "ızgara",
+   "güvenlik",
+   "kesik",
+   "ajan",
+   "sızma",
+   "laser",
+   "grid",
+   "security",
+   "breach",
+   "spy",
+   "cut"
+  ],
+  "anchor": "ızgara merkezi (0,0)",
+  "box": [
+   -160,
+   -95,
+   160,
+   95
+  ],
+  "points": [
+   "cut",
+   "emitter_left",
+   "emitter_right"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kesilme anı: orta lazer kesilir, kıvılcım (0.6 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "lazer rengi"
+   }
+  }
+ },
+ {
+  "name": "spy-fx/lockpick-twist",
+  "status": "draft",
+  "desc": "Asma kilit ve maymuncuk: maymuncuk dönüyor, tam açılınca tık parıltısı çıkıyor",
+  "tags": [
+   "kilit",
+   "maymuncuk",
+   "açma",
+   "ajan",
+   "hırsız",
+   "gizli",
+   "lock",
+   "lockpick",
+   "pick",
+   "spy",
+   "unlock",
+   "keyhole"
+  ],
+  "anchor": "kilit gövdesi merkezi (0,0)",
+  "box": [
+   -120,
+   -120,
+   120,
+   120
+  ],
+  "points": [
+   "keyhole",
+   "pick_handle",
+   "shackle"
+  ],
+  "params": {
+   "open": {
+    "type": "number",
+    "default": 0,
+    "desc": "0–1: maymuncuk dönüşü; 1 = kilit açık (tık parıltısı)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kilit gövde rengi"
+   }
+  }
+ },
+ {
+  "name": "spy-fx/signal-jam",
+  "status": "draft",
+  "desc": "Vericiden yayılan sinyal dalgaları: karıştırma anında glitch ile bozulup temizleniyor",
+  "tags": [
+   "sinyal",
+   "dalga",
+   "karıştırma",
+   "glitch",
+   "verici",
+   "ajan",
+   "signal",
+   "wave",
+   "jam",
+   "glitch",
+   "spy",
+   "transmitter"
+  ],
+  "anchor": "verici direk tabanı (0,0)",
+  "box": [
+   -150,
+   -190,
+   150,
+   110
+  ],
+  "points": [
+   "source",
+   "wave_edge",
+   "dish"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "karıştırma anı: 0.45 sn glitch, sonra temiz sinyal döner"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "sinyal dalga rengi"
    }
   }
  },
