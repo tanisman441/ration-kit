@@ -1440,6 +1440,265 @@
   }
  },
  {
+  "name": "broadcast-fx/applause-meter",
+  "status": "draft",
+  "desc": "Tepki ölçer: level kadar hücre yanar, üstte alkış dalgaları level ile büyür, dolu hücreler nabız atar",
+  "tags": [
+   "alkış",
+   "tepki",
+   "ölçer",
+   "seyirci",
+   "beğeni",
+   "applause",
+   "meter",
+   "reaction",
+   "audience",
+   "cheer",
+   "hype",
+   "live"
+  ],
+  "anchor": "ölçerin merkezi (0,0)",
+  "box": [
+   -170,
+   -110,
+   170,
+   110
+  ],
+  "points": [
+   "bar",
+   "top"
+  ],
+  "params": {
+   "level": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "0–1: alkış şiddeti (yanan hücre + dalga genliği)"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel"
+   }
+  }
+ },
+ {
+  "name": "broadcast-fx/comment-fly",
+  "status": "draft",
+  "desc": "Uçan yorum: at anında sol alttan fırlayıp kavisle sağ üste uçar, iz bırakır, varınca kalp atar",
+  "tags": [
+   "yorum",
+   "uçan yorum",
+   "balon",
+   "mesaj",
+   "canlı sohbet",
+   "comment",
+   "flying comment",
+   "chat",
+   "bubble",
+   "live chat",
+   "reaction"
+  ],
+  "anchor": "uçuş yolunun merkezi (0,0)",
+  "box": [
+   -200,
+   -120,
+   200,
+   120
+  ],
+  "points": [
+   "start",
+   "end",
+   "bubble"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "uçuş anı (1.2 sn kavisli uçuş + kalp)"
+   },
+   "text": {
+    "type": "text",
+    "default": "Harika yayın!",
+    "desc": "balondaki yorum yazısı"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   }
+  }
+ },
+ {
+  "name": "broadcast-fx/going-live",
+  "status": "draft",
+  "desc": "Yayına geçiş: at öncesinde soluk BEKLEME rozeti, at anında halka patlamasıyla CANLI rozeti belirir, sonra nokta nabız atar",
+  "tags": [
+   "canlı",
+   "yayına geçiş",
+   "going live",
+   "canlı yayın",
+   "başlıyor",
+   "live",
+   "broadcast",
+   "on air",
+   "starting",
+   "premiere"
+  ],
+  "anchor": "rozetin merkezi (0,0)",
+  "box": [
+   -190,
+   -110,
+   190,
+   110
+  ],
+  "points": [
+   "center",
+   "dot"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yayına geçiş anı (0.6 sn halka patlaması + rozet pop)"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel"
+   }
+  }
+ },
+ {
+  "name": "broadcast-fx/lower-third-pop",
+  "status": "draft",
+  "desc": "Alt bant kartı: at anında alttan fırlayıp esneyerek oturur, vurgu çizgisi süpürür, sonra hafif nefes alır",
+  "tags": [
+   "alt bant",
+   "lower third",
+   "isimlik",
+   "yazı kartı",
+   "konuk",
+   "altyazı",
+   "lower-third",
+   "name card",
+   "caption",
+   "broadcast",
+   "guest"
+  ],
+  "anchor": "kartın merkezi (0,0)",
+  "box": [
+   -230,
+   -75,
+   230,
+   75
+  ],
+  "points": [
+   "center",
+   "accent"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kartın belirme anı (0.5 sn pop + çizgi süpürme)"
+   },
+   "name": {
+    "type": "text",
+    "default": "STÜDYO KONUĞU",
+    "desc": "karttaki isim satırı"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel"
+   }
+  }
+ },
+ {
+  "name": "broadcast-fx/mic-on-air",
+  "status": "draft",
+  "desc": "Canlı yayın mikrofonu: üstte ON AIR tabelası, on yükseldikçe tabela ve lamba parlar, ses dalgaları canlanır",
+  "tags": [
+   "mikrofon",
+   "canlı yayın",
+   "on air",
+   "yayında",
+   "stüdyo",
+   "radyo",
+   "microphone",
+   "live",
+   "on air",
+   "broadcast",
+   "studio",
+   "radio"
+  ],
+  "anchor": "mikrofon gövdesinin merkezi (0,0)",
+  "box": [
+   -140,
+   -140,
+   140,
+   115
+  ],
+  "points": [
+   "mic",
+   "sign",
+   "stand"
+  ],
+  "params": {
+   "on": {
+    "type": "number",
+    "default": 1,
+    "desc": "0–1: yayın açık mı (tabela parlaklığı + ses dalgası şiddeti)"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   }
+  }
+ },
+ {
+  "name": "broadcast-fx/ticker-scroll",
+  "status": "draft",
+  "desc": "Haber bandı: solda nabız atan CANLI rozeti, sağda speed ile hızlanan kayan haber yazısı",
+  "tags": [
+   "haber bandı",
+   "kayan yazı",
+   "son dakika",
+   "canlı",
+   "ticker",
+   "haber",
+   "news ticker",
+   "scrolling",
+   "breaking news",
+   "live",
+   "banner"
+  ],
+  "anchor": "bandın merkezi (0,0)",
+  "box": [
+   -270,
+   -42,
+   270,
+   42
+  ],
+  "points": [
+   "left",
+   "right",
+   "badge"
+  ],
+  "params": {
+   "speed": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "0–1: kayma hızı"
+   },
+   "text": {
+    "type": "text",
+    "default": "SON DAKİKA  •  STÜDYODA CANLI YAYIN BAŞLADI  •  GÜNDEM SICAK  •  ",
+    "desc": "akan haber yazısı"
+   },
+   "color": {
+    "type": "color",
+    "default": "panel"
+   }
+  }
+ },
+ {
   "name": "camping-fx/campfire-sparks",
   "status": "draft",
   "desc": "Kamp ateşi: taş halka içinde titreyen alevler, kor nabzı ve sürekli yükselen kıvılcımlar",
@@ -20595,6 +20854,247 @@
   }
  },
  {
+  "name": "shop-display-fx/coupon-flutter",
+  "status": "draft",
+  "desc": "Havada süzülen, kenarı çırpınan indirim kuponu; döngüsel salınım ve uçuş çizgileriyle",
+  "tags": [
+   "kupon",
+   "indirim",
+   "uçuşan",
+   "fırsat",
+   "çek",
+   "coupon",
+   "voucher",
+   "flutter",
+   "discount",
+   "flying",
+   "deal"
+  ],
+  "anchor": "kuponun merkezi",
+  "box": [
+   -130,
+   -90,
+   130,
+   90
+  ],
+  "points": [
+   "left",
+   "right",
+   "centre"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "shop-display-fx/gift-wrap",
+  "status": "draft",
+  "desc": "Hediye kutusu; paketleme anında kurdele sarılır ve fiyonk belirir",
+  "tags": [
+   "hediye",
+   "paket",
+   "kurdele",
+   "fiyonk",
+   "kutu",
+   "sürpriz",
+   "gift",
+   "wrap",
+   "ribbon",
+   "bow",
+   "present",
+   "box"
+  ],
+  "anchor": "kutunun tabanı (0, 95)",
+  "box": [
+   -120,
+   -110,
+   120,
+   110
+  ],
+  "points": [
+   "bow",
+   "lid",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "paketleme anı: kurdele sarılır (0.8 sn) + fiyonk patlar (1.4 sn)"
+   }
+  }
+ },
+ {
+  "name": "shop-display-fx/neon-open",
+  "status": "draft",
+  "desc": "Duvara asılı, neon tüplü AÇIK tabelası; parlaklığı ayarlanır ve boşta hafifçe titrer",
+  "tags": [
+   "açık",
+   "tabela",
+   "neon",
+   "dükkan",
+   "vitrin",
+   "mağaza",
+   "open",
+   "neon",
+   "sign",
+   "shop",
+   "store",
+   "display"
+  ],
+  "anchor": "tabelanın merkezi",
+  "box": [
+   -160,
+   -95,
+   160,
+   95
+  ],
+  "points": [
+   "top",
+   "centre",
+   "cord"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "on": {
+    "type": "number",
+    "default": 1,
+    "desc": "neon parlaklığı (0 = sönük, 1 = tam parlak)"
+   }
+  }
+ },
+ {
+  "name": "shop-display-fx/open-sign-swing",
+  "status": "draft",
+  "desc": "Zincirle asılı, sallanan OPEN tabelası; kenar ışıkları döngüsel olarak sırayla yanar",
+  "tags": [
+   "açık",
+   "tabela",
+   "sallanan",
+   "asılı",
+   "dükkan",
+   "vitrin",
+   "open",
+   "sign",
+   "swing",
+   "hanging",
+   "shop",
+   "store"
+  ],
+  "anchor": "asma noktasının merkezi (0, -110)",
+  "box": [
+   -140,
+   -110,
+   140,
+   110
+  ],
+  "points": [
+   "pivot",
+   "top",
+   "centre"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "green"
+   }
+  }
+ },
+ {
+  "name": "shop-display-fx/price-pop",
+  "status": "draft",
+  "desc": "İpten sarkan fiyat etiketi; belirme anında zıplar ve etrafına yıldızlar saçar",
+  "tags": [
+   "fiyat",
+   "etiket",
+   "indirim",
+   "belirme",
+   "pop",
+   "price",
+   "tag",
+   "discount",
+   "sale",
+   "shop",
+   "offer"
+  ],
+  "anchor": "etiketin merkezi",
+  "box": [
+   -120,
+   -110,
+   120,
+   110
+  ],
+  "points": [
+   "hole",
+   "tag",
+   "string"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "belirme anı: etiket zıplayarak büyür + yıldız patlaması (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "shop-display-fx/shelf-shine",
+  "status": "draft",
+  "desc": "Üzerinde üç ürün olan mağaza rafı; parlama anında ışık soldan sağa süpürür",
+  "tags": [
+   "raf",
+   "vitrin",
+   "ürün",
+   "parlama",
+   "mağaza",
+   "dükkan",
+   "shelf",
+   "shine",
+   "display",
+   "products",
+   "shop",
+   "store"
+  ],
+  "anchor": "raf tablasının merkezi (0, 70)",
+  "box": [
+   -150,
+   -110,
+   150,
+   110
+  ],
+  "points": [
+   "shelf",
+   "left",
+   "mid",
+   "right"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "parlama anı: ışık bandı soldan sağa süpürür + ürünler sırayla parlar (1.3 sn)"
+   }
+  }
+ },
+ {
   "name": "social-fx/comment-typing",
   "status": "draft",
   "desc": "Speech bubble with three dots jumping in a loop, like someone is typing",
@@ -28367,6 +28867,277 @@
     "type": "time",
     "default": null,
     "desc": "ateş anı: namlu flaşı + geri tepme + dürbün parlaması"
+   }
+  }
+ },
+ {
+  "name": "weather-alert-fx/flood-warning",
+  "status": "draft",
+  "desc": "Ünlemli sel uyarı üçgeni altında kabaran su; at anında 1 sn süren su kabarması ve sıçrama",
+  "tags": [
+   "sel",
+   "su baskını",
+   "uyarı",
+   "taşkın",
+   "tehlike",
+   "flood",
+   "flood warning",
+   "water",
+   "danger",
+   "alert"
+  ],
+  "anchor": "uyarı üçgeni merkezi (0,-60); su alt bölümde",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "top",
+   "waterline",
+   "bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "water": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sel anı: 1.0 sn su kabarması + sıçrayan damlalar"
+   }
+  }
+ },
+ {
+  "name": "weather-alert-fx/frost-spread",
+  "status": "draft",
+  "desc": "Merkezden dışa yayılan 6 kollu buz kristali; at anında 1.2 sn uzayan don dalları",
+  "tags": [
+   "don",
+   "buz",
+   "soğuk",
+   "kristal",
+   "kar",
+   "frost",
+   "freeze",
+   "ice",
+   "crystal",
+   "cold",
+   "snowflake"
+  ],
+  "anchor": "kristal merkezi (0,0)",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "centre",
+   "tip",
+   "edge"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "core": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "don yayılma anı: 1.2 sn dalların uzaması + kıvılcım patlaması"
+   }
+  }
+ },
+ {
+  "name": "weather-alert-fx/storm-cell",
+  "status": "draft",
+  "desc": "Dönen spiral kollu fırtına hücresi; at anında çakan şimşek ve yayılan kırmızı uyarı halkası",
+  "tags": [
+   "fırtına",
+   "şiddetli hava",
+   "uyarı",
+   "hücre",
+   "radar",
+   "yağmur",
+   "storm",
+   "storm cell",
+   "severe weather",
+   "warning",
+   "radar"
+  ],
+  "anchor": "hücre merkezi (0,0)",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "centre",
+   "edge",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "alert": {
+    "type": "color",
+    "default": "red"
+   },
+   "bolt": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "uyarı anı: 0.2 sn flaş + 1.2 sn yayılan halka ve yağmur patlaması"
+   }
+  }
+ },
+ {
+  "name": "weather-alert-fx/temp-rise",
+  "status": "draft",
+  "desc": "Yükselen sıcaklık termometresi; level cıva yüksekliği, ısı dalgaları sürekli yukarı süzülür",
+  "tags": [
+   "sıcaklık",
+   "termometre",
+   "sıcak",
+   "ısı",
+   "yükseliş",
+   "temperature",
+   "thermometer",
+   "heat",
+   "hot",
+   "rising"
+  ],
+  "anchor": "termometre gövdesi merkezi; hazne alt kısımda (y=110)",
+  "box": [
+   -110,
+   -170,
+   110,
+   170
+  ],
+  "points": [
+   "top",
+   "bulb",
+   "mercury"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "heat": {
+    "type": "color",
+    "default": "red"
+   },
+   "level": {
+    "type": "number",
+    "default": 0.6,
+    "desc": "sıcaklık seviyesi 0–1: cıva yüksekliği"
+   }
+  }
+ },
+ {
+  "name": "weather-alert-fx/uv-pulse",
+  "status": "draft",
+  "desc": "Mor UV güneşi; at anında 1.5 sn yayılan 3 nabız halkası ve parlayan çekirdek",
+  "tags": [
+   "uv",
+   "güneş",
+   "ultraviyole",
+   "nabız",
+   "uyarı",
+   "ışın",
+   "sun",
+   "ultraviolet",
+   "pulse",
+   "radiation",
+   "warning"
+  ],
+  "anchor": "güneş merkezi (0,0)",
+  "box": [
+   -150,
+   -150,
+   150,
+   150
+  ],
+  "points": [
+   "centre",
+   "ray",
+   "edge"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "purple"
+   },
+   "core": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "UV nabız anı: 1.5 sn 3 halka yayılımı + çekirdek parlaması"
+   }
+  }
+ },
+ {
+  "name": "weather-alert-fx/wind-arrow-gust",
+  "status": "draft",
+  "desc": "Sağa bakan kalın rüzgar oku; 2.4 sn döngüde ileri fırlayan ok ve arkadan akan esinti çizgileri",
+  "tags": [
+   "rüzgar",
+   "esinti",
+   "ok",
+   "fırtına",
+   "hava",
+   "wind",
+   "gust",
+   "arrow",
+   "breeze",
+   "storm"
+  ],
+  "anchor": "ok gövdesi merkezi (0,0); ok ucu sağda",
+  "box": [
+   -170,
+   -90,
+   170,
+   90
+  ],
+  "points": [
+   "tip",
+   "tail",
+   "centre"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "gust": {
+    "type": "color",
+    "default": "cyan"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "döngü hızı çarpanı 0.5–2"
    }
   }
  },
