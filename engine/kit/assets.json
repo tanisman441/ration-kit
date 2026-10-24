@@ -1440,6 +1440,264 @@
   }
  },
  {
+  "name": "birthday-fx/balloon-pop",
+  "status": "draft",
+  "desc": "Havada sallanan balon; patlama anında flaş ve parçalar saçılır, ipi sarkar",
+  "tags": [
+   "balon",
+   "patlama",
+   "doğum günü",
+   "parti",
+   "kutlama",
+   "balloon",
+   "pop",
+   "burst",
+   "birthday",
+   "party",
+   "celebration"
+  ],
+  "anchor": "balon düğümü (0,0)",
+  "box": [
+   -120,
+   -165,
+   120,
+   140
+  ],
+  "points": [
+   "top",
+   "knot",
+   "string"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "balon rengi (tek vurgu rengi)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "patlama anı — 0.15 sn flaş, 0.7 sn parça saçılması"
+   }
+  }
+ },
+ {
+  "name": "birthday-fx/cake-slice",
+  "status": "draft",
+  "desc": "Yuvarlak doğum günü pastası; bıçak inip bir dilimi keser, dilim yana kayar",
+  "tags": [
+   "pasta",
+   "dilim",
+   "bıçak",
+   "kesmek",
+   "doğum günü",
+   "servis",
+   "cake",
+   "slice",
+   "knife",
+   "cut",
+   "birthday",
+   "serve"
+  ],
+  "anchor": "pasta tabanı (0,0)",
+  "box": [
+   -160,
+   -170,
+   175,
+   30
+  ],
+  "points": [
+   "top",
+   "slice",
+   "knife"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "pasta kreması rengi (tek vurgu rengi)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kesme anı — 0.25 sn bıçak inişi, 0.7 sn dilim kayması"
+   }
+  }
+ },
+ {
+  "name": "birthday-fx/candle-blow",
+  "status": "draft",
+  "desc": "Üç mumlu doğum günü pastası; üfleme anında alevler söner, fitillerden duman yükselir",
+  "tags": [
+   "doğum günü",
+   "pasta",
+   "mum",
+   "üfleme",
+   "dilek",
+   "kutlama",
+   "birthday",
+   "cake",
+   "candle",
+   "blow",
+   "wish",
+   "party"
+  ],
+  "anchor": "pasta tabanı (0,0)",
+  "box": [
+   -150,
+   -205,
+   150,
+   30
+  ],
+  "points": [
+   "flame1",
+   "flame2",
+   "flame3",
+   "cake"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "pasta kreması rengi (tek vurgu rengi)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "üfleme anı — alevler 0.3 sn içinde söner, ardından 1.2 sn duman yükselir"
+   }
+  }
+ },
+ {
+  "name": "birthday-fx/party-hat-toss",
+  "status": "draft",
+  "desc": "Pompomlu çizgili parti şapkası; fırlatma anında dönerek havalanır ve yerine düşer",
+  "tags": [
+   "parti şapkası",
+   "şapka",
+   "fırlatma",
+   "doğum günü",
+   "kutlama",
+   "pompon",
+   "party hat",
+   "toss",
+   "birthday",
+   "party",
+   "celebration",
+   "cone"
+  ],
+  "anchor": "şapka tabanı (0,0)",
+  "box": [
+   -130,
+   -200,
+   130,
+   40
+  ],
+  "points": [
+   "tip",
+   "pompom",
+   "brim"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "şapka rengi (tek vurgu rengi)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fırlatma anı — 1.2 sn havada dönüş, sonra iniş ve küçük sekme"
+   }
+  }
+ },
+ {
+  "name": "birthday-fx/present-open",
+  "status": "draft",
+  "desc": "Kurdeleli hediye kutusu; açılış anında kapağı uçar, içinden ışık ve kıvılcımlar saçılır",
+  "tags": [
+   "hediye",
+   "kutu",
+   "açmak",
+   "sürpriz",
+   "doğum günü",
+   "kurdele",
+   "present",
+   "gift",
+   "open",
+   "surprise",
+   "birthday",
+   "ribbon"
+  ],
+  "anchor": "kutu tabanı (0,0)",
+  "box": [
+   -140,
+   -150,
+   140,
+   60
+  ],
+  "points": [
+   "lid",
+   "inside",
+   "bow"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "purple",
+    "desc": "kutu rengi (tek vurgu rengi)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "açılış anı — 0.35 sn kapak uçuşu, 0.9 sn ışık ve kıvılcım"
+   }
+  }
+ },
+ {
+  "name": "birthday-fx/wish-sparkle",
+  "status": "draft",
+  "desc": "Mumlu küçük kek; etrafında döngüsel yanıp sönen dört köşeli dilek kıvılcımları",
+  "tags": [
+   "dilek",
+   "kıvılcım",
+   "parıltı",
+   "mum",
+   "doğum günü",
+   "sihir",
+   "wish",
+   "sparkle",
+   "twinkle",
+   "candle",
+   "birthday",
+   "magic"
+  ],
+  "anchor": "kek tabanı (0,0)",
+  "box": [
+   -150,
+   -160,
+   150,
+   60
+  ],
+  "points": [
+   "flame",
+   "sparkle",
+   "cake"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow",
+    "desc": "kıvılcım ve alev rengi (tek vurgu rengi)"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "dilek anı — 0.8 sn büyük yıldız patlaması ve halka"
+   }
+  }
+ },
+ {
   "name": "broadcast-fx/applause-meter",
   "status": "draft",
   "desc": "Tepki ölçer: level kadar hücre yanar, üstte alkış dalgaları level ile büyür, dolu hücreler nabız atar",
@@ -9040,6 +9298,248 @@
     "type": "number",
     "default": 1,
     "desc": "0.5–1.5: sütun büyüklüğü"
+   }
+  }
+ },
+ {
+  "name": "fishing-fx/bobber-dip",
+  "status": "draft",
+  "desc": "Suda duran şamandıra balık ısırınca suyun altına dalıp geri çıkar",
+  "tags": [
+   "şamandıra",
+   "balık",
+   "ısırma",
+   "olta",
+   "su",
+   "bobber",
+   "bite",
+   "fishing",
+   "dip",
+   "water"
+  ],
+  "anchor": "su yüzeyi (0,0); şamandıra yüzeyde durur",
+  "box": [
+   -110,
+   -80,
+   110,
+   80
+  ],
+  "points": [
+   "bobber",
+   "water"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ısırma anı (0.6 sn, şamandıra batar ve geri çıkar)"
+   },
+   "color": {
+    "type": "color",
+    "default": "red",
+    "desc": "şamandıra üst rengi"
+   }
+  }
+ },
+ {
+  "name": "fishing-fx/cast-line",
+  "status": "draft",
+  "desc": "Olta kamışı savrulur, misina açılır ve şamandıra suya düşer",
+  "tags": [
+   "olta",
+   "balık tutma",
+   "misina",
+   "şamandıra",
+   "atış",
+   "fishing",
+   "cast",
+   "rod",
+   "line",
+   "bobber"
+  ],
+  "anchor": "sahne merkezi (0,0); kamış sapı sol altta, su yüzeyi sağ altta",
+  "box": [
+   -160,
+   -110,
+   160,
+   110
+  ],
+  "points": [
+   "tip",
+   "bobber",
+   "butt"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "olta atma anı (0.8 sn, misina savrulur şamandıra suya düşer)"
+   },
+   "color": {
+    "type": "color",
+    "default": "ink",
+    "desc": "kamış rengi"
+   }
+  }
+ },
+ {
+  "name": "fishing-fx/fish-jump",
+  "status": "draft",
+  "desc": "Balık sudan yay çizerek sıçrar, havada döner ve diğer tarafta suya düşer",
+  "tags": [
+   "balık",
+   "sıçrama",
+   "zıplama",
+   "su",
+   "olta",
+   "fish",
+   "jump",
+   "leap",
+   "splash",
+   "water"
+  ],
+  "anchor": "sahne merkezi (0,0); su yüzeyi y=40",
+  "box": [
+   -150,
+   -115,
+   150,
+   95
+  ],
+  "points": [
+   "takeoff",
+   "peak",
+   "landing"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sıçrama anı (1.0 sn, balık yay çizerek sudan çıkar ve iner)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "balık rengi"
+   }
+  }
+ },
+ {
+  "name": "fishing-fx/net-scoop",
+  "status": "draft",
+  "desc": "Balık ağı suya dalar, balığı kepçeyle yakalayıp yukarı kaldırır",
+  "tags": [
+   "ağ",
+   "kepçe",
+   "balık",
+   "yakalama",
+   "olta",
+   "net",
+   "scoop",
+   "fishing",
+   "catch",
+   "fish"
+  ],
+  "anchor": "sahne merkezi (0,0); sap sol altta, ağ halkası sağ üstte",
+  "box": [
+   -140,
+   -110,
+   140,
+   110
+  ],
+  "points": [
+   "hoop",
+   "handle_end"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kepçe anı (0.8 sn, ağ suya dalar balıkla kalkar)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "ağ halkası rengi"
+   }
+  }
+ },
+ {
+  "name": "fishing-fx/reel-in",
+  "status": "draft",
+  "desc": "Olta makarası kolu döner, misina sarılır ve balık makaraya çekilir",
+  "tags": [
+   "makara",
+   "olta",
+   "sarma",
+   "balık",
+   "misina",
+   "reel",
+   "fishing",
+   "crank",
+   "wind",
+   "catch"
+  ],
+  "anchor": "makara merkezi (0,0); balık sağda",
+  "box": [
+   -140,
+   -90,
+   140,
+   90
+  ],
+  "points": [
+   "spool",
+   "line_end"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sarma anı (1.0 sn, kol hızlı döner balık yaklaşır)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "makara göbeği rengi"
+   }
+  }
+ },
+ {
+  "name": "fishing-fx/splash-catch",
+  "status": "draft",
+  "desc": "Su sıçrayarak patlar, balık havaya fırlar ve yakalanmış halde asılı kalır",
+  "tags": [
+   "sıçrama",
+   "balık",
+   "yakalama",
+   "su",
+   "olta",
+   "splash",
+   "catch",
+   "fish",
+   "water",
+   "leap"
+  ],
+  "anchor": "sahne merkezi (0,0); su yüzeyi y=30, balık zirvede (0,-55)",
+  "box": [
+   -130,
+   -120,
+   130,
+   100
+  ],
+  "points": [
+   "splash",
+   "fish"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yakalama anı (0.8 sn, su patlar balık yükselir)"
+   },
+   "color": {
+    "type": "color",
+    "default": "cyan",
+    "desc": "balık rengi"
    }
   }
  },
@@ -29901,6 +30401,242 @@
     "type": "number",
     "default": 0.7,
     "desc": "hortum şiddeti 0–1: yalpa genliği ve huni genişliği"
+   }
+  }
+ },
+ {
+  "name": "wedding-fx/bouquet-toss",
+  "status": "draft",
+  "desc": "Gelin buketi fırlatır: at anında buket havaya fırlar, döner ve süzülerek düşer",
+  "tags": [
+   "buket",
+   "düğün",
+   "gelin",
+   "fırlatmak",
+   "çiçek",
+   "bouquet",
+   "wedding",
+   "bride",
+   "toss",
+   "flowers"
+  ],
+  "anchor": "gelinin ayakları (0,0); buket at anında yukarı fırlar",
+  "box": [
+   -170,
+   -400,
+   170,
+   40
+  ],
+  "points": [
+   "bouquet",
+   "hand",
+   "head"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "buketin fırlatıldığı an"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "wedding-fx/cake-cut",
+  "status": "draft",
+  "desc": "Üç katlı düğün pastası: çift bıçağı birlikte tutar, at anında bıçak pastayı keser",
+  "tags": [
+   "pasta",
+   "düğün",
+   "kesmek",
+   "bıçak",
+   "kutlama",
+   "cake",
+   "wedding",
+   "cut",
+   "knife",
+   "celebration"
+  ],
+  "anchor": "pasta standının tabanı (0,0); bıçak sağ üstten gelir",
+  "box": [
+   -190,
+   -320,
+   190,
+   40
+  ],
+  "points": [
+   "knife",
+   "cake",
+   "topper"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "bıçağın pastayı kestiği an"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "wedding-fx/confetti-shower",
+  "status": "draft",
+  "desc": "Yeni evli çiftin üstüne konfeti yağar: at anında patlama, sonra süzülen renkli yağmur",
+  "tags": [
+   "konfeti",
+   "düğün",
+   "kutlama",
+   "yağmur",
+   "çift",
+   "confetti",
+   "wedding",
+   "celebration",
+   "couple",
+   "shower"
+  ],
+  "anchor": "çiftin ayakları (0,0); konfeti tepeden aşağı yağar",
+  "box": [
+   -210,
+   -340,
+   210,
+   40
+  ],
+  "points": [
+   "couple",
+   "top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "konfeti patlamasının anı"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "wedding-fx/first-dance",
+  "status": "draft",
+  "desc": "Yeni evli çift ilk dansı yapar: döngüsel salınım ve süzülen notalarla yavaş vals",
+  "tags": [
+   "dans",
+   "düğün",
+   "ilk dans",
+   "vals",
+   "çift",
+   "romantik",
+   "dance",
+   "wedding",
+   "waltz",
+   "couple",
+   "romantic"
+  ],
+  "anchor": "çiftin ayakları (0,0); 2.4 sn döngüyle salınır",
+  "box": [
+   -190,
+   -380,
+   190,
+   40
+  ],
+  "points": [
+   "heads",
+   "hands",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "happy",
+    "values": [
+     "happy",
+     "neutral"
+    ]
+   }
+  }
+ },
+ {
+  "name": "wedding-fx/ring-exchange",
+  "status": "draft",
+  "desc": "Yüzük takma anı: damadın eli gelinin parmağına altın yüzüğü takar, at anında ışıltı parlar",
+  "tags": [
+   "yüzük",
+   "düğün",
+   "evlilik",
+   "takmak",
+   "nişan",
+   "ring",
+   "wedding",
+   "marriage",
+   "exchange"
+  ],
+  "anchor": "ellerin merkezi (0,0); gelinin eli soldan, damadın eli sağ üstten gelir",
+  "box": [
+   -180,
+   -140,
+   180,
+   140
+  ],
+  "points": [
+   "ring",
+   "hand"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "yüzüğün parmağa takıldığı an"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "wedding-fx/sparkler-exit",
+  "status": "draft",
+  "desc": "Çift maytaplı koridordan çıkar: maytaplar döngüsel kıvılcım saçar, çift yürüyerek ilerler",
+  "tags": [
+   "maytap",
+   "düğün",
+   "çıkış",
+   "kıvılcım",
+   "koridor",
+   "sparkler",
+   "wedding",
+   "exit",
+   "spark",
+   "aisle"
+  ],
+  "anchor": "çiftin ayakları (0,0); maytaplar iki yanda ellerde tutulur",
+  "box": [
+   -210,
+   -360,
+   210,
+   40
+  ],
+  "points": [
+   "couple",
+   "sparklerL",
+   "sparklerR"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
    }
   }
  },
