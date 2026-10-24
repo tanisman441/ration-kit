@@ -948,6 +948,237 @@
   }
  },
  {
+  "name": "art-fx/brush-stroke",
+  "status": "draft",
+  "desc": "Boya fırçası soldan sağa uzayan dalgalı bir boya izi çeker",
+  "tags": [
+   "fırça",
+   "boya",
+   "resim",
+   "iz",
+   "sanat",
+   "brush",
+   "paint",
+   "stroke",
+   "painting",
+   "art"
+  ],
+  "anchor": "iz bandının merkezi (0,0)",
+  "box": [
+   -175,
+   -150,
+   175,
+   115
+  ],
+  "points": [
+   "stroke_start",
+   "stroke_end"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "boya rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "fırça darbesi anı (0.9 sn: iz uzar)"
+   }
+  }
+ },
+ {
+  "name": "art-fx/canvas-flip",
+  "status": "draft",
+  "desc": "Ahşap çerçeveli tuval; flip anında dikey eksende döner, boştayken süzülür",
+  "tags": [
+   "tuval",
+   "kanvas",
+   "resim",
+   "tablo",
+   "çerçeve",
+   "sanat",
+   "canvas",
+   "painting",
+   "frame",
+   "art",
+   "flip"
+  ],
+  "anchor": "tuval merkezi (0,0)",
+  "box": [
+   -130,
+   -150,
+   130,
+   150
+  ],
+  "points": [
+   "topleft",
+   "center"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "flip anı (0.7 sn: dikey eksende tam tur)"
+   }
+  }
+ },
+ {
+  "name": "art-fx/chisel-hit",
+  "status": "draft",
+  "desc": "Çekiç keskiye vurur; kıvılcım ve taş parçaları saçar, taşta çatlak açılır",
+  "tags": [
+   "keski",
+   "çekiç",
+   "taş",
+   "oyma",
+   "heykel",
+   "zanaat",
+   "chisel",
+   "hammer",
+   "stone",
+   "carve",
+   "sculpture",
+   "craft"
+  ],
+  "anchor": "taş bloğun taban merkezi (0,0)",
+  "box": [
+   -140,
+   -235,
+   140,
+   115
+  ],
+  "points": [
+   "hit",
+   "chisel_top"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "vuruş anı (0.18 sn salınım + 0.55 sn kıvılcım)"
+   }
+  }
+ },
+ {
+  "name": "art-fx/gallery-spotlight",
+  "status": "draft",
+  "desc": "Spot ışığıyla aydınlanan çerçeveli tablo; ışık açılır ve hafifçe salınır",
+  "tags": [
+   "galeri",
+   "spot",
+   "tablo",
+   "sergi",
+   "ışık",
+   "müze",
+   "sanat",
+   "gallery",
+   "spotlight",
+   "painting",
+   "frame",
+   "exhibition",
+   "museum"
+  ],
+  "anchor": "çerçeve merkezi (0,0)",
+  "box": [
+   -170,
+   -196,
+   170,
+   130
+  ],
+  "points": [
+   "frame_top",
+   "picture",
+   "lamp"
+  ],
+  "params": {
+   "on": {
+    "type": "number",
+    "default": 1,
+    "desc": "ışık seviyesi (0-1: açılış + salınım genliği)"
+   }
+  }
+ },
+ {
+  "name": "art-fx/paint-splat",
+  "status": "draft",
+  "desc": "Patlayarak büyüyen boya lekesi; damlalar fırlayıp düşer, halka yayılır",
+  "tags": [
+   "boya",
+   "sıçrama",
+   "leke",
+   "damla",
+   "sanat",
+   "paint",
+   "splat",
+   "splash",
+   "droplet",
+   "art"
+  ],
+  "anchor": "leke merkezi (0,18)",
+  "box": [
+   -150,
+   -130,
+   150,
+   130
+  ],
+  "points": [
+   "center"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "boya rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sıçrama anı (0.7 sn: patlama + damlalar)"
+   }
+  }
+ },
+ {
+  "name": "art-fx/palette-spin",
+  "status": "draft",
+  "desc": "Boya topaklı ressam paleti; spin kadar döner, boştayken hafif sallanır",
+  "tags": [
+   "palet",
+   "ressam",
+   "boya",
+   "renk",
+   "sanat",
+   "palette",
+   "painter",
+   "paint",
+   "colors",
+   "art"
+  ],
+  "anchor": "palet merkezi (0,0)",
+  "box": [
+   -160,
+   -130,
+   160,
+   130
+  ],
+  "points": [
+   "center",
+   "edge"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "accent",
+    "desc": "ana boya topağının rengi"
+   },
+   "spin": {
+    "type": "number",
+    "default": 0,
+    "desc": "dönüş miktarı (0-1: tam tur)"
+   }
+  }
+ },
+ {
   "name": "battle-fx/armor-crack",
   "status": "draft",
   "desc": "Zırh çatlağı: darbe anında kalkan plakadan yayılan çatlaklar ve fırlayan zırh parçaları",
@@ -4753,6 +4984,263 @@
    "color": {
     "type": "color",
     "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "courtroom-fx/evidence-present",
+  "status": "draft",
+  "desc": "Delil kutusu; at anında öne uzatılırcasına pop-in ile belirir",
+  "tags": [
+   "delil",
+   "kanıt",
+   "dosya",
+   "kutu",
+   "mahkeme",
+   "evidence",
+   "box",
+   "file",
+   "court",
+   "present",
+   "proof"
+  ],
+  "anchor": "kutu tabanı (0,70)",
+  "box": [
+   -150,
+   -130,
+   150,
+   120
+  ],
+  "points": [
+   "top",
+   "label"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "kutu rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sunuş anı (pop-in + toz halkası)"
+   }
+  }
+ },
+ {
+  "name": "courtroom-fx/gavel-bang",
+  "status": "draft",
+  "desc": "Hâkim tokmağı; at anında vurur, darbe dalgası ve blok titreşimi çıkarır",
+  "tags": [
+   "tokmak",
+   "vuruş",
+   "mahkeme",
+   "hâkim",
+   "hüküm",
+   "karar",
+   "gavel",
+   "court",
+   "judge",
+   "verdict",
+   "bang"
+  ],
+  "anchor": "vuruş noktası (0,0) — blok üst yüzeyi",
+  "box": [
+   -180,
+   -210,
+   180,
+   120
+  ],
+  "points": [
+   "strike",
+   "grip"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "tokmak rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "vuruş anı (iniş + dalga + titreşim)"
+   }
+  }
+ },
+ {
+  "name": "courtroom-fx/objection-point",
+  "status": "draft",
+  "desc": "İtiraz eden el; at anında fırlayıp yukarı işaret eder, ünlem efektleri patlar",
+  "tags": [
+   "itiraz",
+   "el",
+   "işaret",
+   "parmak",
+   "mahkeme",
+   "objection",
+   "point",
+   "hand",
+   "finger",
+   "court",
+   "raise",
+   "protest"
+  ],
+  "anchor": "bilek çevresi (0,-30)",
+  "box": [
+   -150,
+   -220,
+   150,
+   170
+  ],
+  "points": [
+   "tip",
+   "wrist"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "el rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "itiraz anı (elin fırlayışı + ünlemler)"
+   }
+  }
+ },
+ {
+  "name": "courtroom-fx/scales-tip",
+  "status": "draft",
+  "desc": "Adalet terazisi; tilt ile kefeler eğilir, zincirler dikey salınır",
+  "tags": [
+   "terazi",
+   "adalet",
+   "denge",
+   "tartı",
+   "mahkeme",
+   "hukuk",
+   "scales",
+   "justice",
+   "balance",
+   "court",
+   "law"
+  ],
+  "anchor": "kaide tabanı (0,44)",
+  "box": [
+   -195,
+   -240,
+   195,
+   60
+  ],
+  "points": [
+   "panL",
+   "panR",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "terazi rengi"
+   },
+   "tilt": {
+    "type": "number",
+    "default": 0,
+    "desc": "kefe eğimi (-1..1)"
+   }
+  }
+ },
+ {
+  "name": "courtroom-fx/verdict-stamp",
+  "status": "draft",
+  "desc": "Hüküm mührü; at anında kağıda basılır, kırmızı mürekkep izi bırakır",
+  "tags": [
+   "mühür",
+   "hüküm",
+   "karar",
+   "damga",
+   "onay",
+   "mahkeme",
+   "kaşe",
+   "stamp",
+   "verdict",
+   "seal",
+   "court",
+   "approve"
+  ],
+  "anchor": "kağıt üst yüzeyi (0,20)",
+  "box": [
+   -160,
+   -230,
+   160,
+   130
+  ],
+  "points": [
+   "plate",
+   "seal"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "mühür rengi"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "basılış anı (iniş + mürekkep izi)"
+   }
+  }
+ },
+ {
+  "name": "courtroom-fx/witness-sweat",
+  "status": "draft",
+  "desc": "Gergin tanık başı; alından döngüsel olarak ter damlası süzülür",
+  "tags": [
+   "tanık",
+   "ter",
+   "sinir",
+   "stres",
+   "gergin",
+   "mahkeme",
+   "ifade",
+   "witness",
+   "sweat",
+   "nervous",
+   "stress",
+   "court",
+   "anxiety"
+  ],
+  "anchor": "boyun tabanı (0,-120)",
+  "box": [
+   -125,
+   -335,
+   125,
+   -110
+  ],
+  "points": [
+   "head",
+   "sweat"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim",
+    "desc": "figür rengi"
+   },
+   "mood": {
+    "type": "enum",
+    "default": "surprised",
+    "values": [
+     "happy",
+     "neutral",
+     "sad",
+     "surprised"
+    ],
+    "desc": "yüz ifadesi"
    }
   }
  },
@@ -18348,6 +18836,262 @@
    "color": {
     "type": "color",
     "default": "yellow"
+   }
+  }
+ },
+ {
+  "name": "restaurant-fx/bill-fold",
+  "status": "draft",
+  "desc": "Tepsideki adisyonun katlanması; katlama anında üst yarının kıvrılıp kapanması",
+  "tags": [
+   "adisyon",
+   "hesap",
+   "fatura",
+   "katlama",
+   "restoran",
+   "tepsi",
+   "ödeme",
+   "bill",
+   "check",
+   "fold",
+   "restaurant bill",
+   "receipt"
+  ],
+  "anchor": "tepsi merkezi (0,24); adisyon katlama çizgisi (0,-24)",
+  "box": [
+   -150,
+   -150,
+   150,
+   90
+  ],
+  "points": [
+   "crease",
+   "paper_top",
+   "tray",
+   "total"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "katlama anı (üst yarı kıvrılır, ~0.9 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "restaurant-fx/chef-toss",
+  "status": "draft",
+  "desc": "Şefin tavada malzeme atıp tutması; atış, parabolik uçuş ve inişte buhar patlaması",
+  "tags": [
+   "tava",
+   "şef",
+   "atıp tutma",
+   "wok",
+   "yemek pişirme",
+   "ocak",
+   "alev",
+   "chef",
+   "pan toss",
+   "flipping",
+   "wok toss",
+   "cooking"
+  ],
+  "anchor": "tava gövdesi merkezi (0,0); sap sağa uzanır",
+  "box": [
+   -200,
+   -190,
+   200,
+   90
+  ],
+  "points": [
+   "pan",
+   "handle_tip",
+   "apex",
+   "fire",
+   "food"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "atış anı (malzeme havalanır, 1.2 sn sonra tavaya düşer)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "restaurant-fx/napkin-fold",
+  "status": "draft",
+  "desc": "Ayakta duran katlanmış peçete; katlanma derecesi animasyonlu, zarif salınım",
+  "tags": [
+   "peçete",
+   "katlama",
+   "peçete katlama",
+   "restoran",
+   "masa düzeni",
+   "şık sunum",
+   "napkin",
+   "napkin fold",
+   "table setting",
+   "restaurant decor"
+  ],
+  "anchor": "peçete tabanı (0,44); katlama sırtı yukarı yükselir",
+  "box": [
+   -135,
+   -165,
+   135,
+   65
+  ],
+  "points": [
+   "ridge",
+   "base_left",
+   "base_right",
+   "table"
+  ],
+  "params": {
+   "fold": {
+    "type": "number",
+    "default": 0.8,
+    "desc": "0-1: katlanma derecesi (düz → dik çadır formu)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "restaurant-fx/order-bell",
+  "status": "draft",
+  "desc": "Tezgâh üstünde pirinç servis zili; çalma anında titreme ve yayılan ses dalgaları",
+  "tags": [
+   "zil",
+   "servis zili",
+   "restoran",
+   "garson",
+   "sipariş hazır",
+   "tezgâh",
+   "bell",
+   "service bell",
+   "order bell",
+   "restaurant counter"
+  ],
+  "anchor": "tezgâh üstü (0,0); zil tabanı y=0",
+  "box": [
+   -170,
+   -140,
+   170,
+   60
+  ],
+  "points": [
+   "button",
+   "dome",
+   "base_left",
+   "base_right",
+   "counter"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "zil çalma anı (titreme + ses dalgaları, ~0.9 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "restaurant-fx/plate-serve",
+  "status": "draft",
+  "desc": "Garson kolunun tepsiyle tabak sunuşu; sunuş anında yükselme pozu ve kıvılcım",
+  "tags": [
+   "tepsi",
+   "tabak sunuşu",
+   "garson",
+   "servis",
+   "restoran",
+   "yemek servisi",
+   "serve",
+   "serving tray",
+   "plate serve",
+   "waiter",
+   "restaurant service"
+  ],
+  "anchor": "tepsi merkezi (0,0); kol soldan girer",
+  "box": [
+   -200,
+   -160,
+   200,
+   90
+  ],
+  "points": [
+   "tray",
+   "plate",
+   "food",
+   "hand"
+  ],
+  "params": {
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sunuş anı (tepsi yükselir, tabak takdim edilir, ~0.8 sn)"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "restaurant-fx/wine-pour",
+  "status": "draft",
+  "desc": "Eğik şişeden kadehe akan şarap; akış miktarı ve kadeh doluluğu animasyonlu",
+  "tags": [
+   "şarap",
+   "kadeh",
+   "şişe",
+   "dökme",
+   "restoran",
+   "içecek",
+   "sommelier",
+   "wine",
+   "pour",
+   "wine glass",
+   "bottle pour",
+   "restaurant"
+  ],
+  "anchor": "kadeh merkezi (62,0); şişe ağzı (-72,-116)",
+  "box": [
+   -175,
+   -175,
+   175,
+   105
+  ],
+  "points": [
+   "lip",
+   "rim",
+   "wine_surface",
+   "stem",
+   "base"
+  ],
+  "params": {
+   "pour": {
+    "type": "number",
+    "default": 0.55,
+    "desc": "0-1: sıvı akış miktarı ve kadeh doluluğu"
+   },
+   "color": {
+    "type": "color",
+    "default": "dim"
    }
   }
  },
