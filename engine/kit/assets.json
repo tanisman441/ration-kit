@@ -5244,6 +5244,257 @@
   }
  },
  {
+  "name": "coast-fx/anchor-chain",
+  "status": "draft",
+  "desc": "Gemiden sarkan çapa zinciri; bırakıldığı anda çapa iner, suya dalar ve sıçrama halkaları yayılır",
+  "tags": [
+   "çapa",
+   "zincir",
+   "gemi",
+   "deniz",
+   "demir",
+   "anchor",
+   "chain",
+   "ship",
+   "sea",
+   "splash",
+   "drop"
+  ],
+  "anchor": "su yüzeyi (0,0); zincir üstü y ~-105, çapa dalış sonrası y ~75",
+  "box": [
+   -150,
+   -110,
+   150,
+   110
+  ],
+  "points": [
+   "surface",
+   "anchor",
+   "ship"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çapa bırakma anı — zincir iner, çapa suya dalar (1.0 sn)"
+   }
+  }
+ },
+ {
+  "name": "coast-fx/beam-sweep",
+  "status": "draft",
+  "desc": "Kayalık üstünde çizgili deniz feneri; sarı ışın döngüsel olarak döner, denizde ışık izi bırakır",
+  "tags": [
+   "deniz feneri",
+   "fener",
+   "ışın",
+   "sahil",
+   "deniz",
+   "gece",
+   "lighthouse",
+   "beam",
+   "coast",
+   "sea",
+   "night",
+   "sweep"
+  ],
+  "anchor": "fener kulesi tabanı (0,0); lamba y ~-78, kayalık tabanı y ~95",
+  "box": [
+   -150,
+   -110,
+   150,
+   110
+  ],
+  "points": [
+   "lamp",
+   "beam",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "ışın dönüş hızı çarpanı (1 = tam tur ~4 sn)"
+   }
+  }
+ },
+ {
+  "name": "coast-fx/buoy-bob",
+  "status": "draft",
+  "desc": "Kırmızı-beyaz şamandıra dalgada yükselip alçalır, yana yatar; tepesindeki lamba ritmik yanıp söner",
+  "tags": [
+   "şamandıra",
+   "dalga",
+   "deniz",
+   "sahil",
+   "işaret",
+   "lamba",
+   "buoy",
+   "wave",
+   "sea",
+   "coast",
+   "float",
+   "beacon"
+  ],
+  "anchor": "su yüzeyi (0,0); şamandıra gövdesi y -30..45, lamba y ~-58",
+  "box": [
+   -150,
+   -110,
+   150,
+   110
+  ],
+  "points": [
+   "lamp",
+   "top",
+   "waterline"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "red"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "dalga hızı çarpanı (1 = tam salınım ~3 sn)"
+   }
+  }
+ },
+ {
+  "name": "coast-fx/foghorn-blast",
+  "status": "draft",
+  "desc": "İskele direği üstünde pirinç sis düdüğü; öttüğü anda borudan ses halkaları yayılır, düdük titrer",
+  "tags": [
+   "sis düdüğü",
+   "düdük",
+   "sis",
+   "ses",
+   "iskele",
+   "gemi",
+   "foghorn",
+   "horn",
+   "sound",
+   "pier",
+   "fog",
+   "blast"
+  ],
+  "anchor": "düdük borusu ağzı (0,0); direk tabanı y ~95, deniz y ~70",
+  "box": [
+   -150,
+   -110,
+   150,
+   110
+  ],
+  "points": [
+   "horn",
+   "mouth",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "sis düdüğü ötme anı — ses halkaları yayılır (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "coast-fx/gull-circle",
+  "status": "draft",
+  "desc": "Beyaz martı gökyüzünde daire çizerek uçar; kanatlar ritmik çırpar, arkada süzülen iki martı daha var",
+  "tags": [
+   "martı",
+   "kuş",
+   "uçuş",
+   "daire",
+   "gökyüzü",
+   "deniz",
+   "seagull",
+   "bird",
+   "fly",
+   "circle",
+   "sky",
+   "coast"
+  ],
+  "anchor": "uçuş dairesinin merkezi (0,0); martı yörünge yarıçapı ~70",
+  "box": [
+   -150,
+   -110,
+   150,
+   110
+  ],
+  "points": [
+   "centre",
+   "gull",
+   "sky"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "uçuş hızı çarpanı (1 = tam tur ~5 sn)"
+   }
+  }
+ },
+ {
+  "name": "coast-fx/tide-rush",
+  "status": "draft",
+  "desc": "Kumsala vuran gelgit dalgası; dalga yükselir, kıyıya çarpar ve beyaz köpük kumsala doğru yayılır",
+  "tags": [
+   "gelgit",
+   "dalga",
+   "kıyı",
+   "kumsal",
+   "köpük",
+   "deniz",
+   "tide",
+   "wave",
+   "shore",
+   "beach",
+   "foam",
+   "sea"
+  ],
+  "anchor": "kıyı çizgisi (0,0); deniz üst yarı, kumsal alt yarı (y 0..110)",
+  "box": [
+   -150,
+   -110,
+   150,
+   110
+  ],
+  "points": [
+   "shore",
+   "crest",
+   "foam"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "dalga vurma anı — dalga yükselir, kıyıya çarpar, köpük yayılır (1.4 sn)"
+   }
+  }
+ },
+ {
   "name": "combat-fx/block-shield",
   "status": "draft",
   "desc": "Blok kalkanı: block anında altıgen kalkan flaşı ve dalgalanma halkası, boşta hafif titreme",
@@ -7245,6 +7496,257 @@
     "type": "color",
     "default": "dim",
     "desc": "kuru dal rengi"
+   }
+  }
+ },
+ {
+  "name": "detective-fx/clue-pin",
+  "status": "draft",
+  "desc": "Mantar panoda sallanan ipucu notu; `at` anında kırmızı iğne yukarıdan düşüp notu panoya tutturur",
+  "tags": [
+   "ipucu",
+   "iğne",
+   "pano",
+   "not",
+   "dedektif",
+   "soruşturma",
+   "clue",
+   "pin",
+   "board",
+   "note",
+   "detective",
+   "investigation"
+  ],
+  "anchor": "ipucu notunun merkezi (0,0); pano y ~-95..95",
+  "box": [
+   -140,
+   -110,
+   140,
+   110
+  ],
+  "points": [
+   "pin",
+   "note",
+   "board"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "iğneleme anı — iğne düşer, not sabitlenir, halka nabzı (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "detective-fx/evidence-bag",
+  "status": "draft",
+  "desc": "Şeffaf delil poşeti içinde anahtar; `at` anında fermuar kayar, kırmızı mühür halkası basılır",
+  "tags": [
+   "delil",
+   "poşet",
+   "mühür",
+   "kanıt",
+   "dedektif",
+   "fermuar",
+   "evidence",
+   "bag",
+   "seal",
+   "proof",
+   "detective",
+   "zip"
+  ],
+  "anchor": "poşet merkezi (0,0); poşet tabanı y ~85",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "seal",
+   "item",
+   "zip"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "mühürleme anı — fermuar kapanır (0.4 sn), mühür basılır (0.6 sn)"
+   }
+  }
+ },
+ {
+  "name": "detective-fx/fingerprint-dust",
+  "status": "draft",
+  "desc": "Koyu yüzeyde parmak izi; toz fırçası soldan sağa süpürür, `at` anında iz tozla belirginleşir",
+  "tags": [
+   "parmak izi",
+   "toz",
+   "fırça",
+   "delil",
+   "dedektif",
+   "inceleme",
+   "fingerprint",
+   "dust",
+   "brush",
+   "evidence",
+   "detective",
+   "forensic"
+  ],
+  "anchor": "parmak izi merkezi (0,0); yüzey kartı y ~-80..80",
+  "box": [
+   -130,
+   -100,
+   130,
+   100
+  ],
+  "points": [
+   "print",
+   "brush"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "toz serpme anı — fırça izi süpürür, iz belirir (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "detective-fx/flashlight-sweep",
+  "status": "draft",
+  "desc": "Karanlık sahnede el feneri; ışın konisi yukarı aşağı süpürür, ışık dairesi duvardaki ayak izini ortaya çıkarır",
+  "tags": [
+   "el feneri",
+   "ışık",
+   "karanlık",
+   "süpürme",
+   "dedektif",
+   "gece",
+   "flashlight",
+   "beam",
+   "dark",
+   "sweep",
+   "detective",
+   "night"
+  ],
+  "anchor": "fener başı / ışık kaynağı (0,0); duvar sağda x ~110",
+  "box": [
+   -140,
+   -110,
+   140,
+   110
+  ],
+  "points": [
+   "head",
+   "spot",
+   "handle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "süpürme hızı çarpanı (1 = ~3 sn bir gidiş-geliş)"
+   }
+  }
+ },
+ {
+  "name": "detective-fx/magnifier-scan",
+  "status": "draft",
+  "desc": "Dedektif büyüteci kâğıt üzerinde sağa sola tarar; mercek altındaki izler büyüyerek belirir, camda parıltı gezer",
+  "tags": [
+   "dedektif",
+   "büyüteç",
+   "tarama",
+   "inceleme",
+   "ipucu",
+   "iz",
+   "detective",
+   "magnifier",
+   "scan",
+   "clue",
+   "inspect",
+   "lens"
+  ],
+  "anchor": "taranan kâğıt kartın merkezi (0,0); büyüteç kart üzerinde gezer",
+  "box": [
+   -140,
+   -110,
+   140,
+   110
+  ],
+  "points": [
+   "lens",
+   "handle",
+   "clue"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "tarama hızı çarpanı (1 = ~3.4 sn bir gidiş-geliş)"
+   }
+  }
+ },
+ {
+  "name": "detective-fx/red-string",
+  "status": "draft",
+  "desc": "Soruşturma panosunda iki ipucu notu; `at` anında kırmızı ip birinden diğerine gerilir ve titreşerek oturur",
+  "tags": [
+   "kırmızı ip",
+   "ipucu",
+   "pano",
+   "bağlantı",
+   "dedektif",
+   "soruşturma",
+   "red string",
+   "clue",
+   "board",
+   "connection",
+   "detective",
+   "investigation"
+  ],
+  "anchor": "pano merkezi (0,0); A notu sol üstte, B notu sağ altta",
+  "box": [
+   -140,
+   -110,
+   140,
+   110
+  ],
+  "points": [
+   "pinA",
+   "pinB",
+   "string"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ip gerilme anı — ip A’dan B’ye uzar (0.6 sn), sonra sönümlü titreşim"
    }
   }
  },
@@ -26986,6 +27488,244 @@
    "color": {
     "type": "color",
     "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "tailor-fx/button-sew",
+  "status": "draft",
+  "desc": "Dört delikli düğme; iğne döngüsel olarak deliklerden geçer, iplik çapraz dikiş atar",
+  "tags": [
+   "terzi",
+   "düğme",
+   "dikiş",
+   "dikmek",
+   "iğne",
+   "iplik",
+   "tailor",
+   "button",
+   "sew",
+   "sewing",
+   "stitch",
+   "needle"
+  ],
+  "anchor": "düğme merkezi (0,0); iğne üstte dolanır",
+  "box": [
+   -120,
+   -110,
+   120,
+   110
+  ],
+  "points": [
+   "button",
+   "needle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   }
+  }
+ },
+ {
+  "name": "tailor-fx/fabric-cut",
+  "status": "draft",
+  "desc": "Katlı kumaş parçası ve üstünde makas; kesim anında bıçaklar kapanır, kesik çizgisi belirir, kumaş iki yana ayrılır",
+  "tags": [
+   "terzi",
+   "makas",
+   "kumaş",
+   "kesmek",
+   "kesim",
+   "kumaş kesimi",
+   "tailor",
+   "scissors",
+   "fabric",
+   "cut",
+   "cutting",
+   "cloth"
+  ],
+  "anchor": "kumaş üst kenarı ortası / kesim noktası (0,0); kumaş tabanı y ~95",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "cut",
+   "scissors",
+   "fabric"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "makas kumaşı keser — bıçaklar kapanır, kesik çizgisi belirir (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "tailor-fx/iron-steam",
+  "status": "draft",
+  "desc": "Kumaş üstünde duran ütü; buhar anında ütü bastırır, tabandan buhar bulutları yükselir",
+  "tags": [
+   "terzi",
+   "ütü",
+   "buhar",
+   "ütülemek",
+   "kumaş",
+   "tailor",
+   "iron",
+   "steam",
+   "ironing",
+   "press",
+   "cloth"
+  ],
+  "anchor": "ütü tabanı ortası (0,42); kumaş üst kenarı y ~45",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "iron",
+   "steam",
+   "fabric"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ütü buhar püskürtür — buhar bulutları yükselir, ütü bastırır (1.0 sn)"
+   }
+  }
+ },
+ {
+  "name": "tailor-fx/mannequin-spin",
+  "status": "draft",
+  "desc": "Elbiseli terzi mankeni standında döner; dönüşte elbise salınır, yan görünümde siluet incelir",
+  "tags": [
+   "terzi",
+   "manken",
+   "elbise",
+   "dönmek",
+   "moda",
+   "dikiş",
+   "tailor",
+   "mannequin",
+   "dress",
+   "spin",
+   "fashion",
+   "sewing"
+  ],
+  "anchor": "gövde merkezi (0,0); taban y ~95",
+  "box": [
+   -120,
+   -115,
+   120,
+   115
+  ],
+  "points": [
+   "mannequin",
+   "dress",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "tailor-fx/needle-thread",
+  "status": "draft",
+  "desc": "Çapraz duran dikiş iğnesi; iplik gözden geçer, geçiş anında göz parlar, iplik ucu salınır",
+  "tags": [
+   "terzi",
+   "iğne",
+   "iplik",
+   "dikiş",
+   "dikmek",
+   "tailor",
+   "needle",
+   "thread",
+   "sew",
+   "sewing",
+   "stitch"
+  ],
+  "anchor": "iğne gözü (0,0); iğne sağ alta, iplik sol üstten gelir",
+  "box": [
+   -130,
+   -100,
+   130,
+   100
+  ],
+  "points": [
+   "eye",
+   "tip",
+   "thread"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "iğne ipliği geçirir — iplik gözden geçer, parıltı (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "tailor-fx/zipper-pull",
+  "status": "draft",
+  "desc": "Dikey fermuar; sürgü aşağı çekildikçe dişler ayrılır, iki kumaş parçası aralanır",
+  "tags": [
+   "terzi",
+   "fermuar",
+   "çekmek",
+   "kumaş",
+   "giysi",
+   "tailor",
+   "zipper",
+   "zip",
+   "pull",
+   "fastener",
+   "cloth"
+  ],
+  "anchor": "fermuar ortası (0,0); üst uç y -95, alt uç y 95",
+  "box": [
+   -120,
+   -110,
+   120,
+   110
+  ],
+  "points": [
+   "top",
+   "slider",
+   "bottom"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "pull": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "fermuar çekişi 0–1: 0 kapalı, 1 tam açık"
    }
   }
  },
