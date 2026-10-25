@@ -1,5 +1,256 @@
 [
  {
+  "name": "airport-fx/baggage-belt",
+  "status": "draft",
+  "desc": "Bagaj bandı döngüsel akar; üç valiz bandın üstünde soldan sağa geçer, bant üzerindeki oklar akışı gösterir",
+  "tags": [
+   "bagaj",
+   "bavul",
+   "valiz",
+   "bant",
+   "konveyör",
+   "havalimanı",
+   "baggage",
+   "luggage",
+   "suitcase",
+   "conveyor",
+   "belt",
+   "airport"
+  ],
+  "anchor": "bagaj bandının merkezi (0,0); valizlerin tabanı bandın üst yüzeyindedir",
+  "box": [
+   -165,
+   -85,
+   165,
+   85
+  ],
+  "points": [
+   "belt",
+   "load"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "bant akış hızı çarpanı (1 = ~6 sn bir tur)"
+   }
+  }
+ },
+ {
+  "name": "airport-fx/boarding-call",
+  "status": "draft",
+  "desc": "Biniş anonsu yapılır: hoparlörden yayılan ses dalgaları ve yeşile dönen kapı işaretiyle yolcular kapıya çağrılır",
+  "tags": [
+   "biniş",
+   "anons",
+   "hoparlör",
+   "kapı",
+   "çağrı",
+   "havalimanı",
+   "boarding",
+   "announcement",
+   "speaker",
+   "gate",
+   "call",
+   "airport"
+  ],
+  "anchor": "kapı tabelasının merkezi (0,0); hoparlör sol altta, kapı sağ alttadır",
+  "box": [
+   -145,
+   -105,
+   145,
+   105
+  ],
+  "points": [
+   "speaker",
+   "gate",
+   "door"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "anons anı: ses dalgaları yayılır, kapı işareti yeşil yanar"
+   }
+  }
+ },
+ {
+  "name": "airport-fx/checkin-scan",
+  "status": "draft",
+  "desc": "Biniş kartı taranır: ışık çizgisi kartı yukarıdan aşağıya süpürür, tarama bitince yeşil onay rozeti belirir",
+  "tags": [
+   "check-in",
+   "biniş kartı",
+   "tarama",
+   "barkod",
+   "onay",
+   "havalimanı",
+   "checkin",
+   "boarding pass",
+   "scan",
+   "barcode",
+   "airport",
+   "approved"
+  ],
+  "anchor": "biniş kartının merkezi (0,0); onay rozeti kartın sağ üst köşesindedir",
+  "box": [
+   -140,
+   -95,
+   140,
+   95
+  ],
+  "points": [
+   "card",
+   "barcode",
+   "check"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tarama anı: ışık çizgisi kartı süpürür, ardından onay belirir"
+   }
+  }
+ },
+ {
+  "name": "airport-fx/jet-bridge",
+  "status": "draft",
+  "desc": "Yolcu körüğü terminalden uzar, uçağın kapısına kenetlenir; kenetlenince kabindeki yeşil ışık yanar",
+  "tags": [
+   "körük",
+   "jet bridge",
+   "terminal",
+   "kapı",
+   "uçağa biniş",
+   "havalimanı",
+   "jetbridge",
+   "boarding",
+   "gate",
+   "airport",
+   "terminal",
+   "aircraft door"
+  ],
+  "anchor": "körüğün orta noktası (0,0); terminal solda, uçak burnu sağdadır; cabin noktası körüğün geri çekilmiş konumudur",
+  "box": [
+   -165,
+   -100,
+   165,
+   100
+  ],
+  "points": [
+   "door",
+   "cabin",
+   "terminal"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "körük yanaşma anı: körük 0.9 sn içinde uçağa uzanır"
+   }
+  }
+ },
+ {
+  "name": "airport-fx/plane-taxi",
+  "status": "draft",
+  "desc": "Yolcu uçağı pistte taksi yapar: olay anında soldan sağa ilerler, tekerlekler ilerlemeyle döner",
+  "tags": [
+   "uçak",
+   "taksi",
+   "pist",
+   "havalimanı",
+   "yolcu uçağı",
+   "tekerlek",
+   "plane",
+   "taxi",
+   "runway",
+   "aircraft",
+   "airport",
+   "airplane"
+  ],
+  "anchor": "uçağın gövde merkezi (taksi ortası, 0,0); zemin y=58 çizgisindedir; nose/tail noktaları taksi ortasındaki konuma göredir",
+  "box": [
+   -165,
+   -75,
+   165,
+   75
+  ],
+  "points": [
+   "nose",
+   "tail",
+   "wheel"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "taksi anı: uçak 1.2 sn içinde soldan sağa ilerler"
+   }
+  }
+ },
+ {
+  "name": "airport-fx/runway-lights",
+  "status": "draft",
+  "desc": "Pist kenar ışıkları sırayla yanıp söner; sarı ışık dalgası pistin bir ucundan diğerine akar",
+  "tags": [
+   "pist",
+   "ışık",
+   "uçak pisti",
+   "iniş",
+   "kalkış",
+   "havalimanı",
+   "runway",
+   "lights",
+   "landing",
+   "takeoff",
+   "airport",
+   "airfield"
+  ],
+  "anchor": "pistin merkezi (0,0); ışıklar pistin iki kenarındadır",
+  "box": [
+   -165,
+   -85,
+   165,
+   85
+  ],
+  "points": [
+   "threshold",
+   "centre",
+   "end"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "ışık dalgasının akış hızı çarpanı (1 = ~2.4 sn bir geçiş)"
+   }
+  }
+ },
+ {
   "name": "alert-fx/alarm-blink",
   "status": "draft",
   "desc": "Duvara monte kırmızı alarm lambası; yanıp sönen kubbe ve patlama hüzmeleri",
@@ -1422,6 +1673,258 @@
     "type": "number",
     "default": 0,
     "desc": "dönüş miktarı (0-1: tam tur)"
+   }
+  }
+ },
+ {
+  "name": "bakery-fx/bread-rise",
+  "status": "draft",
+  "desc": "Kalıptaki ekmek hamuru `at` anında kabarır, kubbeleşir ve buhar çıkarır",
+  "tags": [
+   "ekmek",
+   "kabarma",
+   "hamur",
+   "buhar",
+   "fırın",
+   "somun",
+   "bread",
+   "rise",
+   "dough",
+   "steam",
+   "bake",
+   "loaf"
+  ],
+  "anchor": "kalıp üst kenarının merkezi (0,0); ekmek yukarı doğru kabarır",
+  "box": [
+   -130,
+   -110,
+   130,
+   90
+  ],
+  "points": [
+   "loaf",
+   "steam",
+   "pan"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ekmeğin kabarmaya başlama anı"
+   }
+  }
+ },
+ {
+  "name": "bakery-fx/cookie-cut",
+  "status": "draft",
+  "desc": "Yıldız kurabiye kalıbı `at` anında hamura basar; yıldız kurabiye belirir, kırıntılar sıçrar",
+  "tags": [
+   "kurabiye",
+   "kalıp",
+   "yıldız",
+   "hamur",
+   "pastane",
+   "tatlı",
+   "cookie",
+   "cutter",
+   "star",
+   "dough",
+   "bake",
+   "bakery"
+  ],
+  "anchor": "hamur tabakasının merkezi (0,0); kalıp üstten basar",
+  "box": [
+   -130,
+   -100,
+   130,
+   100
+  ],
+  "points": [
+   "cutter",
+   "cookie",
+   "dough"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kalıbın hamura basma anı"
+   }
+  }
+ },
+ {
+  "name": "bakery-fx/dough-knead",
+  "status": "draft",
+  "desc": "Tezgahta hamur yoğrulur; iki el ritmik olarak bastırdıkça hamur yayılır ve toplanır",
+  "tags": [
+   "hamur",
+   "yoğurma",
+   "ekmek",
+   "fırın",
+   "pastane",
+   "el",
+   "dough",
+   "knead",
+   "bread",
+   "bakery",
+   "hands",
+   "flour"
+  ],
+  "anchor": "tezgah yüzeyinin merkezi (0,0); hamur yüzeyde, eller üsttedir",
+  "box": [
+   -140,
+   -90,
+   140,
+   90
+  ],
+  "points": [
+   "dough",
+   "handL",
+   "handR"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "yoğurma hızı çarpanı (1 = ~1.6 sn bir bastırma döngüsü)"
+   }
+  }
+ },
+ {
+  "name": "bakery-fx/icing-drip",
+  "status": "draft",
+  "desc": "Kremalı pasta; `at` anında kenardaki krema damlası düşer ve pasta üzerinde yayılır",
+  "tags": [
+   "pasta",
+   "krema",
+   "damla",
+   "pastane",
+   "tatlı",
+   "süsleme",
+   "cake",
+   "icing",
+   "drip",
+   "frosting",
+   "dessert",
+   "bakery"
+  ],
+  "anchor": "pastanın merkezi (0,0); tabak altta, krema üsttedir",
+  "box": [
+   -130,
+   -90,
+   130,
+   90
+  ],
+  "points": [
+   "drip",
+   "cake",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "purple"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "krema damlasının düşme anı"
+   }
+  }
+ },
+ {
+  "name": "bakery-fx/mixer-whirl",
+  "status": "draft",
+  "desc": "Stand mikser çalışır; çırpıcı dönerken kasedeki hamur girdap yapar",
+  "tags": [
+   "mikser",
+   "çırpıcı",
+   "hamur",
+   "girdap",
+   "mutfak",
+   "pastane",
+   "mixer",
+   "whisk",
+   "whirl",
+   "dough",
+   "kitchen",
+   "bakery"
+  ],
+  "anchor": "mikser başlığının alt kenarının merkezi (0,0); kase altta, çırpıcı kasededir",
+  "box": [
+   -140,
+   -100,
+   140,
+   100
+  ],
+  "points": [
+   "bowl",
+   "beater",
+   "head"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "çırpma hızı çarpanı (1 = ~1.1 sn bir tur)"
+   }
+  }
+ },
+ {
+  "name": "bakery-fx/oven-bake",
+  "status": "draft",
+  "desc": "Fırın ön yüzü; camın arkasında somun pişerken alevler titrer, ısı dalgaları yükselir",
+  "tags": [
+   "fırın",
+   "ekmek",
+   "pişirme",
+   "alev",
+   "ısı",
+   "somun",
+   "oven",
+   "bake",
+   "bread",
+   "flame",
+   "heat",
+   "bakery"
+  ],
+  "anchor": "fırın gövdesinin merkezi (0,0); cam ortada, alevler camın altındadır",
+  "box": [
+   -140,
+   -110,
+   140,
+   110
+  ],
+  "points": [
+   "window",
+   "loaf",
+   "flame"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "alev ve ısı dalgası hızı çarpanı (1 = ~0.45 sn alev titremesi)"
    }
   }
  },
@@ -20262,6 +20765,265 @@
     "type": "time",
     "default": null,
     "desc": "baskı anı: kağıt 1.2 sn'de çıkar, baskı çizgileri belirir"
+   }
+  }
+ },
+ {
+  "name": "orchestra-fx/baton-wave",
+  "status": "draft",
+  "desc": "Şefin eli ince batonu döngüsel olarak sallar; geride kalan hayalet izler ve uçtaki parıltı sallanma ritmini gösterir",
+  "tags": [
+   "şef",
+   "baton",
+   "orkestra",
+   "sallama",
+   "ritim",
+   "müzik",
+   "conductor",
+   "baton",
+   "orchestra",
+   "wave",
+   "tempo",
+   "music"
+  ],
+  "anchor": "şefin elinin (bilek) merkezi (0,0); baton elden yukarı uzanır",
+  "box": [
+   -110,
+   -110,
+   110,
+   110
+  ],
+  "points": [
+   "hand",
+   "tip",
+   "pivot"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "sallanma hızı çarpanı (1 = ~1.8 sn bir gidiş-geliş)"
+   }
+  }
+ },
+ {
+  "name": "orchestra-fx/conductor-bow",
+  "status": "draft",
+  "desc": "Frak giymiş şef selam için belinden öne eğilir; eğilmeden önce hafifçe nefes alır, batonlu kolu selamla birlikte alçalır",
+  "tags": [
+   "şef",
+   "selam",
+   "eğilme",
+   "orkestra",
+   "frak",
+   "baton",
+   "sahne",
+   "conductor",
+   "bow",
+   "greeting",
+   "orchestra",
+   "stage",
+   "baton"
+  ],
+  "anchor": "şefin kalça merkezi (0,0); ayaklar altta podyumda",
+  "box": [
+   -110,
+   -120,
+   110,
+   120
+  ],
+  "points": [
+   "head",
+   "baton",
+   "feet"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "ink"
+   },
+   "at": {
+    "type": "time",
+    "default": 0.8,
+    "desc": "selam (eğilme) anı"
+   }
+  }
+ },
+ {
+  "name": "orchestra-fx/cymbal-crash",
+  "status": "draft",
+  "desc": "Karşılıklı duran iki el zili üfleme anında çarpışır; çarpışma sonrası kenarlar titreşir ve yıldız kıvılcımları saçılır",
+  "tags": [
+   "zil",
+   "çarpma",
+   "crash",
+   "orkestra",
+   "perküsyon",
+   "titreşim",
+   "kıvılcım",
+   "cymbal",
+   "crash",
+   "orchestra",
+   "percussion",
+   "vibration",
+   "spark"
+  ],
+  "anchor": "iki zilin çarpışma noktası (0,0); üst zil yukarıda, alt zil aşağıda",
+  "box": [
+   -120,
+   -110,
+   120,
+   110
+  ],
+  "points": [
+   "center",
+   "rim",
+   "topHandle",
+   "bottomHandle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": 0.8,
+    "desc": "zil çarpışma anı (kapanış + titreşim + kıvılcım)"
+   }
+  }
+ },
+ {
+  "name": "orchestra-fx/harp-pluck",
+  "status": "draft",
+  "desc": "Üçgen gövdeli arpın tellerinden sırayla biri çekilir; çekilen tel titreşerek yana esner, ucundan bir nota yükselir",
+  "tags": [
+   "arp",
+   "tel",
+   "çekme",
+   "titreşim",
+   "nota",
+   "orkestra",
+   "müzik",
+   "harp",
+   "pluck",
+   "strings",
+   "vibration",
+   "note",
+   "orchestra",
+   "music"
+  ],
+  "anchor": "arpın gövde (ses tablası) merkezi (0,0); direk solda, tabla sağa eğik",
+  "box": [
+   -120,
+   -115,
+   120,
+   115
+  ],
+  "points": [
+   "top",
+   "pluck",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "çekme temposu çarpanı (1 = ~1.2 sn bir tel çekişi)"
+   }
+  }
+ },
+ {
+  "name": "orchestra-fx/trumpet-blast",
+  "status": "draft",
+  "desc": "Yandan görünen trompet; üfleme anında çan ağzından genişleyen ses halkaları ve uçan notalar patlar",
+  "tags": [
+   "trompet",
+   "üfleme",
+   "ses",
+   "nota",
+   "orkestra",
+   "borazan",
+   "müzik",
+   "trumpet",
+   "blast",
+   "sound",
+   "notes",
+   "orchestra",
+   "brass"
+  ],
+  "anchor": "trompet borusunun merkezi (0,0); çan sağa, ağızlık sola bakar",
+  "box": [
+   -150,
+   -90,
+   150,
+   90
+  ],
+  "points": [
+   "bell",
+   "mouthpiece",
+   "valves"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": 0.8,
+    "desc": "üfleme anı (ses dalgası + nota patlaması)"
+   }
+  }
+ },
+ {
+  "name": "orchestra-fx/violin-bow",
+  "status": "draft",
+  "desc": "Yatay duran kemanın telleri üzerinde yay döngüsel olarak ileri geri çekilir; köprü yakınında titreşim halkaları belirir",
+  "tags": [
+   "keman",
+   "yay",
+   "teller",
+   "orkestra",
+   "çello",
+   "müzik",
+   "violin",
+   "bow",
+   "strings",
+   "orchestra",
+   "music",
+   "fiddle"
+  ],
+  "anchor": "keman gövdesinin merkezi (0,0); sap sağa uzanır",
+  "box": [
+   -150,
+   -95,
+   150,
+   95
+  ],
+  "points": [
+   "bridge",
+   "scroll",
+   "bowTip",
+   "tailpiece"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "speed": {
+    "type": "number",
+    "default": 1,
+    "desc": "yay çekme hızı çarpanı (1 = ~1.4 sn bir gidiş-geliş)"
    }
   }
  },
