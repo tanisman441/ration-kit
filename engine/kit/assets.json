@@ -948,6 +948,253 @@
   }
  },
  {
+  "name": "archaeology-fx/artifact-lift",
+  "status": "draft",
+  "desc": "Altın amfora toprak yığınından yukarı kaldırılır; kaldırma anında parıltılar saçar, toprak kırıntıları dökülür",
+  "tags": [
+   "eser",
+   "amfora",
+   "vazo",
+   "arkeoloji",
+   "kaldırma",
+   "altın",
+   "artifact",
+   "amphora",
+   "vase",
+   "archaeology",
+   "gold",
+   "excavation"
+  ],
+  "anchor": "toprak yığınının merkezi (0,0); amfora merkezde yükselir",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "top",
+   "neck",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kaldırma anı — amfora yükselir, parıltı + dökülen toprak (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "archaeology-fx/brush-dust",
+  "status": "draft",
+  "desc": "Eğik kazı fırçası toprak üzerindeki eseri süpürür; süpürme anında toz bulutu kalkar",
+  "tags": [
+   "fırça",
+   "kazı",
+   "arkeoloji",
+   "toz",
+   "süpürme",
+   "brush",
+   "archaeology",
+   "dust",
+   "excavation",
+   "dig"
+  ],
+  "anchor": "toprak yığınının merkezi (0,0); fırça sağ üstten sola süpürür",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "bristles",
+   "handle",
+   "shard"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "süpürme anı — fırça ileri kayar, toz bulutu kalkar (1.0 sn)"
+   }
+  }
+ },
+ {
+  "name": "archaeology-fx/fossil-reveal",
+  "status": "draft",
+  "desc": "Kaya levha üzerinde spiral ammonit fosili; ortaya çıkış anında toprak tabakası kalkar, fosil parıltıyla belirir",
+  "tags": [
+   "fosil",
+   "ammonit",
+   "arkeoloji",
+   "kazı",
+   "kaya",
+   "fossil",
+   "ammonite",
+   "archaeology",
+   "excavation",
+   "rock",
+   "paleontology"
+  ],
+  "anchor": "kaya levhanın merkezi (0,0); fosil merkezde",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "fossil",
+   "slab",
+   "top"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "ortaya çıkış anı — toprak tabakası kalkar, fosil belirir (1.1 sn)"
+   }
+  }
+ },
+ {
+  "name": "archaeology-fx/tomb-open",
+  "status": "draft",
+  "desc": "Hiyeroglifli taş mezar kapağı menteşeden döner açılır; açılışta içinden altın ışık ve toz bulutu yükselir",
+  "tags": [
+   "mezar",
+   "kapak",
+   "lahit",
+   "arkeoloji",
+   "açılış",
+   "ışık",
+   "tomb",
+   "sarcophagus",
+   "lid",
+   "archaeology",
+   "mummy",
+   "excavation"
+  ],
+  "anchor": "mezar tabanının merkezi (0,0); kapak sol menteşeden açılır",
+  "box": [
+   -130,
+   -150,
+   130,
+   110
+  ],
+  "points": [
+   "lid",
+   "hinge",
+   "glow",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "açılış anı — kapak döner açılır, ışık + toz yükselir (1.4 sn)"
+   }
+  }
+ },
+ {
+  "name": "archaeology-fx/torch-illuminate",
+  "status": "draft",
+  "desc": "Yanan meşale; alevi sürekli dalgalanır, ışığı nabız gibi atar, kor parçacıkları yükselir",
+  "tags": [
+   "meşale",
+   "alev",
+   "ateş",
+   "ışık",
+   "mağara",
+   "torch",
+   "flame",
+   "fire",
+   "light",
+   "cave",
+   "archaeology"
+  ],
+  "anchor": "meşale sapının merkezi (0,0); alev yukarı bakar",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "flame",
+   "grip",
+   "base"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "alev parlaması anı — alev büyür, ışık güçlenir (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "archaeology-fx/trowel-dig",
+  "status": "draft",
+  "desc": "Üçgen uçlu kazı malası toprak yığınına saplanır; kazı anında toprak parçaları havaya fırlar",
+  "tags": [
+   "mala",
+   "kazı",
+   "arkeoloji",
+   "toprak",
+   "trowel",
+   "dig",
+   "archaeology",
+   "excavation",
+   "soil",
+   "shovel"
+  ],
+  "anchor": "kazı çukurunun merkezi (0,0); mala sağ üstten sola eğik saplanır",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "blade",
+   "handle",
+   "pit"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kazı anı — mala toprağa saplanır, toprak parçaları fırlar (0.9 sn)"
+   }
+  }
+ },
+ {
   "name": "art-fx/brush-stroke",
   "status": "draft",
   "desc": "Boya fırçası soldan sağa uzayan dalgalı bir boya izi çeker",
@@ -1934,6 +2181,234 @@
     "type": "time",
     "default": null,
     "desc": "dilek anı — 0.8 sn büyük yıldız patlaması ve halka"
+   }
+  }
+ },
+ {
+  "name": "blacksmith-fx/anvil-spark",
+  "status": "draft",
+  "desc": "Örs üzerinde kızgın demir; sürekli küçük kıvılcımlar sıçrar, olay anında büyük kıvılcım patlaması olur",
+  "tags": [
+   "demirci",
+   "örs",
+   "kıvılcım",
+   "sıçrama",
+   "dövme",
+   "blacksmith",
+   "anvil",
+   "spark",
+   "forge",
+   "metal"
+  ],
+  "anchor": "örs tablası merkezi / kıvılcım kaynağı (0,0)",
+  "box": [
+   -130,
+   -100,
+   130,
+   100
+  ],
+  "points": [
+   "spark",
+   "anvil",
+   "workpiece"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "büyük kıvılcım patlaması anı (0.8 sn)"
+   }
+  }
+ },
+ {
+  "name": "blacksmith-fx/bellows-pump",
+  "status": "draft",
+  "desc": "Ahşap demirci körüğü; düzenli aralıklarla açılıp kapanır, ağzından hava akımı ve kıvılcım tozları üflenir",
+  "tags": [
+   "körük",
+   "demirci",
+   "hava",
+   "üfleme",
+   "pompalama",
+   "bellows",
+   "blacksmith",
+   "air",
+   "forge",
+   "pump"
+  ],
+  "anchor": "körük gövdesi merkezi (0,0); hava akımı sağa",
+  "box": [
+   -130,
+   -90,
+   130,
+   90
+  ],
+  "points": [
+   "nozzle",
+   "hinge",
+   "handle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "blacksmith-fx/blade-sharpen",
+  "status": "draft",
+  "desc": "Bıçak bileme taşında ritmik olarak ileri geri kayar; hızlı geçişlerde temas noktasından kıvılcım çizgileri çıkar",
+  "tags": [
+   "bıçak",
+   "bileme",
+   "biley",
+   "kıvılcım",
+   "demirci",
+   "blade",
+   "sharpen",
+   "whetstone",
+   "blacksmith",
+   "knife"
+  ],
+  "anchor": "bileme taşı merkezi (0,0)",
+  "box": [
+   -130,
+   -90,
+   130,
+   90
+  ],
+  "points": [
+   "edge",
+   "stone",
+   "handle"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "blacksmith-fx/forge-glow",
+  "status": "draft",
+  "desc": "Taş demirci ocağı; kor yatağı yanıp söner, üç alev dili dans eder, kor parçaları yükselir",
+  "tags": [
+   "ocak",
+   "demirci",
+   "kor",
+   "alev",
+   "ateş",
+   "forge",
+   "blacksmith",
+   "fire",
+   "ember",
+   "glow",
+   "coals"
+  ],
+  "anchor": "ocak ağzı / kor merkezi (0,0); ocak tabanı y ~100",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "fire",
+   "coals",
+   "chimney"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   }
+  }
+ },
+ {
+  "name": "blacksmith-fx/hammer-strike",
+  "status": "draft",
+  "desc": "Örs üzerinde kızgın demir çubuk; çekiç darbe anında iner, çarpma noktasından kıvılcımlar saçılır",
+  "tags": [
+   "demirci",
+   "çekiç",
+   "örs",
+   "darbe",
+   "kıvılcım",
+   "dövme",
+   "blacksmith",
+   "hammer",
+   "anvil",
+   "strike",
+   "spark",
+   "forge"
+  ],
+  "anchor": "örs tablası merkezi / darbe noktası (0,0); örs tabanı y ~95",
+  "box": [
+   -130,
+   -110,
+   130,
+   110
+  ],
+  "points": [
+   "impact",
+   "anvil",
+   "hammer"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "çekiç darbesi anı — çekiç iner, kıvılcım patlaması (0.7 sn)"
+   }
+  }
+ },
+ {
+  "name": "blacksmith-fx/quench-steam",
+  "status": "draft",
+  "desc": "Kızgın demir çubuk su fıçısına daldırılır; daldırma anında yoğun buhar bulutu yükselir, demir soğur",
+  "tags": [
+   "demirci",
+   "su verme",
+   "buhar",
+   "soğutma",
+   "fıçı",
+   "quench",
+   "steam",
+   "blacksmith",
+   "water",
+   "forge"
+  ],
+  "anchor": "su yüzeyi merkezi (0,0); fıçı tabanı y ~95",
+  "box": [
+   -120,
+   -110,
+   120,
+   110
+  ],
+  "points": [
+   "water",
+   "bar",
+   "barrel"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "daldırma anı — buhar patlaması (1.4 sn), demir soğur"
    }
   }
  },
@@ -18352,6 +18827,237 @@
     "type": "number",
     "default": 0.55,
     "desc": "0–1: yanan pencere yoğunluğu"
+   }
+  }
+ },
+ {
+  "name": "observatory-fx/dome-rotate",
+  "status": "draft",
+  "desc": "Gözlemevi kubbesi: at anında kubbe döner, yarık karşıya kayar, kapak yukarı açılır ve içeriden ışık sızar",
+  "tags": [
+   "gözlemevi",
+   "kubbe",
+   "dönüş",
+   "rasathane",
+   "kapak",
+   "observatory",
+   "dome",
+   "rotate",
+   "telescope dome",
+   "shutter"
+  ],
+  "anchor": "kubbe tabanının merkezi (0,30); zemin çizgisi",
+  "box": [
+   -120,
+   -100,
+   120,
+   100
+  ],
+  "points": [
+   "dome",
+   "slit",
+   "beacon"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "dönüş anı — kubbe döner, kapak açılır, ışık sızar (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "observatory-fx/eclipse-shadow",
+  "status": "draft",
+  "desc": "Güneş tutulması: ay soldan gelip güneşi kapatır, tam tutulma anında korona parlar, sonra güneş geri döner",
+  "tags": [
+   "tutulma",
+   "güneş tutulması",
+   "ay",
+   "korona",
+   "gölge",
+   "eclipse",
+   "solar eclipse",
+   "corona",
+   "moon",
+   "shadow"
+  ],
+  "anchor": "güneş diskinin merkezi (0,0)",
+  "box": [
+   -120,
+   -110,
+   120,
+   110
+  ],
+  "points": [
+   "sun",
+   "corona"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "tutulma anı — ay güneşin tam önünden geçer, korona parlar (1.2 sn)"
+   }
+  }
+ },
+ {
+  "name": "observatory-fx/moon-phases",
+  "status": "draft",
+  "desc": "Ay evreleri: phase 0-1 arasında ayın aydınlık kısmı değişir, çevresindeki halka evreyi gösterir, yıldızlar yanıp söner",
+  "tags": [
+   "ay",
+   "ay evresi",
+   "dolunay",
+   "hilal",
+   "dördün",
+   "moon",
+   "moon phase",
+   "full moon",
+   "crescent",
+   "lunar"
+  ],
+  "anchor": "ay diskinin merkezi (0,0)",
+  "box": [
+   -120,
+   -110,
+   120,
+   110
+  ],
+  "points": [
+   "moon",
+   "indicator"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "phase": {
+    "type": "number",
+    "default": 0.5,
+    "desc": "ay evresi 0-1: 0 yeni ay, 0.25 ilk dördün, 0.5 dolunay, 0.75 son dördün"
+   }
+  }
+ },
+ {
+  "name": "observatory-fx/planet-transit",
+  "status": "draft",
+  "desc": "Gezegen geçişi: karanlık gezegen soldan gelip parlak güneşin önünden geçer, kenarında ince ışık halkası belirir",
+  "tags": [
+   "gezegen",
+   "geçiş",
+   "güneş",
+   "transit",
+   "astronomi",
+   "planet",
+   "transit",
+   "sun",
+   "astronomy",
+   "venus"
+  ],
+  "anchor": "güneş diskinin merkezi (0,0)",
+  "box": [
+   -140,
+   -95,
+   140,
+   95
+  ],
+  "points": [
+   "sun",
+   "transit"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "yellow"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "geçiş anı — gezegen güneşin tam ortasından geçer (2.4 sn sürer)"
+   }
+  }
+ },
+ {
+  "name": "observatory-fx/star-twinkle",
+  "status": "draft",
+  "desc": "Yıldızlı gökyüzü: her yıldız kendi ritminde yanıp söner, at anında parlak bir kayan yıldız çapraz geçer",
+  "tags": [
+   "yıldız",
+   "yanıp sönme",
+   "kayan yıldız",
+   "gece",
+   "gökyüzü",
+   "star",
+   "twinkle",
+   "shooting star",
+   "night sky",
+   "sparkle"
+  ],
+  "anchor": "gökyüzünün merkezi (0,0)",
+  "box": [
+   -130,
+   -100,
+   130,
+   100
+  ],
+  "points": [
+   "sky",
+   "meteor"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "panel2"
+   },
+   "at": {
+    "type": "time",
+    "default": null,
+    "desc": "kayan yıldız anı — çapraz parlak iz bırakarak geçer (0.9 sn)"
+   }
+  }
+ },
+ {
+  "name": "observatory-fx/telescope-scan",
+  "status": "draft",
+  "desc": "Tripod üstünde teleskop; tüpü yavaşça sağa sola tarar, merceği parlar, arka planda yıldızlar yanıp söner",
+  "tags": [
+   "teleskop",
+   "gözlemevi",
+   "tarama",
+   "gökyüzü",
+   "yıldız",
+   "mercek",
+   "telescope",
+   "observatory",
+   "scan",
+   "stargazing"
+  ],
+  "anchor": "kaide merkezi (0,0); tüp kaidenin üstünde döner",
+  "box": [
+   -130,
+   -100,
+   130,
+   100
+  ],
+  "points": [
+   "lens",
+   "eyepiece",
+   "mount"
+  ],
+  "params": {
+   "color": {
+    "type": "color",
+    "default": "dim"
    }
   }
  },
